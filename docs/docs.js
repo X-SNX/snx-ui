@@ -28,7 +28,7 @@ function menuChoosed() {
 }
 
 function codeDisplay() {
-    $('.code-display').find('button').bind('click', function () {
+    $('.code-display').bind('click', function () {
         $(this).parent().next('.code').slideToggle();
     });
 }
