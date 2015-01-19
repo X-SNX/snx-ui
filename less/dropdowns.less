@@ -1,0 +1,156 @@
+*{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@font-family:dax-regular;
+
+.triangle {//定义三角形
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-top:   10px solid;
+  border-right: 6px solid transparent;
+  border-left:  6px solid transparent;
+}
+.triangle-top{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-bottom: 1px;
+  border-bottom:   10px solid;
+  border-right: 6px solid transparent;
+  border-left:  6px solid transparent;
+}
+
+.dropdown {
+  position: relative;/*position是定位的关键*/
+  list-style: none;
+  font-family: @font-family;
+}
+
+.dropdown-list{//用在ul上
+  position: absolute; //相对于除了static的父元素
+  left: 0;
+  display: none;
+  float: right;
+  top: 100%;/*默认是下拉菜单*/
+  list-style: none;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  padding: 0.6em 0;
+  margin: 2px 0 0;
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;//背景被剪裁到内边据框
+  min-width: 160px;
+  >li{
+    >a{
+      display: block;
+      padding: 0.6em 1em;
+      clear: both;
+      color: #434343;
+      white-space: nowrap;//不遇到换行则不换行
+      text-decoration: none;
+      transition:all 0.3s;
+      -moz-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      cursor: pointer;
+      &:hover{
+        color: #434343;
+        background-color: #f0f0f0;
+        //        box-shadow: 0 0 2px rgba(0,0,0,0.4);
+      }
+    }
+  }
+}
+
+/*内标题*/
+.dropdown-list .dropdown-header{//保证优先级
+  >a{
+    padding-left: 2em;
+    color: #a0a0a0;
+    font-size: 110%;
+    &:hover{
+      color: #a0a0a0;
+      background-color: transparent;
+    }
+  }
+}
+/*幽灵下拉*/
+.dropdown-yl{
+  >.dropdown-list{
+    >li{
+      >a{
+        color: white;
+        &:hover{
+          color: #434343;
+        }
+      }
+    }
+  }
+}
+.dropdown-yl{
+  >.dropdown-list {
+    background-color: rgba(0,0,0,0.06);
+    >.dropdown-header{
+      >a{
+        color: #d8d8d8;
+        &:hover{
+          color: #d8d8d8;
+        }
+      }
+    }
+  }
+}
+
+/*分割线（li）*/
+.dropdown-list .divider{//长度目前不能自适应
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin: 0.6em 0;
+  vertical-align: middle;
+  border-top:   1px solid #d0d0d0;
+  border-right: 80px solid transparent;
+  border-left:  80px solid transparent;
+}
+
+/*disabled（li）*/
+.dropdown > .dropdown-list > .disabled > a{
+  cursor: not-allowed;
+  color: #e6e6e6;
+  &:hover{
+    background-color: transparent;
+    color: #e6e6e6;
+  }
+}
+.dropdown-yl > .dropdown-list > .disabled > a{
+  cursor: not-allowed;
+  color: #c0c0c0;
+  &:hover {
+    background-color: transparent;
+    color: #c0c0c0;
+  }
+}
+
+/*上拉、左拉、右拉菜单*/
+.dropdown-top{
+  >.dropdown-list {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 2px;
+  }
+}
+
+.justify-right{
+    right: 0;
+    left: auto;
+}
+
+.dropdown-block{
+  >.dropdown-list{
+    right: 0;
+    left: 0;
+  }
+}

@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'dax-regular';
+    src: url('../fonts/dax/dax-regular.eot');
+    src: url('../fonts/dax/dax-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/dax/dax-regular.woff2') format('woff2'),
+    url('../fonts/dax/dax-regular.woff') format('woff'),
+    url('../fonts/dax/dax-regular.ttf') format('truetype'),
+    url('../fonts/dax/dax-regular.svg#dax-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-size: 100%;
+    font-family: dax-regular;
+}
+
+header {
+    display: block;
+    position: fixed;
+    width: 28%;
+    height: 100%;
+    font-size: 120%;
+    text-align: center;
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+}
+
+section {
+    display: block;
+    width: 72%;
+    /*padding: 0 1em;*/
+    float: right;
+    box-sizing: border-box;
+}
+
+section>h1 {
+    padding: .5em;
+    font-size: 3em;
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+}
+
+article {
+    background-color: #efefef;
+}
+
+article>div>div {
+    margin: 0 2em;
+    background-color: #ffffff;
+}
+
+article>h1 {
+    padding: 1em;
+    font-size: 2em;
+}
+
+article p {
+    margin: 1em 0;
+    padding: 1em;
+}
+
+header a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+kbd {
+    margin: 0 .2em;
+    padding: .2em .3em;
+    background-color: #acacac;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-family: "Monaco", arial, sans-serif;
+}
+
+#logo {
+    padding: 1.5em 2em;
+    background-color: #a08cc8;
+    font-size: 150%;
+    color: #b6f5f3;
+}
+#logo a {
+    color: #ffffff;
+}
+
+#menu {
+    margin: 1em;
+    text-align: left;
+}
+
+#menu li {
+    margin: 1em 1em 1em 0;
+}
+
+#menu a+ul {
+    margin: .5em;
+    border-left: 1px solid #c3c3c3;
+    cursor: pointer;
+}
+
+#menu a+ul li {
+    color: #cccccc;
+}
+
+#menu a+ul li:before {
+    margin: 0 1em 0 0;
+    content: "-";
+    color: #cccccc;
+}
+
+.selected a {
+    color: #99d2f5;
+    background-color: #ddeafd;
+}
+
+code span {
+    line-height: 1.5em;
+}

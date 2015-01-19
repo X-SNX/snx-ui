@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Collie-UI DopDowns</title>
+    <link rel="stylesheet" type="text/css" href="../css/snxUI.min.css" />
+    <link href="../fonts/dax/dax.css" type="text/css" rel="stylesheet"/>
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../javascript/dropdowns.js"></script>
+    <style type="text/css">
+        .bgc-change {
+            background-image: url("../image/background.png");
+            background-size: contain;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.ch-cli').on('click', function () {
+                $('body').toggleClass('bgc-change');
+            });
+        });
+    </script>
+</head>
+
+<body class="bgc-change">
+<div class="grids-16">
+    <div class="g-2"></div>
+    <div class="form g-12"><br />
+        <div style="float:left; z-index:-100">
+            <img src="../image/Collie%20logo.png" class="ch-cli">
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;
+        <label style="position:absolute;top: 135px;">
+            <h1>UI Dropdowns</h1>
+        </label>
+    </div>
+    <div class="g-2"></div>
+</div><br />
+
+<div class="grids-16">
+    <div class="g-2"></div>
+
+    <div class="form g-12"><br />
+        <legend>Normal</legend>
+    </div>
+    <!-- 空div -->
+    <div class="g-2"></div>
+</div>
+
+<div class="grids-16">
+    <div class="g-2"></div>
+
+    <div class="form g-4"><br />
+<div class="dropdown">
+    <button class="btn btn-fl skyblue btn-dropdown" data-dropdown="#dropdown1">Choose one
+        <span class="triangle"></span>
+    </button>
+    <ul class="dropdown-list" id="dropdown1">
+        <li><a href="#">Elsa</a></li>
+        <li><a href="#">Do you</a></li>
+        <li class="disabled"><a>Wanna build</a></li>
+        <li><a href="#">A snow man</a></li>
+    </ul>
+</div>
+    </div>
+    <div class="form g-4"><br />
+<div class="dropdown">
+    <button class="btn btn-fl skyblue btn-dropdown" data-dropdown="#dropdown2">Choose one
+        <span class="triangle"></span>
+    </button>
+    <ul class="dropdown-list" id="dropdown2">
+        <li  class="dropdown-header"><a>Come On</a></li>
+        <li><a href="#">let's go</a></li>
+        <li><a href="#">and play</a></li>
+        <li class="dropdown-header"><a>I Never</a></li>
+        <li><a href="#">see you anymore</a></li>
+        <li><a href="#">come out the door</a></li>
+    </ul>
+</div>
+    </div>
+    <div class="form g-4"><br />
+        <div class="dropdown">
+            <button class="btn btn-fl skyblue btn-dropdown" data-dropdown="#dropdown3">Choose one
+                <span class="triangle"></span>
+            </button>
+            <ul class="dropdown-list" id="dropdown3">
+                <li><a>It's like you gone away</a></li>
+                <li><a href="#">We used to be best buddies</a></li>
+                <li><a href="#">and now we're not</a></li>
+                <li class="divider"><span class="line"></span></li>
+                <li><a href="#">I wish</a></li>
+                <li><a href="#">you could tell me why.....................</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 空div -->
+    <div class="g-2"></div>
+</div>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br />
+
+<div class="grids-16">
+    <div class="g-2"></div>
+
+    <div class="form g-12"><br />
+        <legend>幽霊</legend>
+    </div>
+    <!-- 空div -->
+    <div class="g-2"></div>
+</div>
+
+<div class="grids-16">
+    <div class="g-2"></div>
+
+    <div class="form g-4"><br />
+        <div class="dropdown dropdown-yl">
+            <button class="btn btn-lu skyblue btn-dropdown" data-dropdown="#dropdown4">Choose one
+                <span class="triangle"></span>
+            </button>
+            <ul class="dropdown-list" id="dropdown4">
+                <li><a href="#">Elsa</a></li>
+                <li><a href="#">Do you</a></li>
+                <li class="disabled"><a>Wanna build</a></li>
+                <li><a href="#">A snow man</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="form g-4"><br />
+        <div class="dropdown dropdown-yl">
+            <button class="btn btn-lu skyblue btn-dropdown" data-dropdown="#dropdown5">Choose one
+                <span class="triangle"></span>
+            </button>
+            <ul class="dropdown-list" id="dropdown5">
+                <li  class="dropdown-header"><a>Come On</a></li>
+                <li><a href="#">let's go</a></li>
+                <li><a href="#">and play</a></li>
+                <li class="dropdown-header"><a>I Never</a></li>
+                <li><a href="#">see you anymore</a></li>
+                <li><a href="#">come out the door</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="form g-4"><br />
+        <div class="dropdown dropdown-yl">
+            <button class="btn btn-lu skyblue btn-dropdown" data-dropdown="#dropdown6">Choose one
+                <span class="triangle"></span>
+            </button>
+            <ul class="dropdown-list" id="dropdown6">
+                <li><a>It's like you gone away</a></li>
+                <li><a href="#">We used to be best buddies</a></li>
+                <li><a href="#">and now we're not</a></li>
+                <li class="divider"><span class="line"></span></li>
+                <li><a href="#">I wish</a></li>
+                <li><a href="#">you could tell me why.....................</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 空div -->
+    <div class="g-2"></div>
+</div>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br />
+<div class="grids-16">
+    <div class="g-2"></div>
+
+    <div class="form g-12"><br />
+        <legend>上拉菜单(配合使用向上三角形)</legend>
+    </div>
+    <!-- 空div -->
+    <div class="g-2"></div>
+</div>
+<div class="grids-16">
+    <div class="g-2"></div>
+
+    <div class="form g-4"><br />
+        <div class="dropdown dropdown-top">
+            <button class="btn btn-fl skyblue btn-dropdown" data-dropdown="#dropdown7">Choose one
+                <span class="triangle-top"></span>
+            </button>
+            <ul class="dropdown-list" id="dropdown7">
+                <li><a href="#">Elsa</a></li>
+                <li><a href="#">Do you</a></li>
+                <li class="disabled"><a>Wanna build</a></li>
+                <li><a href="#">A snow man</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="form g-4"><br />
+        <div class="dropdown dropdown-yl dropdown-top">
+            <button class="btn btn-lu skyblue btn-dropdown" data-dropdown="#dropdown8">Choose one
+                <span class="triangle-top"></span>
+            </button>
+            <ul class="dropdown-list" id="dropdown8">
+                <li  class="dropdown-header"><a>Come On</a></li>
+                <li><a href="#">let's go</a></li>
+                <li><a href="#">and play</a></li>
+                <li class="dropdown-header"><a>I Never</a></li>
+                <li><a href="#">see you anymore</a></li>
+                <li><a href="#">come out the door</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="form g-4"></div>
+    <div class="g-2"></div>
+    </div>
+    <!-- 空div -->
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br />
+
+<div class="grids-16">
+    <div class="g-2"></div>
+
+    <div class="form g-12"><br />
+        <legend>dropdown-block使下拉菜单拉伸至父元素100%</legend>
+    </div>
+    <!-- 空div -->
+    <div class="g-2"></div>
+</div>
+
+<div class="grids-16">
+    <div class="g-2"></div>
+
+    <div class="form g-6"><br />
+        <div class="dropdown dropdown-block">
+            <button class="btn btn-fl skyblue btn-dropdown" data-dropdown="#dropdown9">Choose one
+                <span class="triangle"></span>
+            </button>
+            <ul class="dropdown-list" id="dropdown9">
+                <li><a href="#">Elsa</a></li>
+                <li><a href="#">Do you</a></li>
+                <li class="disabled"><a>Wanna build</a></li>
+                <li><a href="#">A snow man</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="form g-6"><br />
+        <div class="dropdown dropdown-yl dropdown-block">
+            <button class="btn btn-lu skyblue btn-dropdown" data-dropdown="#dropdown10">Choose one
+                <span class="triangle"></span>
+            </button>
+            <ul class="dropdown-list" id="dropdown10">
+                <li><a>It's like you gone away</a></li>
+                <li><a href="#">We used to be best buddies</a></li>
+                <li><a href="#">and now we're not</a></li>
+                <li class="divider"><span class="line"></span></li>
+                <li><a href="#">I wish</a></li>
+                <li><a href="#">you could tell me why.....................</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 空div -->
+    <div class="g-2"></div>
+</div>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br />
+
+<div class="grids-16">
+    <div class="g-2"></div>
+
+    <div class="form g-12"><br />
+        <legend>按钮组式的下拉菜单(同时测试使用右对齐)</legend>
+    </div>
+    <!-- 空div -->
+    <div class="g-2"></div>
+</div>
+
+<div class="grids-16">
+    <div class="g-2"></div>
+    <div class="form g-12"><br />
+            <div class="btn-group dropdown dropdown-yl">
+              <button type="submit" class="btn btn btn-lu skyblue">青い鳥</button>
+              <button type="button" class="btn btn btn-lu skyblue btn-dropdown" data-dropdown="#dropdown11">
+                  <span class="triangle"></span>
+              </button>
+
+            <ul class="dropdown-list" id="dropdown11">
+                <li><a href="#">羽ばたいたら</a></li>
+                <li><a href="#">戻らないと言って</a></li>
+                <li class="disabled"><a>目指したのは</a></li>
+                <li><a href="#">青い...青い...あの空...</a></li>
+            </ul>
+            </div>
+        <div class="btn-group dropdown dropdown-yl">
+            <button type="submit" class="btn btn btn-lu skyblue">いきものがかり</button>
+            <button type="button" class="btn btn btn-lu skyblue btn-dropdown" data-dropdown="#dropdown12">
+                <span class="triangle"></span>
+            </button>
+
+            <ul class="dropdown-list justify-right" id="dropdown12">
+                <li><a href="#">突き抜けたら</a></li>
+                <li><a href="#">見つかると知って</a></li>
+                <li><a>振り切るほど</a></li>
+                <li class="divider"></li>
+                <li><a href="#">蒼い...蒼い...あの空...</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 空div -->
+    <div class="g-2"></div>
+</div>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br />
+</body>
+</html>

@@ -1,0 +1,60 @@
+.alert {
+  position: relative;
+  margin: .3em 0;
+  padding: .5em 1em .5em .5em;
+  border-radius: 1.5em;
+  word-break: normal;
+  word-wrap:break-word;
+  box-sizing: border-box;
+  i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding: .5em;
+    font-family: FontAwesome;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);  /* 50%为自身尺寸的一半 */
+  }
+}
+
+.alert-bgc {
+  background-color: #73dcff;
+  color: #ffffff;
+  border: .2em solid #ffffff;
+  &.green {
+    background-color: #65e1a3;
+  }
+  &.yellow {
+    background-color: #ffb24c;
+  }
+  &.red {
+    background-color: #ee3b3b;
+  }
+}
+
+.alert-yl {
+  background-color: transparent;
+  color: #73dcff;
+  border: .2em solid #73dcff;
+  &.green {
+    border-color: #65e1a3;
+    color: #65e1a3;
+  }
+  &.yellow {
+    border-color: #ffb24c;
+    color: #ffb24c;
+  }
+  &.red {
+    border-color: #ee3b3b;
+    color: #ee3b3b;
+  }
+}
+
+.alert-hide {
+  position: absolute;
+  display: none;
+}

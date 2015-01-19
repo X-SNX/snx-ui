@@ -1,0 +1,178 @@
+@font-family: dax-regular;
+@font-size-table:100%;
+@line-height-table: (@font-size-table*7/3);
+@border-radius-normal: 2px;
+@table-padding: 0 20px;
+@table-padding-narrow: 0 5px;
+
+//--------------------------------------------------------------------------
+
+.transition-setting(@action:background-color,@time:.3s){
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  transition: @arguments;
+}
+
+tr {
+  .transition-setting;
+}
+
+.table-basic() {
+  width: 100%;
+  padding: 0;
+  margin: .5em 0 0;
+  font-family: @font-family;
+  font-size: @font-size-table;
+  white-space: nowrap;
+  line-height: @line-height-table;
+  text-align: left;
+  border-radius: 2px;
+  >thead,
+  >tbody,
+  >tfoot {
+    >tr {
+      >th,
+      >td {
+        text-align: left;
+        padding: @table-padding;
+      }
+    }
+  }
+  >thead{
+    font-size: 1.3em;
+  }
+}
+
+.table {
+  .table-basic;
+  border: 1px solid #d0d0d0;
+  >thead {
+    background-color: transparent;
+  }
+}
+
+.table-underline {
+  .table-basic;
+  >thead {
+    >tr {
+      >th {
+        border-bottom:2px solid #d0d0d0;
+      }
+    }
+  }
+  >tbody {
+    >tr {
+      >td,
+      >th {
+        border-bottom:1px solid #d0d0d0;
+      }
+    }
+  }
+}
+
+.table-bordered {
+  .table-basic;
+  border-collapse: collapse;
+  border-spacing: 0;
+//  border: 1px solid #d0d0d0;
+  >thead,
+  >tbody,
+  >tfoot {
+    >tr {
+      >th,
+      >td {
+        border :1px solid #d0d0d0;
+      }
+      >th{
+        border-bottom:2px solid #d0d0d0;
+      }
+    }
+  }
+  >thead {
+    >tr {
+      >td,
+      >th {
+        background-color:transparent;
+      }
+    }
+  }
+}
+
+.table-strip {
+  >tbody {
+    >tr:nth-child(odd) {
+      background-color: #f5f5f5;
+    }
+  }
+}
+
+//hover
+.table-hover {
+  >tbody {
+    >tr:hover {
+      background-color: #dcf2f5;
+      -webkit-transition: background-color 0.3s;
+      transition: background-color 0.3s;
+    }
+  }
+}
+
+.table-bluehead {
+  >thead {
+    line-height: 2.2em;
+    color: #ffffff;
+    background-color: #73dcff;
+  }
+}
+
+.table-solid {
+  >thead {
+    box-shadow: 0 .15em .2em #bbbbbb;
+  }
+}
+
+//according to screen's size,add scroll...to make table be responsive
+.table-responsive {
+  margin: 0 .5em;
+  width: auto;
+  overflow-y: auto;
+}
+
+.table-headfixed {
+  margin: 0 .5em;
+  max-height: 12.5em;
+  overflow-x: auto;
+  >table {
+    margin: 0;
+  }
+}
+
+.thclone {
+  max-height: 12.5em;
+  overflow-x: hidden;
+  >table {
+    width: auto;
+    margin: 0;
+  }
+}
+
+
+
+.info{
+  background-color:#d0d0d0;
+}
+.active{
+  background-color: #dcf2f5;
+}
+.success{
+  background-color:#d7f0cc;
+}
+.secondary{
+  background-color:#d0e5f5;
+}
+.warning{
+  background-color:#ffeed9;
+}
+.error{
+  background-color:#f2dada;
+}

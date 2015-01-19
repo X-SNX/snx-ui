@@ -1,0 +1,115 @@
+.imgs {
+  max-width: 100%;
+//  overflow-x: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  >img[src] {
+    height: 30em;
+    width: 40em;
+  }
+}
+.images {
+  position: relative;
+  height: 30em;
+  max-width: 40em;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  >img[src]:not(.img-choosed) {
+    position: absolute;
+    display: none;
+    left: 40em;
+    height: 30em;
+    width: 40em;
+  }
+  .img-choosed {
+    position: absolute;
+    left: 0;
+    height: 30em;
+    width: 40em;
+  }
+}
+
+.c-slider {
+  -webkit-animation: c-image-slider forwards .5s;
+  animation: c-image-slider forwards .5s;
+}
+@-webkit-keyframes c-image-slider {
+  from {
+    left: 0;
+  }
+  to {
+    left: -40em;
+  }
+}
+@keyframes c-image-slider {
+  from {
+    left: 0;
+  }
+  to {
+    left: -40em;
+  }
+}
+
+.u-slider {
+  -webkit-animation: u-image-slider forwards .5s;
+  animation: u-image-slider forwards .5s;
+}
+@-webkit-keyframes u-image-slider {
+  from {
+    left: 40em;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes u-image-slider {
+  from {
+    left: 40em;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.c-l-slider {
+  -webkit-animation: cl-image-slider forwards .5s;
+  animation: cl-image-slider forwards .5s;
+}
+@-webkit-keyframes cl-image-slider {
+  from {
+    left: 0;
+  }
+  to {
+    left: 40em;
+  }
+}
+@keyframes cl-image-slider {
+  from {
+    left: 0;
+  }
+  to {
+    left: 40em;
+  }
+}
+
+.u-l-slider {
+  -webkit-animation: ul-image-slider forwards .5s;
+  animation: ul-image-slider forwards .5s;
+}
+@-webkit-keyframes ul-image-slider {
+  from {
+    left: -40em;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes ul-image-slider {
+  from {
+    left: -40em;
+  }
+  to {
+    left: 0;
+  }
+}

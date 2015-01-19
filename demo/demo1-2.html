@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="../css/snxUI.min.css"/>
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../fonts/dax/dax.css">
+    <script src="../less/less-1.7.4.min.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../javascript/navs.js"></script>
+    <script src="../javascript/img-scroll.js"></script>
+    <script src="../javascript/tabs.js"></script>
+    <script src="../javascript/dropdowns.js"></script>
+    <script src="../javascript/modal.js"></script>
+    <script src="../javascript/forms.js"></script>
+    <script src="../javascript/progress.js"></script>
+    <style>
+        body {
+            background-color: #e3fcff;
+            margin: 1em;
+            font-family: dax-regular;
+        }
+        .info,
+        .demo-content {
+            background-color: #ffffff;
+        }
+        .demo-content {
+            margin: 0 15px;
+            box-sizing: border-box;
+        }
+        .info i {
+            margin: .5em 1em;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('header').hide();
+            $('section').hide();
+            $('.progressbar.active').progress("animate",{curValue:0,hasStrip:true});
+            setTimeout(function () {
+                $('header').show();
+                $('section').show();
+                $('.progressbar.active').hide();
+            },8000);
+        });
+    </script>
+</head>
+<body>
+<div class="progressbar active">
+    <div class="probar-stripe animate-stripe" style="width: 0"></div>
+</div>
+<header>
+    <nav class="nav nav-primary nav-padding">
+        <ul>
+            <li><a href="#"><span class="fa fa-heart"></span>Collie-UI</a></li>
+            <li><a href="#">更新ログ</a></li>
+            <li><a href="#">メンバー</a></li>
+            <li class="disabled"><a href="#">リンク</a></li>
+            <li><a href="#">問い合わせ</a></li>
+            <li class="right btn-modal" data-modal="#modal2"><a href="#"><i class="fa fa-user"></i></a></li>
+            <li class="right"><a href="#"><i class="fa fa-cloud"></i></a></li>
+            <li class="right"><form class="form">
+                <div class="input-group">
+                    <input class="input-rounded" type="email" placeholder="Email">
+                    <div class="input-info"><i class="fa fa-search fa-fw"></i></div>
+                </div>
+            </form></li>
+        </ul>
+    </nav>
+    <!--登录框-->
+    <div class="modal" id="modal2">
+        <div class="content" style="width: 600px">
+            <div class="modal-main">
+                <button type="button" class="close">&times;</button>
+                <div class="modal-header">
+                    <h2 class="modal-title">登录</h2>
+                </div>
+                <div class="modal-body grids-16">
+                    <form class="form form-order g-8">
+                        <label for="email1">Email</label>
+                        <input class="pure-u-1-3" id="email1" type="email" placeholder="Email">
+
+                        <label for="password1">Password</label>
+                        <input class="pure-u-1-3" id="password1" type="password" placeholder="Password">
+
+                        <label for="state">State</label>
+                        <select id="state">
+                            <option>AL</option>
+                            <option>CA</option>
+                            <option>IL</option>
+                        </select>
+
+                        <label for="remember" class="checkbox">
+                            <input id="remember" type="checkbox"> Remember me
+                        </label>
+
+                        <button type="submit" class="btn btn-lu skyblue">Sign in</button>
+                    </form>
+                    <div class="g-8">
+                        <img src="../image/qrcode.png">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-lu default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-lu skyblue">Save changes</button>
+                </div>
+            </div><!-- /.modal-fl -->
+        </div><!-- content -->
+    </div><!-- /.modal -->
+</header>
+<section class="grids-16 gutter-vertical">
+    <div class="g-sm-4 list-group list info">
+        <div class="list-item">
+            <div class="center">
+                <img class="img img-circle" src="../image/m2.jpg" alt="img3" style="width: 100px;height: 100px">
+                <h1>Collie</h1>
+                <button class="btn btn-fl btn-r skyblue">Follow</button>
+                <button class="btn btn-fl btn-r skyblue">Contact</button>
+            </div>
+        </div>
+        <div class="list-item grids-16">
+            <div class="g-8 ">
+
+            </div>
+            <div class="g-8">
+
+            </div>
+        </div>
+        <div class="list-item">
+            <a class="block" href="#"><i class="fa fa-envelope"></i>xxx@xxx.com</a>
+            <a class="block" href="#"><i class="fa fa-google-plus"></i>www.googleplus.com/xxx</a>
+            <a class="block" href="#"><i class="fa fa-home"></i>www.xxx.com</a>
+        </div>
+        <div class="list-item">
+            <a href="#"><i class="fa fa-share-alt"></i>Share my info with friend</a>
+        </div>
+    </div>
+    <div class="g-sm-10">
+        <div class="demo-content">
+            <div class="tab-horizontal tab-line gutter">
+                <ul class="tabs">
+                    <li>最近更新</li>
+                    <li>話し合い</li>
+                    <li>Others</li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-item">
+                        <div class="dropdown right">
+                            <button class="btn btn-fl skyblue btn-dropdown" data-dropdown="#dropdown1">Choose one
+                                <span class="triangle"></span>
+                            </button>
+                            <ul class="dropdown-list" id="dropdown1">
+                                <li><a href="#">Elsa</a></li>
+                                <li><a href="#">Do you</a></li>
+                                <li class="disabled"><a>Wanna build</a></li>
+                                <li><a href="#">A snow man</a></li>
+                            </ul>
+                        </div>
+                        <div class="list-group">
+                            <div class="list-item">
+                                <div class="media-item pure-u-1-2">
+                                    <img  class="img" src="../image/Collie%20logo.png">
+                                    <div class="mi-content">
+                                        <p>logo的更新</p>
+                                        <div>形状诠释意义，同时融入色彩元素</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="media-item pure-u-1-2">
+                                    <img  class="img" src="../image/m2.jpg">
+                                    <div class="mi-content">
+                                        <p>组件的更新</p>
+                                        <div>修改了一些尺寸不适用的bug</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="media-item pure-u-1-2">
+                                    <img  class="img" src="../image/m1.jpg">
+                                    <div class="mi-content">
+                                        <p>文档的更新</p>
+                                        <div>仍然在更新中...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="media-item pure-u-1-2">
+                                    <img  class="img" src="../image/m1.jpg">
+                                    <div class="mi-content">
+                                        <p>文档的更新</p>
+                                        <div>仍然在更新中...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="media-item pure-u-1-2">
+                                    <img  class="img" src="../image/m1.jpg">
+                                    <div class="mi-content">
+                                        <p>文档的更新</p>
+                                        <div>仍然在更新中...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="media-item pure-u-1-2">
+                                    <img  class="img" src="../image/m1.jpg">
+                                    <div class="mi-content">
+                                        <p>文档的更新</p>
+                                        <div>仍然在更新中...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="pgn pgn-border align-center gutter">
+                                <a class="pgn-pre">Previous</a>
+                                <a class="pgn-choosed">1</a>
+                                <a>2</a>
+                                <a>3</a>
+                                <a class="pgn-next">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-item">
+                        <div class="list-group">
+                            <div class="list-item">
+                               <p>飯牟礼オーナー、
+
+                                   ご意見、しかと承りました。
+                                   今年の感謝祭の全体をキチンと総括する中で、通常時間で取り組んだことについてのプラスとマイナスしっかり整理して、
+                                   ゼロイチではなく現場の納得感が一番ある結論を出した上で、改めてご報告します。</p>
+                            </div>
+                            <div class="list-item">
+                                飯牟礼オーナー、
+
+                                昨年、店長の残業時間をしっかり協定の範囲内に収めるという観点から、営業的には厳しい決断をしたわけですが、
+                                仰るとおり感謝祭のインパクトやニュース性をもっと強くしていくべき、という部分は賛成しますが、開店時間の前倒しは私は反対です。
+
+                                幸い、タイムセールやマーケの連動、お店の中での販促物の投入で賑やかしや全社販促で効果が出ていると思われ、
+                                かなり営業時間を短縮しているのですが、一定の売上が取れており、労働時間ももうちょっと頑張りが必要な現状、
+                                いまはこれで当面様子を見るべきではないかと思います。
+
+                                さらにもっと特別感を出す、という観点でデジタルを絡めた販促をもっとうまくやるなど、こちらの方面の工夫をマーケや営業に対して
+                                求めて詰めていくのがよいのではないでしょうか。
+                            </div>
+                            <div class="list-item">
+                                次の創業祭や感謝祭の営業開始時間は全店朝9時にして頂きたいと思います。
+                                弊社の2店舗では売上予算は達成していますが前年を割っています。前年までの朝6時オープンのインパクトやニュースに欠けたと思います。
+                                朝6時オープン復活を願いたいところですが、せめて9時オープンにして通常とは違う特別感を出したいです。
+
+                                (有)ファースト・アクト　飯牟礼　伸悟
+                            </div>
+                        </div>
+                        <div>
+                            <div class="btn-group-gap align-center gutter">
+                                <button type="button" class="btn btn-fl btn-r default"><<</button>
+                                <button type="button" class="btn btn-fl btn-r default">3</button>
+                                <button type="button" class="btn btn-fl btn-r default">4</button>
+                                <button type="button" class="btn btn-fl btn-r default">5</button>
+                                <button type="button" class="btn btn-fl btn-r default">>></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-item">
+                        <div class="grids-16 set-margin">
+                            <div class="progresscircle g-6">
+                                <div class="pie-right"><div></div></div>
+                                <div class="pie-left"><div></div></div>
+                                <div class="circle-inner">75%</div>
+                            </div>
+                            <div class="g-8">
+                                <h2>达成度</h2>
+                                <p>大约75%，仍需1个月左右的时间进行测试和完善</p>
+                            </div>
+                        </div>
+                        <div class="table-responsive set-margin">
+                            <table class="table table-bluehead table-solid" cellspacing="0" cellpadding="0">
+                                <thead>
+                                <tr>
+                                    <th><span>Keywords</span></th>
+                                    <th><span>Impressions</span></th>
+                                    <th><span>Clicks</span></th>
+                                    <th><span>CTR</span></th>
+                                    <th><span>Rank</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>silly tshirts</td>
+                                    <td>6,000</td>
+                                    <td>110</td>
+                                    <td>1.8%</td>
+                                    <td>22.2</td>
+                                </tr>
+                                <tr>
+                                    <td>2013 webapps</td>
+                                    <td>9,900</td>
+                                    <td>460</td>
+                                    <td>4.6%</td>
+                                    <td>11.5</td>
+                                </tr>
+                                <tr>
+                                    <td>ring bananaphone</td>
+                                    <td>10,500</td>
+                                    <td>748</td>
+                                    <td>7.1%</td>
+                                    <td>17.3</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="g-sm-2 center">
+        <div class="modal" id="modal1">
+            <div class="content">
+                <div class="modal-main">
+                    <button type="button" class="close">&times;</button>
+                    <div class="modal-header">
+                        <h2 class="modal-title">部品</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;
+                            <br />
+                            <br />
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-lu default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-lu skyblue">Save changes</button>
+                    </div>
+                </div><!-- /.modal-fl -->
+            </div><!-- content -->
+        </div><!-- /.modal -->
+        <button class="btn btn-lu skyblue set-margin-tb btn-modal" data-modal="#modal1">部品<span class="label label-skyblue">New!</span></button>
+        <button class="btn btn-lu green set-margin-tb">插件<span class="label label-green">New!</span></button>
+        <button class="btn btn-lu orange set-margin-tb">文档<span class="label label-orange">New!</span></button>
+        <button class="btn btn-lu red set-margin-tb">颜色<span class="label label-red">New!</span></button>
+    </div>
+</section>
+<script>
+    $('.tab-horizontal').tabs();
+    $('.images').imgScroll('cycle',{leftButton:'.left-p',rightButton:'.right-p'});
+</script>
+
+</body>
+</html>

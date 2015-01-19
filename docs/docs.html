@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width">
+    <title></title>
+    <link href="docs.css" type="text/css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../less/less-1.7.4.min.js">
+    <link rel="stylesheet/less" type="text/less" href="../less/tables.less">
+    <script src="../less/less-1.7.4.min.js"></script>
+    <script src="../javascript/jquery-2.1.1.min.js"></script>
+    <script src="../javascript/tables.js"></script>
+    <script src="docs.js"></script>
+
+    <link rel="stylesheet" href="styles/atelier-dune.light.css">
+    <script src="styles/highlight.pack.js"></script>
+    <script>
+        hljs.tabReplace = '    ' ;// 4 spaces
+        hljs.initHighlightingOnLoad();
+    </script>
+</head>
+<body>
+<header id="header">
+    <div id="logo">
+        <h2><a href="#" title="snx-ui">Snx-UI</a></h2>
+        <h5>Color your life</h5>
+    </div>
+    <div id="menu">
+        <ul>
+            <li>Grid</li>
+            <li>Layout</li>
+            <li>
+                <a href="#">Form</a>
+                <ul>
+                    <li>Universal</li>
+                    <li>Collie-Style</li>
+                    <li>Group</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Table</a>
+                <ul>
+                    <li>Style</li>
+                    <li>Addition</li>
+                    <li>Responsive</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+<section id="section">
+    <h1>Table</h1>
+    <article id="style">
+        <h1>Style</h1>
+        <div>
+            <div>
+                <p><strong>默认表格[Default Table]</strong>，添加<kbd>table</kbd>类即可调用。</p>
+                <table class="table" cellspacing="0" cellpadding="0">
+                    <thead>
+                    <tr>
+                        <th><span>Name</span></th>
+                        <th><span>Group</span></th>
+                        <th><span>ID</span></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>XiaoMing</td>
+                        <td>Collie</td>
+                        <td>001</td>
+                    </tr>
+                    <tr>
+                        <td>XiaoHua</td>
+                        <td>Collie</td>
+                        <td>002</td>
+                    </tr>
+                    <tr>
+                        <td>XiaoHong</td>
+                        <td>Collie</td>
+                        <td>003</td>
+                    </tr>
+                    <tr>
+                        <td>XiaoLi</td>
+                        <td>Collie</td>
+                        <td>004</td>
+                    </tr>
+                    </tbody>
+                </table>
+               <pre>
+                   <code class="html">
+&lt;table class="table-bordered" cellspacing="0" cellpadding="0"&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;&lt;span&gt;Keywords&lt;/span&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;span&gt;Impressions&lt;/span&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;span&gt;Clicks&lt;/span&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;span&gt;CTR&lt;/span&gt;&lt;/th&gt;
+        &lt;th&gt;&lt;span&gt;Rank&lt;/span&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;silly tshirts&lt;/td&gt;
+        &lt;td&gt;6,000&lt;/td&gt;
+        &lt;td&gt;110&lt;/td&gt;
+        &lt;td&gt;1.8%&lt;/td&gt;
+        &lt;td&gt;22.2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;2013 webapps&lt;/td&gt;
+        &lt;td&gt;9,900&lt;/td&gt;
+        &lt;td&gt;460&lt;/td&gt;
+        &lt;td&gt;4.6%&lt;/td&gt;
+        &lt;td&gt;11.5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;ring bananaphone&lt;/td&gt;
+        &lt;td&gt;10,500&lt;/td&gt;
+        &lt;td&gt;748&lt;/td&gt;
+        &lt;td&gt;7.1%&lt;/td&gt;
+        &lt;td&gt;17.3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                   </code>
+               </pre>
+            </div>
+            <div>
+                <p><strong>下划线表格[Underline Table]</strong>为table标签添加类名<kbd>table-underline</kbd>。</p>
+                <table class="table-underline" cellspacing="0" cellpadding="0">
+                    <thead>
+                    <tr>
+                        <th><span>Name</span></th>
+                        <th><span>Group</span></th>
+                        <th><span>ID</span></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>XiaoMing</td>
+                        <td>Collie</td>
+                        <td>001</td>
+                    </tr>
+                    <tr>
+                        <td>XiaoHua</td>
+                        <td>Collie</td>
+                        <td>002</td>
+                    </tr>
+                    <tr>
+                        <td>XiaoHong</td>
+                        <td>Collie</td>
+                        <td>003</td>
+                    </tr>
+                    <tr>
+                        <td>XiaoLi</td>
+                        <td>Collie</td>
+                        <td>004</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <pre>
+                   <code class="html">
+&lt;table class="table-underline" cellspacing="0" cellpadding="0"&gt;
+...
+&lt;/table&gt;
+                   </code>
+               </pre>
+            </div>
+            <div>
+                <p><strong>网状表格[Bordered Table]</strong>,为table标签添加<kbd>table-bordered</kbd>.</p>
+                <table class="table-bordered" cellspacing="0" cellpadding="0">
+                    <thead>
+                    <tr>
+                        <th><span>Name</span></th>
+                        <th><span>Group</span></th>
+                        <th><span>ID</span></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>XiaoMing</td>
+                        <td>Collie</td>
+                        <td>001</td>
+                    </tr>
+                    <tr>
+                        <td>XiaoHua</td>
+                        <td>Collie</td>
+                        <td>002</td>
+                    </tr>
+                    <tr>
+                        <td>XiaoHong</td>
+                        <td>Collie</td>
+                        <td>003</td>
+                    </tr>
+                    <tr>
+                        <td>XiaoLi</td>
+                        <td>Collie</td>
+                        <td>004</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <pre>
+                   <code class="html">
+&lt;table class="table-bordered" cellspacing="0" cellpadding="0"&gt;
+...
+&lt;/table&gt;
+                   </code>
+               </pre>
+            </div>
+        </div>
+    </article>
+    <article id="addition">
+        <h1>Addition</h1>
+        <div>
+            <div>
+                <p>
+                    <strong>条纹[Strip]</strong>特性需要为 table 标签添加<kbd>table-strip</kbd>类；
+                    <strong>悬浮[Hover]</strong>特性需要为 table 标签添加<kbd>table-hover</kbd>类。
+                </p>
+                <table class="table table-strip table-hover" cellspacing="0" cellpadding="0">
+                    <thead>
+                    <tr>
+                        <th><span>Name</span></th>
+                        <th><span>Group</span></th>
+                        <th><span>ID</span></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>XiaoMing</td>
+                        <td>Collie</td>
+                        <td>001</td>
+                    </tr>
+                    <tr>
+                        <td>XiaoHua</td>
+                        <td>Collie</td>
+                        <td>002</td>
+                    </tr>
+                    <tr>
+                        <td>XiaoHong</td>
+                        <td>Collie</td>
+                        <td>003</td>
+                    </tr>
+                    <tr>
+                        <td>XiaoLi</td>
+                        <td>Collie</td>
+                        <td>004</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <pre>
+                   <code class="html">
+                       &lt;table class="table table-strip table-hover" cellspacing="0" cellpadding="0"&gt;
+                       ...
+                       &lt;/table&gt;
+                   </code>
+               </pre>
+            </div>
+            <div>
+                <p>
+                    <strong>固定表头[Head Fixed]</strong>特性需要为 table 标签的父元素添加<kbd>table-headfixed</kbd>类，但表格长度超过设定，将产生滚动条并且表头固定；
+                </p>
+                <div class="table-headfixed">
+                    <table class="table table-strip table-hover" cellspacing="0" cellpadding="0">
+                        <thead>
+                        <tr>
+                            <th><span>Name</span></th>
+                            <th><span>Group</span></th>
+                            <th><span>ID</span></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>XiaoMing</td>
+                            <td>Collie</td>
+                            <td>001</td>
+                        </tr>
+                        <tr>
+                            <td>XiaoHua</td>
+                            <td>Collie</td>
+                            <td>002</td>
+                        </tr>
+                        <tr>
+                            <td>XiaoHong</td>
+                            <td>Collie</td>
+                            <td>003</td>
+                        </tr>
+                        <tr>
+                            <td>XiaoLi</td>
+                            <td>Collie</td>
+                            <td>004</td>
+                        </tr>
+                        <tr>
+                            <td>XiaoMing</td>
+                            <td>Collie</td>
+                            <td>001</td>
+                        </tr>
+                        <tr>
+                            <td>XiaoHua</td>
+                            <td>Collie</td>
+                            <td>002</td>
+                        </tr>
+                        <tr>
+                            <td>XiaoHong</td>
+                            <td>Collie</td>
+                            <td>003</td>
+                        </tr>
+                        <tr>
+                            <td>XiaoLi</td>
+                            <td>Collie</td>
+                            <td>004</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <pre>
+                   <code class="html">
+                       &lt;div class="table-headfixed"&gt;
+                            &lt;table class="table table-strip table-hover" cellspacing="0" cellpadding="0"&gt;
+                            ...
+                            &lt;/table&gt;
+                       &lt;/div&gt;
+                   </code>
+               </pre>
+            </div>
+        </div>
+    </article>
+    <article id="responsive">
+        <h1>Responsive</h1>
+        <div>
+            <div>
+                <p>
+                    向表格添加<strong>响应式[Strip]</strong>处理，需要为 table 标签的父元素添加<kbd>table-responsive</kbd>类；
+                </p>
+                <div class="table-responsive">
+                    <table class="table table-strip table-hover" cellspacing="0" cellpadding="0">
+                        <thead>
+                        <tr>
+                            <th><span>Name</span></th>
+                            <th><span>Group</span></th>
+                            <th><span>ID</span></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>XiaoMing</td>
+                            <td>Collie</td>
+                            <td>001</td>
+                        </tr>
+                        <tr>
+                            <td>XiaoHua</td>
+                            <td>Collie</td>
+                            <td>002</td>
+                        </tr>
+                        <tr>
+                            <td>XiaoHong</td>
+                            <td>Collie</td>
+                            <td>003</td>
+                        </tr>
+                        <tr>
+                            <td>XiaoLi</td>
+                            <td>Collie</td>
+                            <td>004</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <pre>
+                   <code class="html">
+                       &lt;div class="table-responsive"&gt;
+                            &lt;table class="table table-strip table-hover" cellspacing="0" cellpadding="0"&gt;
+                            ...
+                            &lt;/table&gt;
+                       &lt;/div&gt;
+                   </code>
+               </pre>
+            </div>
+        </div>
+    </article>
+</section>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Alert-test</title>
+    <link rel="stylesheet" type="text/css" href="../css/snxUI.min.css" />
+    <link type="text/css" rel="stylesheet" href="../fonts/dax/dax.css">
+    <link type="text/css" rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../javascript/alerts.js"></script>
+    <link type="text/css" rel="stylesheet" href="testpage/testpage.css">
+    <script src="testpage/testpage.js"></script>
+</head>
+<body class="bgc-change">
+<div>
+    <img class="ch-cli" src="../image/Collie%20logo.png">
+    <h1 class="title">-UI Alert</h1>
+</div>
+<button class="btn btn-fl green test-alert">test-alert</button>
+<br>
+
+<div class="divide grids-16">
+    <div class="g-4 alert alert-bgc" role="alert">
+        yeah,look at me;iamverylongduibudui;
+    </div>
+    <div class="g-6 alert alert-bgc green" role="alert">
+        success! you are great!
+    </div>
+    <div class="g-8 alert alert-bgc yellow" role="alert">
+        problem!pay attention!
+    </div>
+    <div class="g-4 alert alert-bgc red" role="alert">
+        warning!sorry...
+    </div>
+</div>
+<br>
+<div class="divide grids-16">
+    <div class="g-4 alert alert-yl" role="alert">
+        yeah,but you still click there....aasdfasd
+    </div>
+    <div class="g-4 alert alert-yl green" role="alert">
+        success! you are great!
+    </div>
+    <div class="g-8 alert alert-yl yellow" role="alert">
+        problem!pay attention!
+        <button class="btn btn-lu orange">retry</button>
+    </div>
+    <div class="g-6 alert alert-yl red" role="alert">
+        warning!sorry...
+    </div>
+</div>
+
+<div class="g-4 alert alert-bgc alert-hide" role="alert">
+    i am test;
+</div>
+
+<script>
+    $('.alert').alert('close');
+    $('.test-alert').click(function () {
+        $('.alert-hide').alert();
+    });
+</script>
+</body>
+</html>

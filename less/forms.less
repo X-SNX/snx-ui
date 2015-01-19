@@ -1,0 +1,688 @@
+
+
+*{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*{
+  -webkit-appearance:none;
+}
+
+@font-family:dax-regular;
+
+.transition-setting(@action:boder-color,@time:ease-in-out .15s){
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  transition: @arguments;
+}
+//----------------------------修改所有input的placeholder的默认色-----------------------------------
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #b8b8b8;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #b8b8b8;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #b8b8b8;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #b8b8b8;
+}
+
+//去除Chrome等浏览器文本框默认发光边框
+input:focus,textarea:focus,select:focus,span:focus{
+  outline: none;
+}
+
+
+//----------------------------定义normal表单样式-----------------------------------
+.form{
+  font-family: @font-family;
+  color: #333333;
+}
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="url"],
+.form input[type="date"],
+.form input[type="month"],
+.form input[type="time"],
+.form input[type="datetime"],
+.form input[type="datetime-local"],
+.form input[type="week"],
+.form input[type="number"],
+.form input[type="search"],
+.form input[type="tel"],
+.form input[type="color"],
+.form select,
+.form textarea,
+.form input:not([type]){
+  color: white;
+  padding: 0.5em 1em;
+  display: inline-block;
+  border: 1px solid #333333;
+  border-radius: 0px;
+  font-size: 100%;
+  font-family: @font-family;
+  -webkit-tap-highlight-color: transparent;/*苹果设备的点击阴影屏蔽，使效果统一*/
+  background-color: #333333;
+  .transition-setting(all .3s);
+  -moz-transition:all ease-in-out .3s;
+  -webkit-transition:all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  &:hover {
+    background-color: black;
+    border: 1px solid black;
+  }
+  &:focus {
+    background-color: #000000;
+    border: 1px solid #8fe1fd;
+    box-shadow: 0px 0px 10px rgba(143,225,253,0.6);
+    .transition-setting(box-shadow ease-in-out 0.3s);//transition竟然不支持box-shadow的过度!疯了@！
+  }
+  &[disabled]{
+    cursor: not-allowed;
+    box-shadow: none;
+    background-color: #999999;
+    border: 1px solid #999999;
+  }
+}
+
+
+//----------------------------Type="Color"-----------------------------------
+.form select{//宽度与表单一致 长度待定
+  padding: 0.5em 1em;
+  background-color: #000000;
+  border: 1px solid #000000;//不起作用~怎么不重写的前提下改变默认样式？
+}
+
+.form .checkbox,
+.form .radio {
+  font-size: 100%;
+  font-family: @font-family;
+  margin: 0.5em 0;
+}
+
+.form .checkbox-inline,
+.form .radio-inline {
+  display: inline-block;
+  font-size: 100%;
+  font-family: @font-family;
+  margin: 0.5em 0;
+}
+
+.form input[readonly],//只读读文本
+.form select[readonly],
+.form textarea[readonly] {
+  background: #999999;
+  color: white;
+  border-color: #999999;
+  &:hover{
+    background: #999999;
+    border: 1px solid #999999;
+  }
+  &:focus{
+    background-color: #999999;
+    border: 1px solid #73dcff;
+  }
+}
+
+
+//----------------------------消息提示(功能要不要呢)-----------------------------------
+.form input:focus:invalid,
+.form textarea:focus:invalid,
+.form select:focus:invalid {
+  color: #b94a48;
+  border-color: #ee5f5b;
+}
+.form input:focus:invalid:focus,
+.form textarea:focus:invalid:focus,
+.form select:focus:invalid:focus {
+  border-color: #e9322d;
+}
+.form input[type="file"]:focus:invalid:focus,
+.form input[type="radio"]:focus:invalid:focus,
+.form input[type="checkbox"]:focus:invalid:focus {
+  outline-color: #e9322d;
+}
+
+
+.form select {
+  border: 1px solid #ccc;
+  background-color: #333333;
+}
+
+.form select[multiple] {//同时选中多个选框
+  height: auto;
+}
+.form label {
+  color:#333333;
+  margin: 0.5em 0 0.2em;
+  font-family: @font-family;
+}
+
+.form fieldset {
+  margin: 0;
+  padding: 0.35em 0 0.75em;
+  border: 0;
+}
+.form legend {
+  display: block;
+  width: 100%;
+  padding: 0.5em 0;
+  margin-bottom: 0.4em;
+  font-family: @font-family;
+  font-size: 110%;
+  color: #333333;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+//----------------------------form-order类 进行块组织-----------------------------------
+.form-order input[type="text"],
+.form-order input[type="password"],
+.form-order input[type="email"],
+.form-order input[type="url"],
+.form-order input[type="date"],
+.form-order input[type="month"],
+.form-order input[type="time"],
+.form-order input[type="datetime"],
+.form-order input[type="datetime-local"],
+.form-order input[type="week"],
+.form-order input[type="number"],
+.form-order input[type="search"],
+.form-order input[type="tel"],
+.form-order input[type="color"],
+.form-order select,
+.form-order textarea,
+.form-order input:not([type]){
+  display: block;
+  margin-top:0.25em;
+  margin-bottom: 0.5em;
+}
+.form-order label{
+  display: block;
+  margin-top:0.25em;
+}
+.input-group{
+  display: inline-block;
+  white-space: nowrap;
+}
+.input-group input[type="text"],
+.input-group input[type="password"],
+.input-group input[type="email"],
+.input-group input[type="url"],
+.input-group input[type="date"],
+.input-group input[type="month"],
+.input-group input[type="time"],
+.input-group input[type="datetime"],
+.input-group input[type="datetime-local"],
+.input-group input[type="week"],
+.input-group input[type="number"],
+.input-group input[type="search"],
+.input-group input[type="tel"],
+.input-group input[type="color"],
+.input-group select,
+.input-group label,
+.input-group textarea,
+.input-group input:not([type]){
+  display:inline-block;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+  zoom: 1;
+  vertical-align: top;
+}
+
+//----------------------------form-block类 进行块组织-----------------------------------
+.form-block input[type="text"],
+.form-block input[type="password"],
+.form-block input[type="email"],
+.form-block input[type="url"],
+.form-block input[type="date"],
+.form-block input[type="month"],
+.form-block input[type="time"],
+.form-block input[type="datetime"],
+.form-block input[type="datetime-local"],
+.form-block input[type="week"],
+.form-block input[type="number"],
+.form-block input[type="search"],
+.form-block input[type="tel"],
+.form-block input[type="color"],
+.form-block select,
+.form-block textarea,
+.form-block input:not([type]){
+  display: block;
+  width:100%;
+  margin-bottom: 0.5em;
+}
+.form-block label{
+  display: block;
+  width:100%;
+}
+
+.form-aligned input,
+.form-aligned textarea,
+.form-aligned select{
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+.form-aligned textarea {
+  vertical-align: top;
+}
+
+/* Aligned Forms */
+.form-aligned .control-group {
+  margin-bottom: 0.5em;
+}
+
+.form-aligned .control-group label {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10em;
+  margin: 0 1em 0 0;
+}
+
+.form-aligned .controls {//定制特殊样式，一般用于表单中的checkbox等
+   margin: 1.5em 0 0 10em;
+ }
+.form-aligned .controls .checkbox,
+.form-aligned .controls .radio{
+  display: block;
+}
+
+//----------------------------form或期中input使用圆角-----------------------------------
+.form input.input-rounded,
+.form .input-rounded {
+  border-radius: 2em;
+}
+
+//-----------------------------组input----------------------------------
+.form .form-group fieldset {
+  margin-bottom: 10px;
+}
+
+.form .form-group input {
+  display: block;
+  padding: 10px 1em;
+  margin: 0;
+  border-radius: 0;
+  position: relative;
+  top: -1px;
+}
+.form .form-group > input:not(:first-child){
+  border-top: 1px solid #222222;
+  &:focus{
+    border-top:1px solid #73dcff;
+  }
+}
+.form .form-group input:focus {
+  z-index: 2;
+}
+.form .form-group input:first-child {
+  top: 1px;
+
+}
+.form .form-group input:last-child {
+  top: -2px;
+}
+.form .form-group button {
+  margin: 0.35em 0;
+}
+
+.form .input-1 {
+  width: 100%;
+}
+.form .input-2-3 {
+  width: 66%;
+}
+.form .input-1-2 {
+  width: 50%;
+}
+.form .input-1-3 {
+  width: 33%;
+}
+.form .input-1-4 {
+  width: 25%;
+}
+
+
+.form-message-inline {
+  display: inline-block;
+  color: #666;
+  font-size: 0.875em;
+  padding: 0.4em 0 0.4em 0.6em;
+}
+
+.form-message {
+  display: block;
+  color: #666;
+  font-size: 0.875em;
+  padding: 0 0 0.4em;
+
+}
+
+//----------------------------input-group-----------------------------------
+
+.input-group {
+  >div:first-child{
+    margin-right: -0.41em;
+  }
+  >input:first-child{
+    margin-right: -0.3em;
+  }
+  >input:first-child.input-rounded{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 2em;
+    border-top-left-radius: 2em;
+  }
+  >input:last-child.input-rounded{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 2em;
+  }
+}
+
+.form .input-group .input-info{
+  margin-top:0.25em;
+  margin-bottom: 0.5em;
+  padding: 0.5em 0.55em;
+  font-size: inherit;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #e6e6e6;
+  border-radius: 0px;
+  font-family: @font-family;
+  box-shadow: none;
+  background-color: #e6e6e6;
+  color: #434343;
+}
+.form .input-group .input-info .checkbox-input{
+  top: -1.3px;
+  margin: -20px;
+}
+.form .input-group .input-info .radio-input{
+  top: -1.3px;
+  margin: -20px;
+}
+//----------------------------多媒体响应式设计-----------------------------------
+@media only screen and (max-width : 480px) {
+  .form button[type="submit"] {
+    margin: 0.7em 0 0;
+  }
+
+  .form input:not([type]),
+  .form input[type="text"],
+  .form input[type="password"],
+  .form input[type="email"],
+  .form input[type="url"],
+  .form input[type="date"],
+  .form input[type="month"],
+  .form input[type="time"],
+  .form input[type="datetime"],
+  .form input[type="datetime-local"],
+  .form input[type="week"],
+  .form input[type="number"],
+  .form input[type="search"],
+  .form input[type="tel"],
+  .form input[type="color"],
+  .form label {
+    margin-bottom: 0.3em;
+    display: block;
+  }
+
+
+  .form-group input:not([type]),
+  .form-group input[type="text"],
+  .form-group input[type="password"],
+  .form-group input[type="email"],
+  .form-group input[type="url"],
+  .form-group input[type="date"],
+  .form-group input[type="month"],
+  .form-group input[type="time"],
+  .form-group input[type="datetime"],
+  .form-group input[type="datetime-local"],
+  .form-group input[type="week"],
+  .form-group input[type="number"],
+  .form-group input[type="search"],
+  .form-group input[type="tel"],
+  .form-group input[type="color"] {
+    margin-bottom: 0;
+  }
+
+  .form-aligned .control-group label {
+    margin-bottom: 0.3em;
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+
+  .form-aligned .controls {
+    margin: 1.5em 0 0 0;
+  }
+
+  .input-group input:not([type]),
+  .input-group input[type="text"],
+  .input-group input[type="password"],
+  .input-group input[type="email"],
+  .input-group input[type="url"],
+  .input-group input[type="date"],
+  .input-group input[type="month"],
+  .input-group input[type="time"],
+  .input-group input[type="datetime"],
+  .input-group input[type="datetime-local"],
+  .input-group input[type="week"],
+  .input-group input[type="number"],
+  .input-group input[type="search"],
+  .input-group input[type="tel"],
+  .input-group input[type="color"]{
+    display: inline-block;
+  }
+}
+
+
+.file{
+  margin-top: 0.3em;
+  padding:0.4em 0.8em;
+  display:inline-block;
+  border:1px solid #333333;
+  background: #333333;
+  color:white;
+  font-family: @font-family;
+  text-align:center;
+  overflow:hidden;
+  position:relative;
+  -moz-transition:background-color ease-in-out .3s;
+  -webkit-transition:background-color ease-in-out .3s;
+  transition: background-color ease-in-out .3s;
+  &:hover {
+    background-color: #000000;
+  }
+  &:focus{
+    border: 1px solid #8fe1fd;
+    box-shadow: 0px 0px 10px rgba(143, 225, 253, 0.6);;//这里的focus<span>中不使用tabindex不起作用 js解决
+     }
+  }
+
+.file+label{
+   margin-top:0;
+   font-size:80%;
+   color:#333333;
+}
+.fbtn {
+  width: 125px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  }
+
+.form div.input-xl,
+.form input.input-xl,
+.form select.input-xl,
+.form textarea.input-xl,
+.form input:not([type]).input-xl{
+  font-size: 125%;
+}
+.form div.input-lg,
+.form input.input-lg,
+.form select.input-lg,
+.form textarea.input-lg,
+.form input:not([type]).input-lg{
+  font-size: 110%;
+}
+.form div.input-sm,
+.form input.input-sm,
+.form select.input-sm,
+.form textarea.input-sm,
+.form input:not([type]).input-sm{
+  font-size: 85%;
+}
+.form div.input-xs,
+.form input.input-xs,
+.form select.input-xs,
+.form textarea.input-xs,
+.form input:not([type]).input-xs{
+  font-size: 70%;
+}
+
+input[type=checkbox] {//隐藏原有样式
+  visibility: hidden;
+}
+input[type=radio] {
+  visibility: hidden;
+}
+//Radio-input
+.radio-input {
+  display: inline-block;
+  margin: 0 0.3em;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  vertical-align: middle;
+  background: #ddd;
+  border-radius: 100%;
+  position: relative;//子元素寻找定位
+  -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+  &[disabled]{
+    cursor: not-allowed;
+  }
+}
+
+.radio-input label {//label坚决不能使用除了static的position 影响label:before的继承
+  display: inline-block;
+  &[disabled]{
+    cursor: not-allowed;
+  }
+}
+.radio-input label{
+  content: "";
+  display: block;
+  margin: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 1;
+  background: #333;
+  -webkit-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+  box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+}
+
+
+.radio-input input[type="radio"]:checked + label{
+  background: #73dcff;
+}
+
+label.btn .radio-input,
+label.btn .checkbox-input{
+  display: none;
+}
+
+//Checkbox-input
+.checkbox-input{
+  display: inline-block;
+  margin: 0 0.3em;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  background: #ddd;
+  position: relative;
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+  &[disabled]{
+    cursor:not-allowed;
+  }
+}
+.checkbox-input label{
+  cursor: pointer;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  top: 2px;
+  left: 2px;
+  background: #333;
+  border-radius: 2em;
+  -webkit-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+  box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+  &[disabled]{
+    cursor: not-allowed;
+  }
+}
+
+.checkbox-input label:after {
+  opacity: 0.3;
+  content: '';
+  position: absolute;
+  width: 11px;
+  height: 5px;
+  background: transparent;
+  top: 1px;
+  left: 1px;
+  border: 3px solid #73dcff;
+  border-top: none;
+  border-right: none;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-transform: rotate(-60deg);//旋转60°制作对钩
+  -moz-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+
+.checkbox-input label:hover::after {
+  opacity: 0.5;
+}
+
+.checkbox-input input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}

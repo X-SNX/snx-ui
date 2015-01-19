@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Collie-UI Popups</title>
+    <link href="../css/snxUI.min.css" type="text/css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../fonts/dax/dax.css">
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../javascript/popups.js"></script>
+    <style type="text/css">
+        .bgc-change {
+            background-image: url("../image/background.png");
+            background-size: cover;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.ch-cli').on('click', function () {
+                $('body').toggleClass('bgc-change');
+            });
+        });
+    </script>
+</head>
+
+<body class="bgc-change">
+
+<div class="grids-16">
+    <div class="g-2"></div>
+    <div class="form g-12"><br />
+        <div style="float:left; z-index:-100">
+            <img src="../image/Collie%20logo.png" class="ch-cli">
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;
+        <label style="position:absolute;top: 135px;">
+            <h1>UI Popups</h1>
+        </label>
+    </div>
+    <div class="g-2"></div>
+</div><br />
+
+<div class="form grids-16">
+    <div class="g-2"></div>
+<div class="g-12">
+    <legend>different directions</legend><br /><br />
+    <div class="g-2"></div>
+    <button class="popup btn btn-fl skyblue">popup-left
+        <span class="triangle"></span>
+        <div class="popup-list popup-left">
+            <div class="popup-triangle"></div>
+            <div class="popup-header">
+                popup-header
+            </div>
+            <div class="popup-body">
+                <p>
+                    This is popup body for the information.
+                    Sed posuere consectetur est at lobortis.
+                </p>
+            </div>
+        </div>
+    </button>
+
+    <button class="popup btn btn-fl green">popup-top
+        <span class="triangle"></span>
+        <div class="popup-list popup-top">
+            <div class="popup-triangle"></div>
+            <div class="popup-header">
+                popup-header
+            </div>
+            <div class="popup-body">
+                <p>
+                    This is popup body for the information.
+                    Sed posuere consectetur est at lobortis.
+                </p>
+            </div>
+        </div>
+    </button>
+
+        <button class="popup btn btn-fl blue">popup-bottom
+            <span class="triangle"></span>
+            <div class="popup-list popup-bottom">
+                <div class="popup-triangle"></div>
+                <div class="popup-header">
+                    popup-header
+                </div>
+                <div class="popup-body">
+                    <p>
+                        This is popup body for the information.
+                        Sed posuere consectetur est at lobortis.
+                    </p>
+                </div>
+            </div>
+        </button>
+
+        <button class="popup btn btn-fl red">popup-right
+            <span class="triangle"></span>
+            <div class="popup-list popup-right">
+                <div class="popup-triangle"></div>
+                <div class="popup-header">
+                    popup-header
+                </div>
+                <div class="popup-body">
+                    <p>
+                        This is popup body for the information.
+                        Sed posuere consectetur est at lobortis.
+                    </p>
+                </div>
+            </div>
+        </button>
+</div>
+    <!-- 空div -->
+    <div class="g-2"></div>
+</div>
+<br /><br /><br />
+
+<div class="form grids-16">
+    <div class="g-2"></div>
+    <div class="g-12">
+        <legend>Without header</legend><br /><br />
+        <div class="g-2"></div>
+        <button class="popup btn btn-fl skyblue">popup-left
+            <span class="triangle"></span>
+            <div class="popup-list popup-left">
+                <div class="popup-triangle"></div>
+                <div class="popup-body">
+                    <p>
+                        This is popup body for the information.
+                        Sed posuere consectetur est at lobortis.
+                    </p>
+                </div>
+            </div>
+        </button>
+
+        <button class="popup btn btn-fl green">popup-top
+            <span class="triangle"></span>
+            <div class="popup-list popup-top">
+                <div class="popup-triangle"></div>
+                <div class="popup-body">
+                    <p>
+                        This is popup body for the information.
+                        Sed posuere consectetur est at lobortis.
+                    </p>
+                </div>
+            </div>
+        </button>
+
+        <button class="popup btn btn-fl blue">popup-bottom
+            <span class="triangle"></span>
+            <div class="popup-list popup-bottom">
+                <div class="popup-triangle"></div>
+                <div class="popup-body">
+                    <p>
+                        This is popup body for the information.
+                        Sed posuere consectetur est at lobortis.
+                    </p>
+                </div>
+            </div>
+        </button>
+
+        <button class="popup btn btn-fl red">popup-right
+            <span class="triangle"></span>
+            <div class="popup-list popup-right">
+                <div class="popup-triangle"></div>
+                <div class="popup-body">
+                    <p>
+                        This is popup body for the information.
+                        Sed posuere consectetur est at lobortis.
+                    </p>
+                </div>
+            </div>
+        </button>
+    </div>
+    <!-- 空div -->
+    <div class="g-2"></div>
+</div>
+<br /><br /><br />
+
+<div class="form grids-16">
+    <div class="g-2"></div>
+    <div class="g-12">
+        <legend>超长按钮弹出框居中测试</legend><br /><br />
+        <div class="g-2"></div>
+        <button class="popup btn btn-fl green">popup-top and the button is very very long
+            <span class="triangle"></span>
+            <div class="popup-list popup-bottom">
+                <div class="popup-triangle"></div>
+                <div class="popup-body">
+                    <p>
+                        This is popup body for the information.
+                        Sed posuere consectetur est at lobortis.
+                    </p>
+                </div>
+            </div>
+        </button><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+    <!-- 空div -->
+    <div class="g-2"></div>
+</div>
+
+
+</body>
+</html>

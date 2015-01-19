@@ -1,0 +1,285 @@
+
+@font-family:dax-regular;
+
+.nav {
+  margin-bottom: 0;
+  padding-left: 0; // Override default ul/ol
+  list-style: none;
+  font-family: @font-family;
+  >ul{
+    display: block;
+    overflow: hidden;
+    background-color: #e6e6e6;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    > li {
+      display: block;
+      float: left;
+      position: relative;
+      >.form{
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+      }
+      >.form .input-group .input-info{
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      >.form .input-group input{
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      > a {
+        position: relative;
+        display: block;
+        padding: 1em 1.3em;
+        vertical-align: top;
+        text-decoration: none;
+        color: #434343;
+        background-color: inherit;
+        -webkit-tap-highlight-color: transparent;
+        -moz-transition:all .3s;
+        -webkit-transition:all .3s;
+        transition:all .3s;
+        &:active,
+        &:focus{
+          text-decoration: none;
+          box-shadow: inset 0 1px 8px rgba(0,0,0,0.25);
+        }
+        &:hover{
+          background-color: rgba(0,0,0,0.08);
+        }
+      }
+
+      &.disabled > a {
+        cursor: not-allowed;
+        color: #c0c0c0;
+        &:hover,
+        &:active,
+        &:focus{
+          color: #c0c0c0 ;
+          text-decoration: none;
+          box-shadow: none;
+          background-color: transparent;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
+
+.nav-yl{
+  margin-bottom: 0;
+  padding-left: 0; // Override default ul/ol
+  list-style: none;
+  font-family: @font-family;
+  >ul {
+    display: block;
+    overflow: hidden;
+    background-color: transparent;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    > li {
+      display: block;
+      float: left;
+      position: relative;
+      >form.form{
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+      }
+      >.form .input-group .input-info{
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      >.form .input-group input{
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      > a {
+        position: relative;
+        display: block;
+        padding: 1em 1.3em;
+        text-decoration: none;
+        color: white;
+        vertical-align: top;
+        background-color: transparent;
+        -webkit-tap-highlight-color: transparent;
+        -moz-transition: all .3s;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        &:hover{
+          color: #434343;
+          background-color: rgba(255,255,255,0.5);
+          -moz-transition: all .3s;
+          -webkit-transition: all .3s;
+          transition: all .3s;
+        }
+        &:active,
+        &:focus{
+          text-decoration: none;
+          color:#434343;
+          background-color: white;
+        }
+      }
+      &.disabled > a {
+        cursor: not-allowed;
+        color: #c0c0c0;
+        &:hover,
+        &:active,
+        &:focus{
+          color: #c0c0c0 ;
+          text-decoration: none;
+          box-shadow: none;
+          background-color: transparent;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
+
+.nav-padding{
+  >ul{
+    padding: 0 1em;
+  }
+}
+.nav-vertical.nav-padding{
+  >ul{
+    padding: 1em 0;
+  }
+}
+
+.right{/*元素居右*/
+  float: right !important;/*调整优先级*/
+}
+
+.nav-vertical{
+  >ul{
+    >li{
+      display: block;
+      float: none;
+      a{
+        padding-left: 1em;
+        padding-right: 2em;
+        display: inline-block;
+        width: 100%;
+        &:hover,
+        &:active,
+        &:focus{
+          border-left:10px solid #73dcff;
+          padding-left: 1.6em;
+          padding-right: 1.4em;
+        }
+      }
+      &.disabled > a{
+        padding-left: 1em;
+        padding-right: 2em;
+        border-left: 0;
+      }
+    }
+  }
+}
+
+//颜色系列
+.nav-primary{
+  >ul{
+    background-color: #73dcff;
+    >li{
+      >a{
+        color: white;
+        background-color: #73dcff;
+      }
+    }
+  }
+}
+.nav-success{
+  >ul{
+    background-color: #65e1a3;
+    >li{
+      >a{
+        color: white;
+        background-color: #65e1a3;
+      }
+    }
+  }
+}
+
+.nav-inverse{//反色
+  >ul{
+    background-color: #555;
+    >li{
+      >a{
+        color: white;
+        background-color: #555;
+        &:active,
+        &:focus{
+          text-decoration: none;
+        }
+        &:hover {
+          background-color: rgba(0,0,0, 0.16);
+        }
+      }
+    }
+  }
+}
+
+.nav-primary,.nav-success,.nav-inverse{
+   >ul{
+     >li{
+       &.disabled > a{
+         color: rgba(255,255,255,0.5);
+         &:hover,
+         &:active,
+         &:focus{
+           color: rgba(255,255,255,0.5);
+         }
+       }
+     }
+   }
+}
+
+.nav-path{
+  >ol {
+    display: inline-block;
+    padding: 0.5em 1em;
+    >li {
+      display: inline-block;
+      list-style: none;
+      >a {
+        padding: 0.5em 0;
+        font-size: 110%;
+        color: #73dcff;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+        &:active,
+        &:focus {
+          color: #b0b0b0;
+          text-decoration: none;
+        }
+      }
+      +li:before {
+        font-size: 80%;
+        color: #d0d0d0;
+        margin: 0 0.5em;
+        content: " / ";
+        padding: 0 5px;
+      }
+      &.disabled > a {
+        color: rgba(115,220,255,0.5);
+        cursor: not-allowed;
+        &:hover,
+        &:active,
+        &:focus{
+          color: rgba(115,220,255,0.5);
+          cursor: not-allowed;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+
+.btn-group,
+.btn-group-gap {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn-group > .btn,
+.btn-group-gap > .btn {
+  position: relative;
+  float: left;
+}
+
+.btn-group > .btn:hover,
+.btn-group-gap > .btn:hover,
+.btn-group > .btn:focus,
+.btn-group-gap > .btn:focus,
+.btn-group > .btn:active,
+.btn-group-gap > .btn:active,
+.btn-group > .btn.active,
+.btn-group-gap > .btn.active {
+  z-index: 2;
+}
+
+.btn-group > .btn:focus,
+.btn-group-gap > .btn:focus {
+  outline: 0;
+}
+
+.btn-group .btn + .btn,
+.btn-group .btn + .btn-group,
+.btn-group .btn-group + .btn,
+.btn-group .btn-group + .btn-group {
+  margin-left: -1px;
+}
+
+.btn-group-gap .btn + .btn,
+.btn-group-gap .btn + .btn-group-gap,
+.btn-group-gap .btn-group-gap + .btn,
+.btn-group-gap .btn-group-gap + .btn-group-gap {
+  margin-left: 1px;
+}
+
+.btn-toolbar {
+  margin-left: -0.6em;
+}
+.btn-toolbar .btn-group,
+.btn-toolbar .btn-group-gap {
+  float: left;
+}
+.btn-toolbar > .btn,
+.btn-toolbar > .btn-group,
+.btn-toolbar > .btn-group-gap {
+  margin-left: 0.6em;
+}
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle),
+.btn-group-gap > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle){
+  border-radius: 0;
+}
+.btn-group > .btn:first-child,
+.btn-group-gap > .btn:first-child{
+  margin-left: 0;
+}
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle),
+.btn-group-gap > .btn:first-child:not(:last-child):not(.dropdown-toggle){
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.btn-group > .btn:last-child:not(:first-child),
+.btn-group > .dropdown-toggle:not(:first-child),
+.btn-group-gap > .btn:last-child:not(:first-child),
+.btn-group-gap > .dropdown-toggle:not(:first-child){
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn-group > .btn-group,
+.btn-group-gap > .btn-group-gap{
+  float: left;
+}
+/*使得不是两端的按钮全部直角化*/
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn,
+.btn-group-gap > .btn-group-gap:not(:first-child):not(:last-child) > .btn{
+  border-radius: 0;
+}
+/*第一个按钮的右上角和右下角变成直角与后面的相接*/
+.btn-group > .btn-group:first-child > .btn:last-child,
+.btn-group > .btn-group:first-child > .dropdown-toggle,
+.btn-group-gap > .btn-group-gap:first-child > .btn:last-child,
+.btn-group-gap > .btn-group-gap:first-child > .dropdown-toggle{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/*最后一个按钮的左下角左上角变成直角与前面的相接*/
+.btn-group > .btn-group:last-child > .btn:first-child,
+.btn-group-gap > .btn-group-gap:last-child > .btn:first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+/*这些大小必须写在各种按钮div之外。大小与分别对单一按钮使用了大小类一致。*/
+.btn-group-xl > .btn,
+.btn-toolbar-xl > .btn-group > .btn,
+.btn-toolbar-xl > .btn-group-gap > .btn{
+  font-size: 125%;
+}
+.btn-group-lg > .btn,
+.btn-toolbar-lg > .btn-group > .btn,
+.btn-toolbar-lg > .btn-group-gap > .btn{
+  font-size: 110%;
+}
+.btn-group-sm > .btn,
+.btn-toolbar-sm > .btn-group > .btn,
+.btn-toolbar-sm > .btn-group-gap > .btn{
+  font-size: 85%;
+}
+.btn-group-xs > .btn,
+.btn-toolbar-xs > .btn-group > .btn,
+.btn-toolbar-xs > .btn-group-gap > .btn{
+  font-size: 70%;
+}

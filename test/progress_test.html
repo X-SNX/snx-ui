@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>UI Progress</title>
+    <link rel="stylesheet" type="text/css" href="../css/snxUI.min.css" />
+    <link type="text/css" rel="stylesheet" href="../fonts/dax/dax.css">
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../javascript/progress.js"></script>
+    <link type="text/css" rel="stylesheet" href="testpage/testpage.css">
+    <script src="testpage/testpage.js"></script>
+    <style>
+        .progressbar {
+            width: 60%;
+        }
+    </style>
+</head>
+<body class="bgc-change">
+<div>
+    <img class="ch-cli" src="../image/Collie%20logo.png">
+    <h1 class="title">-UI Progress</h1>
+</div>
+
+<div class=" progressbar active">
+    <div></div>
+</div>
+<div class=" progressbar active">
+    <div></div>
+</div>
+<button id="start">start</button>
+<button id="stop">stop</button>
+<button id="done">done</button>
+
+<!--<script>-->
+    <!--$('#stop').click(function () {-->
+        <!--$('.progressbar.active').progress("stop");-->
+    <!--});-->
+<!--</script>-->
+
+<div class=" progressbar">
+    <div style="width: 20%">
+        20%
+    </div>
+</div>
+
+<div class=" progressbar">
+    <div class="probar-stripe" style="width: 72%">
+        72%
+    </div>
+</div>
+<div class=" progressbar yellow">
+    <div class="probar-stripe" style="width: 72%">
+        72%
+    </div>
+</div>
+<div class=" progressbar">
+    <div class="probar-stripe animate-stripe" style="width: 72%">
+        72%
+    </div>
+</div>
+<div class=" progressbar">
+    <div class="probar-stripe animate-stripe" style="width: 20%"></div>
+</div>
+
+<div class="grids-12">
+    <div class="g-6 progresscircle">
+        <div class="pie-right"><div></div></div>
+        <div class="pie-left"><div></div></div>
+        <div class="circle-inner">75%</div>
+    </div>
+
+    <div class="g-6 progresscircle red">
+        <div class="pie-right"><div></div></div>
+        <div class="pie-left"><div></div></div>
+        <div class="circle-inner">75%</div>
+    </div>
+</div>
+
+<script>
+    $('.progressbar.active').progress("animate");
+</script>
+
+<h2>Loading</h2>
+<div class="loading">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<div class="loading-round">
+    <span></span>
+    <span></span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,427 @@
+
+@default-a:#e6e6e6;
+@default-b:#c8c8c8;
+@default-c:#b0b0b0;
+@default-d:#ebebeb;
+
+@skyblue-a:#73dcff;
+@skyblue-b:#50c0e6;
+@skyblue-c:#43a0bf;
+@skyblue-d:#a6e9ff;
+
+@blue-a:#259bf5;
+@blue-b:#0a7acf;
+@blue-c:#0863a8;
+@blue-d:#87c5f5;
+
+@green-a:#65e1a3;
+@green-b:#46c786;
+@green-c:#34ad71;
+@green-d:#92e0b9;
+
+@orange-a:#ffb24c;
+@orange-b:#ff9100;
+@orange-c:#bf7d26;
+@orange-d:#ffc880;
+
+@red-a:#ee3b3b;
+@red-b:#d42020;
+@red-c:#ad1a1a;
+@red-d:#ed8e8e;
+
+@link-b:#008bf5;
+@link-d:#6ebaf5;
+//link-a,link-b分别使用blue-a和blue-b。
+
+@yl-d:#e0e0e0;
+
+@font-family:dax-regular;
+@font-size:100%;
+@font-size-xl:125%;
+@font-size-lg:110%;
+@font-size-sm:85%;
+@font-size-xs:70%;
+//------------------------------------------------------
+
+.btn{
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+  overflow: visible;
+  letter-spacing: 1px;
+  font-family:@font-family;
+  font-size:@font-size;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;/*苹果设备的点击阴影屏蔽，使效果统一*/
+  -moz-transition:text-shadow 0.3s,background-color 0.4s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+  -webkit-transition: text-shadow 0.3s,background-color 0.4s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+  transition: text-shadow 0.3s,background-color 0.4s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+  &:focus{
+    outline: 0;
+  }
+  &[disabled]{
+    cursor: not-allowed;
+    pointer-events:none;
+  }
+}
+
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+//inset-box-shadow
+.box-shadow-inset-setting(@inset:inset,@x:0,@y:2,@radius:8px,@color:@default-c) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+.btn-size(@top:0.5em,@right:1em,@bottom:0.5em,@left:1em) {
+  padding: @arguments;
+}
+
+
+/*........................................Link按钮类...................................*/
+
+.btn-link {/*Link按钮*/
+  border: 0px solid ;
+  color: @blue-a;
+  &:hover ,&:focus {
+    text-decoration: underline;
+    color: @link-b;
+  }
+  &:active,&.active{
+    text-decoration: underline;
+    color: @blue-c;
+  }
+}
+
+.btn-link-disabled {
+  border: 0px solid ;
+  background: transparent;
+  color: @link-d;
+}
+
+/*...................................幽霊按钮系列类....................................*/
+.btn-yl {
+  border-radius: 0px;
+  color: white;
+  border: 1px solid;
+  .btn;
+  &:hover ,&:focus{
+    text-shadow:0 0 5px #000;
+  }
+  &:active,&.active{
+    text-shadow:0 0 5px #000;
+    background-color: white;
+  }
+  &[disabled]{
+    border: 1px solid @yl-d;
+    color: @yl-d;
+  }
+}
+
+/*...................................按钮形状....................................*/
+
+.btn-lu,
+.btn-fl{
+  border-radius: 0px;
+}
+.btn-r{
+  border-radius: 60px;
+}
+.btn-lu,.btn-yl,.btn-link{
+  background: transparent;
+}
+
+/*.....................................按钮大小类.....................................*/
+
+.btn-xl {
+  font-size: @font-size-xl;
+}
+
+.btn-lg {
+  font-size: @font-size-lg;
+}
+
+.btn-sm {
+  font-size: @font-size-sm;
+}
+
+.btn-xs {
+  font-size: @font-size-xs;
+}
+/*......................................透明按钮颜色的分类动作.....................................*/
+
+
+.btn-lu.default,{
+  border: 1px solid @default-b;
+  color:black;
+  &:hover ,&:focus {
+    background-color:@default-b ;
+    color: white;
+  }
+  &:active,&.active{
+    border: 1px solid @default-c;
+    background-color: @default-c;
+    color: white;
+  }
+  &[disabled]{
+    border: 1px solid @default-b;
+    color: @default-b;
+  }
+}
+
+
+.btn-lu.blue{
+  border: 1px solid @blue-a;
+  color: @blue-a;
+  &:hover ,&:focus {
+    background-color: @blue-a;
+    color: white;
+  }
+  &:active,&.active {
+    color: white;
+    border: 1px solid @blue-b;
+    background-color: @blue-b;
+  }
+  &[disabled]{
+    border: 1px solid @blue-d;
+    color:@blue-d;
+  }
+}
+
+
+.btn-lu.skyblue{
+  /*skyblue颜色类*/
+  border: 1px solid @skyblue-a;
+  color: @skyblue-a;
+  &:hover ,&:focus {
+    background-color: @skyblue-a;
+    color: white;
+  }
+  &:active,&.active {
+    color: white;
+    border: 1px solid @skyblue-b;
+    background-color: @skyblue-b;
+  }
+  &[disabled]{
+    border: 1px solid @skyblue-d;
+    color:@skyblue-d;
+  }
+}
+
+.btn-lu.green{
+  /*green颜色类*/
+  border: 1px solid @green-a;
+  color: @green-a;
+  &:hover ,&:focus {
+    background-color: @green-a;
+    color: white;
+  }
+  &:active,&.active {
+    color: white;
+    border: 1px solid @green-b;
+    background-color: @green-b;
+  }
+  &[disabled]{
+    border: 1px solid @green-d;
+    color:@green-d;
+  }
+}
+
+
+.btn-lu.orange{
+  border: 1px solid @orange-a;
+  color:@orange-a;
+  &:hover ,&:focus {
+    background-color: @orange-a;
+    color: white;
+  }
+  &:active,&.active {
+    color: white;
+    border: 1px solid @orange-b;
+    background-color: @orange-b;
+  }
+  &[disabled]{
+    border: 1px solid @orange-d;
+    color:@orange-d;
+  }
+}
+
+.btn-lu.red{
+  border: 1px solid @red-a;
+  color: @red-a;
+  &:hover ,&:focus {
+    background-color: @red-a;
+    color: white;
+  }
+  &:active,&.active {
+    color: white;
+    border: 1px solid @red-b;
+    background-color: @red-b;
+  }
+  &[disabled]{
+    border: 1px solid @red-d;
+    color:@red-d;
+  }
+}
+
+
+/*......................................全色按钮颜色的分类动作.....................................*/
+
+.btn-fl.default{
+  border: 1px solid transparent;
+  background: @default-a;
+  color:black;
+  &:hover ,&:focus {
+    border: 1px solid transparent;
+    background: @default-b;
+    color:black;
+  }
+  &:active,&.active {
+    border: 1px solid @default-c;
+    background: @default-b;
+    color:black;
+    .box-shadow-inset-setting(inset,0,2px,8px,@default-c);
+  }
+  &[disabled]{
+    border: 1px solid transparent;
+    background: @default-d;
+    color: @default-c;
+  }
+}
+
+.btn-fl.blue{
+  border: 1px solid transparent;
+  background: @blue-a;
+  color: white;
+  &:hover ,&:focus {
+    border: 1px solid transparent;
+    background: @blue-b;
+    color: white;
+  }
+  &:active,&.active {
+    border: 1px solid @blue-c;
+    background: @blue-b;
+    color: white;
+    .box-shadow-inset-setting(inset, 0, 2px, 8px, @blue-c);
+  }
+  &[disabled]{
+    border: 1px solid transparent;
+    background: @blue-d;
+    color: white;
+  }
+}
+
+.btn-fl.skyblue{
+  border: 1px solid transparent;
+  background: @skyblue-a;
+  color: white;
+  &:hover ,&:focus {
+    border: 1px solid transparent;
+    background: @skyblue-b;
+    color:white;
+  }
+  &:active,&.active {
+    border: 1px solid @skyblue-c;
+    background: @skyblue-b;
+    color:white;
+   .box-shadow-inset-setting(inset,0,2px,8px,@skyblue-c);
+  }
+  &[disabled]{
+    border: 1px solid transparent;
+    background: @skyblue-d;
+    color: white;
+  }
+}
+
+.btn-fl.green{
+  border: 1px solid transparent;
+  background: @green-a;
+  color: white;
+  &:hover ,&:focus {
+    border: 1px solid transparent;
+    background: @green-b;
+    color:white;
+  }
+  &:active,&.active {
+     border: 1px solid @green-c;
+     background: @green-b;
+     color:white;
+     .box-shadow-inset-setting(inset,0,2px,8px,@green-c);
+   }
+  &[disabled]{
+    border: 1px solid transparent;
+    background: @green-d;
+    color: white;
+  }
+}
+
+.btn-fl.orange{
+  border: 1px solid transparent;
+  background: @orange-a;
+  color: white;
+  &:hover ,&:focus {
+    border: 1px solid transparent;
+    background: @orange-b;
+    color:white;
+  }
+  &:active,&.active {
+     border: 1px solid @orange-c;
+     background: @orange-b;
+     color:white;
+     .box-shadow-inset-setting(inset,0,2px,8px,@orange-c);
+   }
+  &[disabled]{
+    border: 1px solid transparent;
+    background: @orange-d;
+    color: white;
+  }
+}
+
+.btn-fl.red{
+  border: 1px solid transparent;
+  background: @red-a;
+  color: white;
+  &:hover ,&:focus {
+    border: 1px solid transparent;
+    background: @red-b;
+    color:white;
+  }
+  &:active,&.active {
+    border: 1px solid @red-c;
+    background: @red-b;
+    color:white;
+    .box-shadow-inset-setting(inset,0,2px,8px,@red-c);
+  }
+  &[disabled]{
+    border: 1px solid transparent;
+    background: @red-d;
+    color: white;
+  }
+}
+
+/*A标签的按钮类问题解决*/
+a.btn-fl:link,
+a.btn-lu:link,
+a.btn-yl:link{
+  text-decoration:none;
+}
+a.btn-fl:visited,
+a.btn-lu:visited,
+a.btn-yl:visited{
+  text-decoration:none;
+}
+a.btn-fl:active,
+a.btn-lu:active,
+a.btn-yl:active,
+a.btn-fl.active,
+a.btn-lu.active,
+a.btn-yl.active{
+  text-decoration:none;
+}

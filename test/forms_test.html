@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Collie-UI Forms</title>
+    <link rel="stylesheet" type="text/css" href="../css/snxUI.min.css" />
+    <link href="../fonts/dax/dax.css" type="text/css" rel="stylesheet"/>
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../javascript/forms.js"></script>
+    <script src="../javascript/other-forms.js"></script>
+    <style type="text/css">
+        .bgc-change {
+            background-image: url("../image/background.png");
+            background-size: contain;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.ch-cli').on('click', function () {
+                $('body').toggleClass('bgc-change');
+            });
+        });
+    </script>
+</head>
+
+<body class="bgc-change">
+<div class="grids-16">
+    <div class="g-2"></div>
+    <div class="form g-12"><br />
+        <div style="float:left; z-index:-100">
+            <img src="../image/Collie%20logo.png" class="ch-cli">
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;
+        <label style="position:absolute;top: 135px;">
+            <h1>UI Forms</h1>
+        </label>
+    </div>
+    <div class="g-2"></div>
+</div><br />
+
+<div class="grids-16">
+<div class="g-2"></div>
+
+<div class="g-12">
+    <br />
+<form class="form">
+    <fieldset>
+        <legend>Collie-UI基础表单测试(默认inline-block)</legend>
+        <input class="g-4" type="email" placeholder="Email">
+        <input class="g-4" type="password" placeholder="Password"  disabled="disabled">
+
+        <label for="remember1">
+            <input id="remember1" type="checkbox"> Remember me
+        </label>
+
+        <button type="submit" class="btn btn-fl btn-r skyblue">Sign in</button>
+    </fieldset>
+</form>
+
+    <br /><br />
+<form class="form form-order">
+    <fieldset>
+        <legend>Collie-UI order表单样式测试</legend>
+
+        <label for="email1">Email</label>
+        <input class="g-4" id="email1" type="email" placeholder="Email">
+
+        <label for="password1">Password</label>
+        <input class="g-4" id="password1" type="password" placeholder="Password">
+
+        <label for="state">State</label>
+        <select id="state">
+            <option>AL</option>
+            <option>CA</option>
+            <option>IL</option>
+        </select>
+
+        <label for="remember" class="checkbox">
+            <input id="remember" type="checkbox"> Remember me
+        </label>
+
+        <button type="submit" class="btn btn-lu skyblue">Sign in</button>
+    </fieldset>
+</form>
+
+    <br /><br />
+    <form class="form">
+        <fieldset>
+        <legend>Collie-UI input-rounded表单样式测试</legend>
+        <label for="search">
+        <input class="g-4 input-rounded" id="search" type="search">
+        <button type="submit" class="btn btn-fl green">Search</button>
+        </label>
+        </fieldset>
+    </form>
+
+    <br /><br />
+<form class="form form-aligned">
+    <fieldset>
+        <legend>Collie-UI aligned对齐表单测试</legend>
+        <div class="control-group">
+            <label for="username">Username</label>
+            <input class="g-4" id="username" type="text" placeholder="Username">
+        </div>
+
+        <div class="control-group">
+            <label for="password2">Password</label>
+            <input class="g-4" id="password2" type="password" placeholder="Password">
+        </div>
+
+        <div class="control-group">
+            <label for="email2">Email Address</label>
+            <input class="g-4" id="email2" type="email" placeholder="Email Address">
+        </div>
+
+        <div class="control-group">
+            <label for="foo">Supercalifragilistic Label</label>
+            <input class="g-4" id="foo" type="text" placeholder="Enter something here...">
+        </div>
+
+        <div class="controls">
+            <label for="cb" class="checkbox">
+                <input id="cb" type="checkbox"> I've read the terms and conditions
+            </label>
+
+            <button type="submit" class="btn btn-lu skyblue">Submit</button>
+        </div>
+    </fieldset>
+</form>
+
+    <br /><br />
+    <form class="form form-order form-block">
+        <fieldset>
+            <legend>Collie-UI form-block表单测试</legend>
+            <div class="control-group">
+                <label for="name">Username</label>
+                <input id="name" type="text" placeholder="Username">
+            </div>
+
+            <div class="control-group">
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password">
+            </div>
+
+            <div class="control-group">
+                <label for="email">Email Address</label>
+                <input id="email" type="email" placeholder="Email Address">
+            </div>
+
+            <div class="controls">
+                <label for="cb2" class="checkbox">
+                    <input id="cb2" type="checkbox"> I've read the terms and conditions
+                </label>
+
+                <button type="submit" class="btn btn-lu skyblue">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <br /><br />
+<form class="form">
+    <legend>Collie-UI 表单组测试</legend>
+    <fieldset class="form-group">
+        <input type="text" class="input-1-2" placeholder="Username">
+        <input type="text" class="input-1-2" placeholder="Password">
+        <input type="email" class="input-1-2" placeholder="Email">
+    </fieldset>
+
+    <fieldset class="form-group">
+        <input type="text" class="input-1-2" placeholder="Another Group">
+        <input type="text" class="input-1-2" placeholder="More Stuff">
+    </fieldset>
+
+    <button type="submit" class="btn btn-lu green input-1-2">Sign in</button>
+</form>
+
+
+    <br /><br />
+    <form class="form form-order">
+        <legend>Collie-UI input-group测试</legend>
+        <fieldset>
+            <label for="email">字符info提示测试</label>
+            <div class="input-group">
+                <div class="input-info">@</div>
+                <input type="email" placeholder="Email">
+            </div>
+
+            <label for="email">checkbox&radio info提示测试</label>
+            <div class="input-group input-xl">
+            <div class="input-info"><input type="checkbox" id="inside"></div>
+            <input type="email" placeholder="Email">
+            </div>
+            <label></label>
+            <div class="input-group input-lg">
+                <div class="input-info"><input type="radio" id="inside4"></div>
+                <input type="email" placeholder="Email">
+            </div>
+            <label></label>
+            <div class="input-group">
+                <div class="input-info"><input type="checkbox" id="inside2"></div>
+                <input type="email" placeholder="Email">
+            </div>
+            <label></label>
+            <div class="input-group input-sm">
+                <div class="input-info"><input type="radio" id="inside5"></div>
+                <input type="email" placeholder="Email">
+            </div>
+            <label></label>
+            <div class="input-group input-xs">
+                <div class="input-info"><input type="checkbox" id="inside3"></div>
+                <input type="email" placeholder="Email">
+            </div>
+
+            <label for="email">Font-Awsome info提示测试</label>
+            <div class="input-group">
+                <div class="input-info"><i class="fa fa-envelope-o"></i> </div>
+                <input type="email" placeholder="Email">
+            </div>
+            <label></label>
+            <div class="input-group">
+                <div class="input-info">
+                    <i class="fa fa-key"></i>
+                </div>
+                <input type="text" placeholder="password">
+            </div>
+            <label for="email">input-info前后均可 input-group支持fa-fw宽图标</label>
+            <div class="input-group">
+                <div class="input-info">
+                    <i class="fa fa-twitter fa-fw"></i>
+                </div>
+                <input type="text" placeholder="twitter name">
+            </div>
+            <label></label>
+            <div class="input-group">
+                <input type="text" placeholder="what do you want...">
+                <div class="input-info">
+                    <i class="fa fa-search fa-fw"></i>
+                </div>
+            </div>
+
+            <label for="email">配合input大小测试</label>
+            <div class="input-group input-xs">
+                <div class="input-info">
+                    <i class="fa fa-times fa-fw"></i>
+                </div>
+                <input type="text" placeholder="Do what you want">
+            </div>
+            <label></label>
+            <div class="input-group input-sm">
+                <div class="input-info">
+                    <i class="fa fa-star fa-fw"></i>
+                </div>
+                <input type="text" placeholder="Do what you want">
+            </div>
+            <label></label>
+            <div class="input-group">
+                <div class="input-info">
+                    <i class="fa fa-cog fa-fw"></i>
+                </div>
+                <input type="text" placeholder="Do what you want">
+            </div>
+            <label></label>
+            <div class="input-group input-lg">
+                <input type="text" placeholder="what do you want...">
+                <div class="input-info">
+                    <i class="fa fa-spinner fa-fw"></i>
+                </div>
+            </div>
+            <label></label>
+            <div class="input-group input-xl">
+                <input type="text" placeholder="what do you want...">
+                <div class="input-info">
+                    <i class="fa fa-search fa-fw"></i>
+                </div>
+            </div>
+            <label for="email">input-group内使用rounded</label>
+            <div class="input-group">
+                <div class="input-info"><i class="fa fa-search fa-fw"></i> </div>
+                <input class="input-rounded" type="email" placeholder="Email">
+            </div>
+            <div class="form-message-inline">This is a form inline-message</div>
+            <div class="form-message">This is a form message</div>
+            <div class="input-group">
+                <input class="input-rounded" type="email" placeholder="Email">
+                <div class="input-info"><i class="fa fa-search fa-fw"></i> </div>
+            </div>
+
+        </fieldset>
+        </form>
+
+        <br /><br />
+    <form class="form form-order">
+        <fieldset>
+            <legend>Collie-UI Checkbox表单测试</legend>
+            <div class="checkbox">Checkbox:
+                <label for="test1">
+                <input type="checkbox" id=test1 value="">
+                Option one is this and that&mdash;be sure to include why it's great
+                </label>
+            </div>
+            <div class="checkbox">
+                <label for="test2">
+                    <input id="test2" type="checkbox" value="" disabled="disabled">
+                    Option two is disabled
+                </label>
+            </div>
+
+            <div class="checkbox">Checkbox-inline:
+
+                <label for="inlineCheckbox1" class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1">1
+                </label>
+
+                <label for="inlineCheckbox2" class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox2" value="option2">2
+                </label>
+
+                <label for="inlineCheckbox3" class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox3" value="option3">3
+                </label>
+
+            </div>
+
+        </fieldset>
+    </form>
+
+        <br /><br />
+        <form class="form form-order">
+            <fieldset>
+                <legend>Collie-UI Radio表单测试</legend>
+                    <div class="radio">Radio:
+                        <label for="optionsRadios1">
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            Option one is this and that&mdash;be sure to include why it's great
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="inlineradio2">
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Option two can be something else and selecting it will deselect option one
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="optionsRadios3">
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="disabled">
+                            Option three is disabled
+                        </label>
+                    </div>
+
+                <div class="radio">Radio-inline:
+                    <label for="inlineRadio1" class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">1
+                    </label>
+                    <label for="inlineRadio2" class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">2
+                    </label>
+                    <label for="inlineRadio3" class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">3
+                    </label>
+                </div>
+                </fieldset>
+            </form><br /><br />
+
+    <form class="form form-order">
+        <fieldset>
+            <legend>按钮组式Checkbox(多选按钮组)</legend>
+            <div class="btn-group">
+                <label class="btn btn-lu green" for="optiong">
+                    <input type="checkbox" name="optionsc" id="optiong" >checkbox 1 (preselected)
+                </label>
+                <label class="btn btn-lu green" for="optionh">
+                    <input type="checkbox" name="optionsc" id="optionh">checkbox 2
+                </label>
+                <label class="btn btn-lu green" for="optioni">
+                    <input type="checkbox" name="optionsc" id="optioni">checkbox 3
+                </label>
+            </div>
+            <label></label>
+            <div class="btn-group">
+                <label class="btn btn-fl btn-r green" for="optionj">
+                    <input type="checkbox" name="optionsd" id="optionj" >checkbox 1 (preselected)
+                </label>
+                <label class="btn btn-fl btn-r green" for="optionk">
+                    <input type="checkbox" name="optionsd" id="optionk">checkbox 2
+                </label>
+                <label class="btn btn-fl btn-r green" for="optionl">
+                    <input type="checkbox" name="optionsd" id="optionl">checkbox 3
+                </label>
+            </div>
+        </fieldset>
+    </form><br /><br />
+
+            <form class="form form-order">
+                <fieldset>
+                    <legend>按钮组式Radio(单选按钮组)</legend>
+                <div class="btn-group">
+                    <label class="btn btn-lu skyblue" for="optiona">
+                    <input type="radio" name="optionsa" id="optiona" >Radio 1 (preselected)
+                </label>
+                    <label class="btn btn-lu skyblue" for="optionb">
+                        <input type="radio" name="optionsa" id="optionb">Radio 2
+                    </label>
+                    <label class="btn btn-lu skyblue" for="optionc">
+                        <input type="radio" name="optionsa" id="optionc">Radio 3
+                    </label>
+                </div>
+                    <label></label>
+                    <div class="btn-group">
+                        <label class="btn btn-fl btn-r skyblue" for="optiond">
+                            <input type="radio" name="optionsb" id="optiond" >Radio 1 (preselected)
+                        </label>
+                        <label class="btn btn-fl btn-r skyblue" for="optione">
+                            <input type="radio" name="optionsb" id="optione">Radio 2
+                        </label>
+                        <label class="btn btn-fl btn-r skyblue" for="optionf">
+                            <input type="radio" name="optionsb" id="optionf">Radio 3
+                        </label>
+                    </div>
+            </fieldset>
+        </form><br /><br />
+
+    <form class="form form-order">
+        <fieldset>
+            <legend>按钮式checkbox、Radio</legend>
+            <label>Checkbox Without inline</label>
+            <label class="btn btn-lu green" for="options">
+                <input type="checkbox" name="optionsc" id="options" >checkbox 1 (preselected)
+            </label>
+            <label class="btn btn-lu green" for="optiont">
+                <input type="checkbox" name="optionsc" id="optiont">checkbox 2
+            </label>
+            <label class="btn btn-lu green" for="optionu">
+                <input type="checkbox" name="optionsc" id="optionu">checkbox 3
+            </label>
+            <label style="margin: 1em"></label>
+            <label class="btn btn-fl btn-r green" for="optionv">
+                <input type="checkbox" name="optionsd" id="optionv" >checkbox 1 (preselected)
+            </label>
+            <label class="btn btn-fl btn-r green" for="optionw">
+                <input type="checkbox" name="optionsd" id="optionw">checkbox 2
+            </label>
+            <label class="btn btn-fl btn-r green" for="optionx">
+                <input type="checkbox" name="optionsd" id="optionx">checkbox 3
+            </label><br />
+
+                <label>Radio with inline</label>
+                <label class="btn btn-lu skyblue radio-inline" for="optionm">
+                    <input type="radio" name="optionsa" id="optionm" >Radio 1 (preselected)
+                </label>
+                <label class="btn btn-lu skyblue radio-inline" for="optionn">
+                    <input type="radio" name="optionsa" id="optionn">Radio 2
+                </label>
+                <label class="btn btn-lu skyblue radio-inline radio-inline" for="optiono">
+                    <input type="radio" name="optionsa" id="optiono">Radio 3
+                </label>
+            <label></label>
+                <label class="btn btn-fl btn-r skyblue radio-inline" for="optionp">
+                    <input type="radio" name="optionsb" id="optionp" >Radio 1 (preselected)
+                </label>
+                <label class="btn btn-fl btn-r skyblue radio-inline" for="optionq">
+                    <input type="radio" name="optionsb" id="optionq">Radio 2
+                </label>
+                <label class="btn btn-fl btn-r skyblue radio-inline" for="optionr">
+                    <input type="radio" name="optionsb" id="optionr">Radio 3
+                </label><br /><br />
+
+
+        </fieldset>
+    </form>
+
+
+    <br /><br />
+<form class="form form-order">
+    <fieldset>
+    <legend>Collie-UI 只读表单测试</legend>
+        <input class="g-4" type="text" id="text" value="readonly but can copy..." readonly>
+    </fieldset>
+        </form>
+
+
+    <br /><br />
+    <form class="form form-block">
+        <fieldset>
+        <legend>Collie-UI file测试</legend>
+            <span class="file">
+                <!--添加了tabindex="0"才聚焦的-->
+                <input class="fbtn" type="file">Select a  file...
+            </span>
+            <label>This is a help text you put for info</label>
+        </fieldset>
+    </form>
+
+    <br /><br />
+    <form class="form">
+        <fieldset>
+            <legend>Collie-UI color测试</legend>
+            <input type="color">
+        </fieldset>
+    </form>
+
+    <br /><br />
+    <form class="form">
+        <fieldset>
+            <legend>Collie-UI date测试</legend>
+            <input type="date">
+        </fieldset>
+    </form>
+
+    <br /><br />
+    <form class="form">
+        <fieldset>
+            <legend>Collie-UI number测试</legend>
+            <input type="number">
+        </fieldset>
+    </form>
+
+    <br />
+    <form class="form">
+        <fieldset>
+            <legend>Collie-UI textarea测试</legend>
+            <textarea class="g-4"></textarea>
+        </fieldset>
+    </form>
+
+    <br /><br />
+    <form class="form form-order">
+        <fieldset>
+            <legend>Collie-UI input框大小测试</legend>
+            <input class="input-xl" type="email" placeholder=".input-xl">
+            <input class="input-lg" type="email" placeholder=".input-lg">
+            <input type="email" placeholder="normal">
+            <input class="input-sm" type="email" placeholder=".input-sm">
+            <input class="input-xs" type="email" placeholder=".input-xs">
+        </fieldset>
+    </form>
+</div>
+    <div class="g-2"></div>
+</div>
+<br/><br/><br/><br/><br/><br/>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/snxUI.min.css" />
+    <link type="text/css" rel="stylesheet" href="../fonts/dax/dax.css">
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../javascript/img-scroll.js"></script>
+    <link type="text/css" rel="stylesheet" href="testpage/testpage.css">
+    <script src="testpage/testpage.js"></script>
+    <style>
+        .left,
+        .right {
+            position: absolute;
+            top: 0;
+            height: 30em;
+            width: 2em;
+            background-color: rgba(0,0,0,0.5);
+            line-height: 30em;
+        }
+        .right {
+            left: 38em;
+        }
+        .test {
+            position: relative;
+        }
+    </style>
+</head>
+<body class="bgc-change">
+<div>
+    <img class="ch-cli" src="../image/Collie%20logo.png">
+    <h1 class="title">-UI Alert</h1>
+</div>
+
+<div class="test divide">
+    <div class="images">
+        <img class="img-choosed" src="../image/m1.jpg">
+        <img src="../image/m2.jpg">
+        <img src="../image/background.png">
+        <img src="../image/m1.jpg">
+        <img src="../image/m2.jpg">
+    </div>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="pgn pgn-circle">
+        <a class="pgn-choosed"></a>
+        <a></a>
+        <a></a>
+        <a></a>
+        <a></a>
+    </div>
+</div>
+
+<script>
+    $('.images').imgScroll('cycle',{leftButton:'.left',rightButton:'.right'});
+</script>
+
+<div>
+    <div class="imgs">
+        <img src="../image/m1.jpg">
+        <img src="../image/m2.jpg">
+        <img src="../image/background.png">
+        <img src="../image/m1.jpg">
+        <img src="../image/m2.jpg">
+    </div>
+</div>
+</body>
+</html>

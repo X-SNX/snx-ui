@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Collie-grids Test</title>
+    <link rel="stylesheet" type="text/css" href="../css/snxUI.min.css" />
+    <link href="../fonts/dax/dax.css" type="text/css" rel="stylesheet">
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="testpage/testpage.js"></script>
+    <style type="text/css">
+        .grid-color{
+            font-size: 120%;
+            font-weight: bold;
+            color: #73dcff;
+            box-shadow: inset 0 0 60px #73dcff;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+        }
+        .bgc-change {
+            background-image: url("../image/background.png");
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body class="bgc-change">
+<header class="grids-16 gutter-bottom">
+    <div class="g-2"></div>
+    <div class="g-12 form"><br>
+        <div style="float:left;">
+            <img src="../image/Collie%20logo.png" class="ch-cli">
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;
+        <label style="position:absolute;top: 135px;">
+            <h1>UI Grids</h1>
+        </label>
+    </div>
+    <div class="g-2"></div>
+</header>
+<section class="form">
+    <legend style="text-align: center"><h4>Unresponsive(Normal) Grids</h4></legend><br />
+<!--普通栅格-->
+  <div class="grids-5"><!--5栅格-->
+      <div class="g-1 grid-color">1</div>
+      <div class="g-4 grid-color">4</div>
+  </div>
+  <div class="grids-12"><!--12栅格-->
+      <div class="g-1 grid-color">1</div>
+      <div class="g-5 grid-color">5</div>
+      <div class="g-3 grid-color">3</div>
+      <div class="g-3 grid-color">3</div>
+  </div>
+
+  <div class="grids-16"><!--16栅格-->
+      <div class="g-2 grid-color">2</div>
+      <div class="g-3 grid-color">3</div>
+      <div class="g-4 grid-color">4</div>
+      <div class="g-7 grid-color">7</div>
+  </div>
+    <label><h5>With container & gutter : </h5></label>
+    <div class="grids-5">
+    <div class="grids-16 container gutter"><!--16栅格-->
+        <div class="g-2 grid-color gutter-vertical" style="line-height: 30px">2</div>
+        <div class="g-3 grid-color gutter-horizontal">3</div>
+        <div class="g-4 grid-color gutter-left">4</div>
+        <div class="g-7 grid-color gutter-right">7</div>
+    </div>
+</div>
+
+    <legend style="text-align: center"><h4>Responsive Grids</h4></legend>
+<!--响应式栅格-->
+    <label><h5>568px :</h5></label>
+    <div class="grids-12"><!--12栅格 568px-->
+        <div class="g-xs-7 grid-color">7</div>
+        <div class="g-xs-4 grid-color">4</div>
+        <div class="g-xs-1 grid-color">1</div>
+    </div>
+    <label><h5>768px :</h5></label>
+  <div class="grids-5"><!--5栅格 768px-->
+      <div class="g-sm-1 grid-color">1</div>
+      <div class="g-sm-4 grid-color">4</div>
+  </div>
+    <label><h5>1024px :</h5></label>
+    <div class="grids-12"><!--12栅格 1024px-->
+      <div class="g-md-1 grid-color">1</div>
+      <div class="g-md-5 grid-color">5</div>
+      <div class="g-md-3 grid-color">3</div>
+      <div class="g-md-3 grid-color">3</div>
+  </div>
+    <label><h5>1280px :</h5></label>
+    <div class="grids-16"><!--16栅格 1280px-->
+      <div class="g-lg-2 grid-color">2</div>
+      <div class="g-lg-3 grid-color">3</div>
+      <div class="g-lg-4 grid-color">4</div>
+      <div class="g-lg-7 grid-color">7</div>
+  </div><br /><br /><br />
+
+</section>
+<footer style="padding-bottom: 100px"></footer>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>scrollMonitor</title>
+    <link type="text/css" rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link href="../fonts/dax/dax.css" type="text/css" rel="stylesheet"/>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../javascript/scrollmonitor.js"></script>
+	<link type="text/css" rel="stylesheet" href="testpage/testpage.css">
+    <script src="testpage/testpage.js"></script>
+
+    <style>
+        h1 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="bgc-change">
+<div>
+    <img class="ch-cli" src="../image/Collie%20logo.png">
+    <h1 class="title">-UI ScrollMonitor[654.8125, 1368.0625, 1847.5625, 1932.5625]</h1>
+</div>
+<nav>
+    <ul class="iam">
+        <li><a href="#hone"><span class="fa fa-heart"></span>spring</a></li>
+        <li><a href="#htwo">summer</a></li>
+        <li><a href="#hthree">autumn</a></li>
+        <li><a href="#hfour">winter</a></li>
+        <div class="cl-fl"></div>
+    </ul>
+</nav>
+<div class="scrollview" style="max-height: 300px; overflow: auto">
+    <h1 id="hone">i am one</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1 id="htwo">i am two</h1>
+    <h1>aaab</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>dafsdf</h1>
+    <h1 id="hthree">i am three</h1>
+    <h1>aaac</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1 id="hfour">i am four</h1>
+    <h1>aaad</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaad</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+</div>
+
+</body>
+<script>
+    $('.scrollview').scrollMonitor({target:'.iam'});
+</script>
+</html>

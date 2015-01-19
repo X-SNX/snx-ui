@@ -1,0 +1,116 @@
+.list-group {
+  padding: 1em 0;
+  >.list-item {
+    padding: 1em .5em;
+    border-bottom: solid 1px #efefef;
+//    listitem子元素若有上下margin就比较麻烦
+    >* {
+      margin: 0;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+  }
+}
+
+.list-chooseable {
+  >.list-item {
+    padding: 0 .5em;
+    cursor: pointer;
+    >*:nth-child(1) {
+      width: 100%;
+      height: auto;
+      padding: 1em 0;
+      text-decoration: none;
+      &:link {
+        color: inherit;
+      }
+      &:visited {
+        color: inherit;
+      }
+    }
+  }
+}
+
+.list-touchmovable {
+  >.list-item {
+    overflow: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  span {
+    display: none;
+  }
+}
+
+.list-touchmoved {
+  position: relative;
+  left: -2em;
+  -webkit-animation: touchmovedleft .5s;
+  animation: touchmovedleft .5s;
+  >span {
+    display: inline;
+    position: absolute;
+    top: 0;
+    right: -2.5em; //如果修改listitem内边距，该值必须改变。
+    height: 100%;
+    width: auto;
+    padding: 1em .5em;
+    background-color: #ff0000;
+    color: #ffffff;
+    box-sizing: border-box;
+    -webkit-animation: touchmovedright .5s;
+    animation: touchmovedright .5s;
+  }
+}
+
+.list-organ {
+  box-sizing: border-box;
+
+  >.list-item {
+    background-color: #efefef;
+    cursor: pointer;
+  }
+  .list-content {
+    display: none;
+    padding: 1em;
+    border: .1em solid #d6d6d6;
+  }
+}
+
+@-webkit-keyframes touchmovedleft {
+  from {
+    left: 0;
+  }
+  to {
+    left: -2em;
+  }
+}
+@-webkit-keyframes touchmovedright {
+  from {
+    right: -4.5em;
+  }
+  to {
+    right: -2.5em;
+  }
+}
+
+@keyframes touchmovedleft {
+  from {
+    left: 0;
+  }
+  to {
+    left: -2em;
+  }
+}
+@keyframes touchmovedright {
+  from {
+    right: -4.5em;
+  }
+  to {
+    right: -2.5em;
+  }
+}
