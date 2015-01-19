@@ -1,26 +1,47 @@
-$(document).ready(function () {
-    var menus = $('#menu').children().children();
-    menus.find('ul').hide();
-    menus.click(function () {
-        menus.find('ul').hide();
-        menus.removeClass('.selected')
-//        $('.selected').children().hide();
-        $(this).find('ul').show();
-        $(this).addClass('.selected');
-    });
 
-    var categories = menus.children('ul');
-    var now;
-    var now_menus = ['#style','#addition','#responsive'];
-    var now_menu;
-    categories.children('li').click(function () {
-        now = $(this);
-        for(var i = 1; i <= now_menus.length; i++) {
-            if($(this).is('li:nth-child('+i+')')) now_menu = i-1;
+'use strict';
+
+function sidebarFixed() {
+    var $detail = $('#detail');
+    var $content = $('#content');
+    var detailOffset = $detail.offset().top;
+    $(window).scroll(function () {
+        if($(window).scrollTop() > detailOffset)
+        {
+            $detail.css({
+                'position':'fixed',
+                'top':'0'});
+            $content.css('margin-left',250+'px');
         }
-        categories.children('li').css('color','#cccccc');
-        $('html,body').animate({scrollTop:$(now_menus[now_menu]).offset().top},200, function () {
-            now.css('color','#99d2f5');
-        });
+        else {
+            $detail.css('position','static');
+            $content.css('margin-left',0);
+        }
     });
+}
+
+function menuChoosed() {
+    var $detail = $('#detail');
+    $detail.find('li').bind('click', function () {
+        $(this).siblings().removeClass('choosed').end().addClass('choosed');
+    });
+}
+
+function codeDisplay() {
+    $('.code-display').find('button').bind('click', function () {
+        $(this).parent().next('.code').slideToggle();
+    });
+}
+
+$(document).ready(function () {
+    sidebarFixed();
+    menuChoosed();
+    codeDisplay();
+    $(window).scrollMonitor({target:'#det'});
+    $('.table-headfixed').headFixed();
+    $('.tab-vertical').tabs('init',{defaultIndex:3});
+    $('.tab-horizontal').tabs();
+    $('.removeTextNodes').contents().filter(function() {
+        return this.nodeType === 3;
+    }).remove();
 });

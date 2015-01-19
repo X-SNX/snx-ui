@@ -53,215 +53,328 @@
     <div id="content">
         <div id="grid">
             <h1 class="title">Grid</h1>
-            <div class="grids-5"><!--5栅格-->
-                <div class="g-1 grid-blue">1</div>
-                <div class="g-4 grid-blue">4</div>
-            </div>
-            <div class="grids-12"><!--12栅格-->
-                <div class="g-1 grid-blue">1</div>
-                <div class="g-5 grid-blue">5</div>
-                <div class="g-3 grid-blue">3</div>
-                <div class="g-3 grid-blue">3</div>
-            </div>
+            <div>
+                <h3 class="small-title">基础栅格</h3>
+                <div>
+                    <div class="grids-5"><!--5栅格-->
+                        <div class="g-1 grid-blue">1</div>
+                        <div class="g-4 grid-blue">4</div>
+                    </div>
+                    <div class="grids-12"><!--12栅格-->
+                        <div class="g-1 grid-blue">1</div>
+                        <div class="g-5 grid-blue">5</div>
+                        <div class="g-3 grid-blue">3</div>
+                        <div class="g-3 grid-blue">3</div>
+                    </div>
 
-            <div class="grids-16"><!--16栅格-->
-                <div class="g-2 grid-blue">2</div>
-                <div class="g-3 grid-blue">3</div>
-                <div class="g-4 grid-blue">4</div>
-                <div class="g-7 grid-blue">7</div>
-            </div>
-            <div class="code-display">
-                <button class="btn btn-fl green">Code</button>
-            <pre class="code">
-                <code class="html">
-    &lt;div class="grids-5"&gt;&lt;!--5栅格--&gt;
-    &lt;div class="g-1 grid-blue"&gt;1&lt;/div&gt;
-    &lt;div class="g-4 grid-blue"&gt;4&lt;/div&gt;
-    &lt;/div&gt;
-                </code>
-            </pre>
-            </div>
-            <h5>With container & gutter : </h5>
-            <div class="grids-5">
-                <div class="grids-16 container gutter"><!--16栅格-->
-                    <div class="g-2 grid-blue gutter-vertical" style="line-height: 30px">2</div>
-                    <div class="g-3 grid-blue gutter-horizontal">3</div>
-                    <div class="g-4 grid-blue gutter-left">4</div>
-                    <div class="g-7 grid-blue gutter-right">7</div>
+                    <div class="grids-16"><!--16栅格-->
+                        <div class="g-2 grid-blue">2</div>
+                        <div class="g-3 grid-blue">3</div>
+                        <div class="g-4 grid-blue">4</div>
+                        <div class="g-7 grid-blue">7</div>
+                    </div>
+                </div>
+                <div class="code-display">
+                    <div>
+                        <button class="btn btn-fl green">Source<i class="fa fa-toggle-down"></i></button>
+                    </div>
+                <pre class="code">
+                    <code class="html">
+                        &lt;div class="grids-5"&gt;&lt;!--5栅格--&gt;
+                        &lt;div class="g-1 grid-blue"&gt;1&lt;/div&gt;
+                        &lt;div class="g-4 grid-blue"&gt;4&lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
                 </div>
             </div>
-            <div class="code-display">
-                <button class="btn btn-fl green">Code</button>
-            <pre class="code">
-                <code class="html">
-    &lt;div class="grids-16 container gutter"&gt;&lt;!--16栅格--&gt;
-        &lt;div class="g-2 grid-blue gutter-vertical" style="line-height: 30px"&gt;2&lt;/div&gt;
-        &lt;div class="g-3 grid-blue gutter-horizontal"&gt;3&lt;/div&gt;
-        &lt;div class="g-4 grid-blue gutter-left"&gt;4&lt;/div&gt;
-        &lt;div class="g-7 grid-blue gutter-right"&gt;7&lt;/div&gt;
-    &lt;/div&gt;
-                </code>
-            </pre>
+            <div>
+                <h3 class="small-title">栅格容器与边距</h3>
+                <div class="grids-5">
+                    <div class="grids-16 container gutter"><!--16栅格-->
+                        <div class="g-2 grid-blue gutter-vertical" style="line-height: 30px">2</div>
+                        <div class="g-3 grid-blue gutter-horizontal">3</div>
+                        <div class="g-4 grid-blue gutter-left">4</div>
+                        <div class="g-7 grid-blue gutter-right">7</div>
+                    </div>
+                </div>
+                <div class="code-display">
+                    <div>
+                        <button class="btn btn-fl green">Source<i class="fa fa-toggle-down"></i></button>
+                    </div>
+                <pre class="code">
+                    <code class="html">
+                        &lt;div class="grids-16 container gutter"&gt;&lt;!--16栅格--&gt;
+                        &lt;div class="g-2 grid-blue gutter-vertical" style="line-height: 30px"&gt;2&lt;/div&gt;
+                        &lt;div class="g-3 grid-blue gutter-horizontal"&gt;3&lt;/div&gt;
+                        &lt;div class="g-4 grid-blue gutter-left"&gt;4&lt;/div&gt;
+                        &lt;div class="g-7 grid-blue gutter-right"&gt;7&lt;/div&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+                </div>
             </div>
-            <h4>Responsive Grids</h4>
-            <!--响应式栅格-->
-            <h5>568px :</h5>
-            <div class="grids-12"><!--12栅格 568px-->
-                <div class="g-xs-7 grid-blue">7</div>
-                <div class="g-xs-4 grid-blue">4</div>
-                <div class="g-xs-1 grid-blue">1</div>
-            </div>
-            <h5>768px :</h5>
-            <div class="grids-5"><!--5栅格 768px-->
-                <div class="g-sm-1 grid-blue">1</div>
-                <div class="g-sm-4 grid-blue">4</div>
-            </div>
-            <h5>1024px :</h5>
-            <div class="grids-12"><!--12栅格 1024px-->
-                <div class="g-md-1 grid-blue">1</div>
-                <div class="g-md-5 grid-blue">5</div>
-                <div class="g-md-3 grid-blue">3</div>
-                <div class="g-md-3 grid-blue">3</div>
-            </div>
-            <h5>1280px :</h5>
-            <div class="grids-16"><!--16栅格 1280px-->
-                <div class="g-lg-2 grid-blue">2</div>
-                <div class="g-lg-3 grid-blue">3</div>
-                <div class="g-lg-4 grid-blue">4</div>
-                <div class="g-lg-7 grid-blue">7</div>
+            <div>
+                <h3 class="small-title">响应式栅格</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered" cellspacing="0" cellpadding="0">
+                        <thead>
+                        <tr>
+                            <th><span><568</span></th>
+                            <th><span><768</span></th>
+                            <th><span><1024</span></th>
+                            <th><span><1280</span></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>.g-xs</td>
+                            <td>.g-sm</td>
+                            <td>.g-md</td>
+                            <td>.g-lg</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--响应式栅格-->
+                <h5>568px :</h5>
+                <div class="grids-12"><!--12栅格 568px-->
+                    <div class="g-xs-7 grid-blue">7</div>
+                    <div class="g-xs-4 grid-blue">4</div>
+                    <div class="g-xs-1 grid-blue">1</div>
+                </div>
+                <h5>768px :</h5>
+                <div class="grids-5"><!--5栅格 768px-->
+                    <div class="g-sm-1 grid-blue">1</div>
+                    <div class="g-sm-4 grid-blue">4</div>
+                </div>
+                <h5>1024px :</h5>
+                <div class="grids-12"><!--12栅格 1024px-->
+                    <div class="g-md-1 grid-blue">1</div>
+                    <div class="g-md-5 grid-blue">5</div>
+                    <div class="g-md-3 grid-blue">3</div>
+                    <div class="g-md-3 grid-blue">3</div>
+                </div>
+                <h5>1280px :</h5>
+                <div class="grids-16"><!--16栅格 1280px-->
+                    <div class="g-lg-2 grid-blue">2</div>
+                    <div class="g-lg-3 grid-blue">3</div>
+                    <div class="g-lg-4 grid-blue">4</div>
+                    <div class="g-lg-7 grid-blue">7</div>
+                </div>
+                <div class="code-display">
+                    <div>
+                        <button class="btn btn-fl green">Source<i class="fa fa-toggle-down"></i></button>
+                    </div>
+                    <pre class="code">
+                        <code class="html">
+                            &lt;div class="grids-*"&gt;&lt;!--16栅格 1280px--&gt;
+                            &lt;div class="g-xs-* grid-blue"&gt;2&lt;/div&gt;
+                            &lt;div class="g-sm-* grid-blue"&gt;2&lt;/div&gt;
+                            &lt;div class="g-* grid-blue"&gt;2&lt;/div&gt;
+                            &lt;div class="g-md-* grid-blue"&gt;2&lt;/div&gt;
+                            &lt;div class="g-lg-* grid-blue"&gt;2&lt;/div&gt;
+                            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
             </div>
         </div>
         <div id="button">
             <h1 class="title">Button</h1>
-            <label><h3>「Lucency系列按钮」大小示例</h3></label>
-            <button class="btn btn-xl btn-lu btn-r default">Default中文</button>
-            <button class="btn btn-lg btn-lu btn-r default">Default中文</button>
-            <button class="btn btn-lu btn-r default">Default中文</button>
-            <button class="btn btn-sm btn-lu btn-r default">Default中文</button>
-            <button class="btn btn-xs btn-lu btn-r default">Default中文</button>
-            <br><br>
-            <button class="btn btn-xl btn-lu default">Default中文</button>
-            <button class="btn btn-lg btn-lu default">Default中文</button>
-            <button class="btn btn-lu default">Default中文</button>
-            <button class="btn btn-sm btn-lu default">Default中文</button>
-            <button class="btn btn-xs btn-lu default">Default中文</button>
-            <br><br>
-            <div class="code-display">
-                <div>
-                    <button class="btn btn-fl green">Code</button>
+            <div>
+                <h3 class="small-title">「Lucency系列按钮」大小示例</h3>
+                <button class="btn btn-xl btn-lu btn-r default">Default中文</button>
+                <button class="btn btn-lg btn-lu btn-r default">Default中文</button>
+                <button class="btn btn-lu btn-r default">Default中文</button>
+                <button class="btn btn-sm btn-lu btn-r default">Default中文</button>
+                <button class="btn btn-xs btn-lu btn-r default">Default中文</button>
+                <br><br>
+                <button class="btn btn-xl btn-lu default">Default中文</button>
+                <button class="btn btn-lg btn-lu default">Default中文</button>
+                <button class="btn btn-lu default">Default中文</button>
+                <button class="btn btn-sm btn-lu default">Default中文</button>
+                <button class="btn btn-xs btn-lu default">Default中文</button>
+                <br><br>
+                <div class="code-display">
+                    <div>
+                        <button class="btn btn-fl green">Source<i class="fa fa-toggle-down"></i></button>
+                    </div>
+                    <pre class="code">
+                        <code class="html">
+                            &lt;button class="btn btn-xl btn-lu btn-r default"&gt;Default中文&lt;/button&gt;
+                            &lt;button class="btn btn-xl btn-lu default"&gt;Default中文&lt;/button&gt;
+                        </code>
+                    </pre>
                 </div>
-                 <pre class="code">
-                <code class="html">
-    &lt;button class="btn btn-xl btn-lu btn-r default"&gt;Default中文&lt;/button&gt;
-    &lt;button class="btn btn-xl btn-lu default"&gt;Default中文&lt;/button&gt;
-                </code>
-            </pre>
             </div>
-            <label><h3>「Flat系列按钮」大小示例</h3></label>
-            <button class="btn btn-xl btn-fl btn-r skyblue">skyblue</button>
-            <button class="btn btn-lg btn-fl btn-r skyblue">skyblue</button>
-            <button class="btn btn-fl btn-r skyblue">skyblue</button>
-            <button class="btn btn-sm btn-fl btn-r skyblue">skyblue</button>
-            <button class="btn btn-xs btn-fl btn-r skyblue">skyblue</button>
-            <br><br>
-            <button class="btn btn-xl btn-fl skyblue">skyblue</button>
-            <button class="btn btn-lg btn-fl skyblue">skyblue</button>
-            <button class="btn btn-fl skyblue">skyblue</button>
-            <button class="btn btn-sm btn-fl skyblue">skyblue</button>
-            <button class="btn btn-xs btn-fl skyblue">skyblue</button>
-            <br><br>
+            <div>
+                <h3 class="small-title">「Flat系列按钮」大小示例</h3>
+                <button class="btn btn-xl btn-fl btn-r skyblue">skyblue</button>
+                <button class="btn btn-lg btn-fl btn-r skyblue">skyblue</button>
+                <button class="btn btn-fl btn-r skyblue">skyblue</button>
+                <button class="btn btn-sm btn-fl btn-r skyblue">skyblue</button>
+                <button class="btn btn-xs btn-fl btn-r skyblue">skyblue</button>
+                <br><br>
+                <button class="btn btn-xl btn-fl skyblue">skyblue</button>
+                <button class="btn btn-lg btn-fl skyblue">skyblue</button>
+                <button class="btn btn-fl skyblue">skyblue</button>
+                <button class="btn btn-sm btn-fl skyblue">skyblue</button>
+                <button class="btn btn-xs btn-fl skyblue">skyblue</button>
+                <br><br>
+                <div class="code-display">
+                    <div>
+                        <button class="btn btn-fl green">Source<i class="fa fa-toggle-down"></i></button>
+                    </div>
+                    <pre class="code">
+                        <code class="html">
+                            &lt;button class="btn btn-xl btn-lu btn-r default"&gt;Default中文&lt;/button&gt;
+                            &lt;button class="btn btn-xl btn-lu default"&gt;Default中文&lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <div>
+                <h3 class="small-title">「Lucency系列按钮」全预设样式示例</h3>
+                <button class="btn btn-lu btn-r default">Default中文</button>
+                <button class="btn btn-lu btn-r blue">blue</button>
+                <button class="btn btn-lu btn-r skyblue">skyblue</button>
+                <button class="btn btn-lu btn-r green">green</button>
+                <button class="btn btn-lu btn-r orange">orange</button>
+                <button class="btn btn-lu btn-r red">red</button>
+                <button class="btn btn-link">Link</button>
+                <br><br>
+                <button class="btn btn-lu default">Default中文</button>
+                <button class="btn btn-lu blue">blue</button>
+                <button class="btn btn-lu skyblue">skyblue</button>
+                <button class="btn btn-lu green">green</button>
+                <button class="btn btn-lu orange">orange</button>
+                <button class="btn btn-lu red">red</button>
+                <button class="btn btn-link">Link</button>
+                <br><br>
+                <div class="code-display">
+                    <div>
+                        <button class="btn btn-fl green">Source<i class="fa fa-toggle-down"></i></button>
+                    </div>
+                    <pre class="code">
+                        <code class="html">
+                            &lt;button class="btn btn-xl btn-lu btn-r default"&gt;Default中文&lt;/button&gt;
+                            &lt;button class="btn btn-xl btn-lu default"&gt;Default中文&lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <div>
+                <h3 class="small-title">「Flat系列按钮」全预设样式示例</h3>
+                <button class="btn btn-fl btn-r default">Default中文</button>
+                <button class="btn btn-fl btn-r blue">blue</button>
+                <button class="btn btn-fl btn-r skyblue">skyblue</button>
+                <button class="btn btn-fl btn-r green">green</button>
+                <button class="btn btn-fl btn-r orange">orange</button>
+                <button class="btn btn-fl btn-r red">red</button>
+                <button class="btn btn-link">Link</button>
+                <br><br>
 
-            <label><h3>「Lucency系列按钮」全预设样式示例</h3></label>
-            <button class="btn btn-lu btn-r default">Default中文</button>
-            <button class="btn btn-lu btn-r blue">blue</button>
-            <button class="btn btn-lu btn-r skyblue">skyblue</button>
-            <button class="btn btn-lu btn-r green">green</button>
-            <button class="btn btn-lu btn-r orange">orange</button>
-            <button class="btn btn-lu btn-r red">red</button>
-            <button class="btn btn-link">Link</button>
-            <br><br>
-            <button class="btn btn-lu default">Default中文</button>
-            <button class="btn btn-lu blue">blue</button>
-            <button class="btn btn-lu skyblue">skyblue</button>
-            <button class="btn btn-lu green">green</button>
-            <button class="btn btn-lu orange">orange</button>
-            <button class="btn btn-lu red">red</button>
-            <button class="btn btn-link">Link</button>
-            <br><br>
+                <button class="btn btn-fl default">Default中文</button>
+                <button class="btn btn-fl blue">blue</button>
+                <button class="btn btn-fl skyblue">skyblue</button>
+                <button class="btn btn-fl green">green</button>
+                <button class="btn btn-fl orange">orange</button>
+                <button class ="btn btn-fl red">red</button>
+                <button class="btn btn-link">Link</button>
+                <br><br>
+                <div class="code-display">
+                    <div>
+                        <button class="btn btn-fl green">Source<i class="fa fa-toggle-down"></i></button>
+                    </div>
+                    <pre class="code">
+                        <code class="html">
+                            &lt;button class="btn btn-xl btn-lu btn-r default"&gt;Default中文&lt;/button&gt;
+                            &lt;button class="btn btn-xl btn-lu default"&gt;Default中文&lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <div>
+                <h3 class="small-title">btn-block测试</h3>
+                <button class="btn btn-fl green btn-block">green</button><br><br>
+                <h3 class="small-title">「Lucency系列按钮」disabled="disabled"示例</h3>
+                <button class="btn btn-lu btn-r default" disabled="disabled">Default中文</button>
+                <button class="btn btn-lu btn-r blue" disabled="disabled">blue</button>
+                <button class="btn btn-lu btn-r skyblue" disabled="disabled">skyblue</button>
+                <button class="btn btn-lu btn-r green" disabled="disabled">green</button>
+                <button class="btn btn-lu btn-r orange" disabled="disabled">orange</button>
+                <button class="btn btn-lu btn-r red" disabled="disabled">red</button>
+                <button class="btn btn-link" disabled="disabled">Link</button>
+                <br><br>
+                <button class="btn btn-lu default" disabled="disabled">Default中文</button>
+                <button class="btn btn-lu blue" disabled="disabled">blue</button>
+                <button class="btn btn-lu skyblue" disabled="disabled">skyblue</button>
+                <button class="btn btn-lu green" disabled="disabled">green</button>
+                <button class="btn btn-lu orange" disabled="disabled">orange</button>
+                <button class="btn btn-lu red" disabled="disabled">red</button>
+                <button class="btn btn-link" disabled="disabled">Link</button>
+                <br><br>
+                <div class="code-display">
+                    <div>
+                        <button class="btn btn-fl green">Source<i class="fa fa-toggle-down"></i></button>
+                    </div>
+                    <pre class="code">
+                        <code class="html">
+                            &lt;button class="btn btn-xl btn-lu btn-r default"&gt;Default中文&lt;/button&gt;
+                            &lt;button class="btn btn-xl btn-lu default"&gt;Default中文&lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <div>
+                <h3 class="small-title">「Flat系列按钮」disabled="disabled"示例</h3>
+                <button class="btn btn-fl btn-r default" disabled="disabled">Default中文</button>
+                <button class="btn btn-fl btn-r blue" disabled="disabled">blue</button>
+                <button class="btn btn-fl btn-r skyblue" disabled="disabled">skyblue</button>
+                <button class="btn btn-fl btn-r green" disabled="disabled">green</button>
+                <button class="btn btn-fl btn-r orange" disabled="disabled">orange</button>
+                <button class="btn btn-fl btn-r red" disabled="disabled">red</button>
+                <button class="btn btn-link" disabled="disabled">Link</button>
 
-            <label><h3>「Flat系列按钮」全预设样式示例</h3></label>
-            <button class="btn btn-fl btn-r default">Default中文</button>
-            <button class="btn btn-fl btn-r blue">blue</button>
-            <button class="btn btn-fl btn-r skyblue">skyblue</button>
-            <button class="btn btn-fl btn-r green">green</button>
-            <button class="btn btn-fl btn-r orange">orange</button>
-            <button class="btn btn-fl btn-r red">red</button>
-            <button class="btn btn-link">Link</button>
-            <br><br>
+                <br><br>
+                <button class="btn btn-fl default" disabled="disabled">Default中文</button>
+                <button class="btn btn-fl blue" disabled="disabled">blue</button>
+                <button class="btn btn-fl skyblue" disabled="disabled">skyblue</button>
+                <button class="btn btn-fl green" disabled="disabled">green</button>
+                <button class="btn btn-fl orange" disabled="disabled">orange</button>
+                <button class ="btn btn-fl red" disabled="disabled">red</button>
+                <button class="btn btn-link" disabled="disabled">Link</button>
 
-            <button class="btn btn-fl default">Default中文</button>
-            <button class="btn btn-fl blue">blue</button>
-            <button class="btn btn-fl skyblue">skyblue</button>
-            <button class="btn btn-fl green">green</button>
-            <button class="btn btn-fl orange">orange</button>
-            <button class ="btn btn-fl red">red</button>
-            <button class="btn btn-link">Link</button>
-            <br><br>
-
-            <label><h3>btn-block测试</h3></label>
-            <button class="btn btn-fl green btn-block">green</button><br><br>
-
-            <label><h3>「Lucency系列按钮」disabled="disabled"示例</h3></label>
-            <button class="btn btn-lu btn-r default" disabled="disabled">Default中文</button>
-            <button class="btn btn-lu btn-r blue" disabled="disabled">blue</button>
-            <button class="btn btn-lu btn-r skyblue" disabled="disabled">skyblue</button>
-            <button class="btn btn-lu btn-r green" disabled="disabled">green</button>
-            <button class="btn btn-lu btn-r orange" disabled="disabled">orange</button>
-            <button class="btn btn-lu btn-r red" disabled="disabled">red</button>
-            <button class="btn btn-link" disabled="disabled">Link</button>
-            <br><br>
-            <button class="btn btn-lu default" disabled="disabled">Default中文</button>
-            <button class="btn btn-lu blue" disabled="disabled">blue</button>
-            <button class="btn btn-lu skyblue" disabled="disabled">skyblue</button>
-            <button class="btn btn-lu green" disabled="disabled">green</button>
-            <button class="btn btn-lu orange" disabled="disabled">orange</button>
-            <button class="btn btn-lu red" disabled="disabled">red</button>
-            <button class="btn btn-link" disabled="disabled">Link</button>
-            <br><br>
-
-            <label><h3>「Flat系列按钮」disabled="disabled"示例</h3></label>
-            <button class="btn btn-fl btn-r default" disabled="disabled">Default中文</button>
-            <button class="btn btn-fl btn-r blue" disabled="disabled">blue</button>
-            <button class="btn btn-fl btn-r skyblue" disabled="disabled">skyblue</button>
-            <button class="btn btn-fl btn-r green" disabled="disabled">green</button>
-            <button class="btn btn-fl btn-r orange" disabled="disabled">orange</button>
-            <button class="btn btn-fl btn-r red" disabled="disabled">red</button>
-            <button class="btn btn-link" disabled="disabled">Link</button>
-
-            <br><br>
-            <button class="btn btn-fl default" disabled="disabled">Default中文</button>
-            <button class="btn btn-fl blue" disabled="disabled">blue</button>
-            <button class="btn btn-fl skyblue" disabled="disabled">skyblue</button>
-            <button class="btn btn-fl green" disabled="disabled">green</button>
-            <button class="btn btn-fl orange" disabled="disabled">orange</button>
-            <button class ="btn btn-fl red" disabled="disabled">red</button>
-            <button class="btn btn-link" disabled="disabled">Link</button>
-
-            <br><br>
-            <label><h3>「Flat系列按钮」disabled="disabled"示例</h3></label>
-            <label>Disabled<br/><br/></label>
-            <button class="btn btn-xl btn-yl" disabled="disabled">Default中文</button>
-
-            <label><h3>「按钮类」示例</h3></label>
-            <label>submit按钮</label><br><br>
-            <button class="btn btn-fl btn-r default" type="submit">Button</button>
-            <button class="btn btn-yl" type="submit">Button</button>
-            <br><br>
-            <label>input</label><br><br>
-            <input class="btn btn-lu green" type="button" value="Input">
-            <input class="btn btn-lu btn-r skyblue" type="submit" value="Submit">
-            <input class="btn btn-yl" type="button" value="Input">
-            <input class="btn btn-yl" type="submit" value="Submit">
+                <div class="code-display">
+                    <div>
+                        <button class="btn btn-fl green">Source<i class="fa fa-toggle-down"></i></button>
+                    </div>
+                    <pre class="code">
+                        <code class="html">
+                            &lt;button class="btn btn-xl btn-lu btn-r default"&gt;Default中文&lt;/button&gt;
+                            &lt;button class="btn btn-xl btn-lu default"&gt;Default中文&lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <div>
+                <h3 class="small-title">「Flat系列按钮」disabled="disabled"示例</h3>
+                <label>Disabled<br/><br/></label>
+                <button class="btn btn-xl btn-yl" disabled="disabled">Default中文</button>
+            </div>
+            <div>
+                <h3 class="small-title">「按钮类」示例</h3>
+                <label>submit按钮</label><br><br>
+                <button class="btn btn-fl btn-r default" type="submit">Button</button>
+                <button class="btn btn-yl" type="submit">Button</button>
+                <br><br>
+                <label>input</label><br><br>
+                <input class="btn btn-lu green" type="button" value="Input">
+                <input class="btn btn-lu btn-r skyblue" type="submit" value="Submit">
+                <input class="btn btn-yl" type="button" value="Input">
+                <input class="btn btn-yl" type="submit" value="Submit">
+            </div>
         </div>
         <div id="button-group">
             <h1 class="title">Button Group</h1>
@@ -347,14 +460,16 @@
                 </table>
             </div>
             <div class="code-display">
-                <button class="btn btn-fl green">Code</button>
+                <div>
+                    <button class="btn btn-fl green">Source</button>
+                </div>
                  <pre class="code">
                 <code class="html">
-    &lt;div class="table-responsive table-headfixed"&gt;
-        &lt;table class="table table-bluehead table-solid" cellspacing="0" cellpadding="0"&gt;
-          ...
-        &lt;/table&gt;
-    &lt;/div&gt;
+                    &lt;div class="table-responsive table-headfixed"&gt;
+                    &lt;table class="table table-bluehead table-solid" cellspacing="0" cellpadding="0"&gt;
+                    ...
+                    &lt;/table&gt;
+                    &lt;/div&gt;
                 </code>
             </pre>
             </div>
@@ -430,15 +545,17 @@
                 </div>
             </div>
             <div class="code-display">
-                <button class="btn btn-fl green">Code</button>
+                <div>
+                    <button class="btn btn-fl green">Source</button>
+                </div>
             <pre class="code">
                 <code class="html">
-    &lt;div class="media-item media-center"&gt;
-        &lt;img  class="img" src="..."&gt;
-        &lt;div class="mi-content"&gt;
-            ...
-        &lt;/div&gt;
-    &lt;/div&gt;
+                    &lt;div class="media-item media-center"&gt;
+                    &lt;img  class="img" src="..."&gt;
+                    &lt;div class="mi-content"&gt;
+                    ...
+                    &lt;/div&gt;
+                    &lt;/div&gt;
                 </code>
             </pre>
             </div>
@@ -519,16 +636,18 @@
                 <li><a>Next</a></li>
             </ul>
             <div class="code-display">
-                <button class="btn btn-fl green">Code</button>
+                <div>
+                    <button class="btn btn-fl green">Source</button>
+                </div>
                 <pre class="code">
                     <code class="html">
-    &lt;ul class="pgn pgn-border" style="padding: 0;"&gt;
-        &lt;li&gt;&lt;a&gt;Previous&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a&gt;1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a class="pgn-choosed"&gt;3&lt;/a&gt;&lt;/li&gt;
-        ...
-        &lt;li&gt;&lt;a&gt;Next&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
+                        &lt;ul class="pgn pgn-border" style="padding: 0;"&gt;
+                        &lt;li&gt;&lt;a&gt;Previous&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a&gt;1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a class="pgn-choosed"&gt;3&lt;/a&gt;&lt;/li&gt;
+                        ...
+                        &lt;li&gt;&lt;a&gt;Next&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
                     </code>
                 </pre>
             </div>
@@ -545,15 +664,17 @@
                 <a class="pgn-next"></a>
             </div>
             <div class="code-display">
-                <button class="btn btn-fl green">Code</button>
+                <div>
+                    <button class="btn btn-fl green">Source</button>
+                </div>
                 <pre class="code">
                     <code class="html">
                         &lt;div class="pgn pgn-roundborder"&gt;
-                            &lt;a class="pgn-pre"&gt;&lt;/a&gt;
-                            ...
-                            &lt;a class="pgn-choosed"&gt;2&lt;/a&gt;
-                            ...
-                            &lt;a class="pgn-next"&gt;&lt;/a&gt;
+                        &lt;a class="pgn-pre"&gt;&lt;/a&gt;
+                        ...
+                        &lt;a class="pgn-choosed"&gt;2&lt;/a&gt;
+                        ...
+                        &lt;a class="pgn-next"&gt;&lt;/a&gt;
                         &lt;/div&gt;
                     </code>
                 </pre>

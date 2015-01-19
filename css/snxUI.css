@@ -3653,7 +3653,7 @@ tr {
 .table {
   width: 100%;
   padding: 0;
-  margin: .5em 0 0;
+  margin: 0;
   font-family: dax-regular;
   font-size: 100%;
   white-space: nowrap;
@@ -3680,7 +3680,7 @@ tr {
 .table-underline {
   width: 100%;
   padding: 0;
-  margin: .5em 0 0;
+  margin: 0;
   font-family: dax-regular;
   font-size: 100%;
   white-space: nowrap;
@@ -3710,7 +3710,7 @@ tr {
 .table-bordered {
   width: 100%;
   padding: 0;
-  margin: .5em 0 0;
+  margin: 0;
   font-family: dax-regular;
   font-size: 100%;
   white-space: nowrap;
@@ -3766,12 +3766,10 @@ tr {
   box-shadow: 0 .15em .2em #bbbbbb;
 }
 .table-responsive {
-  margin: 0 .5em;
   width: auto;
   overflow-y: auto;
 }
 .table-headfixed {
-  margin: 0 .5em;
   max-height: 12.5em;
   overflow-x: auto;
 }

@@ -29,7 +29,7 @@ function menuChoosed() {
 
 function codeDisplay() {
     $('.code-display').find('button').bind('click', function () {
-        $(this).next('.code').slideToggle();
+        $(this).parent().next('.code').slideToggle();
     });
 }
 
