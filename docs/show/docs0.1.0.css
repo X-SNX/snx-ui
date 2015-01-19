@@ -23,7 +23,7 @@
     border-left:10px solid #73dcff;
     padding-left: 2.1em;
     padding-right: 1.4em;
- }
+}
 .header {
     margin: 60px auto 0;
     width: 600px;
@@ -64,11 +64,11 @@
     height: 2.6em;
     padding-left: 1em;
 }#Nav nav ul li .loading-radius{
-    height: 2.6em;
-    padding-left: 1.8em;
-    padding-top: 0.6em;
-    box-sizing: border-box;
-}
+     height: 2.6em;
+     padding-left: 1.8em;
+     padding-top: 0.6em;
+     box-sizing: border-box;
+ }
 #Nav nav ul li .loading-round{
     height: 2.6em;
     padding-left: 1.5em;
@@ -124,16 +124,16 @@
     box-sizing: border-box;
     width: 196px;
 }.main-content .c-2{
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
-    letter-spacing: normal;
-    word-spacing: normal;
-    vertical-align: top;
-    text-rendering: auto;
-    box-sizing: border-box;
-    width: 196px;
-}
+     display: inline-block;
+     *display: inline;
+     zoom: 1;
+     letter-spacing: normal;
+     word-spacing: normal;
+     vertical-align: top;
+     text-rendering: auto;
+     box-sizing: border-box;
+     width: 196px;
+ }
 .main-content .c-10{
     display: inline-block;
     *display: inline;
@@ -181,4 +181,32 @@
 }
 .table-bordered > thead > tr > th {
     border: 1px solid #fff;
+}
+
+.form fieldset.fieldset {
+    position: relative;
+    margin: 0 0 100px;
+    padding: 1em 1.8em 2.4em;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 2px 6px #e6e6e6;
+}
+.form fieldset.fieldset .codebutton{
+    position: absolute;
+    font-size: 9px;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.form legend{
+    text-align: center;
+    font-size: 146%;
+    background-color: white;
+}
+.code{
+    display: none;
+    margin-top: -100px;
+    margin-bottom: 60px;
+}
+.code .html{
+    font-family: dax-regular;
 }

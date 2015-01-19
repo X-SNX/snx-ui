@@ -2,6 +2,10 @@
  * Created by Didi on 2015/01/14.
  */
 $(document).ready(function(){
+    $(".codebutton").click(function(event){
+        $(this).parents(".fieldset").next(".code").slideToggle(300);
+        event.stopPropagation();
+    });
     function css(){
         var $this = $("#css");
         $this.siblings("#cssMenu").show(300);
