@@ -1,6 +1,6 @@
 body{
     font-size: 16px;
-    font-family: dax-regular;
+    font-family: dax-regular, arial, sans-serif;
 }
 #logo{
     position: absolute;
@@ -156,8 +156,11 @@ section {
 .yl {
     padding: 32px;
     background-image: linear-gradient(45deg, #EE855F, #a3f7e6);
+}
+
 .code .html{
-    font-family: dax-regular;
+    font-family: 'SourceCodePro', arial, sans-serif;
+    font-size: 14px;
 }
 .table-underline > thead > tr > th{
     font-size: 22px;
