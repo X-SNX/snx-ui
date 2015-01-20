@@ -24,7 +24,7 @@
             //监听滚动事件
             var flag = 0;
             cur.scroll(function () {
-                if(flag === 0) {
+                if(flag === 0||flag ===1 ) {
                     for(var i = 0; i<num; i++){
                         var temp1 = anchor[0].attr('href').replace(/#/,'');
                         if(i<num-1) {
@@ -39,7 +39,8 @@
                 }
                 for(var j = 0; j<num; j++){
                     var tars = anchor[j].attr('href');
-                    if($(this).scrollTop() < offsets[j]){
+                    var baseOffset = document.getElementById(anchor[0].attr('href').replace(/#/,'')).offsetTop;
+                    if($(this).scrollTop() < offsets[j]+baseOffset-1){
                         //监听中发生样式改变在这里修改。
                         $(tar).find('li').removeClass('choosed');
                         $('[href="'+tars+'"]').parent().addClass('choosed');
