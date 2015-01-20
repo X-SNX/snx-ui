@@ -143,13 +143,12 @@ section {
 /*样例的样式*/
 
 .grid-blue{
-    height: 60px;
+    height: 50px;
     border: 1px solid #ffffff;
     font-size: 120%;
-    font-weight: bold;
-    color: #a4bbef;
-    background-color: #dedede;
-    line-height: 60px;
+    color: #fff;
+    background-color: #999;
+    line-height: 50px;
     text-align: center;
 }
 
@@ -192,4 +191,7 @@ section {
 }
 .table-grey > thead > tr > th {
     border: 1px solid #fff;
+}
+.container{
+    width: 100%;
 }
