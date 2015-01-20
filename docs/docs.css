@@ -156,8 +156,6 @@ section {
 .yl {
     padding: 32px;
     background-image: linear-gradient(45deg, #EE855F, #a3f7e6);
-}
-
 .code .html{
     font-family: 'SourceCodePro', arial, sans-serif;
     font-size: 14px;
@@ -194,4 +192,7 @@ section {
 }
 .table-grey > thead > tr > th {
     border: 1px solid #fff;
+}
+.container{
+    width: 100%;
 }
