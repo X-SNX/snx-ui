@@ -84,6 +84,8 @@ section {
     /*background-color: #888;*/
     box-shadow: 0 0 10px #e6e6e6;
     transition: all 0.3s ease-in-out;
+    /*line-height: -moz-block-height;*/
+    line-height: 20px;
 }
 /*#detail li:hover{*/
 /*box-shadow: 0 0 100px rgba(0,0,0,0.1);*/
@@ -139,4 +141,37 @@ section {
 }
 .code .html{
     font-family: dax-regular;
+}
+.table-underline > thead > tr > th{
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: .18em;
+    padding-bottom: .18em;
+}
+.table-bordered > thead > tr > th{
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: .18em;
+    padding-bottom: .18em;
+}
+.table-underline > thead > tr > th{
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: .18em;
+    padding-bottom: .18em;
+}
+.table-grey > thead > tr > th{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: .15em;
+    padding-bottom: .15em;
+    background-color: rgba(0,0,0,0.5);
+    border-bottom: 2px solid #fff;
+}
+.table-grey > tbody > tr > td{
+    border: 1px solid #fff;
+}
+.table-grey > thead > tr > th {
+    border: 1px solid #fff;
 }
