@@ -63,7 +63,10 @@ section {
     list-style: none;
 }
 #detail a {
-    padding: 6px 16px;
+    display: inline-flex;
+    width: 100%;
+    height: 50%;
+    padding: 6px 24px;
     color: #333;
     text-decoration: none;
     letter-spacing: 1px;
@@ -75,10 +78,10 @@ section {
 /*}*/
 #detail li {
     margin: 0 8px 8px 32px;
-    padding: 8px;
+    padding: 3px;
     border-left: 10px solid transparent;
     /*background-color: #efefef;*/
-    /*background-color: #666;*/
+    /*background-color: #888;*/
     box-shadow: 0 0 10px #e6e6e6;
     transition: all 0.3s ease-in-out;
 }
@@ -88,18 +91,17 @@ section {
 #detail .choosed  {
     border-left-color: #73dcff;
 }
-
 .title {
     text-align: center;
     font-size: 200%;
     margin: 16px 0;
     padding: 8px 0;
     /*border-bottom: 2px solid #e6e6e6;*/
-    color: #ffffff;
+    color: #fff;
     background-image: linear-gradient(135deg, #5fa4ee, #a3f7e6);
-    border-radius: 8px;
+    /*border-radius: 8px;*/
+    font-weight: 500;
 }
-
 .block {
     position: relative;
     margin: 46px 30px 86px;
