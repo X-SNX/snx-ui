@@ -104,7 +104,7 @@ section {
 }
 .block {
     position: relative;
-    margin: 46px 30px 86px;
+    margin: 60px 30px 100px;
     padding: 0 1.8em 2.4em;
     border: 1px solid #e0e0e0;
     box-shadow: 0 2px 6px #e0e0e0;
@@ -135,7 +135,7 @@ section {
 }
 .code{
     display: none;
-    margin: -86px 30px 60px;
+    margin: -100px 30px 60px;
 }
 .code .html{
     font-family: dax-regular;

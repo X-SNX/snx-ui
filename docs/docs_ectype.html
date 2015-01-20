@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Collie-UI</title>
+    <link href="../css/snxUI.min.css" type="text/css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../fonts/dax/dax.css">
+    <link href="docs.css" type="text/css" rel="stylesheet">
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="docs.js"></script>
+    <script src="../javascript/forms.js"></script>
+    <script src="../javascript/other-forms.js"></script>
+    <script src="../javascript/navs.js"></script>
+    <script src="../javascript/scrollmonitor.js"></script>
+    <script src="../javascript/tables.js"></script>
+    <script src="../javascript/tabs.js"></script>
+    <link rel="stylesheet" href="styles/monokai_sublime.css">
+    <script src="styles/highlight.pack.js"></script>
+    <script>
+        hljs.tabReplace = '    ' ;// 4 spaces
+        hljs.initHighlightingOnLoad();
+    </script>
+</head>
+<body>
+<header>
+    <div class="nav nav-padding">
+        <img id="logo" src="../image/Collie%20Headerlogo1.png">
+        <ul>
+            <li><a href="#">Getting Started</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">Component</a></li>
+            <li><a href="#">Template</a></li>
+        </ul>
+    </div>
+</header>
+<section>
+    <div id="detail">
+        <ul id="det">
+            <li class="choosed"><a href="#grid">栅格-Grid</a></li>
+            <li><a href="#button">Button</a></li>
+            <li><a href="#button-group">Button Group</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#form">Form</a></li>
+            <li><a href="#nav">Navigation</a></li>
+            <li><a href="#image">Image</a></li>
+            <li><a href="#badges">Badges</a></li>
+            <li><a href="#pagination">Pagination</a></li>
+            <li><a href="#label">Labels</a></li>
+            <li><a href="#helper">Helper</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="grid">
+            <h1 class="title">Grid</h1>
+        </div>
+        <div id="button">
+            <h1 class="title">Button</h1>
+        </div>
+        <div id="button-group">
+            <h1 class="title">Button Group</h1>
+        </div>
+        <div id="table">
+            <h1 class="title">Table</h1>
+        </div>
+
+        <div id="form">
+            <h1 class="title">Form</h1>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">Collie-UI基础表单测试(默认inline-block)</h2>
+                    <form class="form">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password"  disabled="disabled">
+                    <label for="remember1">
+                        <input id="remember1" type="checkbox"> Remember me
+                    </label>
+                    <button type="submit" class="btn btn-fl btn-r skyblue">Sign in</button>
+                    </form>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+                        <pre class="code">
+                            <code class="html">
+      &lt;form class="form"&gt;
+      &lt;input type="email" placeholder="Email"&gt;
+      &lt;input type="password" placeholder="Password"  disabled="disabled"&gt;
+      &lt;label for="remember1"&gt;
+          &lt;input id="remember1" type="checkbox"&gt; Remember me
+      &lt;/label&gt;
+      &lt;button type="submit" class="btn btn-fl btn-r skyblue"&gt;Sign in&lt;/button&gt;
+      &lt;button class="codebutton btn btn-fl default"&gt;Source&lt;/button&gt;
+      &lt;/form&gt;
+                            </code>
+                        </pre>
+            </div>
+
+
+            <div>
+            <div class="block">
+            <h2 class="small-title">Collie-UI order表单样式示例</h2>
+                <form class="form form-order">
+                    <label for="email1">Email</label>
+                    <input class="g-4" id="email1" type="email" placeholder="Email">
+                    <label for="password1">Password</label>
+                    <input class="g-4" id="password1" type="password" placeholder="Password">
+                    <label for="state">State</label>
+                    <select id="state">
+                        <option>AL</option>
+                        <option>CA</option>
+                        <option>IL</option>
+                    </select>
+                    <label for="remember" class="checkbox">
+                        <input id="remember" type="checkbox"> Remember me
+                    </label>
+                    <button type="submit" class="btn btn-lu skyblue">Sign in</button>
+                </form>
+            <button class="code-display btn btn-fl default">Source</button>
+            </div>
+            <pre class="code">
+            <code class="html">
+                &lt;form class="form form-order"&gt;
+                &lt;label for="email1"&gt;Email&lt;/label&gt;
+                &lt;input class="g-4" id="email1" type="email" placeholder="Email"&gt;
+                &lt;label for="password1"&gt;Password&lt;/label&gt;
+                &lt;input class="g-4" id="password1" type="password" placeholder="Password"&gt;
+                &lt;label for="state"&gt;State&lt;/label&gt;
+                &lt;select id="state"&gt;
+                &lt;option&gt;AL&lt;/option&gt;
+                &lt;option&gt;CA&lt;/option&gt;
+                &lt;option&gt;IL&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;label for="remember" class="checkbox"&gt;
+                &lt;input id="remember" type="checkbox"&gt; Remember me
+                &lt;/label&gt;
+                &lt;button type="submit" class="btn btn-lu skyblue"&gt;Sign in&lt;/button&gt;
+                &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <div>
+            <div class="block">
+            <h2 class="small-title">Collie-UI input-rounded表单样式示例</h2>
+                <form class="form">
+                    <label for="search">
+                        <input class="g-4 input-rounded" id="search" type="search">
+                        <button type="submit" class="btn btn-fl green">Search</button>
+                    </label>
+                    </form>
+            <button class="code-display btn btn-fl default">Source</button>
+            </div>
+            <pre class="code">
+            <code class="html">
+      &lt;form class="form"&gt;
+      &lt;label for="search"&gt;
+      &lt;input class="g-4 input-rounded" id="search" type="search"&gt;
+      &lt;button type="submit" class="btn btn-fl green"&gt;Search&lt;/button&gt;
+      &lt;/label&gt;
+      &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <div>
+            <div class="block">
+            <h2 class="small-title">Collie-UI aligned对齐表单示例</h2>
+                <form class="form form-aligned">
+                    <div class="control-group">
+                        <label for="username">Username</label>
+                        <input class="g-4" id="username" type="text" placeholder="Username">
+                    </div>
+
+                    <div class="control-group">
+                        <label for="password2">Password</label>
+                        <input class="g-4" id="password2" type="password" placeholder="Password">
+                    </div>
+
+                    <div class="control-group">
+                        <label for="email2">Email Address</label>
+                        <input class="g-4" id="email2" type="email" placeholder="Email Address">
+                    </div>
+
+                    <div class="control-group">
+                        <label for="foo">Supercalifragilistic Label</label>
+                        <input class="g-4" id="foo" type="text" placeholder="Enter something here...">
+                    </div>
+
+                    <div class="controls">
+                        <label for="cb" class="checkbox">
+                            <input id="cb" type="checkbox"> I've read the terms and conditions
+                        </label>
+
+                        <button type="submit" class="btn btn-lu skyblue">Submit</button>
+                    </div>
+                    </form>
+            <button class="code-display btn btn-fl default">Source</button>
+            </div>
+            <pre class="code">
+            <code class="html">
+      &lt;form class="form form-aligned"&gt;
+      &lt;div class="control-group"&gt;
+      &lt;label for="username"&gt;Username&lt;/label&gt;
+      &lt;input class="g-4" id="username" type="text" placeholder="Username"&gt;
+      &lt;/div&gt;
+      &lt;div class="control-group"&gt;
+      &lt;label for="password2"&gt;Password&lt;/label&gt;
+      &lt;input class="g-4" id="password2" type="password" placeholder="Password"&gt;
+      &lt;/div&gt;
+      &lt;div class="control-group"&gt;
+      &lt;label for="email2"&gt;Email Address&lt;/label&gt;
+      &lt;input class="g-4" id="email2" type="email" placeholder="Email Address"&gt;
+      &lt;/div&gt;
+      &lt;div class="control-group"&gt;
+      &lt;label for="foo"&gt;Supercalifragilistic Label&lt;/label&gt;
+      &lt;input class="g-4" id="foo" type="text" placeholder="Enter something here..."&gt;
+      &lt;/div&gt;
+      &lt;div class="controls"&gt;
+      &lt;label for="cb" class="checkbox"&gt;
+      &lt;input id="cb" type="checkbox"&gt; I've read the terms and conditions
+      &lt;/label&gt;
+      &lt;button type="submit" class="btn btn-lu skyblue"&gt;Submit&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <div>
+            <div class="block">
+            <h2 class="small-title">Collie-UI form-block表单示例</h2>
+                <form class="form form-order form-block">
+                    <div class="control-group">
+                        <label for="name">Username</label>
+                        <input id="name" type="text" placeholder="Username">
+                    </div>
+                    <div class="control-group">
+                        <label for="password">Password</label>
+                        <input id="password" type="password" placeholder="Password">
+                    </div>
+                    <div class="control-group">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" placeholder="Email Address">
+                    </div>
+                    <div class="controls">
+                        <label for="cb2" class="checkbox">
+                            <input id="cb2" type="checkbox"> I've read the terms and conditions
+                        </label>
+
+                        <button type="submit" class="btn btn-lu skyblue">Submit</button>
+                    </div>
+                    </form>
+            <button class="code-display btn btn-fl default">Source</button>
+            </div>
+            <pre class="code">
+            <code class="html">
+      &lt;form class="form form-order form-block"&gt;
+      &lt;div class="control-group"&gt;
+      &lt;label for="name"&gt;Username&lt;/label&gt;
+      &lt;input id="name" type="text" placeholder="Username"&gt;
+      &lt;/div&gt;
+      &lt;div class="control-group"&gt;
+      &lt;label for="password"&gt;Password&lt;/label&gt;
+      &lt;input id="password" type="password" placeholder="Password"&gt;
+      &lt;/div&gt;
+      &lt;div class="control-group"&gt;
+      &lt;label for="email"&gt;Email Address&lt;/label&gt;
+      &lt;input id="email" type="email" placeholder="Email Address"&gt;
+      &lt;/div&gt;
+      &lt;div class="controls"&gt;
+      &lt;label for="cb2" class="checkbox"&gt;
+      &lt;input id="cb2" type="checkbox"&gt; I've read the terms and conditions
+      &lt;/label&gt;
+      &lt;button type="submit" class="btn btn-lu skyblue"&gt;Submit&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <div>
+            <div class="block">
+            <h2 class="small-title">Collie-UI 表单组示例</h2>
+                <form class="form">
+                    <fieldset class="form-group">
+                        <input type="text" class="input-1-2" placeholder="Username">
+                        <input type="text" class="input-1-2" placeholder="Password">
+                        <input type="email" class="input-1-2" placeholder="Email">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <input type="text" class="input-1-2" placeholder="Another Group">
+                        <input type="text" class="input-1-2" placeholder="More Stuff">
+                    </fieldset>
+                    <button type="submit" class="btn btn-lu green input-1-2">Sign in</button>
+                    </form>
+            <button class="code-display btn btn-fl default">Source</button>
+            </div>
+            <pre class="code">
+            <code class="html">
+      &lt;form class="form"&gt;
+      &lt;fieldset class="form-group"&gt;
+      &lt;input type="text" class="input-1-2" placeholder="Username"&gt;
+      &lt;input type="text" class="input-1-2" placeholder="Password"&gt;
+      &lt;input type="email" class="input-1-2" placeholder="Email"&gt;
+      &lt;/fieldset&gt;
+      &lt;fieldset class="form-group"&gt;
+      &lt;input type="text" class="input-1-2" placeholder="Another Group"&gt;
+      &lt;input type="text" class="input-1-2" placeholder="More Stuff"&gt;
+      &lt;/fieldset&gt;
+      &lt;button type="submit" class="btn btn-lu green input-1-2"&gt;Sign in&lt;/button&gt;
+      &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <div>
+            <div class="block">
+            <h2 class="small-title">Collie-UI input-group示例</h2>
+                <form class="form form-order">
+                    <label for="email">字符info提示测试</label>
+                    <div class="input-group">
+                        <div class="input-info">@</div>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <label for="email">checkbox&radio info提示测试</label>
+                    <div class="input-group">
+                        <div class="input-info"><input type="checkbox" id="inside2"></div>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <label></label>
+                    <label for="email">配合input大小测试</label>
+                    <div class="input-group input-xs">
+                        <div class="input-info">
+                            <i class="fa fa-times fa-fw"></i>
+                        </div>
+                        <input type="text" placeholder="Do what you want">
+                    </div>
+                    <label></label>
+                    <div class="input-group input-sm">
+                        <div class="input-info">
+                            <i class="fa fa-star fa-fw"></i>
+                        </div>
+                        <input type="text" placeholder="Do what you want">
+                    </div>
+                    <label></label>
+                    <div class="input-group">
+                        <div class="input-info">
+                            <i class="fa fa-cog fa-fw"></i>
+                        </div>
+                        <input type="text" placeholder="Do what you want">
+                    </div>
+                    <label></label>
+                    <div class="input-group input-lg">
+                        <input type="text" placeholder="what do you want...">
+                        <div class="input-info">
+                            <i class="fa fa-spinner fa-fw"></i>
+                        </div>
+                    </div>
+                    <label></label>
+                    <div class="input-group input-xl">
+                        <input type="text" placeholder="what do you want...">
+                        <div class="input-info">
+                            <i class="fa fa-search fa-fw"></i>
+                        </div>
+                    </div>
+                    <label for="email">input-group内使用rounded</label>
+                    <div class="input-group">
+                        <div class="input-info"><i class="fa fa-search fa-fw"></i> </div>
+                        <input class="input-rounded" type="email" placeholder="Email">
+                    </div>
+                    <div class="form-message-inline">This is a form inline-message</div>
+                    <div class="form-message">This is a form message</div>
+                    <div class="input-group">
+                        <input class="input-rounded" type="email" placeholder="Email">
+                        <div class="input-info"><i class="fa fa-search fa-fw"></i> </div>
+                    </div>
+                    </form>
+            <button class="code-display btn btn-fl default">Source</button>
+            </div>
+            <pre class="code">
+            <code class="html">
+      &lt;form class="form form-order"&gt;
+      &lt;label for="email"&gt;字符info提示测试&lt;/label&gt;
+      &lt;div class="input-group"&gt;
+      &lt;div class="input-info"&gt;@&lt;/div&gt;
+      &lt;input type="email" placeholder="Email"&gt;
+      &lt;/div&gt;
+      &lt;label for="email"&gt;checkbox&radio info提示测试&lt;/label&gt;
+      &lt;div class="input-group"&gt;
+      &lt;div class="input-info"&gt;&lt;input type="checkbox" id="inside2"&gt;&lt;/div&gt;
+      &lt;input type="email" placeholder="Email"&gt;
+      &lt;/div&gt;
+      &lt;label&gt;&lt;/label&gt;
+      &lt;label for="email"&gt;配合input大小测试&lt;/label&gt;
+      &lt;div class="input-group input-xs"&gt;
+      &lt;div class="input-info"&gt;
+      &lt;i class="fa fa-times fa-fw"&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;input type="text" placeholder="Do what you want"&gt;
+      &lt;/div&gt;
+      &lt;label&gt;&lt;/label&gt;
+      &lt;div class="input-group input-sm"&gt;
+      &lt;div class="input-info"&gt;
+      &lt;i class="fa fa-star fa-fw"&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;input type="text" placeholder="Do what you want"&gt;
+      &lt;/div&gt;
+      &lt;label&gt;&lt;/label&gt;
+      &lt;div class="input-group"&gt;
+      &lt;div class="input-info"&gt;
+      &lt;i class="fa fa-cog fa-fw"&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;input type="text" placeholder="Do what you want"&gt;
+      &lt;/div&gt;
+      &lt;label&gt;&lt;/label&gt;
+      &lt;div class="input-group input-lg"&gt;
+      &lt;input type="text" placeholder="what do you want..."&gt;
+      &lt;div class="input-info"&gt;
+      &lt;i class="fa fa-spinner fa-fw"&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;label&gt;&lt;/label&gt;
+      &lt;div class="input-group input-xl"&gt;
+      &lt;input type="text" placeholder="what do you want..."&gt;
+      &lt;div class="input-info"&gt;
+      &lt;i class="fa fa-search fa-fw"&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;label for="email"&gt;input-group内使用rounded&lt;/label&gt;
+      &lt;div class="input-group"&gt;
+      &lt;div class="input-info"&gt;&lt;i class="fa fa-search fa-fw"&gt;&lt;/i&gt; &lt;/div&gt;
+      &lt;input class="input-rounded" type="email" placeholder="Email"&gt;
+      &lt;/div&gt;
+      &lt;div class="form-message-inline"&gt;This is a form inline-message&lt;/div&gt;
+      &lt;div class="form-message"&gt;This is a form message&lt;/div&gt;
+      &lt;div class="input-group"&gt;
+      &lt;input class="input-rounded" type="email" placeholder="Email"&gt;
+      &lt;div class="input-info"&gt;&lt;i class="fa fa-search fa-fw"&gt;&lt;/i&gt; &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <div>
+            <div class="block">
+            <h2 class="small-title">Collie-UI Checkbox表单示例</h2>
+                <form class="form form-order">
+                    <div class="checkbox">Checkbox:
+                        <label for="test1">
+                            <input type="checkbox" id=test1 value="">
+                            Option one is this and that&mdash;be sure to include why it's great
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label for="test2">
+                            <input id="test2" type="checkbox" value="" disabled="disabled">
+                            Option two is disabled
+                        </label>
+                    </div>
+                    <div class="checkbox">Checkbox-inline:
+                        <label for="inlineCheckbox1" class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox1" value="option1">1
+                        </label>
+                        <label for="inlineCheckbox2" class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox2" value="option2">2
+                        </label>
+                        <label for="inlineCheckbox3" class="checkbox-inline">
+                            <input type="checkbox" id="inlineCheckbox3" value="option3">3
+                        </label>
+                    </div>
+                    </form>
+            <button class="code-display btn btn-fl default">Source</button>
+            </div>
+            <pre class="code">
+            <code class="html">
+      &lt;form class="form form-order"&gt;
+      &lt;div class="checkbox"&gt;Checkbox:
+      &lt;label for="test1"&gt;
+      &lt;input type="checkbox" id=test1 value=""&gt;
+      Option one is this and that&mdash;be sure to include why it's great
+      &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="checkbox"&gt;
+      &lt;label for="test2"&gt;
+      &lt;input id="test2" type="checkbox" value="" disabled="disabled"&gt;
+      Option two is disabled
+      &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="checkbox"&gt;Checkbox-inline:
+      &lt;label for="inlineCheckbox1" class="checkbox-inline"&gt;
+      &lt;input type="checkbox" id="inlineCheckbox1" value="option1"&gt;1
+      &lt;/label&gt;
+      &lt;label for="inlineCheckbox2" class="checkbox-inline"&gt;
+      &lt;input type="checkbox" id="inlineCheckbox2" value="option2"&gt;2
+      &lt;/label&gt;
+      &lt;label for="inlineCheckbox3" class="checkbox-inline"&gt;
+      &lt;input type="checkbox" id="inlineCheckbox3" value="option3"&gt;3
+      &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <div>
+            <div class="block">
+            <h2 class="small-title">Collie-UI Radio表单示例</h2>
+                <form class="form form-order">
+                    <div class="radio">Radio:
+                        <label for="optionsRadios1">
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            Option one is this and that&mdash;be sure to include why it's great
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="inlineradio2">
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Option two can be something else and selecting it will deselect option one
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="optionsRadios3">
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="disabled">
+                            Option three is disabled
+                        </label>
+                    </div>
+                    <div class="radio">Radio-inline:
+                        <label for="inlineRadio1" class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">1
+                        </label>
+                        <label for="inlineRadio2" class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">2
+                        </label>
+                        <label for="inlineRadio3" class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">3
+                        </label>
+                    </div>
+                    </form>
+            <button class="code-display btn btn-fl default">Source</button>
+            </div>
+            <pre class="code">
+            <code class="html">
+      &lt;form class="form form-order"&gt;
+      &lt;div class="radio"&gt;Radio:
+      &lt;label for="optionsRadios1"&gt;
+      &lt;input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked&gt;
+      Option one is this and that&mdash;be sure to include why it's great
+      &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="radio"&gt;
+      &lt;label for="inlineradio2"&gt;
+      &lt;input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"&gt;
+      Option two can be something else and selecting it will deselect option one
+      &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="radio"&gt;
+      &lt;label for="optionsRadios3"&gt;
+      &lt;input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="disabled"&gt;
+      Option three is disabled
+      &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="radio"&gt;Radio-inline:
+      &lt;label for="inlineRadio1" class="radio-inline"&gt;
+      &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"&gt;1
+      &lt;/label&gt;
+      &lt;label for="inlineRadio2" class="radio-inline"&gt;
+      &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"&gt;2
+      &lt;/label&gt;
+      &lt;label for="inlineRadio3" class="radio-inline"&gt;
+      &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"&gt;3
+      &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <div>
+            <div class="block">
+            <h2 class="small-title">按钮组式Checkbox(多选按钮组)示例</h2>
+                <form class="form form-order">
+                    <div class="btn-group">
+                        <label class="btn btn-lu green" for="optiong">
+                            <input type="checkbox" name="optionsc" id="optiong" >checkbox 1 (preselected)
+                        </label>
+                        <label class="btn btn-lu green" for="optionh">
+                            <input type="checkbox" name="optionsc" id="optionh">checkbox 2
+                        </label>
+                        <label class="btn btn-lu green" for="optioni">
+                            <input type="checkbox" name="optionsc" id="optioni">checkbox 3
+                        </label>
+                    </div>
+                    <label></label>
+                    <div class="btn-group">
+                        <label class="btn btn-fl btn-r green" for="optionj">
+                            <input type="checkbox" name="optionsd" id="optionj" >checkbox 1 (preselected)
+                        </label>
+                        <label class="btn btn-fl btn-r green" for="optionk">
+                            <input type="checkbox" name="optionsd" id="optionk">checkbox 2
+                        </label>
+                        <label class="btn btn-fl btn-r green" for="optionl">
+                            <input type="checkbox" name="optionsd" id="optionl">checkbox 3
+                        </label>
+                    </div>
+                    </form>
+            <button class="code-display btn btn-fl default">Source</button>
+            </div>
+            <pre class="code">
+            <code class="html">
+      &lt;form class="form form-order"&gt;
+      &lt;div class="btn-group"&gt;
+      &lt;label class="btn btn-lu green" for="optiong"&gt;
+      &lt;input type="checkbox" name="optionsc" id="optiong" &gt;checkbox 1 (preselected)
+      &lt;/label&gt;
+      &lt;label class="btn btn-lu green" for="optionh"&gt;
+      &lt;input type="checkbox" name="optionsc" id="optionh"&gt;checkbox 2
+      &lt;/label&gt;
+      &lt;label class="btn btn-lu green" for="optioni"&gt;
+      &lt;input type="checkbox" name="optionsc" id="optioni"&gt;checkbox 3
+      &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;label&gt;&lt;/label&gt;
+      &lt;div class="btn-group"&gt;
+      &lt;label class="btn btn-fl btn-r green" for="optionj"&gt;
+      &lt;input type="checkbox" name="optionsd" id="optionj" &gt;checkbox 1 (preselected)
+      &lt;/label&gt;
+      &lt;label class="btn btn-fl btn-r green" for="optionk"&gt;
+      &lt;input type="checkbox" name="optionsd" id="optionk"&gt;checkbox 2
+      &lt;/label&gt;
+      &lt;label class="btn btn-fl btn-r green" for="optionl"&gt;
+      &lt;input type="checkbox" name="optionsd" id="optionl"&gt;checkbox 3
+      &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <div>
+            <div class="block">
+            <h2 class="small-title">按钮组式Radio(单选按钮组)示例</h2>
+                <form class="form form-order">
+                    <div class="btn-group">
+                        <label class="btn btn-lu skyblue" for="optiona">
+                            <input type="radio" name="optionsa" id="optiona" >Radio 1 (preselected)
+                        </label>
+                        <label class="btn btn-lu skyblue" for="optionb">
+                            <input type="radio" name="optionsa" id="optionb">Radio 2
+                        </label>
+                        <label class="btn btn-lu skyblue" for="optionc">
+                            <input type="radio" name="optionsa" id="optionc">Radio 3
+                        </label>
+                    </div>
+                    <label></label>
+                    <div class="btn-group">
+                        <label class="btn btn-fl btn-r skyblue" for="optiond">
+                            <input type="radio" name="optionsb" id="optiond" >Radio 1 (preselected)
+                        </label>
+                        <label class="btn btn-fl btn-r skyblue" for="optione">
+                            <input type="radio" name="optionsb" id="optione">Radio 2
+                        </label>
+                        <label class="btn btn-fl btn-r skyblue" for="optionf">
+                            <input type="radio" name="optionsb" id="optionf">Radio 3
+                        </label>
+                    </div>
+                    </form>
+            <button class="code-display btn btn-fl default">Source</button>
+            </div>
+            <pre class="code">
+            <code class="html">
+      &lt;form class="form form-order"&gt;
+      &lt;div class="btn-group"&gt;
+      &lt;label class="btn btn-lu skyblue" for="optiona"&gt;
+      &lt;input type="radio" name="optionsa" id="optiona" &gt;Radio 1 (preselected)
+      &lt;/label&gt;
+      &lt;label class="btn btn-lu skyblue" for="optionb"&gt;
+      &lt;input type="radio" name="optionsa" id="optionb"&gt;Radio 2
+      &lt;/label&gt;
+      &lt;label class="btn btn-lu skyblue" for="optionc"&gt;
+      &lt;input type="radio" name="optionsa" id="optionc"&gt;Radio 3
+      &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;label&gt;&lt;/label&gt;
+      &lt;div class="btn-group"&gt;
+      &lt;label class="btn btn-fl btn-r skyblue" for="optiond"&gt;
+      &lt;input type="radio" name="optionsb" id="optiond" &gt;Radio 1 (preselected)
+      &lt;/label&gt;
+      &lt;label class="btn btn-fl btn-r skyblue" for="optione"&gt;
+      &lt;input type="radio" name="optionsb" id="optione"&gt;Radio 2
+      &lt;/label&gt;
+      &lt;label class="btn btn-fl btn-r skyblue" for="optionf"&gt;
+      &lt;input type="radio" name="optionsb" id="optionf"&gt;Radio 3
+      &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <div>
+            <div class="block">
+            <h2 class="small-title">按钮式checkbox、Radio示例</h2>
+                <form class="form form-order">
+                    <label>Radio with inline</label>
+                    <label class="btn btn-lu green radio-inline" for="optionm">
+                        <input type="radio" name="optionsa" id="optionm" >Radio 1 (preselected)
+                    </label>
+                    <label class="btn btn-lu green radio-inline" for="optionn">
+                        <input type="radio" name="optionsa" id="optionn">Radio 2
+                    </label>
+                    <label class="btn btn-lu green radio-inline radio-inline" for="optiono">
+                        <input type="radio" name="optionsa" id="optiono">Radio 3
+                    </label>
+                    <label></label>
+                    <label class="btn btn-fl btn-r skyblue radio-inline" for="optionp">
+                        <input type="radio" name="optionsb" id="optionp" >Radio 1 (preselected)
+                    </label>
+                    <label class="btn btn-fl btn-r skyblue radio-inline" for="optionq">
+                        <input type="radio" name="optionsb" id="optionq">Radio 2
+                    </label>
+                    <label class="btn btn-fl btn-r skyblue radio-inline" for="optionr">
+                        <input type="radio" name="optionsb" id="optionr">Radio 3
+                    </label>
+                </form>
+            <button class="code-display btn btn-fl default">Source</button>
+            </div>
+            <pre class="code">
+            <code class="html">
+      &lt;form class="form form-order"&gt;
+      &lt;label&gt;Radio with inline&lt;/label&gt;
+      &lt;label class="btn btn-lu green radio-inline" for="optionm"&gt;
+      &lt;input type="radio" name="optionsa" id="optionm" &gt;Radio 1 (preselected)
+      &lt;/label&gt;
+      &lt;label class="btn btn-lu green radio-inline" for="optionn"&gt;
+      &lt;input type="radio" name="optionsa" id="optionn"&gt;Radio 2
+      &lt;/label&gt;
+      &lt;label class="btn btn-lu green radio-inline radio-inline" for="optiono"&gt;
+      &lt;input type="radio" name="optionsa" id="optiono"&gt;Radio 3
+      &lt;/label&gt;
+      &lt;label&gt;&lt;/label&gt;
+      &lt;label class="btn btn-fl btn-r skyblue radio-inline" for="optionp"&gt;
+      &lt;input type="radio" name="optionsb" id="optionp" &gt;Radio 1 (preselected)
+      &lt;/label&gt;
+      &lt;label class="btn btn-fl btn-r skyblue radio-inline" for="optionq"&gt;
+      &lt;input type="radio" name="optionsb" id="optionq"&gt;Radio 2
+      &lt;/label&gt;
+      &lt;label class="btn btn-fl btn-r skyblue radio-inline" for="optionr"&gt;
+      &lt;input type="radio" name="optionsb" id="optionr"&gt;Radio 3
+      &lt;/label&gt;
+      &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <div>
+            <div class="block">
+            <h2 class="small-title">Collie-UI 只读表单示例</h2>
+                <form class="form form-order">
+                    <input class="g-4" type="text" id="text" value="readonly but can copy..." readonly>
+                </form>
+                    <button class="code-display btn btn-fl default">Source</button>
+            </div>
+            <pre class="code">
+            <code class="html">
+      &lt;form class="form form-order"&gt;
+      &lt;input class="g-4" type="text" id="text" value="readonly but can copy..." readonly&gt;
+      &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <div>
+            <div class="block">
+            <h2 class="small-title">Collie-UI file示例</h2>
+                <form class="form form-block">
+                            <span class="file">
+                                <!--添加了tabindex="0"才聚焦的-->
+                                <input class="fbtn" type="file">Select a  file...
+                            </span>
+                    <label>This is a help text you put for info</label>
+                    </form>
+            <button class="code-display btn btn-fl default">Source</button>
+            </div>
+            <pre class="code">
+            <code class="html">
+      &lt;form class="form form-block"&gt;
+      &lt;span class="file"&gt;
+      &lt;input class="fbtn" type="file"&gt;Select a  file...
+      &lt;/span&gt;
+      &lt;label&gt;This is a help text you put for info&lt;/label&gt;
+      &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <div>
+            <div class="block">
+            <h2 class="small-title">Collie-UI color示例</h2>
+                <form class="form">
+                    <input type="color">
+                    </form>
+            <button class="code-display btn btn-fl default">Source</button>
+            </div>
+            <pre class="code">
+            <code class="html">
+      &lt;form class="form"&gt;
+      &lt;input type="color"&gt;
+      &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <div>
+            <div class="block">
+            <h2 class="small-title">Collie-UI date示例</h2>
+                <form class="form">
+                    <input type="date">
+                </form>
+            <button class="code-display btn btn-fl default">Source</button>
+            </div>
+            <pre class="code">
+            <code class="html">
+      &lt;form class="form"&gt;
+      &lt;input type="date"&gt;
+      &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <div>
+            <div class="block">
+            <h2 class="small-title">Collie-UI number示例</h2>
+                <form class="form">
+                    <fieldset>
+                        <input type="number">
+                    </fieldset>
+                </form>
+            <button class="code-display btn btn-fl default">Source</button>
+            </div>
+            <pre class="code">
+            <code class="html">
+      &lt;form class="form"&gt;
+      &lt;input type="number"&gt;
+      &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <div>
+            <div class="block">
+            <h2 class="small-title">Collie-UI textarea示例</h2>
+                <form class="form">
+                    <textarea></textarea>
+                </form>
+            <button class="code-display btn btn-fl default">Source</button>
+            </div>
+            <pre class="code">
+            <code class="html">
+      &lt;form class="form"&gt;
+      &lt;textarea&gt;&lt;/textarea&gt;
+      &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <!--<div>-->
+            <!--<div class="block">-->
+            <!--<h2 class="small-title">Collie-UI基础表单测试(默认inline-block)</h2>-->
+
+            <!--<button class="code-display btn btn-fl default">Source</button>-->
+            <!--</div>-->
+            <!--<pre class="code">-->
+            <!--<code class="html">-->
+
+            <!--</code>-->
+            <!--</pre>-->
+            <!--</div>-->
+        </div><!--Forms-->
+
+        <div id="nav">
+            <h1 class="title">Navigation</h1>
+        </div>
+        <div id="image">
+            <h1 class="title">Image</h1>
+        </div>
+        <div id="badges">
+            <h1 class="title">Badges</h1>
+        </div>
+        <div id="pagination">
+            <h1 class="title">Pagination</h1>
+        </div>
+        <div id="label">
+            <h1 class="title">Label</h1>
+        </div>
+        <div id="helper">
+            <h1 class="title">Helper</h1>
+        </div>
+    </div>
+</section>
+</body>
+</html>
