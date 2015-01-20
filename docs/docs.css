@@ -84,6 +84,8 @@ section {
     /*background-color: #888;*/
     box-shadow: 0 0 10px #e6e6e6;
     transition: all 0.3s ease-in-out;
+    /*line-height: -moz-block-height;*/
+    line-height: 20px;
 }
 /*#detail li:hover{*/
 /*box-shadow: 0 0 100px rgba(0,0,0,0.1);*/
@@ -104,7 +106,7 @@ section {
 }
 .block {
     position: relative;
-    margin: 46px 30px 86px;
+    margin: 60px 30px 100px;
     padding: 0 1.8em 2.4em;
     border: 1px solid #e0e0e0;
     box-shadow: 0 2px 6px #e0e0e0;
@@ -135,7 +137,7 @@ section {
 }
 .code{
     display: none;
-    margin: -86px 30px 60px;
+    margin: -100px 30px 60px;
 }
 
 /*样例的样式*/
@@ -154,4 +156,39 @@ section {
 .yl {
     padding: 32px;
     background-image: linear-gradient(45deg, #EE855F, #a3f7e6);
+.code .html{
+    font-family: dax-regular;
+}
+.table-underline > thead > tr > th{
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: .18em;
+    padding-bottom: .18em;
+}
+.table-bordered > thead > tr > th{
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: .18em;
+    padding-bottom: .18em;
+}
+.table-underline > thead > tr > th{
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: .18em;
+    padding-bottom: .18em;
+}
+.table-grey > thead > tr > th{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: .15em;
+    padding-bottom: .15em;
+    background-color: rgba(0,0,0,0.5);
+    border-bottom: 2px solid #fff;
+}
+.table-grey > tbody > tr > td{
+    border: 1px solid #fff;
+}
+.table-grey > thead > tr > th {
+    border: 1px solid #fff;
 }
