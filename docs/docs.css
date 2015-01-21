@@ -119,7 +119,7 @@ section {
     bottom: 0;
     cursor: pointer;
 }
-.block h2 {
+.block .small-title {
     width: 100%;
     margin: 0 auto 6px;
     padding: 12px;
