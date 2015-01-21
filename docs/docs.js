@@ -44,4 +44,26 @@ $(document).ready(function () {
     $('.removeTextNodes').contents().filter(function() {
         return this.nodeType === 3;
     }).remove();
+    $("#goToTop").hide();//隐藏go to top按钮
+    $(window).scroll(function(){
+        if($(this).scrollTop()>1){//当window的scrolltop距离大于1时，go to top按钮淡出，反之淡入
+            $("#goToTop").show(300);
+        } else {
+            $("#goToTop").hide(300);
+        }
+    });
+
+    // 给go to top按钮一个点击事件
+    $("#goToTop").click(function(event){
+        $("html,body").animate({scrollTop:0},300);
+        $('.list-item').find(".list-touchmoved").each(function(){
+            var $this = $(this);
+            $this.removeClass("list-touchmoved");
+            $this.find(".btn").css({
+                "display":"inline-block"
+            })
+        });
+        event.stopPropagation();
+        return false;
+    });
 });
