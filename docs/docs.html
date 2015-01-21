@@ -578,7 +578,7 @@
                         <button type="button" class="btn btn-fl btn-r default">>></button>
                     </div>
                     <br><br>
-                    <div class="btn-group-gap btn-group-sm">
+                    <div class="btn-group-gap btn-group-xs">
                         <button type="button" class="btn btn-xs btn-fl btn-r skyblue">
                             <i class="fa fa-info-circle"></i>
                         </button>
@@ -1333,130 +1333,122 @@
 
             <div>
                 <div class="block">
-                    <h2 class="small-title">Collie-UI input-group示例</h2>
+                    <h2 class="small-title">Collie-UI input-group样式示例</h2>
                     <form class="form form-order">
                         <label for="email">字符info提示测试</label>
                         <div class="input-group">
                             <div class="input-info">@</div>
                             <input type="email" placeholder="Email">
-                        </div>
-
+                        </div><br><br>
                         <label for="email">checkbox&radio info提示测试</label>
                         <div class="input-group">
+                            <input type="email" placeholder="Name">
                             <div class="input-info"><input type="checkbox" id="inside2"></div>
+                        </div><label></label>
+                        <div class="input-group">
+                            <div class="input-info"><input type="radio" id="inside3"></div>
                             <input type="email" placeholder="Email">
-                        </div>
-                        <label></label>
-                        <label for="email">配合input大小测试</label>
-                        <div class="input-group input-xs">
-                            <div class="input-info">
-                                <i class="fa fa-times fa-fw"></i>
-                            </div>
-                            <input type="text" placeholder="Do what you want">
-                        </div>
-                        <label></label>
-                        <div class="input-group input-sm">
-                            <div class="input-info">
-                                <i class="fa fa-star fa-fw"></i>
-                            </div>
-                            <input type="text" placeholder="Do what you want">
-                        </div>
-                        <label></label>
-                        <div class="input-group">
-                            <div class="input-info">
-                                <i class="fa fa-cog fa-fw"></i>
-                            </div>
-                            <input type="text" placeholder="Do what you want">
-                        </div>
-                        <label></label>
-                        <div class="input-group input-lg">
-                            <input type="text" placeholder="what do you want...">
-                            <div class="input-info">
-                                <i class="fa fa-spinner fa-fw"></i>
-                            </div>
-                        </div>
-                        <label></label>
-                        <div class="input-group input-xl">
-                            <input type="text" placeholder="what do you want...">
-                            <div class="input-info">
-                                <i class="fa fa-search fa-fw"></i>
-                            </div>
-                        </div>
-                        <label for="email">input-group内使用rounded</label>
-                        <div class="input-group">
-                            <div class="input-info"><i class="fa fa-search fa-fw"></i> </div>
-                            <input class="input-rounded" type="email" placeholder="Email">
-                        </div>
-                        <div class="form-message-inline">This is a form inline-message</div>
-                        <div class="form-message">This is a form message</div>
-                        <div class="input-group">
-                            <input class="input-rounded" type="email" placeholder="Email">
-                            <div class="input-info"><i class="fa fa-search fa-fw"></i> </div>
                         </div>
                     </form>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;form class="form form-order"&gt;
-                &lt;label for="email"&gt;字符info提示测试&lt;/label&gt;
-                &lt;div class="input-group"&gt;
-                &lt;div class="input-info"&gt;@&lt;/div&gt;
-                &lt;input type="email" placeholder="Email"&gt;
-                &lt;/div&gt;
-                &lt;label for="email"&gt;checkbox&radio info提示测试&lt;/label&gt;
-                &lt;div class="input-group"&gt;
-                &lt;div class="input-info"&gt;&lt;input type="checkbox" id="inside2"&gt;&lt;/div&gt;
-                &lt;input type="email" placeholder="Email"&gt;
-                &lt;/div&gt;
-                &lt;label&gt;&lt;/label&gt;
-                &lt;label for="email"&gt;配合input大小测试&lt;/label&gt;
-                &lt;div class="input-group input-xs"&gt;
-                &lt;div class="input-info"&gt;
-                &lt;i class="fa fa-times fa-fw"&gt;&lt;/i&gt;
-                &lt;/div&gt;
-                &lt;input type="text" placeholder="Do what you want"&gt;
-                &lt;/div&gt;
-                &lt;label&gt;&lt;/label&gt;
-                &lt;div class="input-group input-sm"&gt;
-                &lt;div class="input-info"&gt;
-                &lt;i class="fa fa-star fa-fw"&gt;&lt;/i&gt;
-                &lt;/div&gt;
-                &lt;input type="text" placeholder="Do what you want"&gt;
-                &lt;/div&gt;
-                &lt;label&gt;&lt;/label&gt;
-                &lt;div class="input-group"&gt;
-                &lt;div class="input-info"&gt;
-                &lt;i class="fa fa-cog fa-fw"&gt;&lt;/i&gt;
-                &lt;/div&gt;
-                &lt;input type="text" placeholder="Do what you want"&gt;
-                &lt;/div&gt;
-                &lt;label&gt;&lt;/label&gt;
-                &lt;div class="input-group input-lg"&gt;
-                &lt;input type="text" placeholder="what do you want..."&gt;
-                &lt;div class="input-info"&gt;
-                &lt;i class="fa fa-spinner fa-fw"&gt;&lt;/i&gt;
-                &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;label&gt;&lt;/label&gt;
-                &lt;div class="input-group input-xl"&gt;
-                &lt;input type="text" placeholder="what do you want..."&gt;
-                &lt;div class="input-info"&gt;
-                &lt;i class="fa fa-search fa-fw"&gt;&lt;/i&gt;
-                &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;label for="email"&gt;input-group内使用rounded&lt;/label&gt;
-                &lt;div class="input-group"&gt;
-                &lt;div class="input-info"&gt;&lt;i class="fa fa-search fa-fw"&gt;&lt;/i&gt; &lt;/div&gt;
-                &lt;input class="input-rounded" type="email" placeholder="Email"&gt;
-                &lt;/div&gt;
-                &lt;div class="form-message-inline"&gt;This is a form inline-message&lt;/div&gt;
-                &lt;div class="form-message"&gt;This is a form message&lt;/div&gt;
-                &lt;div class="input-group"&gt;
-                &lt;input class="input-rounded" type="email" placeholder="Email"&gt;
-                &lt;div class="input-info"&gt;&lt;i class="fa fa-search fa-fw"&gt;&lt;/i&gt; &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;/form&gt;
+      &lt;form class="form form-order"&gt;
+          &lt;label for="email"&gt;字符info提示测试&lt;/label&gt;
+          &lt;div class="input-group"&gt;
+              &lt;div class="input-info"&gt;@&lt;/div&gt;
+              &lt;input type="email" placeholder="Email"&gt;
+          &lt;/div&gt;&lt;br&gt;&lt;br&gt;
+          &lt;label for="email"&gt;checkbox&radio info提示测试&lt;/label&gt;
+          &lt;div class="input-group"&gt;
+              &lt;input type="email" placeholder="Name"&gt;
+              &lt;div class="input-info"&gt;&lt;input type="checkbox" id="inside2"&gt;&lt;/div&gt;
+          &lt;/div&gt;&lt;label&gt;&lt;/label&gt;
+          &lt;div class="input-group"&gt;
+              &lt;div class="input-info"&gt;&lt;input type="radio" id="inside3"&gt;&lt;/div&gt;
+              &lt;input type="email" placeholder="Email"&gt;
+          &lt;/div&gt;
+      &lt;/form&gt;
+            </code>
+            </pre>
+            </div>
+
+            <div>
+                <div class="block">
+                    <h2 class="small-title">Collie-UI input-group大小示例</h2>
+                    <form class="form form-order">
+                        <label for="email">input-rounded配合input大小测试</label>
+                        <div class="input-group input-xs">
+                            <div class="input-info">
+                                <i class="fa fa-times fa-fw"></i>
+                            </div>
+                            <input type="text" placeholder="Do what you want">
+                        </div>
+                        <div class="input-group input-sm">
+                            <div class="input-info">
+                                <i class="fa fa-star fa-fw"></i>
+                            </div>
+                            <input type="text" placeholder="Do what you want">
+                        </div>
+                        <div class="input-group">
+                            <div class="input-info">
+                                <i class="fa fa-cog fa-fw"></i>
+                            </div>
+                            <input class="input-rounded" type="text" placeholder="Do what you want">
+                        </div>
+                        <label></label>
+                        <div class="input-group input-lg">
+                            <input  class="input-rounded" type="text" placeholder="what do you want...">
+                            <div class="input-info">
+                                <i class="fa fa-spinner fa-fw"></i>
+                            </div>
+                        </div>
+                        <div class="input-group input-xl">
+                            <input type="text" placeholder="what do you want...">
+                            <div class="input-info">
+                                <i class="fa fa-search fa-fw"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+            <pre class="code">
+            <code class="html">
+      &lt;form class="form form-order"&gt;
+          &lt;label for="email"&gt;input-rounded配合input大小测试&lt;/label&gt;
+          &lt;div class="input-group input-xs"&gt;
+              &lt;div class="input-info"&gt;
+                  &lt;i class="fa fa-times fa-fw"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+              &lt;input type="text" placeholder="Do what you want"&gt;
+          &lt;/div&gt;
+          &lt;div class="input-group input-sm"&gt;
+              &lt;div class="input-info"&gt;
+                  &lt;i class="fa fa-star fa-fw"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+              &lt;input type="text" placeholder="Do what you want"&gt;
+          &lt;/div&gt;
+          &lt;div class="input-group"&gt;
+              &lt;div class="input-info"&gt;
+                  &lt;i class="fa fa-cog fa-fw"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+              &lt;input class="input-rounded" type="text" placeholder="Do what you want"&gt;
+          &lt;/div&gt;
+          &lt;label&gt;&lt;/label&gt;
+          &lt;div class="input-group input-lg"&gt;
+              &lt;input  class="input-rounded" type="text" placeholder="what do you want"&gt;
+              &lt;div class="input-info"&gt;
+                  &lt;i class="fa fa-spinner fa-fw"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="input-group input-xl"&gt;
+              &lt;input type="text" placeholder="what do you want"&gt;
+              &lt;div class="input-info"&gt;
+                  &lt;i class="fa fa-search fa-fw"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/form&gt;
             </code>
             </pre>
             </div>
