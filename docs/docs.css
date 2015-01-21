@@ -40,6 +40,13 @@ header{
     border-bottom: 2px solid #73dcff;
 }
 
+.nav .active {
+    color: #73dcff;
+    border-bottom: 2px solid #73dcff;
+    background-color: inherit;
+    box-shadow: none;
+}
+
 section {
     display: -webkit-flex;
     display: flex;
@@ -126,7 +133,7 @@ section {
     bottom: 0;
     cursor: pointer;
 }
-.block h2 {
+.block .small-title {
     width: 100%;
     margin: 0 auto 6px;
     padding: 12px;
