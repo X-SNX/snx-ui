@@ -120,12 +120,11 @@ section {
 }
 .block {
     position: relative;
-    margin: 30px 30px 60px;
-    padding: 0 1em 2.4em;
+    margin: 0 30px 60px;
+    padding: 0 1.5em 2.2em;
     border: 1px solid #e6e6e6;
     box-shadow: 0 2px 6px #e6e6e6;
 }
-
 .code-display {
     position: absolute;
     font-size: 9px;
@@ -151,7 +150,7 @@ section {
 }
 .code{
     display: none;
-    margin: -60px 30px 60px;
+    margin: -70px 30px 60px;
 }
 
 /*样例的样式*/
