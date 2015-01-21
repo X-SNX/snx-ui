@@ -6,6 +6,7 @@
     <link href="../css/snxUI.min.css" type="text/css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../fonts/dax/dax.css">
     <link type="text/css" rel="stylesheet" href="../fonts/SourceCodePro/SourceCodePro.css">
+    <link type="text/css" rel="stylesheet" href="../fonts/Raleway/Raleway.css">
     <link href="docs.css" type="text/css" rel="stylesheet">
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
@@ -50,6 +51,10 @@
             <li><a href="#label">Labels</a></li>
             <li><a href="#helper">Helper</a></li>
         </ul>
+        <span class="top" id="goToTop" style="display: block;">
+            <i class="fa fa-chevron-up"></i>
+            <a>Top</a>
+        </span>
     </div>
 
 
@@ -68,7 +73,8 @@
 
     <div id="content">
         <div id="grid">
-            <h1 class="title">Grid</h1>
+            <h1 class="title">Grids</h1>
+            <label class="under">Simple CSS for HTML forms.</label>
             <div>
                 <div class="block">
                     <h2 class="small-title">基础栅格</h2>
@@ -148,32 +154,6 @@
                             </tbody>
                         </table>
                     </div>
-                    <!--响应式栅格-->
-                    <h5>568px :</h5>
-                    <div class="grids-12"><!--12栅格 568px-->
-                        <div class="g-xs-7 grid-blue">7</div>
-                        <div class="g-xs-4 grid-blue">4</div>
-                        <div class="g-xs-1 grid-blue">1</div>
-                    </div>
-                    <h5>768px :</h5>
-                    <div class="grids-5"><!--5栅格 768px-->
-                        <div class="g-sm-1 grid-blue">1</div>
-                        <div class="g-sm-4 grid-blue">4</div>
-                    </div>
-                    <h5>1024px :</h5>
-                    <div class="grids-12"><!--12栅格 1024px-->
-                        <div class="g-md-1 grid-blue">1</div>
-                        <div class="g-md-5 grid-blue">5</div>
-                        <div class="g-md-3 grid-blue">3</div>
-                        <div class="g-md-3 grid-blue">3</div>
-                    </div>
-                    <h5>1280px :</h5>
-                    <div class="grids-16"><!--16栅格 1280px-->
-                        <div class="g-lg-2 grid-blue">2</div>
-                        <div class="g-lg-3 grid-blue">3</div>
-                        <div class="g-lg-4 grid-blue">4</div>
-                        <div class="g-lg-7 grid-blue">7</div>
-                    </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
                 <pre class="code">
@@ -190,7 +170,8 @@
             </div>
         </div>
         <div id="button">
-            <h1 class="title">Button</h1>
+            <h1 class="title">Buttons</h1>
+            <label class="under">Simple CSS for buttons.</label>
             <div>
                 <div class="block">
                     <h2 class="small-title">「Lucency系列按钮」全预设样式</h2>
@@ -425,7 +406,8 @@
             </div>
         </div>
         <div id="button-group">
-            <h1 class="title">Button Group</h1>
+            <h1 class="title">ButtonGroups</h1>
+            <label class="under">Simple CSS for buttonGroups.</label>
             <div>
                 <div class="block">
                     <h2 class="small-title">「Lucency」按钮组</h2>
@@ -600,7 +582,7 @@
         </div>
         <div id="table">
             <h1 class="title">Table</h1>
-
+            <label class="under">Simple CSS & JS for Tables.</label>
             <div>
                 <div class="block">
                     <h2 class="small-title">Tables headfixed strip hover示例</h2>
@@ -1084,7 +1066,8 @@
             </div>
         </div><!--table-->
         <div id="form">
-            <h1 class="title">Form</h1>
+            <h1 class="title">Forms</h1>
+            <label class="under">Simple CSS & JS for Forms.</label>
             <div>
                 <div class="block">
                     <h2 class="small-title">Collie-UI基础表单测试(默认inline-block)</h2>
@@ -1890,9 +1873,11 @@
         </div><!--Forms-->
         <div id="nav">
             <h1 class="title">Navigation</h1>
+            <label class="under">Simple CSS & JS for Navs.</label>
         </div>
         <div id="image">
             <h1 class="title">Image</h1>
+            <label class="under">Simple CSS & JS for Images.</label>
             <div>
                 <div class="block">
                     <h2 class="small-title">幽灵系列图片样式</h2>
@@ -1907,19 +1892,19 @@
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
+<pre class="code">
+<code class="html">
     &lt;div class="grids-16"&gt;
-        &lt;figure class="img-under g-5"&gt;
-            &lt;img class="img" src="../image/blur.jpg" alt="img"&gt;
-            &lt;p&gt;hihihi&lt;/p&gt;
-        &lt;/figure&gt;
-        &lt;figure class="g-5"&gt;
-            &lt;img class="img img-circle" src="../image/blur.jpg" alt="img"&gt;
-        &lt;/figure&gt;
+    &lt;figure class="img-under g-5"&gt;
+    &lt;img class="img" src="../image/blur.jpg" alt="img"&gt;
+    &lt;p&gt;hihihi&lt;/p&gt;
+    &lt;/figure&gt;
+    &lt;figure class="g-5"&gt;
+    &lt;img class="img img-circle" src="../image/blur.jpg" alt="img"&gt;
+    &lt;/figure&gt;
     &lt;/div>
-                    </code>
-                </pre>
+</code>
+</pre>
             </div>
             <div>
                 <div class="block">
@@ -1936,26 +1921,26 @@
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
+<pre class="code">
+<code class="html">
     &lt;div class="grids-16"&gt;
-        &lt;figure class="img-above g-6"&gt;
-            &lt;img class="img" src="../image/blur.jpg" alt="img"&gt;
-            &lt;div&gt;2012/2/2&lt;/div&gt;
-        &lt;/figure&gt;
-        &lt;figure class="img-above g-6"&gt;
-            &lt;img class="img" src="../image/blur.jpg" alt="img"&gt;
-            &lt;div&gt;走过路过千万不要错过啊啊啊啊啊&lt;/div&gt;
-        &lt;/figure&gt;
+    &lt;figure class="img-above g-6"&gt;
+    &lt;img class="img" src="../image/blur.jpg" alt="img"&gt;
+    &lt;div&gt;2012/2/2&lt;/div&gt;
+    &lt;/figure&gt;
+    &lt;figure class="img-above g-6"&gt;
+    &lt;img class="img" src="../image/blur.jpg" alt="img"&gt;
+    &lt;div&gt;走过路过千万不要错过啊啊啊啊啊&lt;/div&gt;
+    &lt;/figure&gt;
     &lt;/div&gt;
-                    </code>
-                </pre>
+</code>
+</pre>
             </div>
             <div>
                 <div class="block">
                     <h2 class="small-title">媒体对象的嵌套</h2>
                     <div class="media-item g-8">
-                        <img  class="img" src="../image/m2.jpg">
+                        <img class="img" src="../image/m2.jpg">
                         <div class="mi-content" id="sortable">
                             <h3>MIMPI</h3>
                             <div>
@@ -1963,7 +1948,7 @@
                                 A warm storyA warm storyA warm story
                             </div>
                             <div class="media-item">
-                                <img  class="img" src="../image/m2.jpg">
+                                <img class="img" src="../image/m2.jpg">
                                 <div class="mi-content">
                                     <h3>MIMPI</h3>
                                     <div>A warm story. A warm story.A warm storyA warm storyA warm storyA warm storyA warm storyA warm story
@@ -1974,29 +1959,29 @@
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
+<pre class="code">
+<code class="html">
     &lt;div class="media-item"&gt;
-        &lt;img  class="img" src="..."&gt;
-        &lt;div class="mi-content" id="..."&gt;
-            &lt;h3&gt;...&lt;/h3&gt;
-            &lt;div&gt;
-               ...
-            &lt;/div&gt;
-            &lt;div class="media-item"&gt;
-                ...
-            &lt;/div&gt;
-        &lt;/div&gt;
+    &lt;img class="img" src="..."&gt;
+    &lt;div class="mi-content" id="..."&gt;
+    &lt;h3&gt;...&lt;/h3&gt;
+    &lt;div&gt;
+    ...
     &lt;/div&gt;
-                    </code>
-                </pre>
+    &lt;div class="media-item"&gt;
+    ...
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+</code>
+</pre>
             </div>
             <div>
                 <div class="block">
                     <h2 class="small-title">媒体对象的垂直相对位置</h2>
                     <div class="grids-12">
                         <div class="media-item g-8">
-                            <img  class="img" src="../image/m2.jpg">
+                            <img class="img" src="../image/m2.jpg">
                             <div class="mi-content">
                                 <h3>MIMPI</h3>
                                 <div>A warm story. A warm story.A warm storyA warm storyA warm storyA warm storyA warm storyA warm story
@@ -2005,7 +1990,7 @@
                             </div>
                         </div>
                         <div class="media-item media-center g-8">
-                            <img  class="img" src="../image/m2.jpg">
+                            <img class="img" src="../image/m2.jpg">
                             <div class="mi-content">
                                 <h3>MIMPI</h3>
                                 <div>A warm story. A warm story.A warm storyA warm storyA warm storyA warm storyA warm storyA warm story
@@ -2013,7 +1998,7 @@
                             </div>
                         </div>
                         <div class="media-item media-end g-8">
-                            <img  class="img" src="../image/m2.jpg">
+                            <img class="img" src="../image/m2.jpg">
                             <div class="mi-content">
                                 <h3>MIMPI</h3>
                                 <div>A warm story. A warm story.A warm storyA warm storyA warm storyA warm storyA warm storyA warm story
@@ -2021,26 +2006,25 @@
                             </div>
                         </div>
                     </div>
-
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
+<pre class="code">
+<code class="html">
     &lt;div class="media-item"&gt;
-        &lt;img  class="img" src="..."&gt;
-        &lt;div class="mi-content"&gt;
-            &lt;h3&gt;...&lt;/h3&gt;
-            &lt;div&gt;...&lt;/div&gt;
-        &lt;/div&gt;
+    &lt;img class="img" src="..."&gt;
+    &lt;div class="mi-content"&gt;
+    &lt;h3&gt;...&lt;/h3&gt;
+    &lt;div&gt;...&lt;/div&gt;
+    &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="media-item media-center"&gt;
-        ...
+    ...
     &lt;/div&gt;
     &lt;div class="media-item media-end"&gt;
-        ...
+    ...
     &lt;/div&gt;
-                    </code>
-                </pre>
+</code>
+</pre>
             </div>
             <div>
                 <div class="block">
@@ -2051,37 +2035,38 @@
                             <div>A warm story.A warm story. A warm story.A warm storyA warm storyA warm storyA warm storyA warm storyA warm story
                                 A warm storyA warm storyA warm story A warm story.A warm storyA warm storyA warm story</div>
                         </div>
-                        <img  class="img" src="../image/m2.jpg">
+                        <img class="img" src="../image/m2.jpg">
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
+<pre class="code">
+<code class="html">
     &lt;div class="media-item"&gt;
-        &lt;div class="mi-content"&gt;
-           ...
-        &lt;/div&gt;
-        &lt;img  class="img" src="..."&gt;
+    &lt;div class="mi-content"&gt;
+    ...
+    &lt;/div&gt;
+    &lt;img class="img" src="..."&gt;
     &lt;/div>
-                    </code>
-                </pre>
+</code>
+</pre>
             </div>
         </div>
         <div id="badges">
             <h1 class="title">Badges</h1>
+            <label class="under">Simple CSS for Badges.</label>
             <div>
                 <div class="block">
                     <h2 class="small-title">按钮中的Badge样式</h2>
                     <button class="btn btn-fl skyblue" style="margin: 1em 0.5em 1.5em 0">badge<span class="badge">1</span></button>
-                    <button class="btn  btn-lu green" style="margin: 1em 0.5em 1.5em 0">badge<span class="badge">99+</span></button>
+                    <button class="btn btn-lu green" style="margin: 1em 0.5em 1.5em 0">badge<span class="badge">99+</span></button>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
+<pre class="code">
+<code class="html">
     &lt;button class="btn btn-fl skyblue"&gt;badge&lt;span class="badge"&gt;1&lt;/span&gt;&lt;/button&gt;
-    &lt;button class="btn  btn-lu green"&gt;badge&lt;span class="badge"&gt;99+&lt;/span&gt;&lt;/button&gt;
-                    </code>
-                </pre>
+    &lt;button class="btn btn-lu green"&gt;badge&lt;span class="badge"&gt;99+&lt;/span&gt;&lt;/button&gt;
+</code>
+</pre>
             </div>
             <div>
                 <div class="block">
@@ -2106,20 +2091,20 @@
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
+<pre class="code">
+<code class="html">
     &lt;div class="tab-vertical tab-line"&gt;
-        &lt;ul class="tabs"&gt;
-            &lt;li&gt;Home&lt;/li&gt;
-            &lt;li&gt;Info&lt;/li&gt;
-            &lt;li&gt;Contact&lt;span class="badge"&gt;56&lt;/span&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;div class="tab-content"&gt;
-            ...
-        &lt;/div&gt;
+    &lt;ul class="tabs"&gt;
+    &lt;li&gt;Home&lt;/li&gt;
+    &lt;li&gt;Info&lt;/li&gt;
+    &lt;li&gt;Contact&lt;span class="badge"&gt;56&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class="tab-content"&gt;
+    ...
+    &lt;/div&gt;
     &lt;/div>
-                    </code>
-                </pre>
+</code>
+</pre>
             </div>
             <div>
                 <div class="block">
@@ -2144,24 +2129,25 @@
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
+<pre class="code">
+<code class="html">
     &lt;div class="tab-horizontal tab-line divider"&gt;
-        &lt;ul class="tabs"&gt;
-            &lt;li class="tab-choosed"&gt;Home&lt;/li&gt;
-            &lt;li&gt;Info&lt;span class="badge"&gt;99+&lt;/span&gt;&lt;/li&gt;
-            &lt;li&gt;Contact&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;div class="tab-content"&gt;
-            ...
-        &lt;/div&gt;
+    &lt;ul class="tabs"&gt;
+    &lt;li class="tab-choosed"&gt;Home&lt;/li&gt;
+    &lt;li&gt;Info&lt;span class="badge"&gt;99+&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;Contact&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class="tab-content"&gt;
+    ...
     &lt;/div&gt;
-                    </code>
-                </pre>
+    &lt;/div&gt;
+</code>
+</pre>
             </div>
         </div>
         <div id="pagination">
             <h1 class="title">Pagination</h1>
+            <label class="under">Simple CSS for Pagination.</label>
             <div>
                 <div class="block">
                     <h2 class="small-title">方正有框样式</h2>
@@ -2178,17 +2164,17 @@
                     </ul>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
+<pre class="code">
+<code class="html">
     &lt;ul class="pgn pgn-border" style="padding: 0;"&gt;
-        &lt;li&gt;&lt;a&gt;Previous&lt;/a&gt;&lt;/li&gt;
-        ...
-        &lt;li&gt;&lt;a class="pgn-choosed"&gt;3&lt;/a&gt;&lt;/li&gt;
-        ...
-        &lt;li&gt;&lt;a&gt;Next&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    ...
+    &lt;li&gt;&lt;a class="pgn-choosed"&gt;3&lt;/a&gt;&lt;/li&gt;
+    ...
+    &lt;li&gt;&lt;a&gt;Next&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
-                    </code>
-                </pre>
+</code>
+</pre>
             </div>
             <div>
                 <div class="block">
@@ -2206,17 +2192,17 @@
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
+<pre class="code">
+<code class="html">
     &lt;div class="pgn pgn-roundborder"&gt;
-        &lt;a class="pgn-pre"&gt;&lt;/a&gt;
-        &lt;a&gt;1&lt;/a&gt;
-        &lt;a class="pgn-choosed"&gt;2&lt;/a&gt;
-        ...
-        &lt;a class="pgn-next"&gt;&lt;/a&gt;
+    &lt;a class="pgn-pre"&gt;&lt;/a&gt;
+    &lt;a&gt;1&lt;/a&gt;
+    &lt;a class="pgn-choosed"&gt;2&lt;/a&gt;
+    ...
+    &lt;a class="pgn-next"&gt;&lt;/a&gt;
     &lt;/div&gt;
-                    </code>
-                </pre>
+</code>
+</pre>
             </div>
             <div>
                 <div class="block">
@@ -2232,21 +2218,22 @@
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
+<pre class="code">
+<code class="html">
     &lt;div class="pgn pgn-circle"&gt;
-        &lt;a class="pgn-pre"&gt;&lt;/a&gt;
-        &lt;a&gt;&lt;/a&gt;
-        &lt;a class="pgn-choosed"&gt;&lt;/a&gt;
-        ...
-        &lt;a class="pgn-next"&gt;&lt;/a&gt;
+    &lt;a class="pgn-pre"&gt;&lt;/a&gt;
+    &lt;a&gt;&lt;/a&gt;
+    &lt;a class="pgn-choosed"&gt;&lt;/a&gt;
+    ...
+    &lt;a class="pgn-next"&gt;&lt;/a&gt;
     &lt;/div&gt;
-                    </code>
-                </pre>
+</code>
+</pre>
             </div>
         </div>
         <div id="label">
             <h1 class="title">Label</h1>
+            <label class="under">Simple CSS for Labels.</label>
             <div>
                 <div class="block">
                     <h2 class="small-title">h1～h6中基础颜色样式</h2>
@@ -2258,13 +2245,13 @@
                     <h6>Example heading <span class="label label-default">New</span></h6>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
+<pre class="code">
+<code class="html">
     &lt;h1&gt;Example heading &lt;span class="label label-skyblue"&gt;New&lt;/span&gt;&lt;/h1&gt;
     ...
     &lt;h6&gt;Example heading &lt;span class="label label-default"&gt;New&lt;/span&gt;&lt;/h6&gt;
-                    </code>
-                </pre>
+</code>
+</pre>
             </div>
             <div>
                 <div class="block">
@@ -2272,11 +2259,11 @@
                     <h1><a href="...">Default <span class="label label-default">New</span></a></h1>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
+<pre class="code">
+<code class="html">
     &lt;h1&gt;&lt;a href="..."&gt;Default &lt;span class="label label-default"&gt;New&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;
-                    </code>
-                </pre>
+</code>
+</pre>
             </div>
             <div>
                 <div class="block">
@@ -2284,26 +2271,26 @@
                     <button class="btn btn-lu skyblue">Default <span class="label label-green">New!</span></button>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
+<pre class="code">
+<code class="html">
     &lt;button class="btn btn-lu skyblue"&gt;Default &lt;span class="label label-green"&gt;New!&lt;/span&gt;&lt;/button&gt;
     &lt;button class="code-display btn btn-fl default"&gt;Source&lt;/button&gt;
-                    </code>
-                </pre>
+</code>
+</pre>
             </div>
         </div>
         <div id="helper">
             <h1 class="title">Helper</h1>
+            <label class="under">Simple CSS for Helper.</label>
             <div>
                 <div class="block">
                     <h2 class="small-title">Collie-UI form-block表单测试</h2>
-
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
-                    </code>
-                </pre>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
             </div>
         </div>
     </div>
