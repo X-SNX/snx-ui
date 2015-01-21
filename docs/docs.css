@@ -21,7 +21,7 @@ header{
     background-color: inherit;
 }
 .nav > ul > li > a{
-    margin: 28px 40px 0;
+    margin: 26px 40px 0;
     padding: 10px 10px 20px 10px;
     cursor: pointer;
 }
@@ -53,7 +53,7 @@ section {
 }
 #content {
     width: 850px;
-    padding: 0 32px;
+    padding: 0 32px 0 0;
     /*border-left: 1px solid #e6e6e6;*/
     box-sizing: border-box;
 }
@@ -94,20 +94,27 @@ section {
     border-left-color: #73dcff;
 }
 .title {
-    text-align: center;
-    font-size: 200%;
-    margin: 16px 0;
+    display: block;
+    font-family: 'raleway',arial, sans-serif;
+    font-size: 56px;
+    margin: 12px 30px 0;
     padding: 8px 0;
-    /*border-bottom: 2px solid #e6e6e6;*/
-    color: #fff;
-    background-image: linear-gradient(135deg, #5fa4ee, #a3f7e6);
-    /*border-radius: 8px;*/
+    color: #333;
     font-weight: 500;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.under{
+    display: block;
+    margin: 10px 30px 66px;
+    font-family: 'raleway',arial, sans-serif;
+    font-size: 120%;
+    color: #666;
 }
 .block {
     position: relative;
-    margin: 60px 30px 130px;
-    padding: 0 1.8em 2.4em;
+    margin: 30px 30px 60px;
+    padding: 0 1em 2.4em;
     border: 1px solid #e6e6e6;
     box-shadow: 0 2px 6px #e6e6e6;
 }
@@ -119,13 +126,13 @@ section {
     bottom: 0;
     cursor: pointer;
 }
-.block .small-title {
+.block h2 {
     width: 100%;
     margin: 0 auto 6px;
     padding: 12px;
     border-bottom: 1px solid #e6e6e6;
     text-align: center;
-    font-size: 146%;
+    font-size: 120%;
     font-weight: 500;
     color: #333;
     background-color: white;
@@ -137,7 +144,7 @@ section {
 }
 .code{
     display: none;
-    margin: -140px 30px 60px;
+    margin: -60px 30px 60px;
 }
 
 /*样例的样式*/
@@ -195,4 +202,39 @@ section {
 }
 .container{
     width: 100%;
+}
+.block h5{
+    font-size: 14px;
+    font-weight: 500;
+    margin:6px 0 1px 0;
+}
+#detail .top {
+    display: inline-block;
+    position: absolute;
+    bottom: -100px;
+    right: -840px;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(0,0,0,0.5);
+    color: #ffffff;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    z-index: 9999;
+}
+#detail .top a{
+    display: none;
+    left: 0;
+    color: rgba(0,0,0,0.6);
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+}
+#detail .top:hover{
+    background-color: rgba(0,0,0,0.65);
+}
+#detail .top:hover a{
+    display: inline-block;
 }
