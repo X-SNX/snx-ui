@@ -166,9 +166,9 @@ section {
 
 .yl {
     padding: 18px;
-    background-image: linear-gradient(45deg, #EE855F, #a3f7e6);
+    /*background-image: linear-gradient(45deg, #EE855F, #a3f7e6);*/
     /*background-image: linear-gradient(135deg, #5fa4ee, #a3f7e6);*/
-    /*background-image: linear-gradient(135deg, #5bcefb, #fc78fd);*/
+    background-image: linear-gradient(135deg, #5bcefb, #fc78fd);
 
 }
 .code .html{
@@ -280,4 +280,31 @@ section {
     width: 2em;
     background-color: rgba(0,0,0,0.5);
     line-height: 30em;
+}
+.header {
+    margin: 60px auto 0;
+    width: 600px;
+    text-align: center;
+}
+.btn-center {
+    text-align: center;
+    min-width: 600px;
+}
+.btn-center .btn{
+    margin: 1em 0.5em;
+}
+#begin h2{
+    display: inline-block;
+    color: #666;
+    /*width: 660px;*/
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Raleway',arial, sans-serif;
+    font-weight: normal;
+    font-stretch: condensed;
+    text-transform: uppercase;
+    margin: 66px 106px 0;
+}
+#begin legend{
+    margin: 0 30px;
 }
