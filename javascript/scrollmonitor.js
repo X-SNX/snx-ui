@@ -2,7 +2,8 @@
     $.fn.scrollMonitor = function (options) {
         var defaults = {
             target: [],
-            container: $('body')
+            container: $('body'),
+            choosed: ''
         };
         var settings = $.extend(defaults,options);
 
@@ -10,6 +11,7 @@
             //get the $(this)
             var cur = $(this);
             var tar = settings.target;
+            var choosed = settings.choosed;
             var anchor = $;
             var num=0;
             var offsets = [];
@@ -42,8 +44,8 @@
                     var baseOffset = document.getElementById(anchor[0].attr('href').replace(/#/,'')).offsetTop;
                     if($(this).scrollTop() < offsets[j]+baseOffset-1){
                         //监听中发生样式改变在这里修改。
-                        $(tar).find('li').removeClass('choosed');
-                        $('[href="'+tars+'"]').parent().addClass('choosed');
+                        $(tar).children().removeClass(choosed);
+                        $('[href="'+tars+'"]').parent().addClass(choosed);
                         break;
                     }
                 }

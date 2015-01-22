@@ -3436,7 +3436,7 @@ label.btn .checkbox-input {
 .progressbar.green > div {
   background-color: #65e1a3;
 }
-.progressbar.yellow > div {
+.progressbar.orange > div {
   background-color: #ffb24b;
 }
 .progressbar.red > div {
@@ -3446,8 +3446,8 @@ label.btn .checkbox-input {
 .progresscircle.green .pie-left {
   background-color: #65e1a3;
 }
-.progresscircle.yellow .pie-right,
-.progresscircle.yellow .pie-left {
+.progresscircle.orange .pie-right,
+.progresscircle.orange .pie-left {
   background-color: #ffb24b;
 }
 .progresscircle.red .pie-right,
