@@ -52,7 +52,7 @@ function sample() {
             $('.alert-hide').alert();
         });
 
-        $('.scrollview').scrollMonitor({target: '#scroll-menu', choosed: 'scroll-choosed'});
+        //$('.scrollview').scrollMonitor({target: '#scroll-menu', choosed: 'scroll-choosed'});
 
         $('.images').imgScroll('cycle',{leftButton:'.imgscroll-left',rightButton:'.imgscroll-right'});
     }
