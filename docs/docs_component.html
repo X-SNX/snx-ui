@@ -12,22 +12,29 @@
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="docs.js"></script>
     <script src="../javascript/forms.js"></script>
+    <script src="../javascript/alerts.js"></script>
     <script src="../javascript/other-forms.js"></script>
     <script src="../javascript/navs.js"></script>
     <script src="../javascript/scrollmonitor.js"></script>
+    <script src="../javascript/list-groups.js"></script>
     <script src="../javascript/tables.js"></script>
     <script src="../javascript/tabs.js"></script>
     <script src="../javascript/dropdowns.js"></script>
+    <script src="../javascript/progress.js"></script>
+    <script src="../javascript/modal.js"></script>
+    <script src="../javascript/img-scroll.js"></script>
+    <script src="../javascript/popups.js"></script>
+    <script src="../javascript/tooltips.js"></script>
     <link rel="stylesheet" href="styles/monokai_sublime.css">
     <script src="styles/highlight.pack.js"></script>
     <script>
-        hljs.tabReplace = '    ' ;// 4 spaces
+        hljs.tabReplace = ' ' ;// 4 spaces
         hljs.initHighlightingOnLoad();
     </script>
 </head>
 <body>
 <header>
-    <div  id="headNav" class="nav nav-padding">
+    <div id="headNav" class="nav nav-padding">
         <img id="logo" src="../image/Collie%20Headerlogo1.png">
         <ul>
             <li><a href="#">Getting Started</a></li>
@@ -68,7 +75,7 @@
                         <div class="tab-content" style="border: 1px solid #e3e3e3">
                             <div class="tab-item">
                                 <div class="media-item">
-                                    <img  class="img" src="../image/m2.jpg">
+                                    <img class="img" src="../image/m2.jpg">
                                     <div class="mi-content">
                                         <p>MIMPI</p>
                                         <div>A warm story.</div>
@@ -90,11 +97,10 @@
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
-
-                    </code>
-                </pre>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
             </div>
             <div>
                 <div class="block">
@@ -119,11 +125,10 @@
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
-
-                    </code>
-                </pre>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
             </div>
             <div>
                 <div class="block">
@@ -148,11 +153,10 @@
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
-
-                    </code>
-                </pre>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
             </div>
             <div>
                 <div class="block">
@@ -166,7 +170,7 @@
                         <div class="tab-content" style="height: 120px">
                             <div class="tab-item">
                                 <div class="media-item">
-                                    <img  class="img" src="../image/m2.jpg">
+                                    <img class="img" src="../image/m2.jpg">
                                     <div class="mi-content">
                                         <p>MIMPI</p>
                                         <div>A warm story.</div>
@@ -175,7 +179,7 @@
                             </div>
                             <div class="tab-item">
                                 <div class="media-item">
-                                    <img  class="img" src="../image/m1.jpg">
+                                    <img class="img" src="../image/m1.jpg">
                                     <div class="mi-content">
                                         <p>MIMPI</p>
                                         <div>A warm story.</div>
@@ -184,7 +188,7 @@
                             </div>
                             <div class="tab-item">
                                 <div class="media-item">
-                                    <img  class="img" src="../image/m2.jpg">
+                                    <img class="img" src="../image/m2.jpg">
                                     <div class="mi-content">
                                         <p>MIMPI</p>
                                         <div>A warm story.</div>
@@ -195,11 +199,10 @@
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
-
-                    </code>
-                </pre>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
             </div>
             <div>
                 <div class="block">
@@ -224,11 +227,10 @@
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
-
-                    </code>
-                </pre>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
             </div>
         </div>
         <div id="dropdown">
@@ -236,72 +238,1002 @@
             <label class="under">Simple CSS for HTML DropDown.</label>
             <div>
                 <div class="block">
-                    <h2 class="small-title">Collie-UI form-block表单测试</h2>
+                    <h2 class="small-title">基础样式</h2>
                     <div class="grids-12">
                         <div class="dropdown g-6">
                             <button class="btn btn-fl skyblue btn-dropdown" data-dropdown="#dropdown1">Choose one
                                 <span class="triangle"></span>
                             </button>
                             <ul class="dropdown-list" id="dropdown1">
-                                <li><a href="#">Elsa</a></li>
-                                <li><a href="#">Do you</a></li>
-                                <li class="disabled"><a>Wanna build</a></li>
-                                <li><a href="#">A snow man</a></li>
+                                <li class="dropdown-header"><a>Come On</a></li>
+                                <li><a href="#">let's go</a></li>
+                                <li><a href="#">and play</a></li>
+                                <li class="dropdown-header"><a>I Never</a></li>
+                                <li><a href="#">see you anymore</a></li>
+                                <li><a href="#">come out the door</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown g-6">
+                            <button class="btn btn-fl skyblue btn-dropdown" data-dropdown="#dropdown2">Choose one
+                                <span class="triangle"></span>
+                            </button>
+                            <ul class="dropdown-list" id="dropdown2">
+                                <li><a>It's like you gone away</a></li>
+                                <li><a href="#">We used to be best buddies</a></li>
+                                <li><a href="#">and now we're not</a></li>
+                                <li class="divider"><span class="line"></span></li>
+                                <li><a href="#">I wish</a></li>
+                                <li class="disabled"><a href="#">you could tell me why.....................</a></li>
                             </ul>
                         </div>
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
-
-                    </code>
-                </pre>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
             </div>
             <div>
                 <div class="block">
-                    <h2 class="small-title">Collie-UI form-block表单测试</h2>
-
+                    <h2 class="small-title">幽灵系列</h2>
+                    <div class="grids-12 yl">
+                        <div class="dropdown dropdown-yl g-6">
+                            <button class="btn btn-yl skyblue btn-dropdown" data-dropdown="#dropdown3">Choose one
+                                <span class="triangle"></span>
+                            </button>
+                            <ul class="dropdown-list" id="dropdown3">
+                                <li class="dropdown-header"><a>Come On</a></li>
+                                <li><a href="#">let's go</a></li>
+                                <li><a href="#">and play</a></li>
+                                <li class="dropdown-header"><a>I Never</a></li>
+                                <li><a href="#">see you anymore</a></li>
+                                <li><a href="#">come out the door</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown dropdown-yl g-6">
+                            <button class="btn btn-yl skyblue btn-dropdown" data-dropdown="#dropdown4">Choose one
+                                <span class="triangle"></span>
+                            </button>
+                            <ul class="dropdown-list" id="dropdown4">
+                                <li><a>It's like you gone away</a></li>
+                                <li><a href="#">We used to be best buddies</a></li>
+                                <li><a href="#">and now we're not</a></li>
+                                <li class="divider"><span class="line"></span></li>
+                                <li><a href="#">I wish</a></li>
+                                <li class="disabled"><a href="#">you could tell me why.....................</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                <pre class="code">
-                    <code class="html">
-
-                    </code>
-                </pre>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">上拉菜单</h2>
+                    <div class="dropdown dropdown-top">
+                        <button class="btn btn-fl skyblue btn-dropdown" data-dropdown="#dropdown5">Choose one
+                            <span class="triangle-top"></span>
+                        </button>
+                        <ul class="dropdown-list" id="dropdown5">
+                            <li class="dropdown-header"><a>Come On</a></li>
+                            <li><a href="#">let's go</a></li>
+                            <li><a href="#">and play</a></li>
+                            <li class="dropdown-header"><a>I Never</a></li>
+                            <li><a href="#">see you anymore</a></li>
+                            <li><a href="#">come out the door</a></li>
+                        </ul>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">下拉菜单拉伸至父元素100%</h2>
+                    <div class="dropdown dropdown-block">
+                        <button class="btn btn-fl skyblue btn-dropdown" data-dropdown="#dropdown9">Choose one
+                            <span class="triangle"></span>
+                        </button>
+                        <ul class="dropdown-list" id="dropdown9">
+                            <li><a href="#">Elsa</a></li>
+                            <li><a href="#">Do you</a></li>
+                            <li class="disabled"><a>Wanna build</a></li>
+                            <li><a href="#">A snow man</a></li>
+                        </ul>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">按钮组式样与右对齐</h2>
+                    <div class="grids-16 yl">
+                        <div class="btn-group dropdown dropdown-yl g-6">
+                            <button type="submit" class="btn btn btn-lu green">青い鳥</button>
+                            <button type="button" class="btn btn btn-lu green btn-dropdown" data-dropdown="#dropdown11">
+                                <span class="triangle"></span>
+                            </button>
+                            <ul class="dropdown-list" id="dropdown11">
+                                <li><a href="#">羽ばたいたら</a></li>
+                                <li><a href="#">戻らないと言って</a></li>
+                                <li class="disabled"><a>目指したのは</a></li>
+                                <li><a href="#">青い...青い...あの空...</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group dropdown dropdown-yl">
+                            <button type="submit" class="btn btn btn-lu blue">いきものがかり</button>
+                            <button type="button" class="btn btn btn-lu blue btn-dropdown" data-dropdown="#dropdown12">
+                                <span class="triangle"></span>
+                            </button>
+                            <ul class="dropdown-list justify-right" id="dropdown12">
+                                <li><a href="#">突き抜けたら</a></li>
+                                <li><a href="#">見つかると知って</a></li>
+                                <li><a>振り切るほど</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">蒼い...蒼い...あの空...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
             </div>
         </div>
         <div id="list-group">
             <h1 class="title">ListGroup</h1>
             <label class="under">Simple CSS for HTML ListGroup.</label>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">ListGroup的删除样式</h2>
+                    <div class="list-group list-chooseable list-touchmovable">
+                        <div class="list-item">
+                            <div class="media-item">
+                                <img class="img" src="../image/m1.jpg">
+                                <div class="mi-content">
+                                    <p>MIMPI</p>
+                                    <div>A warm story.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="media-item">
+                                <img class="img" src="../image/m2.jpg">
+                                <div class="mi-content">
+                                    <p>MIMPI</p>
+                                    <div>A warm story.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="media-item">
+                                <img class="img" src="../image/m1.jpg">
+                                <div class="mi-content">
+                                    <p>MIMPI</p>
+                                    <div>A warm story.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">ListGroup的拓展样式</h2>
+                    <div class="list-group list-chooseable">
+                        <div class="list-item">
+                            <div>
+                                <form class="form form-order">
+                                    <p>whats that?</p>
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Option one is this and that&mdash;be sure to include why it's great
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <form class="form form-order">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Option one is this and that&mdash;be sure to include why it's great
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <form class="form form-order">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Option one is this and that&mdash;be sure to include why it's great
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">ListGroup的手风琴样式</h2>
+                    <div class="list-group list-organ">
+                        <div class="list-item">
+                            <div class="media-item g-8">
+                                <img class="img" src="../image/m2.jpg">
+                                <div class="mi-content">
+                                    <p>MIMPI</p>
+                                    <div>A warm story.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-content">
+                            <button class="btn btn-lu green">Collect</button>
+                            <button class="btn btn-lu orange">Download</button>
+                        </div>
+                        <div class="list-item">
+                            asdfasdfa
+                        </div>
+                        <div class="list-content">bbb</div>
+                        <div class="list-item">
+                            asdfasdfa
+                        </div>
+                        <div class="list-content">ccc</div>
+                        <div class="list-item">
+                            asdfasdfa
+                        </div>
+                        <div class="list-content">ddd</div>
+                        <div class="list-item">
+                            <a href="#">yayayyfdsfd</a>
+                        </div>
+                        <div class="list-content">eee</div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
         </div>
         <div id="popup">
             <h1 class="title">Popup</h1>
             <label class="under">Simple CSS for HTML Popup.</label>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">Popup基础样式</h2>
+                    <div class="popup">
+                        <button class="btn btn-fl skyblue">popup-left
+                            <span class="triangle"></span>
+                        </button>
+                        <div class="popup-list popup-left">
+                            <div class="popup-triangle"></div>
+                            <div class="popup-header">
+                                popup-header
+                            </div>
+                            <div class="popup-body">
+                                <p>
+                                    This is popup body for the information.
+                                    Sed posuere consectetur est at lobortis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup">
+                        <button class="btn btn-fl green">popup-top
+                            <span class="triangle"></span>
+                        </button>
+                        <div class="popup-list popup-top">
+                            <div class="popup-triangle"></div>
+                            <div class="popup-header">
+                                popup-header
+                            </div>
+                            <div class="popup-body">
+                                <p>
+                                    This is popup body for the information.
+                                    Sed posuere consectetur est at lobortis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup">
+                        <button class="btn btn-fl blue">popup-bottom
+                            <span class="triangle"></span>
+                        </button>
+                        <div class="popup-list popup-bottom">
+                            <div class="popup-triangle"></div>
+                            <div class="popup-body">
+                                <p>
+                                    This is popup body for the information.
+                                    Sed posuere consectetur est at lobortis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup">
+                        <button class="btn btn-fl red">popup-right
+                            <span class="triangle"></span>
+                        </button>
+                        <div class="popup-list popup-right">
+                            <div class="popup-triangle"></div>
+                            <div class="popup-body">
+                                <p>
+                                    This is popup body for the information.
+                                    Sed posuere consectetur est at lobortis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">长按钮Popup样式</h2>
+                    <div class="popup">
+                        <button class="btn btn-lu green">popup-top and the button is very very long
+                            <span class="triangle"></span>
+                        </button>
+                        <div class="popup-list popup-bottom">
+                            <div class="popup-triangle"></div>
+                            <div class="popup-body">
+                                <p>
+                                    This is popup body for the information.
+                                    Sed posuere consectetur est at lobortis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
         </div>
         <div id="tooltip">
             <h1 class="title">Tooltip</h1>
             <label class="under">Simple CSS for HTML Tooltip.</label>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">Tooltip基础样式</h2>
+                    <div class="tooltip">
+                        <button class="btn btn-lu skyblue">tooltip-left</button>
+                        <div class="tooltip-list tooltip-left">
+                            <div class="tooltip-triangle"></div>
+                            <div class="tooltip-body">
+                                <p>
+                                    This is tooltip body for the info.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tooltip">
+                        <button class="btn btn-lu green">tooltip-top</button>
+                        <div class="tooltip-list tooltip-top">
+                            <div class="tooltip-triangle"></div>
+                            <div class="tooltip-body">
+                                <p>
+                                    This is tooltip body for the info.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tooltip">
+                        <button class="tooltip btn btn-lu blue">tooltip-bottom</button>
+                        <div class="tooltip-list tooltip-bottom">
+                            <div class="tooltip-triangle"></div>
+                            <div class="tooltip-body">
+                                <p>
+                                    This is tooltip body for the info.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tooltip">
+                        <button class="tooltip btn btn-lu red">tooltip-right</button>
+                        <div class="tooltip-list tooltip-right">
+                            <div class="tooltip-triangle"></div>
+                            <div class="tooltip-body">
+                                <p>
+                                    This is tooltip body for the info.
+                                    Sed posuere consectetur est at lobortis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">长Tooltip样式</h2>
+                    <div class="tooltip">
+                        <button class="tooltip btn btn-fl orange">tooltip-top and the button is very very long</button>
+                        <div class="tooltip-list tooltip-bottom">
+                            <div class="tooltip-triangle"></div>
+                            <div class="tooltip-body">
+                                <p>
+                                    This is tooltip body for the info.
+                                    Sed posuere consectetur est at lobortis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
         </div>
         <div id="progress">
             <h1 class="title">Progress</h1>
             <label class="under">Simple CSS for HTML Progress.</label>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">静态进度条样式</h2>
+                    <div class=" progressbar">
+                        <div style="width: 20%">
+                            20%
+                        </div>
+                    </div>
+                    <div class=" progressbar green">
+                        <div class="probar-stripe" style="width: 72%">
+                            72%
+                        </div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">动画进度条样式</h2>
+                    <div class=" progressbar red">
+                        <div class="probar-stripe animate-stripe" style="width: 48%">
+                        </div>
+                    </div>
+                    <div class=" progressbar orange">
+                        <div class="probar-stripe animate-stripe" style="width: 66%">
+                            66%
+                        </div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">进度条控制插件</h2>
+                    <div class=" progressbar active">
+                        <div></div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">环形进度-[Unstable]</h2>
+                    <div class="grids-12">
+                        <div class="g-6 progresscircle">
+                            <div class="pie-right"><div></div></div>
+                            <div class="pie-left"><div></div></div>
+                            <div class="circle-inner">75%</div>
+                        </div>
+                        <div class="g-6 progresscircle red">
+                            <div class="pie-right"><div></div></div>
+                            <div class="pie-left"><div></div></div>
+                            <div class="circle-inner">75%</div>
+                        </div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">Loading样式</h2>
+                    <div class="grids-12">
+                        <div class="loading g-3">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="loading-round g-3">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
         </div>
         <div id="alert">
             <h1 class="title">Alert</h1>
             <label class="under">Simple CSS for HTML Alert.</label>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">Collie-UI form-block表单测试</h2>
+                    <div class="grids-16">
+                        <div class="g-4 alert alert-bgc" role="alert">
+                            yeah,look at me;iamverylongduibudui;
+                        </div>
+                        <div class="g-6 alert alert-bgc green" role="alert">
+                            success! you are great!
+                        </div>
+                        <div class="g-8 alert alert-bgc yellow" role="alert">
+                            problem!pay attention!
+                        </div>
+                        <div class="g-4 alert alert-bgc red" role="alert">
+                            warning!sorry...
+                        </div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">Collie-UI form-block表单测试</h2>
+                    <div class="divide grids-16">
+                        <div class="g-4 alert alert-yl" role="alert">
+                            yeah,but you still click there....aasdfasd
+                        </div>
+                        <div class="g-4 alert alert-yl green" role="alert">
+                            success! you are great!
+                        </div>
+                        <div class="g-8 alert alert-yl yellow" role="alert">
+                            problem!pay attention!
+                            <button class="btn btn-lu orange">retry</button>
+                        </div>
+                        <div class="g-6 alert alert-yl red" role="alert">
+                            warning!sorry...
+                        </div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">Alert插件－[Unstable]</h2>
+                    <button class="btn btn-fl green test-alert">test-alert</button>
+                    <div class="grids-5">
+                        <div class="g-2 alert alert-bgc alert-hide" role="alert" style="display: none">
+                            i am test
+                        </div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
         </div>
         <div id="modal">
             <h1 class="title">Modal</h1>
             <label class="under">Simple CSS for HTML Modal.</label>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">Collie-UI form-block表单测试</h2>
+                    <div>
+                        <button class="btn btn-fl skyblue btn-lg btn-modal" data-modal="#modal1">
+                            Modal demo1
+                        </button>
+                        <button class="btn btn-fl skyblue btn-lg btn-modal" data-modal="#modal2">
+                            Modal demo2
+                        </button><label>◀ When the modal is long</label>
+                    </div>
+                    <div class="modal" id="modal1">
+                        <div class="content">
+                            <div class="modal-main">
+                                <button type="button" class="close">&times;</button>
+                                <div class="modal-header">
+                                    <h2 class="modal-title">Collie-UI Modal title</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <p>One fine body&hellip;
+                                        <br />
+                                        <br />
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-lu default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-lu skyblue">Save changes</button>
+                                </div>
+                            </div><!-- /.modal-fl -->
+                        </div><!-- content -->
+                    </div><!-- /.modal -->
+                    <div class="modal" id="modal2">
+                        <div class="content">
+                            <div class="modal-main">
+                                <button type="button" class="close">&times;</button>
+                                <div class="modal-header">
+                                    <h2 class="modal-title">国を選択</h2><br />
+                                    <form class="form grids-12">
+                                        <div class="checkbox g-4">
+                                            <label for="test1">
+                                                <input type="checkbox" id=test1 value="">
+                                                日本
+                                            </label>
+                                        </div>
+                                        <div class="checkbox g-4">
+                                            <label for="test2">
+                                                <input type="checkbox" id=test2 value="">
+                                                UK
+                                            </label>
+                                        </div>
+                                        <div class="checkbox g-4">
+                                            <label for="test3">
+                                                <input type="checkbox" id=test3 value="">
+                                                China
+                                            </label>
+                                        </div>
+                                        <div class="checkbox g-4">
+                                            <label for="test4">
+                                                <input type="checkbox" id=test4 value="">
+                                                U.S.A
+                                            </label>
+                                        </div>
+                                        <div class="checkbox g-4">
+                                            <label for="test5">
+                                                <input type="checkbox" id=test5 value="">
+                                                Korea
+                                            </label>
+                                        </div>
+                                        <div class="checkbox g-4">
+                                            <label for="test6">
+                                                <input type="checkbox" id=test6 value="">
+                                                Hong Kong
+                                            </label>
+                                        </div>
+                                        <div class="checkbox g-4">
+                                            <label for="test7">
+                                                <input type="checkbox" id=test7 value="">
+                                                France
+                                            </label>
+                                        </div>
+                                        <div class="checkbox g-4">
+                                            <label for="test8">
+                                                <input type="checkbox" id=test8 value="">
+                                                Singapore
+                                            </label>
+                                        </div>
+                                        <div class="checkbox g-4">
+                                            <label for="test9">
+                                                <input type="checkbox" id=test9 value="">
+                                                Russia
+                                            </label>
+                                        </div>
+                                        <div class="checkbox g-4">
+                                            <label for="test10">
+                                                <input type="checkbox" id=test10 value="">
+                                                Taiwan
+                                            </label>
+                                        </div>
+                                        <div class="checkbox g-4">
+                                            <label for="test11">
+                                                <input type="checkbox" id=test11 value="">
+                                                Thailand
+                                            </label>
+                                        </div>
+                                        <div class="checkbox g-4">
+                                            <label for="test12">
+                                                <input type="checkbox" id=test12 value="">
+                                                Philippines
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>ブロック・エリア選択</h3>
+                                    <p>One very long body&hellip;内容を自分で選択しましょう。
+                                        <br /><br /><br /><br /><br /><br />
+                                        <br /><br /><br /><br /><br /><br />
+                                        <br /><br /><br /><br /><br /><br />
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-lu default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-lu skyblue">Save changes</button>
+                                </div>
+                            </div><!-- /.modal-fl -->
+                        </div><!-- content -->
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">Collie-UI form-block表单测试</h2>
+                    <div>
+                        <button class="btn btn-lu skyblue btn-lg btn-modal" data-modal="#modal3">
+                            Modal demo3
+                        </button>
+                        <button class="btn btn-lu skyblue btn-lg btn-modal" data-modal="#modal4">
+                            Modal demo3
+                        </button>
+                        <label>◀ When the modal is long</label>
+                        <div class="modal" id="modal3">
+                            <div class="content content-sm">
+                                <div class="modal-main">
+                                    <button type="button" class="close">&times;</button>
+                                    <div class="modal-header">
+                                        <h2 class="modal-title">Collie-UI Modal title</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>One fine body&hellip;
+                                            <br />
+                                            <br />
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-lu default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-lu skyblue">Save changes</button>
+                                    </div>
+                                </div><!-- /.modal-fl -->
+                            </div><!-- content -->
+                        </div><!-- /.modal -->
+                        <div class="modal" id="modal4">
+                            <div class="content content-sm">
+                                <div class="modal-main">
+                                    <button type="button" class="close">&times;</button>
+                                    <div class="modal-header">
+                                        <h2 class="modal-title">国を選択</h2><br />
+                                        <form class="form grids-12">
+                                            <div class="checkbox g-4">
+                                                <label for="test13">
+                                                    <input type="checkbox" id=test13 value="">
+                                                    日本
+                                                </label>
+                                            </div>
+                                            <div class="checkbox g-4">
+                                                <label for="test14">
+                                                    <input type="checkbox" id=test14 value="">
+                                                    UK
+                                                </label>
+                                            </div>
+                                            <div class="checkbox g-4">
+                                                <label for="test15">
+                                                    <input type="checkbox" id=test15 value="">
+                                                    China
+                                                </label>
+                                            </div>
+                                            <div class="checkbox g-4">
+                                                <label for="test16">
+                                                    <input type="checkbox" id=test16 value="">
+                                                    U.S.A
+                                                </label>
+                                            </div>
+                                            <div class="checkbox g-4">
+                                                <label for="test17">
+                                                    <input type="checkbox" id=test17 value="">
+                                                    Korea
+                                                </label>
+                                            </div>
+                                            <div class="checkbox g-4">
+                                                <label for="test18">
+                                                    <input type="checkbox" id=test18 value="">
+                                                    Hong Kong
+                                                </label>
+                                            </div>
+                                            <div class="checkbox g-4">
+                                                <label for="test19">
+                                                    <input type="checkbox" id=test19 value="">
+                                                    France
+                                                </label>
+                                            </div>
+                                            <div class="checkbox g-4">
+                                                <label for="test20">
+                                                    <input type="checkbox" id=test20 value="">
+                                                    Singapore
+                                                </label>
+                                            </div>
+                                            <div class="checkbox g-4">
+                                                <label for="test21">
+                                                    <input type="checkbox" id=test21 value="">
+                                                    Russia
+                                                </label>
+                                            </div>
+                                            <div class="checkbox g-4">
+                                                <label for="test22">
+                                                    <input type="checkbox" id=test22 value="">
+                                                    Taiwan
+                                                </label>
+                                            </div>
+                                            <div class="checkbox g-4">
+                                                <label for="test23">
+                                                    <input type="checkbox" id=test23 value="">
+                                                    Thailand
+                                                </label>
+                                            </div>
+                                            <div class="checkbox g-4">
+                                                <label for="test24">
+                                                    <input type="checkbox" id=test24 value="">
+                                                    Philippines
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>ブロック・エリア選択</h3>
+                                        <p>One very long body&hellip;内容を自分で選択しましょう。
+                                            <br /><br /><br /><br /><br /><br />
+                                            <br /><br /><br /><br /><br /><br />
+                                            <br /><br /><br /><br /><br /><br />
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-lu default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-lu skyblue">Save changes</button>
+                                    </div>
+                                </div><!-- /.modal-fl -->
+                            </div><!-- content -->
+                        </div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
         </div>
         <div id="scroll-monitor">
             <h1 class="title">ScrollMonitor</h1>
             <label class="under">Simple CSS for HTML ScrollMonitor.</label>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">Collie-UI form-block表单测试</h2>
+                    <nav class="nav nav-success nav-padding">
+                        <ul id="scroll-menu">
+                            <li class="scroll-choosed"><a href="#l-one">Spring</a></li>
+                            <li><a href="#l-two">Summer</a></li>
+                            <li><a href="#l-three">Fall</a></li>
+                            <li><a href="#l-four">Winter</a></li>
+                        </ul>
+                    </nav>
+                    <div class="scrollview" style="max-height: 200px; overflow: auto">
+                        <h1 id="l-one">i am one</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1 id="l-two">i am two</h1>
+                        <h1>aaab</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>dafsdf</h1>
+                        <h1 id="l-three">i am three</h1>
+                        <h1>aaac</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1 id="l-four">i am four</h1>
+                        <h1>aaad</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaad</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                        <h1>aaaa</h1>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">Collie-UI form-block表单测试</h2>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
         </div>
         <div id="image-scroll">
             <h1 class="title">ImageScroll</h1>
             <label class="under">Simple CSS for HTML ImageScroll.</label>
+            <div>
+                <div class="block">
+                    <h2 class="small-title">图片轮播样式</h2>
+                    <div class="images">
+                        <img class="img-choosed" src="../image/m1.jpg">
+                        <img src="../image/m2.jpg">
+                        <img src="../image/background.png">
+                        <img src="../image/m1.jpg">
+                        <img src="../image/m2.jpg">
+                        <div class="imgscroll-left"></div>
+                        <div class="imgscroll-right"></div>
+                    </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
+<pre class="code">
+<code class="html">
+</code>
+</pre>
+            </div>
         </div>
     </div>
 </section>
