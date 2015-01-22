@@ -93,7 +93,6 @@ $(document).ready(function () {
             nextMonth.push(new Date(tYear,tMonth+1,k+1));
         }
         preMonth = preMonth.concat(currentMonth,nextMonth);
-        console.log('im panel');
         return preMonth;
     }
 
@@ -105,7 +104,6 @@ $(document).ready(function () {
     $.calUI = function (date) {
         //获取前后三个月的日历
         var calpanel = $.calPanel(date); //日历面板
-        console.log( calpanel);
 
         curYear = calpanel[7].getFullYear();
         curMonth = calpanel[7].getMonth();
