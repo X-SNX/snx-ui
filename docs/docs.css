@@ -246,7 +246,24 @@ section {
 #detail .top:hover a{
     display: inline-block;
 }
-
+.left{
+    position: absolute;
+    left: -20px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    height: auto;
+    background-color: #fff;
+}
+.right{
+    position: absolute;
+    right: -20px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    height: auto;
+    background-color: #fff;
+}
 .scroll-choosed {
 
 }
