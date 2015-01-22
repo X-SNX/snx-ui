@@ -264,8 +264,8 @@ section {
     height: auto;
     background-color: #fff;
 }
-.scroll-choosed {
-
+#content .scroll-choosed a {
+    color: #000000;
 }
 
 .imgscroll-right {
