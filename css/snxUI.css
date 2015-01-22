@@ -3932,6 +3932,7 @@ tr {
 }
 
 .tooltip {
+  display: inline-block;
   position: relative;
   /*position是定位的关键*/
   list-style: none;
