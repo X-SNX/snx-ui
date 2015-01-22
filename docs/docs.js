@@ -54,12 +54,7 @@ function sample() {
 
     $('.images').imgScroll('cycle',{leftButton:'.imgscroll-left',rightButton:'.imgscroll-right'});
 }
-
-$(document).ready(function () {
-    sidebarFixed();
-    menuChoosed();
-    codeDisplay();
-    sample();
+function goToTop(){
     $("#goToTop").hide();//隐藏go to top按钮
     $(window).scroll(function(){
         if($(this).scrollTop()>1){//当window的scrolltop距离大于1时，go to top按钮淡出，反之淡入
@@ -72,14 +67,15 @@ $(document).ready(function () {
     // 给go to top按钮一个点击事件
     $("#goToTop").click(function(event){
         $("html,body").animate({scrollTop:0},300);
-        $('.list-item').find(".list-touchmoved").each(function(){
-            var $this = $(this);
-            $this.removeClass("list-touchmoved");
-            $this.find(".btn").css({
-                "display":"inline-block"
-            })
-        });
         event.stopPropagation();
         return false;
     });
+}
+$(document).ready(function () {
+    goToTop();
+    sidebarFixed();
+    menuChoosed();
+    codeDisplay();
+    sample();
+
 });

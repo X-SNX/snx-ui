@@ -4,17 +4,17 @@ body{
 }
 #logo{
     position: absolute;
-    width: 220px;
+    width: 180px;
     height: auto;
-    left: 36px;
-    top: 6px;
+    left: 46px;
+    top: 12px;
 }
 header{
     position: relative;
     width: 1100px;
     height: 80px;
-    margin: 32px auto 0;
-    border-bottom: 1px solid #e0e0e0;
+    margin: 0 auto 0;
+    box-shadow: 0 0 10px #e6e6e6;
 }
 #headNav.nav-padding >ul{
     padding: 0 0 0 300px;
@@ -27,7 +27,7 @@ header{
 }
 #headNav.nav{
     font-size: 130%;
-    margin-top: -20px;
+    margin-top: -8px;
 }
 #headNav.nav > ul > li > a:hover{
     background-color: inherit;
