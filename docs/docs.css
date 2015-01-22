@@ -166,9 +166,9 @@ section {
 
 .yl {
     padding: 18px;
-    /*background-image: linear-gradient(45deg, #EE855F, #a3f7e6);*/
+    background-image: linear-gradient(45deg, #EE855F, #a3f7e6);
     /*background-image: linear-gradient(135deg, #5fa4ee, #a3f7e6);*/
-    background-image: linear-gradient(135deg, #5bcefb, #fc78fd);
+    /*background-image: linear-gradient(135deg, #5bcefb, #fc78fd);*/
 
 }
 .code .html{
