@@ -53,7 +53,9 @@ $(document).ready(function() {
         }
     });
     $('.popup').bind('click',function (event) {//点击弹出,无需绑定ID
+        //alert("ha");
         var $this=$(this).find('.popup-list');
+        //alert($this);
         $('.popup-list').fadeOut(300);
         if($this.is(':visible')){
             $this.fadeOut(300);

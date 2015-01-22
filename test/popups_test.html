@@ -22,9 +22,7 @@
         });
     </script>
 </head>
-
 <body class="bgc-change">
-
 <div class="grids-16">
     <div class="g-2"></div>
     <div class="form g-12"><br />
@@ -37,14 +35,15 @@
     </div>
     <div class="g-2"></div>
 </div><br />
-
 <div class="form grids-16">
     <div class="g-2"></div>
 <div class="g-12">
     <legend>different directions</legend><br /><br />
     <div class="g-2"></div>
-    <button class="popup btn btn-fl skyblue">popup-left
-        <span class="triangle"></span>
+    <div class="popup">
+        <button class="btn btn-fl skyblue">popup-left
+            <span class="triangle"></span>
+        </button>
         <div class="popup-list popup-left">
             <div class="popup-triangle"></div>
             <div class="popup-header">
@@ -57,10 +56,11 @@
                 </p>
             </div>
         </div>
-    </button>
-
-    <button class="popup btn btn-fl green">popup-top
-        <span class="triangle"></span>
+    </div>
+    <div class="popup">
+        <button class="btn btn-fl green">popup-top
+            <span class="triangle"></span>
+        </button>
         <div class="popup-list popup-top">
             <div class="popup-triangle"></div>
             <div class="popup-header">
@@ -73,52 +73,55 @@
                 </p>
             </div>
         </div>
-    </button>
-
-        <button class="popup btn btn-fl blue">popup-bottom
+    </div>
+    <div class="popup">
+        <button class="btn btn-fl blue">popup-bottom
             <span class="triangle"></span>
-            <div class="popup-list popup-bottom">
-                <div class="popup-triangle"></div>
-                <div class="popup-header">
-                    popup-header
-                </div>
-                <div class="popup-body">
-                    <p>
-                        This is popup body for the information.
-                        Sed posuere consectetur est at lobortis.
-                    </p>
-                </div>
-            </div>
         </button>
+        <div class="popup-list popup-bottom">
+            <div class="popup-triangle"></div>
+            <div class="popup-header">
+                popup-header
+            </div>
+            <div class="popup-body">
+                <p>
+                    This is popup body for the information.
+                    Sed posuere consectetur est at lobortis.
+                </p>
+            </div>
+        </div>
+    </div>
 
-        <button class="popup btn btn-fl red">popup-right
+    <div class="popup">
+        <button class="btn btn-fl red">popup-right
             <span class="triangle"></span>
-            <div class="popup-list popup-right">
-                <div class="popup-triangle"></div>
-                <div class="popup-header">
-                    popup-header
-                </div>
-                <div class="popup-body">
-                    <p>
-                        This is popup body for the information.
-                        Sed posuere consectetur est at lobortis.
-                    </p>
-                </div>
-            </div>
         </button>
+        <div class="popup-list popup-right">
+            <div class="popup-triangle"></div>
+            <div class="popup-header">
+                popup-header
+            </div>
+            <div class="popup-body">
+                <p>
+                    This is popup body for the information.
+                    Sed posuere consectetur est at lobortis.
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
-    <!-- 空div -->
     <div class="g-2"></div>
 </div>
 <br /><br /><br />
-
 <div class="form grids-16">
     <div class="g-2"></div>
     <div class="g-12">
         <legend>Without header</legend><br /><br />
         <div class="g-2"></div>
-        <button class="popup btn btn-fl skyblue">popup-left
-            <span class="triangle"></span>
+        <div class="popup">
+            <button class="btn btn-fl skyblue">popup-left
+                <span class="triangle"></span>
+            </button>
             <div class="popup-list popup-left">
                 <div class="popup-triangle"></div>
                 <div class="popup-body">
@@ -128,10 +131,11 @@
                     </p>
                 </div>
             </div>
-        </button>
-
-        <button class="popup btn btn-fl green">popup-top
-            <span class="triangle"></span>
+        </div>
+        <div class="popup">
+            <button class="btn btn-fl green">popup-top
+                <span class="triangle"></span>
+            </button>
             <div class="popup-list popup-top">
                 <div class="popup-triangle"></div>
                 <div class="popup-body">
@@ -141,10 +145,11 @@
                     </p>
                 </div>
             </div>
-        </button>
-
-        <button class="popup btn btn-fl blue">popup-bottom
-            <span class="triangle"></span>
+        </div>
+        <div class="popup">
+            <button class="btn btn-fl blue">popup-bottom
+                <span class="triangle"></span>
+            </button>
             <div class="popup-list popup-bottom">
                 <div class="popup-triangle"></div>
                 <div class="popup-body">
@@ -154,10 +159,11 @@
                     </p>
                 </div>
             </div>
-        </button>
-
-        <button class="popup btn btn-fl red">popup-right
-            <span class="triangle"></span>
+        </div>
+        <div class="popup">
+            <button class="btn btn-fl red">popup-right
+                <span class="triangle"></span>
+            </button>
             <div class="popup-list popup-right">
                 <div class="popup-triangle"></div>
                 <div class="popup-body">
@@ -167,20 +173,20 @@
                     </p>
                 </div>
             </div>
-        </button>
+        </div>
     </div>
-    <!-- 空div -->
     <div class="g-2"></div>
 </div>
 <br /><br /><br />
-
 <div class="form grids-16">
     <div class="g-2"></div>
     <div class="g-12">
         <legend>超长按钮弹出框居中测试</legend><br /><br />
         <div class="g-2"></div>
-        <button class="popup btn btn-fl green">popup-top and the button is very very long
-            <span class="triangle"></span>
+        <div class="popup">
+            <button class="btn btn-fl green">popup-top and the button is very very long
+                <span class="triangle"></span>
+            </button>
             <div class="popup-list popup-bottom">
                 <div class="popup-triangle"></div>
                 <div class="popup-body">
@@ -190,12 +196,9 @@
                     </p>
                 </div>
             </div>
-        </button><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </div><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
-    <!-- 空div -->
     <div class="g-2"></div>
 </div>
-
-
 </body>
 </html>
