@@ -246,7 +246,7 @@ section {
 #detail .top:hover a{
     display: inline-block;
 }
-.left{
+.left-white{
     position: absolute;
     left: -20px;
     top: 0;
@@ -255,7 +255,7 @@ section {
     height: auto;
     background-color: #fff;
 }
-.right{
+.right-white{
     position: absolute;
     right: -20px;
     top: 0;
