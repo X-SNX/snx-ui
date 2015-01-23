@@ -24,6 +24,14 @@
         hljs.tabReplace = '    ' ;// 4 spaces
         hljs.initHighlightingOnLoad();
     </script>
+    <style type="text/css">
+        .hljs{
+            background-image: linear-gradient(135deg, #5bcefb, #fc78fd);
+        }
+        #detail .top{
+            bottom: -420px;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -45,9 +53,10 @@
             <li class="choosed"><a href="#begin">Begin</a></li>
             <li><a href="#Wiki">Wiki</a></li>
             <li><a href="#download">Download</a></li>
-            <li><a href="#">Thinking...</a></li>
-            <li><a href="#">Thinking...</a></li>
-            <li><a href="#">Thinking...</a></li>
+            <li><a href="#compiling">Compiling</a></li>
+            <li style="display: none"><a href="#">Thinking...</a></li>
+            <li style="display: none"><a href="#">Thinking...</a></li>
+            <li style="display: none"><a href="#">Thinking...</a></li>
         </ul>
         <span class="top" id="goToTop" style="display: block;">
             <i class="fa fa-chevron-up"></i>
@@ -63,15 +72,89 @@
             <legend></legend>
             <div class="btn-center">
                 <a class="btn btn-xl btn-fl skyblue">Download</a>
-                <a class="btn btn-xl btn-fl green" href="https://github.com/DreamArts/collie-ui" target="_blank">View on GitHub</a>
+                <a class="btn btn-xl btn-fl green" href="https://github.com/DAC-SNX/snx-ui" target="_blank">View on GitHub</a>
             </div>
             <div class="grids-12">
                 <div class="g-4"></div>
                 <div class="g-4"></div>
                 <div class="g-4"></div>
-            </div>
+            </div><br><br><br><br><br><br>
         </div><!--Header-->
 
+    <div id="Wiki">
+        <h1 class="title">Wiki</h1>
+        <label class="under">To introduce what we are.</label>
+        <div class="introduce grids-12">
+            <div class="g-6 gutter-horizontal">
+                <h1>多浏览器支持</h1>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;支持各大主流浏览器，目前的版本支持Firefox，chrome，IE(Version10+),Safari。不断争取完美。
+            </div>
+            <div class="g-6 gutter-horizontal">
+                <h1>响应式</h1>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web响应式设计，支持PC端多种屏幕分辨率和pad端多种屏幕分辨率，手机部分适配ing。
+            </div>
+            <div class="g-6 gutter-horizontal">
+                <h1>自己的风格</h1>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;简洁，清晰的样式，外观上拥有自己独立的风格，设计有待修改。争取经过版本迭代有PK设计师的资本~
+                (｡◝‿◜｡)
+            </div>
+            <div class="g-6 gutter-horizontal">
+                <h1>易于使用</h1>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用舒适化的类名与标签搭配，支持部分移动端手势。想要真正方便的提供给人使用绝非易事，但是我们会不断努力。
+            </div>
+            <div class="g-12">
+                <h1 style="font-size: 24px;color: #333;width: 480px;margin: 80px auto 0">SNX是完全开源的。它的代码托管、开发、维护都依赖 GitHub 平台。</h1>
+            </div>
+        </div>
+        <div class="block" style="margin-top: 100px">
+            <h2 class="small-title">目前用于生产环境的(含压缩版)目录结构：</h2>
+            <pre class="code" style="display: block;margin: 0;">
+                <code class="html">
+            bootstrap/
+            ├── css/
+            │   ├── snxUI.css
+            │   ├── snxUI.min.css
+            ├── js/
+            │   ├── alerts.js
+            │   ├── dropdowns.js
+            │   ├── forms.js
+            │   ├── img-scroll.js
+            │   └── ...&lt;!--总体压缩版未来版本更新--&gt;
+            ├── fonts/
+            │   ├──dax-regular.eot
+            │   ├──dax-regular.svg
+            │   ├──dax-regular.ttf
+            │   ├──dax-regular.woff
+            │   └──dax-regular.woff2
+            └── less/
+                ├──buttons.less
+                ├──tabs.less
+                ├──plugins.less
+                ├──popups.less
+                └──...&lt;!--less源文件过多这里省略--&gt;
+                </code>
+                </pre>
+        </div>
+    </div><!--wiki-->
+
+    <div id="download">
+        <h1 class="title">DownLoad</h1>
+        <label class="under">Download for your web development.</label>
+        <div class="introduce grids-12">
+            <div class="g-12" style="padding-top: 30px">
+            Building...
+            </div>
+        </div>
+    </div>
+    <div id="compiling">
+        <h1 class="title">Compiling</h1>
+        <label class="under">How to compile.</label>
+        <div class="introduce grids-12" style="padding-top: 30px">
+            <div class="g-12">
+                Building...
+            </div>
+        </div>
+    </div>
     </div>
 </section>
 </body>

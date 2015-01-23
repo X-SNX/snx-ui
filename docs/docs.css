@@ -117,6 +117,20 @@ section {
     font-size: 120%;
     color: #666;
 }
+.introduce{
+    display: block;
+    margin: -80px 30px 66px;
+    font-size: 100%;
+    color: #333;
+    /*text-align: center;*/
+}
+.introduce h1{
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #888;
+    text-align: center;
+}
 .block {
     position: relative;
     margin: 0 30px 60px;

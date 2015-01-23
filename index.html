@@ -2,132 +2,79 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Collie UI</title>
-    <link rel="stylesheet" type="text/css" href="css/snxUI.min.css" />
-    <link href="fonts/dax/dax.css" type="text/css" rel="stylesheet"/>
+    <title>Collie-UI Show</title>
+    <link href="css/snxUI.min.css" type="text/css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="fonts/dax/dax.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <style type="text/css">
-         .center{
-             padding-left: 0;
-             padding-right: 0;
-             text-align:center;
-         }
-         .nav-yl > ul > li > a{
-             transition: 0.3s ease-in-out;
-         }
-         .nav-yl > ul > li > a:hover{
-             color: #fff;
-         }
-        .grids-16 .g-3{
-            width: 120px;
+        div.background{
+            position:fixed;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            z-index:-1;
         }
-        #logo{
-            width: 120px;
-            height: auto;
-            margin-top: -26px;
-            padding-bottom: 36px;
+        div.background > img {
+            height:100%;
+            width:100%;
+            border:0;
+        }
+        h1{
+        color: white;
+        max-width: 800px;
+        font-weight: bold;
+        font-size: 120px;
+        margin: 0 auto;
+        padding: 30px 0 20px;
+        line-height: 110px;
+        position: relative;
+        }
+        h2 {
+            color: #f0f0f0;
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: condensed;
+            text-transform: uppercase;
+            margin: 0 auto;
+            position: relative;
+        }
+        .logo{
+            /*padding-left:20px;*/
+            /*height:120px;*/
+            /*width:180px;*/
         }
     </style>
 </head>
-<body style="/*background: -webkit-radial-gradient(#555,black);*/background-color:#000">
-<br /><br /><br /><br /><br /><br /><br />
-<div class="grids-16">
-<div class="g-2"></div>
-
-<div class="form g-12"><br />
-    <div class="g-3">
-        <img id="logo" src="image/Nav%20logo.png">
+<body>
+<div class="background"><img src="image/blur.jpg" /></div>
+<div class="background" style="opacity: 0.6"><img src="image/content.png" /></div>
+<header class="grids-16 gutter-vertical">
+    <div class="g-2"></div>
+    <div class="g-12 form">
+        <div style="display: inline-block">
+        <img class="logo" src="image/Snx.png">
+        </div>&nbsp;
     </div>
-    <div class="g-9">
-        <h1 style="color: #fff">Collie-UI Test</h1>
-    </div>
-<br />
-</div>
-<!-- 空div -->
-<div class="g-2"></div>
-</div>
-
-
-
-<div class="grids-16">
-
-<div class="g-2"></div>
-
-<div class="g-2"><br />
-<a class="btn btn-block btn-fl default center" href="test/buttons_test.html" role="button">Buttons</a>
-</div>
-
-<div class="g-2"><br />
-<a class="btn btn-block btn-fl skyblue center" href="test/tables_test.html" role="button">Tables</a>
-</div>
-
-<div class="g-2"><br />
-<a class="btn btn-block btn-fl blue center" href=" test/forms_test.html" role="button">Forms</a>
-</div>
-
-<div class="g-2"><br />
-<a class="btn btn-block btn-fl green center" href=" test/modals_test.html" role="button">Modals</a>
-</div>
-
-<div class="g-2"><br />
-    <a class="btn btn-block btn-fl orange center" href=" test/buttongroups_test.html" role="button">ButtonGroups</a>
-</div>
-
-<div class="g-2"><br />
-<a class="btn btn-block btn-fl red center" href="test/navs_test.html" role="button">Navs</a>
-</div>
-
-<!-- 空div -->
-<div class="g-2"></div>
-
-</div>
-
-<div class="grids-16">
-
     <div class="g-2"></div>
 
-    <div class="g-12"><br />
-     <nav class="nav-yl">
-         <ul>
-             <li><a href="test/tabs_test.html">Tabs</a></li>
-             <li><a href="test/scrollmonitor_test.html">ScrollMonitor</a></li>
-             <li><a href="test/dropdowns_test.html">DropDowns</a></li>
-             <li><a href="test/images_test.html">Images</a></li>
-             <li><a href="test/badges_test.html">Badges</a></li>
-             <li><a href="test/popups_test.html">Popups</a></li>
-             <li><a href="test/tooltips_test.html">Tooltips</a></li>
-             <li><a href="test/list-groups.html">ListGroups</a></li>
-             <li><a href="test/snx-grids_test.html">Grids</a></li>
-             <li><a href="test/paginations_test.html">Paginations</a></li>
-             <li><a href="test/alerts.html">Alerts</a></li>
-             <li><a href="test/progress_test.html">Progress</a></li>
-             <li><a href="test/img-scroll_test.html">ImgScrolls</a></li>
-             <li><a href="test/labels_test.html">Labels</a></li>
-             <li><a href="demo/demo1-2.html">Demo-1</a></li>
-             <li><a href="demo/demo1.html">Demo-2</a></li>
-             <li><a href="docs/show/index.html">Show</a></li>
-             <li><a href="docs/docs.html">Docs</a></li>
-         </ul>
-     </nav>
-    </div>
-
-    <!-- 空div -->
+</header>
+<section class="grids-16">
     <div class="g-2"></div>
-
-</div>
-
-
-<div class="grids-16">
-
-<div class="g-2"></div>
-<!-- 留白 -->
-
-<div class=" form g-12" style="text-align:right;margin-top: 100px;color: #a0a0a0">
-    @Didichaoren &nbsp; & &nbsp; ckitakishi
-</div>
-
-<div class="g-2"></div>
-<!-- 留白 -->
-</div>
-
+    <div class="g-12 form" style="text-align: center">
+        <h1>I'm a UI framework</h1>
+        <h2>FREE WITH BEAUTY FOR EASY WEB DEVELOPMENT</h2>
+        <legend></legend>
+        <a type="button" class="btn btn-fl green" style="font-size: 180%;margin-top: 30px" href="docs/docs_started.html">Get Started...</a>
+    </div>
+    <div class="g-2"></div>
+</section>
+<footer class="grids-16 form gutter-vertical" style="position:fixed;bottom:0;left: 0;right: 0;padding-left: 8px;padding-right: 8px">
+    <div class="g-2"></div>
+    <div class="g-12">
+    <P style="text-align: right;color:#d6d6d6">@Didichaoren &nbsp;&&nbsp; @Ckitakishi</P>
+    </div>
+    <div class="g-2"></div>
+</footer>
 </body>
 </html>
