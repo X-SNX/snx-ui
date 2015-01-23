@@ -348,7 +348,6 @@
     &lt;button class="btn btn-xl btn-yl"&gt;Default中文&lt;/button&gt;
     &lt;button class="btn btn-lg btn-yl"&gt;Default中文&lt;/button&gt;
     &lt;button class="btn btn-yl"&gt;Default中文&lt;/button&gt;
-
     &lt;button class="btn btn-sm btn-yl btn-r"&gt;Default中文&lt;/button&gt;
     &lt;button class="btn btn-xs btn-yl btn-r"&gt;Default中文&lt;/button&gt;
                     </code>
@@ -384,9 +383,7 @@
                 <pre class="code">
                     <code class="html">
     &lt;a class="btn btn-fl orange" role="button"&gt;LinkButton&lt;/a&gt;
-
     &lt;button class="btn btn-fl btn-r red" type="submit"&gt;Submit&lt;/button&gt;
-
     &lt;input class="btn btn-lu green" type="button" value="InputButton"&gt;
     &lt;input class="btn btn-lu btn-r skyblue" type="submit" value="Submit"&gt;
                     </code>
@@ -575,7 +572,7 @@
                 <div class="block">
                     <h2 class="small-title">Tables headfixed strip hover示例</h2>
                     <div class=" table-responsive table-headfixed">
-                        <table class="table-bordered table-grey table-strip table-hover" cellspacing="0" cellpadding="0">
+                        <table class="table-bordered table-grey table-strip table-hover">
                             <thead>
                             <tr>
                                 <th>key</th>
@@ -656,85 +653,23 @@
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;div class=" table-responsive table-headfixed"&gt;
-                &lt;table class="table-bordered table-strip table-hover" cellspacing="0" cellpadding="0"&gt;
-                &lt;thead&gt;
-                &lt;tr&gt;
-                &lt;th&gt;key&lt;/th&gt;
-                &lt;th&gt;value&lt;/th&gt;
-                &lt;/tr&gt;
-                &lt;/thead&gt;
-                &lt;tbody&gt;
-                &lt;tr&gt;
-                &lt;td class="key"&gt;hostname&lt;/td&gt;
-                &lt;td class="val"&gt;
-                &lt;div&gt;Didi-PC&lt;/div&gt;
-                &lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                &lt;td class="key"&gt;type&lt;/td&gt;
-                &lt;td class="val"&gt;
-                &lt;div&gt;Windows_NT&lt;/div&gt;
-                &lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                &lt;td class="key"&gt;platform&lt;/td&gt;
-                &lt;td class="val"&gt;
-                &lt;div&gt;win32&lt;/div&gt;
-                &lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                &lt;td class="key"&gt;arch&lt;/td&gt;
-                &lt;td class="val"&gt;
-                &lt;div&gt;x64&lt;/div&gt;
-                &lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                &lt;td class="key"&gt;release&lt;/td&gt;
-                &lt;td class="val"&gt;
-                &lt;div&gt;6.1.7601&lt;/div&gt;
-                &lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                &lt;td class="key"&gt;loadavg&lt;/td&gt;
-                &lt;td class="val"&gt;
-                &lt;div&gt;0,0,0&lt;/div&gt;
-                &lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                &lt;td class="key"&gt;totalmem&lt;/td&gt;
-                &lt;td class="val"&gt;
-                &lt;div&gt;4189683712&lt;/div&gt;
-                &lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                &lt;td class="key"&gt;freemem&lt;/td&gt;
-                &lt;td class="val"&gt;
-                &lt;div&gt;1403961344&lt;/div&gt;
-                &lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                &lt;td class="key"&gt;uptime&lt;/td&gt;
-                &lt;td class="val"&gt;
-                &lt;div&gt;6879.241882&lt;/div&gt;
-                &lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                &lt;td class="key"&gt;createdAt&lt;/td&gt;
-                &lt;td class="val"&gt;
-                &lt;div&gt;Mon Jan 19 2015 10:27:34 GMT+0800 (中国 (標準時))&lt;/div&gt;
-                &lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                &lt;td class="key"&gt;updatedAt&lt;/td&gt;
-                &lt;td class="val"&gt;
-                &lt;div&gt;Mon Jan 19 2015 10:27:34 GMT+0800 (中国 (標準時))&lt;/div&gt;
-                &lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;/tbody&gt;
-                &lt;/table&gt;
-                &lt;/div&gt;
-
+    &lt;div class=" table-responsive table-headfixed"&gt;
+        &lt;table class="table-bordered table-grey table-strip table-hover"&gt;
+            &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;...&lt;/th&gt;
+                &lt;th&gt;...&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td class="key"&gt;...&lt;/td&gt;
+                &lt;td class="val"&gt;...&lt;/td&gt;
+            &lt;/tr&gt;
+            ...
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
             </code>
             </pre>
             </div>
@@ -782,50 +717,28 @@
                             </tbody>
                         </table>
                     </div>
+
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;div class="table-responsive"&gt;
-                &lt;table class="table-underline" cellspacing="0" cellpadding="0"&gt;
-                &lt;thead&gt;
-                &lt;tr&gt;
-                &lt;th&gt;&lt;span&gt;Keywords&lt;/span&gt;&lt;/th&gt;
-                &lt;th&gt;&lt;span&gt;Impressions&lt;/span&gt;&lt;/th&gt;
-                &lt;th&gt;&lt;span&gt;Clicks&lt;/span&gt;&lt;/th&gt;
-                &lt;th&gt;&lt;span&gt;CTR&lt;/span&gt;&lt;/th&gt;
-                &lt;th&gt;&lt;span&gt;Rank&lt;/span&gt;&lt;/th&gt;
-                &lt;th&gt;&lt;span&gt;CTR&lt;/span&gt;&lt;/th&gt;
-                &lt;/tr&gt;
-                &lt;/thead&gt;
-                &lt;tbody&gt;
-                &lt;tr&gt;
-                &lt;td&gt;silly tshirts&lt;/td&gt;
-                &lt;td&gt;6,000&lt;/td&gt;
-                &lt;td&gt;110&lt;/td&gt;
-                &lt;td&gt;1.8%&lt;/td&gt;
-                &lt;td&gt;22.2&lt;/td&gt;
-                &lt;td&gt;1.8%&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                &lt;td&gt;2013 webapps&lt;/td&gt;
-                &lt;td&gt;9,900&lt;/td&gt;
-                &lt;td&gt;460&lt;/td&gt;
-                &lt;td&gt;4.6%&lt;/td&gt;
-                &lt;td&gt;11.5&lt;/td&gt;
-                &lt;td&gt;4.6%&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                &lt;td&gt;ring bananaphone&lt;/td&gt;
-                &lt;td&gt;10,500&lt;/td&gt;
-                &lt;td&gt;748&lt;/td&gt;
-                &lt;td&gt;7.1%&lt;/td&gt;
-                &lt;td&gt;17.3&lt;/td&gt;
-                &lt;td&gt;7.1%&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;/tbody&gt;
-                &lt;/table&gt;
-                &lt;/div&gt;
+    &lt;div class="table-responsive"&gt;
+        &lt;table class="table-underline" cellspacing="0" cellpadding="0"&gt;
+            &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;...&lt;/th&gt;
+                ...
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;...&lt;/td&gt;
+                ...
+            &lt;/tr&gt;
+            ...
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
             </code>
             </pre>
             </div>
@@ -874,42 +787,23 @@
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;div class="table-responsive"&gt;
-                &lt;table class="table-bordered" cellspacing="0" cellpadding="0"&gt;
-                &lt;thead&gt;
-                &lt;tr&gt;
-                &lt;th&gt;&lt;span&gt;Keywords&lt;/span&gt;&lt;/th&gt;
-                &lt;th&gt;&lt;span&gt;Impressions&lt;/span&gt;&lt;/th&gt;
-                &lt;th&gt;&lt;span&gt;Clicks&lt;/span&gt;&lt;/th&gt;
-                &lt;th&gt;&lt;span&gt;CTR&lt;/span&gt;&lt;/th&gt;
-                &lt;th&gt;&lt;span&gt;Rank&lt;/span&gt;&lt;/th&gt;
-                &lt;/tr&gt;
-                &lt;/thead&gt;
-                &lt;tbody&gt;
-                &lt;tr&gt;
-                &lt;td&gt;silly tshirts&lt;/td&gt;
-                &lt;td&gt;6,000&lt;/td&gt;
-                &lt;td&gt;110&lt;/td&gt;
-                &lt;td&gt;1.8%&lt;/td&gt;
-                &lt;td&gt;22.2&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                &lt;td&gt;2013 webapps&lt;/td&gt;
-                &lt;td&gt;9,900&lt;/td&gt;
-                &lt;td&gt;460&lt;/td&gt;
-                &lt;td&gt;4.6%&lt;/td&gt;
-                &lt;td&gt;11.5&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                &lt;td&gt;ring bananaphone&lt;/td&gt;
-                &lt;td&gt;10,500&lt;/td&gt;
-                &lt;td&gt;748&lt;/td&gt;
-                &lt;td&gt;7.1%&lt;/td&gt;
-                &lt;td&gt;17.3&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;/tbody&gt;
-                &lt;/table&gt;
-                &lt;/div&gt;
+    &lt;div class="table-responsive"&gt;
+        &lt;table class="table-bordered" cellspacing="0" cellpadding="0"&gt;
+            &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;...&lt;/th&gt;
+                ...
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;...&lt;/td&gt;
+                ...
+            &lt;/tr&gt;
+            ...
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
             </code>
             </pre>
             </div>
@@ -985,74 +879,33 @@
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;div class="table-responsive"&gt;
-                &lt;table class="table-underline" cellspacing="0" cellpadding="0"&gt;
-                &lt;thead&gt;
-                &lt;tr&gt;
-                &lt;th&gt;&lt;span&gt;Keywords&lt;/span&gt;&lt;/th&gt;
-                &lt;th&gt;&lt;span&gt;Impressions&lt;/span&gt;&lt;/th&gt;
-                &lt;th&gt;&lt;span&gt;Clicks&lt;/span&gt;&lt;/th&gt;
-                &lt;th&gt;&lt;span&gt;CTR&lt;/span&gt;&lt;/th&gt;
-                &lt;th&gt;&lt;span&gt;Rank&lt;/span&gt;&lt;/th&gt;
-                &lt;/tr&gt;
-                &lt;/thead&gt;
-                &lt;tbody&gt;
-                &lt;tr class="active"&gt;
-                &lt;td&gt;silly tshirts&lt;/td&gt;
-                &lt;td&gt;6,000&lt;/td&gt;
-                &lt;td&gt;110&lt;/td&gt;
-                &lt;td&gt;1.8%&lt;/td&gt;
-                &lt;td&gt;22.2&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                &lt;td&gt;desktop photos&lt;/td&gt;
-                &lt;td class="error"&gt;2,200&lt;/td&gt;
-                &lt;td&gt;500&lt;/td&gt;
-                &lt;td&gt;22%&lt;/td&gt;
-                &lt;td&gt;8.9&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr class="warning"&gt;
-                &lt;td&gt;arrested quotes&lt;/td&gt;
-                &lt;td&gt;13,500&lt;/td&gt;
-                &lt;td&gt;900&lt;/td&gt;
-                &lt;td&gt;6.7%&lt;/td&gt;
-                &lt;td&gt;12.0&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                &lt;td&gt;popular web series&lt;/td&gt;
-                &lt;td&gt;8,700&lt;/td&gt;
-                &lt;td&gt;350&lt;/td&gt;
-                &lt;td&gt;4%&lt;/td&gt;
-                &lt;td&gt;7.0&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr class="secondary"&gt;
-                &lt;td&gt;2013 webapps&lt;/td&gt;
-                &lt;td&gt;9,900&lt;/td&gt;
-                &lt;td&gt;460&lt;/td&gt;
-                &lt;td&gt;4.6%&lt;/td&gt;
-                &lt;td&gt;11.5&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                &lt;td&gt;ring bananaphone&lt;/td&gt;
-                &lt;td&gt;10,500&lt;/td&gt;
-                &lt;td&gt;748&lt;/td&gt;
-                &lt;td&gt;7.1%&lt;/td&gt;
-                &lt;td&gt;17.3&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr class="success"&gt;
-                &lt;td&gt;ring bananaphone&lt;/td&gt;
-                &lt;td&gt;10,500&lt;/td&gt;
-                &lt;td&gt;748&lt;/td&gt;
-                &lt;td&gt;7.1%&lt;/td&gt;
-                &lt;td&gt;17.3&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;/tbody&gt;
-                &lt;/table&gt;
-                &lt;/div&gt;
+    &lt;div class="table-responsive"&gt;
+        &lt;table class="table-underline" cellspacing="0" cellpadding="0"&gt;
+            &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;...&lt;/th&gt;
+                ...
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+            &lt;tr class="active"&gt;
+                &lt;td&gt;...&lt;/td&gt;
+                ...
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;...&lt;/td&gt;
+                &lt;td class="error"&gt;...&lt;/td&gt;
+                ...
+            &lt;/tr&gt;
+            ...
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
             </code>
             </pre>
             </div>
         </div><!--table-->
+
         <div id="form">
             <h1 class="title">Forms</h1>
             <label class="under">Simple CSS & JS for Forms.</label>
@@ -1069,19 +922,18 @@
                     </form>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-                        <pre class="code">
-                            <code class="html">
-                                &lt;form class="form"&gt;
-                                &lt;input type="email" placeholder="Email"&gt;
-                                &lt;input type="password" placeholder="Password"  disabled="disabled"&gt;
-                                &lt;label for="remember1"&gt;
-                                &lt;input id="remember1" type="checkbox"&gt; Remember me
-                                &lt;/label&gt;
-                                &lt;button type="submit" class="btn btn-fl btn-r skyblue"&gt;Sign in&lt;/button&gt;
-                                &lt;button class="codebutton btn btn-fl default"&gt;Source&lt;/button&gt;
-                                &lt;/form&gt;
-                            </code>
-                        </pre>
+                <pre class="code">
+                    <code class="html">
+    &lt;form class="form"&gt;
+        &lt;input type="email" placeholder="Email"&gt;
+        &lt;input type="password" placeholder="Password"  disabled="disabled"&gt;
+        &lt;label for="remember1"&gt;
+            &lt;input id="remember1" type="checkbox"&gt; Remember me
+        &lt;/label&gt;
+        &lt;button type="submit" class="btn btn-fl btn-r skyblue"&gt;Sign in&lt;/button&gt;
+    &lt;/form&gt;
+                    </code>
+                </pre>
             </div>
 
 
@@ -1090,9 +942,9 @@
                     <h2 class="small-title">Collie-UI order表单样式示例</h2>
                     <form class="form form-order">
                         <label for="email1">Email</label>
-                        <input class="g-4" id="email1" type="email" placeholder="Email">
+                        <input id="email1" type="email" placeholder="Email">
                         <label for="password1">Password</label>
-                        <input class="g-4" id="password1" type="password" placeholder="Password">
+                        <input id="password1" type="password" placeholder="Password">
                         <label for="state">State</label>
                         <select id="state">
                             <option>AL</option>
@@ -1108,22 +960,20 @@
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;form class="form form-order"&gt;
-                &lt;label for="email1"&gt;Email&lt;/label&gt;
-                &lt;input class="g-4" id="email1" type="email" placeholder="Email"&gt;
-                &lt;label for="password1"&gt;Password&lt;/label&gt;
-                &lt;input class="g-4" id="password1" type="password" placeholder="Password"&gt;
-                &lt;label for="state"&gt;State&lt;/label&gt;
-                &lt;select id="state"&gt;
-                &lt;option&gt;AL&lt;/option&gt;
-                &lt;option&gt;CA&lt;/option&gt;
-                &lt;option&gt;IL&lt;/option&gt;
-                &lt;/select&gt;
-                &lt;label for="remember" class="checkbox"&gt;
-                &lt;input id="remember" type="checkbox"&gt; Remember me
-                &lt;/label&gt;
-                &lt;button type="submit" class="btn btn-lu skyblue"&gt;Sign in&lt;/button&gt;
-                &lt;/form&gt;
+    &lt;form class="form form-order"&gt;
+        &lt;label for="email1"&gt;Email&lt;/label&gt;
+        &lt;input id="email1" type="email" placeholder="Email"&gt;
+        ...
+        &lt;label for="state"&gt;State&lt;/label&gt;
+        &lt;select id="state"&gt;
+            &lt;option&gt;AL&lt;/option&gt;
+            ...
+        &lt;/select&gt;
+        &lt;label for="remember" class="checkbox"&gt;
+            &lt;input id="remember" type="checkbox"&gt; Remember me
+        &lt;/label&gt;
+        &lt;button type="submit" class="btn btn-lu skyblue"&gt;Sign in&lt;/button&gt;
+    &lt;/form&gt;
             </code>
             </pre>
             </div>
@@ -1141,12 +991,12 @@
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;form class="form"&gt;
-                &lt;label for="search"&gt;
-                &lt;input class="g-4 input-rounded" id="search" type="search"&gt;
-                &lt;button type="submit" class="btn btn-fl green"&gt;Search&lt;/button&gt;
-                &lt;/label&gt;
-                &lt;/form&gt;
+    &lt;form class="form"&gt;
+        &lt;label for="search"&gt;
+            &lt;input class="g-4 input-rounded" id="search" type="search"&gt;
+            &lt;button type="submit" class="btn btn-fl green"&gt;Search&lt;/button&gt;
+        &lt;/label&gt;
+    &lt;/form&gt;
             </code>
             </pre>
             </div>
@@ -1157,29 +1007,24 @@
                     <form class="form form-aligned">
                         <div class="control-group">
                             <label for="username">Username</label>
-                            <input class="g-4" id="username" type="text" placeholder="Username">
+                            <input id="username" type="text" placeholder="Username">
                         </div>
-
                         <div class="control-group">
                             <label for="password2">Password</label>
-                            <input class="g-4" id="password2" type="password" placeholder="Password">
+                            <input id="password2" type="password" placeholder="Password">
                         </div>
-
                         <div class="control-group">
                             <label for="email2">Email Address</label>
-                            <input class="g-4" id="email2" type="email" placeholder="Email Address">
+                            <input id="email2" type="email" placeholder="Email Address">
                         </div>
-
                         <div class="control-group">
                             <label for="foo">Supercalifragilistic Label</label>
-                            <input class="g-4" id="foo" type="text" placeholder="Enter something here...">
+                            <input id="foo" type="text" placeholder="Enter something here...">
                         </div>
-
                         <div class="controls">
                             <label for="cb" class="checkbox">
                                 <input id="cb" type="checkbox"> I've read the terms and conditions
                             </label>
-
                             <button type="submit" class="btn btn-lu skyblue">Submit</button>
                         </div>
                     </form>
@@ -1187,30 +1032,19 @@
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;form class="form form-aligned"&gt;
-                &lt;div class="control-group"&gt;
-                &lt;label for="username"&gt;Username&lt;/label&gt;
-                &lt;input class="g-4" id="username" type="text" placeholder="Username"&gt;
-                &lt;/div&gt;
-                &lt;div class="control-group"&gt;
-                &lt;label for="password2"&gt;Password&lt;/label&gt;
-                &lt;input class="g-4" id="password2" type="password" placeholder="Password"&gt;
-                &lt;/div&gt;
-                &lt;div class="control-group"&gt;
-                &lt;label for="email2"&gt;Email Address&lt;/label&gt;
-                &lt;input class="g-4" id="email2" type="email" placeholder="Email Address"&gt;
-                &lt;/div&gt;
-                &lt;div class="control-group"&gt;
-                &lt;label for="foo"&gt;Supercalifragilistic Label&lt;/label&gt;
-                &lt;input class="g-4" id="foo" type="text" placeholder="Enter something here..."&gt;
-                &lt;/div&gt;
-                &lt;div class="controls"&gt;
-                &lt;label for="cb" class="checkbox"&gt;
+    &lt;form class="form form-aligned"&gt;
+        &lt;div class="control-group"&gt;
+            &lt;label for="username"&gt;Username&lt;/label&gt;
+            &lt;input id="username" type="text" placeholder="Username"&gt;
+        &lt;/div&gt;
+        ...
+        &lt;div class="controls"&gt;
+            &lt;label for="cb" class="checkbox"&gt;
                 &lt;input id="cb" type="checkbox"&gt; I've read the terms and conditions
-                &lt;/label&gt;
-                &lt;button type="submit" class="btn btn-lu skyblue"&gt;Submit&lt;/button&gt;
-                &lt;/div&gt;
-                &lt;/form&gt;
+            &lt;/label&gt;
+            &lt;button type="submit" class="btn btn-lu skyblue"&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
             </code>
             </pre>
             </div>
@@ -1243,26 +1077,19 @@
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;form class="form form-order form-block"&gt;
-                &lt;div class="control-group"&gt;
-                &lt;label for="name"&gt;Username&lt;/label&gt;
-                &lt;input id="name" type="text" placeholder="Username"&gt;
-                &lt;/div&gt;
-                &lt;div class="control-group"&gt;
-                &lt;label for="password"&gt;Password&lt;/label&gt;
-                &lt;input id="password" type="password" placeholder="Password"&gt;
-                &lt;/div&gt;
-                &lt;div class="control-group"&gt;
-                &lt;label for="email"&gt;Email Address&lt;/label&gt;
-                &lt;input id="email" type="email" placeholder="Email Address"&gt;
-                &lt;/div&gt;
-                &lt;div class="controls"&gt;
-                &lt;label for="cb2" class="checkbox"&gt;
+    &lt;form class="form form-order form-block"&gt;
+        &lt;div class="control-group"&gt;
+            &lt;label for="name"&gt;Username&lt;/label&gt;
+            &lt;input id="name" type="text" placeholder="Username"&gt;
+        &lt;/div&gt;
+        ...
+        &lt;div class="controls"&gt;
+            &lt;label for="cb2" class="checkbox"&gt;
                 &lt;input id="cb2" type="checkbox"&gt; I've read the terms and conditions
-                &lt;/label&gt;
-                &lt;button type="submit" class="btn btn-lu skyblue"&gt;Submit&lt;/button&gt;
-                &lt;/div&gt;
-                &lt;/form&gt;
+            &lt;/label&gt;
+            &lt;button type="submit" class="btn btn-lu skyblue"&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
             </code>
             </pre>
             </div>
@@ -1286,18 +1113,15 @@
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;form class="form"&gt;
-                &lt;fieldset class="form-group"&gt;
-                &lt;input type="text" class="input-1-2" placeholder="Username"&gt;
-                &lt;input type="text" class="input-1-2" placeholder="Password"&gt;
-                &lt;input type="email" class="input-1-2" placeholder="Email"&gt;
-                &lt;/fieldset&gt;
-                &lt;fieldset class="form-group"&gt;
-                &lt;input type="text" class="input-1-2" placeholder="Another Group"&gt;
-                &lt;input type="text" class="input-1-2" placeholder="More Stuff"&gt;
-                &lt;/fieldset&gt;
-                &lt;button type="submit" class="btn btn-lu green input-1-2"&gt;Sign in&lt;/button&gt;
-                &lt;/form&gt;
+    &lt;form class="form"&gt;
+        &lt;fieldset class="form-group"&gt;
+            &lt;input type="text" class="input-1-2" placeholder="Username"&gt;
+            &lt;input type="text" class="input-1-2" placeholder="Password"&gt;
+            &lt;input type="email" class="input-1-2" placeholder="Email"&gt;
+        &lt;/fieldset&gt;
+        ...
+        &lt;button type="submit" class="btn btn-lu green input-1-2"&gt;Sign in&lt;/button&gt;
+    &lt;/form&gt;
             </code>
             </pre>
             </div>
@@ -1310,12 +1134,13 @@
                         <div class="input-group">
                             <div class="input-info">@</div>
                             <input type="email" placeholder="Email">
-                        </div><br><br>
+                        </div>
                         <label for="email">checkbox&radio info提示测试</label>
                         <div class="input-group">
                             <input type="email" placeholder="Name">
                             <div class="input-info"><input type="checkbox" id="inside2"></div>
-                        </div><label></label>
+                        </div>
+                        <label></label>
                         <div class="input-group">
                             <div class="input-info"><input type="radio" id="inside3"></div>
                             <input type="email" placeholder="Email">
@@ -1330,12 +1155,13 @@
           &lt;div class="input-group"&gt;
               &lt;div class="input-info"&gt;@&lt;/div&gt;
               &lt;input type="email" placeholder="Email"&gt;
-          &lt;/div&gt;&lt;br&gt;&lt;br&gt;
+          &lt;/div&gt;
           &lt;label for="email"&gt;checkbox&radio info提示测试&lt;/label&gt;
           &lt;div class="input-group"&gt;
               &lt;input type="email" placeholder="Name"&gt;
               &lt;div class="input-info"&gt;&lt;input type="checkbox" id="inside2"&gt;&lt;/div&gt;
-          &lt;/div&gt;&lt;label&gt;&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;label&gt;&lt;/label&gt;
           &lt;div class="input-group"&gt;
               &lt;div class="input-info"&gt;&lt;input type="radio" id="inside3"&gt;&lt;/div&gt;
               &lt;input type="email" placeholder="Email"&gt;
@@ -1456,31 +1282,26 @@
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;form class="form form-order"&gt;
-                &lt;div class="checkbox"&gt;Checkbox:
-                &lt;label for="test1"&gt;
+    &lt;form class="form form-order"&gt;
+        &lt;div class="checkbox"&gt;Checkbox:
+            &lt;label for="test1"&gt;
                 &lt;input type="checkbox" id=test1 value=""&gt;
                 Option one is this and that&mdash;be sure to include why it's great
-                &lt;/label&gt;
-                &lt;/div&gt;
-                &lt;div class="checkbox"&gt;
-                &lt;label for="test2"&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="checkbox"&gt;
+            &lt;label for="test2"&gt;
                 &lt;input id="test2" type="checkbox" value="" disabled="disabled"&gt;
                 Option two is disabled
-                &lt;/label&gt;
-                &lt;/div&gt;
-                &lt;div class="checkbox"&gt;Checkbox-inline:
-                &lt;label for="inlineCheckbox1" class="checkbox-inline"&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="checkbox"&gt;Checkbox-inline:
+            &lt;label for="inlineCheckbox1" class="checkbox-inline"&gt;
                 &lt;input type="checkbox" id="inlineCheckbox1" value="option1"&gt;1
-                &lt;/label&gt;
-                &lt;label for="inlineCheckbox2" class="checkbox-inline"&gt;
-                &lt;input type="checkbox" id="inlineCheckbox2" value="option2"&gt;2
-                &lt;/label&gt;
-                &lt;label for="inlineCheckbox3" class="checkbox-inline"&gt;
-                &lt;input type="checkbox" id="inlineCheckbox3" value="option3"&gt;3
-                &lt;/label&gt;
-                &lt;/div&gt;
-                &lt;/form&gt;
+            &lt;/label&gt;
+            ...
+        &lt;/div&gt;
+    &lt;/form&gt;
             </code>
             </pre>
             </div>
@@ -1491,31 +1312,31 @@
                     <form class="form form-order">
                         <div class="radio">Radio:
                             <label for="optionsRadios1">
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                <input type="radio" id="optionsRadios1" value="option1" checked>
                                 Option one is this and that&mdash;be sure to include why it's great
                             </label>
                         </div>
                         <div class="radio">
                             <label for="inlineradio2">
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                <input type="radio" id="optionsRadios2" value="option2">
                                 Option two can be something else and selecting it will deselect option one
                             </label>
                         </div>
                         <div class="radio">
                             <label for="optionsRadios3">
-                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="disabled">
+                                <input type="radio" id="optionsRadios3" value="option3" disabled="disabled">
                                 Option three is disabled
                             </label>
                         </div>
                         <div class="radio">Radio-inline:
                             <label for="inlineRadio1" class="radio-inline">
-                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">1
+                                <input type="radio" id="inlineRadio1" value="option1">1
                             </label>
                             <label for="inlineRadio2" class="radio-inline">
-                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">2
+                                <input type="radio" id="inlineRadio2" value="option2">2
                             </label>
                             <label for="inlineRadio3" class="radio-inline">
-                                <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">3
+                                <input type="radio" id="inlineRadio3" value="option3">3
                             </label>
                         </div>
                     </form>
@@ -1523,37 +1344,27 @@
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;form class="form form-order"&gt;
-                &lt;div class="radio"&gt;Radio:
-                &lt;label for="optionsRadios1"&gt;
-                &lt;input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked&gt;
+    &lt;form class="form form-order"&gt;
+        &lt;div class="radio"&gt;Radio:
+            &lt;label for="optionsRadios1"&gt;
+                &lt;input type="radio" id="optionsRadios1" value="option1" checked&gt;
                 Option one is this and that&mdash;be sure to include why it's great
-                &lt;/label&gt;
-                &lt;/div&gt;
-                &lt;div class="radio"&gt;
-                &lt;label for="inlineradio2"&gt;
-                &lt;input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="radio"&gt;
+            &lt;label for="inlineradio2"&gt;
+                &lt;input type="radio" id="optionsRadios2" value="option2"&gt;
                 Option two can be something else and selecting it will deselect option one
-                &lt;/label&gt;
-                &lt;/div&gt;
-                &lt;div class="radio"&gt;
-                &lt;label for="optionsRadios3"&gt;
-                &lt;input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="disabled"&gt;
-                Option three is disabled
-                &lt;/label&gt;
-                &lt;/div&gt;
-                &lt;div class="radio"&gt;Radio-inline:
-                &lt;label for="inlineRadio1" class="radio-inline"&gt;
-                &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"&gt;1
-                &lt;/label&gt;
-                &lt;label for="inlineRadio2" class="radio-inline"&gt;
-                &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"&gt;2
-                &lt;/label&gt;
-                &lt;label for="inlineRadio3" class="radio-inline"&gt;
-                &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"&gt;3
-                &lt;/label&gt;
-                &lt;/div&gt;
-                &lt;/form&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+        ...
+        &lt;div class="radio"&gt;Radio-inline:
+            &lt;label for="inlineRadio1" class="radio-inline"&gt;
+                &lt;input type="radio" id="inlineRadio1" value="option1"&gt;1
+            &lt;/label&gt;
+            ...
+        &lt;/div&gt;
+    &lt;/form&gt;
             </code>
             </pre>
             </div>
@@ -1564,7 +1375,7 @@
                     <form class="form form-order">
                         <div class="btn-group">
                             <label class="btn btn-lu green" for="optiong">
-                                <input type="checkbox" name="optionsc" id="optiong" >checkbox 1 (preselected)
+                                <input type="checkbox" name="optionsc" id="optiong" >checkbox 1
                             </label>
                             <label class="btn btn-lu green" for="optionh">
                                 <input type="checkbox" name="optionsc" id="optionh">checkbox 2
@@ -1576,7 +1387,7 @@
                         <label></label>
                         <div class="btn-group">
                             <label class="btn btn-fl btn-r green" for="optionj">
-                                <input type="checkbox" name="optionsd" id="optionj" >checkbox 1 (preselected)
+                                <input type="checkbox" name="optionsd" id="optionj" >checkbox 1
                             </label>
                             <label class="btn btn-fl btn-r green" for="optionk">
                                 <input type="checkbox" name="optionsd" id="optionk">checkbox 2
@@ -1590,31 +1401,21 @@
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;form class="form form-order"&gt;
-                &lt;div class="btn-group"&gt;
-                &lt;label class="btn btn-lu green" for="optiong"&gt;
-                &lt;input type="checkbox" name="optionsc" id="optiong" &gt;checkbox 1 (preselected)
-                &lt;/label&gt;
-                &lt;label class="btn btn-lu green" for="optionh"&gt;
-                &lt;input type="checkbox" name="optionsc" id="optionh"&gt;checkbox 2
-                &lt;/label&gt;
-                &lt;label class="btn btn-lu green" for="optioni"&gt;
-                &lt;input type="checkbox" name="optionsc" id="optioni"&gt;checkbox 3
-                &lt;/label&gt;
-                &lt;/div&gt;
-                &lt;label&gt;&lt;/label&gt;
-                &lt;div class="btn-group"&gt;
-                &lt;label class="btn btn-fl btn-r green" for="optionj"&gt;
-                &lt;input type="checkbox" name="optionsd" id="optionj" &gt;checkbox 1 (preselected)
-                &lt;/label&gt;
-                &lt;label class="btn btn-fl btn-r green" for="optionk"&gt;
-                &lt;input type="checkbox" name="optionsd" id="optionk"&gt;checkbox 2
-                &lt;/label&gt;
-                &lt;label class="btn btn-fl btn-r green" for="optionl"&gt;
-                &lt;input type="checkbox" name="optionsd" id="optionl"&gt;checkbox 3
-                &lt;/label&gt;
-                &lt;/div&gt;
-                &lt;/form&gt;
+    &lt;form class="form form-order"&gt;
+        &lt;div class="btn-group"&gt;
+            &lt;label class="btn btn-lu green" for="optiong"&gt;
+                &lt;input type="checkbox" name="optionsc" id="optiong" &gt;checkbox 1
+            &lt;/label&gt;
+            ...
+        &lt;/div&gt;
+        &lt;label&gt;&lt;/label&gt;
+        &lt;div class="btn-group"&gt;
+            &lt;label class="btn btn-fl btn-r green" for="optionj"&gt;
+                &lt;input type="checkbox" name="optionsd" id="optionj" &gt;checkbox 1
+            &lt;/label&gt;
+            ...
+        &lt;/div&gt;
+    &lt;/form&gt;
             </code>
             </pre>
             </div>
@@ -1625,7 +1426,7 @@
                     <form class="form form-order">
                         <div class="btn-group">
                             <label class="btn btn-lu skyblue" for="optiona">
-                                <input type="radio" name="optionsa" id="optiona" >Radio 1 (preselected)
+                                <input type="radio" name="optionsa" id="optiona" >Radio 1
                             </label>
                             <label class="btn btn-lu skyblue" for="optionb">
                                 <input type="radio" name="optionsa" id="optionb">Radio 2
@@ -1637,7 +1438,7 @@
                         <label></label>
                         <div class="btn-group">
                             <label class="btn btn-fl btn-r skyblue" for="optiond">
-                                <input type="radio" name="optionsb" id="optiond" >Radio 1 (preselected)
+                                <input type="radio" name="optionsb" id="optiond" >Radio 1
                             </label>
                             <label class="btn btn-fl btn-r skyblue" for="optione">
                                 <input type="radio" name="optionsb" id="optione">Radio 2
@@ -1651,31 +1452,21 @@
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;form class="form form-order"&gt;
-                &lt;div class="btn-group"&gt;
-                &lt;label class="btn btn-lu skyblue" for="optiona"&gt;
-                &lt;input type="radio" name="optionsa" id="optiona" &gt;Radio 1 (preselected)
-                &lt;/label&gt;
-                &lt;label class="btn btn-lu skyblue" for="optionb"&gt;
-                &lt;input type="radio" name="optionsa" id="optionb"&gt;Radio 2
-                &lt;/label&gt;
-                &lt;label class="btn btn-lu skyblue" for="optionc"&gt;
-                &lt;input type="radio" name="optionsa" id="optionc"&gt;Radio 3
-                &lt;/label&gt;
-                &lt;/div&gt;
-                &lt;label&gt;&lt;/label&gt;
-                &lt;div class="btn-group"&gt;
-                &lt;label class="btn btn-fl btn-r skyblue" for="optiond"&gt;
-                &lt;input type="radio" name="optionsb" id="optiond" &gt;Radio 1 (preselected)
-                &lt;/label&gt;
-                &lt;label class="btn btn-fl btn-r skyblue" for="optione"&gt;
-                &lt;input type="radio" name="optionsb" id="optione"&gt;Radio 2
-                &lt;/label&gt;
-                &lt;label class="btn btn-fl btn-r skyblue" for="optionf"&gt;
-                &lt;input type="radio" name="optionsb" id="optionf"&gt;Radio 3
-                &lt;/label&gt;
-                &lt;/div&gt;
-                &lt;/form&gt;
+    &lt;form class="form form-order"&gt;
+        &lt;div class="btn-group"&gt;
+            &lt;label class="btn btn-lu skyblue" for="optiona"&gt;
+                &lt;input type="radio" name="optionsa" id="optiona" &gt;Radio 1
+            &lt;/label&gt;
+            ...
+        &lt;/div&gt;
+        &lt;label&gt;&lt;/label&gt;
+        &lt;div class="btn-group"&gt;
+            &lt;label class="btn btn-fl btn-r skyblue" for="optiond"&gt;
+                &lt;input type="radio" name="optionsb" id="optiond" &gt;Radio 1
+            &lt;/label&gt;
+            ...
+        &lt;/div&gt;
+    &lt;/form&gt;
             </code>
             </pre>
             </div>
@@ -1709,28 +1500,18 @@
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;form class="form form-order"&gt;
-                &lt;label&gt;Radio with inline&lt;/label&gt;
-                &lt;label class="btn btn-lu green radio-inline" for="optionm"&gt;
-                &lt;input type="radio" name="optionsa" id="optionm" &gt;Radio 1 (preselected)
-                &lt;/label&gt;
-                &lt;label class="btn btn-lu green radio-inline" for="optionn"&gt;
-                &lt;input type="radio" name="optionsa" id="optionn"&gt;Radio 2
-                &lt;/label&gt;
-                &lt;label class="btn btn-lu green radio-inline radio-inline" for="optiono"&gt;
-                &lt;input type="radio" name="optionsa" id="optiono"&gt;Radio 3
-                &lt;/label&gt;
-                &lt;label&gt;&lt;/label&gt;
-                &lt;label class="btn btn-fl btn-r skyblue radio-inline" for="optionp"&gt;
-                &lt;input type="radio" name="optionsb" id="optionp" &gt;Radio 1 (preselected)
-                &lt;/label&gt;
-                &lt;label class="btn btn-fl btn-r skyblue radio-inline" for="optionq"&gt;
-                &lt;input type="radio" name="optionsb" id="optionq"&gt;Radio 2
-                &lt;/label&gt;
-                &lt;label class="btn btn-fl btn-r skyblue radio-inline" for="optionr"&gt;
-                &lt;input type="radio" name="optionsb" id="optionr"&gt;Radio 3
-                &lt;/label&gt;
-                &lt;/form&gt;
+    &lt;form class="form form-order"&gt;
+        &lt;label&gt;Radio with inline&lt;/label&gt;
+        &lt;label class="btn btn-lu green radio-inline" for="optionm"&gt;
+            &lt;input type="radio" name="optionsa" id="optionm" &gt;Radio 1 (preselected)
+        &lt;/label&gt;
+        ...
+        &lt;label&gt;&lt;/label&gt;
+        &lt;label class="btn btn-fl btn-r skyblue radio-inline" for="optionp"&gt;
+            &lt;input type="radio" name="optionsb" id="optionp" &gt;Radio 1 (preselected)
+        &lt;/label&gt;
+        ...
+    &lt;/form&gt;
             </code>
             </pre>
             </div>
@@ -1739,15 +1520,15 @@
                 <div class="block">
                     <h2 class="small-title">Collie-UI 只读表单示例</h2>
                     <form class="form form-order">
-                        <input class="g-4" type="text" id="text" value="readonly but can copy..." readonly>
+                        <input type="text" id="text" value="readonly but can copy..." readonly>
                     </form>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;form class="form form-order"&gt;
-                &lt;input class="g-4" type="text" id="text" value="readonly but can copy..." readonly&gt;
-                &lt;/form&gt;
+    &lt;form class="form form-order"&gt;
+        &lt;input type="text" id="text" value="readonly but can copy..." readonly&gt;
+    &lt;/form&gt;
             </code>
             </pre>
             </div>
@@ -1756,22 +1537,22 @@
                 <div class="block">
                     <h2 class="small-title">Collie-UI file示例</h2>
                     <form class="form form-block">
-                            <span class="file">
-                                <!--添加了tabindex="0"才聚焦的-->
-                                <input class="fbtn" type="file">Select a  file...
-                            </span>
+                        <span class="file">
+                            <!--添加了tabindex="0"才聚焦的-->
+                            <input class="fbtn" type="file">Select a  file...
+                        </span>
                         <label>This is a help text you put for info</label>
                     </form>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;form class="form form-block"&gt;
-                &lt;span class="file"&gt;
+    &lt;form class="form form-block"&gt;
+            &lt;span class="file"&gt;
                 &lt;input class="fbtn" type="file"&gt;Select a  file...
-                &lt;/span&gt;
-                &lt;label&gt;This is a help text you put for info&lt;/label&gt;
-                &lt;/form&gt;
+            &lt;/span&gt;
+        &lt;label&gt;This is a help text you put for info&lt;/label&gt;
+    &lt;/form&gt;
             </code>
             </pre>
             </div>
@@ -1786,9 +1567,9 @@
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;form class="form"&gt;
-                &lt;input type="color"&gt;
-                &lt;/form&gt;
+    &lt;form class="form"&gt;
+        &lt;input type="color"&gt;
+    &lt;/form&gt;
             </code>
             </pre>
             </div>
@@ -1803,9 +1584,9 @@
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;form class="form"&gt;
-                &lt;input type="date"&gt;
-                &lt;/form&gt;
+    &lt;form class="form"&gt;
+        &lt;input type="date"&gt;
+    &lt;/form&gt;
             </code>
             </pre>
             </div>
@@ -1822,9 +1603,9 @@
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;form class="form"&gt;
-                &lt;input type="number"&gt;
-                &lt;/form&gt;
+    &lt;form class="form"&gt;
+        &lt;input type="number"&gt;
+    &lt;/form&gt;
             </code>
             </pre>
             </div>
@@ -1839,13 +1620,14 @@
                 </div>
             <pre class="code">
             <code class="html">
-                &lt;form class="form"&gt;
-                &lt;textarea&gt;&lt;/textarea&gt;
-                &lt;/form&gt;
+    &lt;form class="form"&gt;
+        &lt;textarea&gt;&lt;/textarea&gt;
+    &lt;/form&gt;
             </code>
             </pre>
             </div>
         </div><!--Forms-->
+
         <div id="nav">
             <h1 class="title">Navigation</h1>
             <label class="under">Simple CSS & JS for Navs.</label>
@@ -1862,10 +1644,10 @@
                             <li class="disabled"><a>Winter</a></li>
                                 <li class="right"><a><i class="fa fa-user"></i></a></li>
                                 <li class="right"><a><i class="fa fa-envelope"></i></a></li>
-                                <li class="right"><form class="form" style="margin-top: calc(0.8em - 1px);">
-                                    <div class="input-group input-xs">
+                                <li class="right"><form class="form">
+                                    <div class="input-group input-xs">·
                                         <input class="input-rounded" type="email" placeholder="Email">
-                                        <div class="input-info" style="width: 11.8000001907349px;"><i class="fa fa-search fa-fw"></i></div>
+                                        <div class="input-info"><i class="fa fa-search fa-fw"></i></div>
                                     </div>
                                 </form></li>
                         </ul>
@@ -1875,7 +1657,23 @@
                 </div>
             <pre class="code">
             <code class="html">
-
+    &lt;nav class="nav nav-success nav-padding"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a&gt;Spring&lt;/a&gt;&lt;/li&gt;
+            ...
+            &lt;li class="disabled"&gt;&lt;a&gt;Winter&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="right"&gt;&lt;a&gt;&lt;i class="fa fa-user"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+            ...
+            &lt;li class="right"&gt;
+                &lt;form class="form" style="margin-top: calc(0.8em - 1px);"&gt;
+                    &lt;div class="input-group input-xs"&gt;
+                        &lt;input class="input-rounded" type="email" placeholder="Email"&gt;
+                        &lt;div class="input-info"&gt;&lt;i class="fa fa-search fa-fw"&gt;&lt;/i&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
             </code>
             </pre>
             </div>
@@ -1884,17 +1682,17 @@
                 <div class="block">
                     <h2 class="small-title">横向幽灵系列Nav示例</h2>
                     <div class="yl">
-                        <nav class="nav-yl nav-padding">
+                        <nav class="nav nav-yl nav-padding">
                         <ul>
                         <li><a>Spring</a></li>
                         <li><a>Summer</a></li>
                         <li class="disabled"><a>Fall</a></li>
                         <li><a>Winter</a></li>
                         <li class="right">
-                            <form class="form" style="margin-top: calc(0.65em - 1px);">
+                            <form class="form">
                                 <label for="search11">
                                     <input class="input-rounded input-sm" id="search11" type="search">
-                                    <button type="submit" class="btn btn-sm btn-lu skyblue">Search</button>
+                                    <button type="submit" class="btn btn-sm btn-yl">Search</button>
                                 </label>
                             </form>
                         </li>
@@ -1905,7 +1703,22 @@
                 </div>
             <pre class="code">
             <code class="html">
-
+    &lt;nav class="nav nav-yl nav-padding"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a&gt;Spring&lt;/a&gt;&lt;/li&gt;
+            ...
+            &lt;li class="disabled"&gt;&lt;a&gt;Fall&lt;/a&gt;&lt;/li&gt;
+            ...
+            &lt;li class="right"&gt;
+                &lt;form class="form"&gt;
+                    &lt;label for="search11"&gt;
+                        &lt;input class="input-rounded input-sm" id="search11" type="search"&gt;
+                        &lt;button type="submit" class="btn btn-sm btn-yl"&gt;Search&lt;/button&gt;
+                    &lt;/label&gt;
+                &lt;/form&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
             </code>
             </pre>
             </div>
@@ -1924,13 +1737,19 @@
                                     <li><a>Winter</a></li>
                                 </ul>
                             </nav>
-                            <button class="code-display btn btn-fl default">Source</button>
                         </div>
                     </div>
-                        </div>
+                    <button class="code-display btn btn-fl default">Source</button>
+                </div>
             <pre class="code">
             <code class="html">
-
+    &lt;nav class="nav nav-vertical"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a&gt;Spring&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="disabled"&gt;&lt;a&gt;Summer&lt;/a&gt;&lt;/li&gt;
+            ...
+        &lt;/ul&gt;
+    &lt;/nav&gt;
             </code>
             </pre>
             </div>
@@ -1957,7 +1776,13 @@
                 </div>
             <pre class="code">
             <code class="html">
-
+    &lt;nav class="nav-yl nav-vertical nav-padding"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a&gt;Spring&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="disabled"&gt;&lt;a&gt;When the list is very very long...&lt;/a&gt;&lt;/li&gt;
+            ...
+        &lt;/ul&gt;
+    &lt;/nav&gt;
             </code>
             </pre>
             </div>
@@ -1979,12 +1804,20 @@
                 </div>
             <pre class="code">
             <code class="html">
-
+    &lt;nav class="nav-path"&gt;
+        &lt;ol&gt;
+            &lt;li&gt;&lt;a &gt;&lt;span class="fa fa-heart"&gt;&lt;/span&gt;Collie-UI&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a &gt;Spring&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="disabled"&gt;&lt;a &gt;Summer&lt;/a&gt;&lt;/li&gt;
+            ...
+        &lt;/ol&gt;
+    &lt;/nav&gt;
             </code>
             </pre>
             </div>
 
             </div><!--Nav-->
+
         <div id="image">
             <h1 class="title">Image</h1>
             <label class="under">Simple CSS & JS for Images.</label>
@@ -2160,7 +1993,8 @@
                     </code>
                 </pre>
             </div>
-        </div>
+        </div><!--Images-->
+
         <div id="badges">
             <h1 class="title">Badges</h1>
             <label class="under">Simple CSS for Badges.</label>
@@ -2171,12 +2005,12 @@
                     <button class="btn btn-lu green" style="margin: 1em 0.5em 1.5em 0">badge<span class="badge">99+</span></button>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-<pre class="code">
-<code class="html">
+                <pre class="code">
+                    <code class="html">
     &lt;button class="btn btn-fl skyblue"&gt;badge&lt;span class="badge"&gt;1&lt;/span&gt;&lt;/button&gt;
     &lt;button class="btn btn-lu green"&gt;badge&lt;span class="badge"&gt;99+&lt;/span&gt;&lt;/button&gt;
-</code>
-</pre>
+                    </code>
+                </pre>
             </div>
             <div>
                 <div class="block">
@@ -2201,20 +2035,22 @@
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-<pre class="code">
-<code class="html">
+                <pre class="code">
+                    <code class="html">
     &lt;div class="tab-vertical tab-line"&gt;
-    &lt;ul class="tabs"&gt;
-    &lt;li&gt;Home&lt;/li&gt;
-    &lt;li&gt;Info&lt;/li&gt;
-    &lt;li&gt;Contact&lt;span class="badge"&gt;56&lt;/span&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;div class="tab-content"&gt;
-    ...
+        &lt;ul class="tabs"&gt;
+            ..
+            &lt;li&gt;Contact&lt;span class="badge"&gt;56&lt;/span&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class="tab-content"&gt;
+            &lt;div class="tab-item"&gt;
+                &lt;h1&gt;i am home&lt;/h1&gt;
+            &lt;/div&gt;
+            ...
+        &lt;/div&gt;
     &lt;/div&gt;
-    &lt;/div>
-</code>
-</pre>
+                    </code>
+                </pre>
             </div>
             <div>
                 <div class="block">
@@ -2239,20 +2075,22 @@
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-<pre class="code">
-<code class="html">
+                <pre class="code">
+                    <code class="html">
     &lt;div class="tab-horizontal tab-line divider"&gt;
-    &lt;ul class="tabs"&gt;
-    &lt;li class="tab-choosed"&gt;Home&lt;/li&gt;
-    &lt;li&gt;Info&lt;span class="badge"&gt;99+&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;Contact&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;div class="tab-content"&gt;
-    ...
+        &lt;ul class="tabs"&gt;
+            &lt;li class="tab-choosed"&gt;Home&lt;/li&gt;
+            &lt;li&gt;Info&lt;span class="badge"&gt;99+&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;Contact&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class="tab-content"&gt;
+            &lt;div class="tab-item" style="display: block;"&gt;...&lt;/div&gt;
+            &lt;div class="tab-item" style="display: none;"&gt;...&lt;/div&gt;
+            &lt;div class="tab-item" style="display: none;"&gt;...&lt;/div&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-    &lt;/div&gt;
-</code>
-</pre>
+                    </code>
+                </pre>
             </div>
         </div>
         <div id="pagination">
@@ -2261,7 +2099,7 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">方正有框样式</h2>
-                    <ul class="pgn pgn-border" style="padding: 0;">
+                    <ul class="pgn pgn-border">
                         <li><a>Previous</a></li>
                         <li><a>1</a></li>
                         <li><a>2</a></li>
@@ -2274,17 +2112,18 @@
                     </ul>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-<pre class="code">
-<code class="html">
-    &lt;ul class="pgn pgn-border" style="padding: 0;"&gt;
-    &lt;li&gt;&lt;a&gt;Previous&lt;/a&gt;&lt;/li&gt;
-    ...
-    &lt;li&gt;&lt;a class="pgn-choosed"&gt;3&lt;/a&gt;&lt;/li&gt;
-    ...
-    &lt;li&gt;&lt;a&gt;Next&lt;/a&gt;&lt;/li&gt;
+                <pre class="code">
+                    <code class="html">
+    &lt;ul class="pgn pgn-border"&gt;
+        &lt;li&gt;&lt;a&gt;Previous&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a&gt;1&lt;/a&gt;&lt;/li&gt;
+        ...
+        &lt;li&gt;&lt;a class="pgn-choosed"&gt;3&lt;/a&gt;&lt;/li&gt;
+        ...
+        &lt;li&gt;&lt;a&gt;Next&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
-</code>
-</pre>
+                    </code>
+                </pre>
             </div>
             <div>
                 <div class="block">
@@ -2302,17 +2141,17 @@
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-<pre class="code">
-<code class="html">
+                <pre class="code">
+                    <code class="html">
     &lt;div class="pgn pgn-roundborder"&gt;
-    &lt;a class="pgn-pre"&gt;&lt;/a&gt;
-    &lt;a&gt;1&lt;/a&gt;
-    &lt;a class="pgn-choosed"&gt;2&lt;/a&gt;
-    ...
-    &lt;a class="pgn-next"&gt;&lt;/a&gt;
+        &lt;a class="pgn-pre"&gt;&lt;/a&gt;
+        &lt;a&gt;1&lt;/a&gt;
+        &lt;a class="pgn-choosed"&gt;2&lt;/a&gt;
+        ...
+        &lt;a class="pgn-next"&gt;&lt;/a&gt;
     &lt;/div&gt;
-</code>
-</pre>
+                    </code>
+                </pre>
             </div>
             <div>
                 <div class="block">
@@ -2328,17 +2167,17 @@
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-<pre class="code">
-<code class="html">
+                <pre class="code">
+                    <code class="html">
     &lt;div class="pgn pgn-circle"&gt;
-    &lt;a class="pgn-pre"&gt;&lt;/a&gt;
-    &lt;a&gt;&lt;/a&gt;
-    &lt;a class="pgn-choosed"&gt;&lt;/a&gt;
-    ...
-    &lt;a class="pgn-next"&gt;&lt;/a&gt;
+        &lt;a class="pgn-pre"&gt;&lt;/a&gt;
+        &lt;a&gt;&lt;/a&gt;
+        &lt;a class="pgn-choosed"&gt;&lt;/a&gt;
+        ...
+        &lt;a class="pgn-next"&gt;&lt;/a&gt;
     &lt;/div&gt;
-</code>
-</pre>
+                    </code>
+                </pre>
             </div>
         </div>
         <div id="label">
@@ -2355,13 +2194,13 @@
                     <h6>Example heading <span class="label label-default">New</span></h6>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-<pre class="code">
-<code class="html">
+                <pre class="code">
+                    <code class="html">
     &lt;h1&gt;Example heading &lt;span class="label label-skyblue"&gt;New&lt;/span&gt;&lt;/h1&gt;
     ...
     &lt;h6&gt;Example heading &lt;span class="label label-default"&gt;New&lt;/span&gt;&lt;/h6&gt;
-</code>
-</pre>
+                    </code>
+                </pre>
             </div>
             <div>
                 <div class="block">
@@ -2369,11 +2208,11 @@
                     <h1><a href="...">Default <span class="label label-default">New</span></a></h1>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-<pre class="code">
-<code class="html">
+                <pre class="code">
+                    <code class="html">
     &lt;h1&gt;&lt;a href="..."&gt;Default &lt;span class="label label-default"&gt;New&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;
-</code>
-</pre>
+                    </code>
+                </pre>
             </div>
             <div>
                 <div class="block">
@@ -2381,12 +2220,12 @@
                     <button class="btn btn-lu skyblue">Default <span class="label label-green">New!</span></button>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-<pre class="code">
-<code class="html">
+                <pre class="code">
+                    <code class="html">
     &lt;button class="btn btn-lu skyblue"&gt;Default &lt;span class="label label-green"&gt;New!&lt;/span&gt;&lt;/button&gt;
     &lt;button class="code-display btn btn-fl default"&gt;Source&lt;/button&gt;
-</code>
-</pre>
+                    </code>
+                </pre>
             </div>
         </div>
         <div id="helper">
@@ -2397,10 +2236,11 @@
                     <h2 class="small-title">Collie-UI form-block表单测试</h2>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
-<pre class="code">
-<code class="html">
-</code>
-</pre>
+                <pre class="code">
+                    <code class="html">
+
+                    </code>
+                </pre>
             </div>
         </div>
     </div>
