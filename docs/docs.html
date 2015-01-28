@@ -66,6 +66,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">基础栅格</h2>
+                    <p class="description">
+                        Collie UI 提供了三套栅格系统，分别为 5，12，16 列。在使用过程中，首先需要在外部容器添加<kbd>.grids-5</kbd>,
+                        <kbd>.grids-12</kbd>或<kbd>.grids-16</kbd>。如下面的例子，占 [n] 列则使用<kbd>.g-[n]</kbd>,n 的最大值为所选栅格的列数。
+                    </p>
                     <div>
                         <div class="grids-5"><!--5栅格-->
                             <div class="g-1 grid-blue">1</div>
@@ -163,6 +167,7 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">「Lucency系列按钮」全预设样式</h2>
+                    <p class="description">使用按钮类，首先需要添加<kbd>.btn</kbd>类。Lucency系列按钮再添加<kbd>.btn-lu</kbd>类。接下来设置颜色，颜色的设置请参看[颜色说明]。</p>
                     <button class="btn btn-lu btn-r default">Lucency系列</button>
                     <button class="btn btn-lu btn-r blue">blue</button>
                     <button class="btn btn-lu btn-r skyblue">skyblue</button>
@@ -192,6 +197,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">「Lucency系列按钮」Disabled样式</h2>
+                    <p class="description">
+                        将按钮设置为禁用的同时，不需要添加额外的类，并且如果没有使用按钮类，<kbd>disabled＝"disabled"</kbd>不会添加样式。
+                    </p>
                     <button class="btn btn-lu btn-r default" disabled="disabled">Default中文</button>
                     <button class="btn btn-lu btn-r blue" disabled="disabled">blue</button>
                     <button class="btn btn-lu btn-r skyblue" disabled="disabled">skyblue</button>
@@ -221,6 +229,7 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">「Flat系列按钮」全预设样式示例</h2>
+                    <p class="description">添加<kbd>.btn</kbd>类的基础上，再添加<kbd>btn-fl</kbd>类，如果需要设置圆角，添加<kbd>.btn-r</kbd>类。接下来设置颜色，颜色的设置请参看[颜色说明]。</p>
                     <button class="btn btn-fl btn-r default">Flat系列</button>
                     <button class="btn btn-fl btn-r blue">blue</button>
                     <button class="btn btn-fl btn-r skyblue">skyblue</button>
@@ -250,6 +259,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">「Flat系列按钮」Disabled样式</h2>
+                    <p class="description">
+                        将按钮设置为禁用的同时，不需要添加额外的类，并且如果没有使用按钮类，<kbd>disabled＝"disabled"</kbd>不会添加样式。
+                    </p>
                     <button class="btn btn-fl btn-r default" disabled="disabled">Default中文</button>
                     <button class="btn btn-fl btn-r blue" disabled="disabled">blue</button>
                     <button class="btn btn-fl btn-r skyblue" disabled="disabled">skyblue</button>
@@ -279,6 +291,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">「Lucency系列按钮」尺寸示例</h2>
+                    <p class="description">
+                        按钮的尺寸总共分为 5 种，<kbd>.btn-xl</kbd>,<kbd>.btn-lg</kbd>,<kbd>.btn-sm</kbd>,<kbd>.btn-xs</kbd>以及默认大小无需添加。
+                    </p>
                     <button class="btn btn-xl btn-lu btn-r default">Lucency_XL</button>
                     <button class="btn btn-lg btn-lu btn-r default">Lucency_LG</button>
                     <button class="btn btn-lu btn-r default">Lucency</button>
@@ -328,6 +343,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">幽灵按钮</h2>
+                    <p class="description">
+                        添加.btn-yl幽灵按钮<kbd>.btn-xl</kbd>,<kbd>.btn-lg</kbd>,<kbd>.btn-sm</kbd>,<kbd>.btn-xs</kbd>以及默认大小无需添加。
+                    </p>
                     <div class="yl">
                         <button class="btn btn-xl btn-r btn-yl">幽灵按钮XL</button>
                         <button class="btn btn-lg btn-r btn-yl">幽灵按钮LG</button>
@@ -356,6 +374,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">按钮辅助类</h2>
+                    <p class="description">
+                        为按钮添加<kbd>.btn-block</kbd>类，它就能占父元素的100%。
+                    </p>
                     <button class="btn btn-fl green btn-block">green</button>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
@@ -368,6 +389,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">「按钮类」的使用</h2>
+                    <p class="description">
+                        若希望 &lt;a&gt;，&lt;input&gt; 标签表现为按钮，则可以直接试用按钮的类<kbd>.btn</kbd>，<kbd>.btn-fl</kbd>等。但是为了保持语义，务必为 &lt;a&gt; 添加 role 属性，为 &lt;input&gt; 添加 type 属性。
+                    </p>
                     <h4>「a」标签的button用法：</h4>
                     <a class="btn btn-fl orange" role="button">LinkButton</a>
                     <a class="btn btn-fl green" role="button">LinkButton</a>
@@ -396,6 +420,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">「Lucency」按钮组</h2>
+                    <p class="description">
+                        与按钮相同，按钮组也有 Lucency 风格，但是并不需要添加特别的类，在按钮容器添加<kbd>.btn-group</kbd>即可。
+                    </p>
                     <div class="btn-group ">
                         <button class="btn btn-lu btn-r skyblue">Left</button>
                         <button class="btn btn-lu btn-r skyblue">Middle</button>
@@ -422,6 +449,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">「Flat」按钮组</h2>
+                    <p class="description">
+                        与按钮相同，按钮组也有 Flat 风格，但是并不需要添加特别的类，在按钮容器添加<kbd>.btn-group</kbd>即可。
+                    </p>
                     <div class="btn-group">
                         <button type="button" class="btn btn-fl btn-r red">Left</button>
                         <button type="button" class="btn btn-fl btn-r red">Middle</button>
@@ -448,6 +478,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">幽灵按钮组</h2>
+                    <p class="description">
+                        与按钮相同，按钮组也可以由幽灵按钮组成，但是并不需要添加特别的类，在按钮容器添加<kbd>.btn-group</kbd>即可。
+                    </p>
                     <div class="yl">
                         <div class="btn-group">
                             <button type="button" class="btn btn-r btn-yl">Left</button>
@@ -476,6 +509,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">按钮组的尺寸</h2>
+                    <p class="description">
+                        按钮组也提供 5 种尺寸，需要在按钮容器添加类<kbd>.btn-group-[Size]</kbd>。
+                    </p>
                     <div class="btn-group btn-group-sm">
                         <button type="button" class="btn btn-fl btn-r orange">Left</button>
                         <button type="button" class="btn btn-fl btn-r orange">Middle</button>
@@ -525,6 +561,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">按钮组的分割线效果</h2>
+                    <p class="description">
+                        如果想让按钮组在整体中体现独立，你可以为其添加分割线，在按钮的容器添加类<kbd>.btn-group-gap</kbd>即可
+                    </p>
                     <div class="btn-group-gap btn-group">
                         <button type="button" class="btn btn-fl btn-r orange">Left</button>
                         <button type="button" class="btn btn-fl btn-r orange">Middle</button>
@@ -571,6 +610,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">Tables headfixed strip hover示例</h2>
+                    <p class="description">
+
+                    </p>
                     <div class=" table-responsive table-headfixed">
                         <table class="table-bordered table-grey table-strip table-hover">
                             <thead>
