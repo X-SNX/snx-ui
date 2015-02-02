@@ -1603,9 +1603,9 @@ span:focus {
   background-color: #000000;
   border: 1px solid #8fe1fd;
   box-shadow: 0px 0px 10px rgba(143, 225, 253, 0.6);
-  -webkit-transition: box-shadow ease-in-out 0.3s ease-in-out 0.15s;
-  -moz-transition: box-shadow ease-in-out 0.3s ease-in-out 0.15s;
-  transition: box-shadow ease-in-out 0.3s ease-in-out 0.15s;
+  -webkit-transition: box-shadow ease-in-out 0.3s;
+  -moz-transition: box-shadow ease-in-out 0.3s;
+  transition: box-shadow ease-in-out 0.3s;
 }
 .form input[type="text"][disabled],
 .form input[type="password"][disabled],
@@ -2235,7 +2235,6 @@ label.btn .checkbox-input {
 }
 .media-item {
   display: -webkit-flex;
-  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
   margin: .5em;
@@ -2556,7 +2555,7 @@ label.btn .checkbox-input {
 .content {
   display: none;
   font-family: dax-regular;
-  text-align: middle;
+  text-align: center;
   width: 768px;
   padding: 3em;
   margin: 0 auto;
@@ -2564,7 +2563,7 @@ label.btn .checkbox-input {
 }
 .modal-main {
   background-color: white;
-  border-radius: 0px;
+  border-radius: 0;
   box-shadow: 0 3px 30px rgba(0, 0, 0, 0.15);
   background-clip: padding-box;
   outline: 0;

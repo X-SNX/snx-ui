@@ -72,6 +72,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">水平带背景颜色样式</h2>
+                    <p class="description">
+                        创建水平的标签页，首先要在最外层容器添加类<kbd>.tab-horizontal</kbd>，如需使用下述带背景颜色的样式，在该处添加<kbd>.tab-bgc</kbd>类。内部组成为：标签栏，推荐用&lt;li&gt;标签，添加<kbd>tabs</kbd>类。
+                        内容部分，创建一个容器并添加类<kbd>tab-content</kbd>，每一页的内容容器上添加<kbd>tab-item</kbd>。
+                    </p>
                     <div class="tab-horizontal tab-bgc">
                         <ul class="tabs removeTextNodes">
                             <li>简介</li>
@@ -124,6 +128,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">水平线条样式</h2>
+                    <p class="description">
+                        创建水平的标签页，首先要在最外层容器添加类<kbd>.tab-horizontal</kbd>,如需使用下述水平线条的样式，在该处添加<kbd>.tab-line</kbd>类。内部组成与上述带背景样式相同。
+                    </p>
                     <div class="tab-horizontal tab-line">
                         <ul class="tabs">
                             <li>Home</li>
@@ -164,6 +171,12 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">小三角样式</h2>
+                    <p class="description">
+                        创建水平的标签页，首先要在最外层容器添加类<kbd>.tab-horizontal</kbd>,如需使用下述带小三角的样式，在该处添加<kbd>.tab-triangle</kbd>类。内部组成与上述带背景样式相同。
+                    </p>
+                    <p class="description">
+
+                    </p>
                     <div class="tab-horizontal tab-triangle">
                         <ul class="tabs">
                             <li>Home</li>
@@ -204,6 +217,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">垂直线条样式</h2>
+                    <p class="description">
+                        创建垂直的标签页，首先要在最外层容器添加类<kbd>.tab-vertical</kbd>,如需使用下述有标签条的样式，在该处添加<kbd>.tab-line</kbd>类。内部组成与上述带水平背景样式相同。
+                    </p>
                     <div class="tab-vertical tab-line">
                         <ul class="tabs">
                             <li>Home</li>
@@ -262,6 +278,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">垂直带背景样式</h2>
+                    <p class="description">
+                        创建垂直的标签页，首先要在最外层容器添加类<kbd>.tab-vertical</kbd>,如需使用下述带背景的样式，在该处添加<kbd>.tab-bgc</kbd>类。内部组成与上述带水平背景样式相同。
+                    </p>
                     <div class="tab-vertical tab-bgc">
                         <ul class="tabs">
                             <li>Home</li>
@@ -364,6 +383,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">基础样式</h2>
+                    <p class="description">
+                        创建一个下拉菜单，首先需要在外层容器添加<kbd>.dropdown</kbd>，内部&lt;button&gt;添加<kbd>.dropdown-button</kbd>类，以及自定义属性<kbd>data-dropdown="[ID]"</kbd>(与列表中的相同)，
+                        下拉中的列表需要添加<kbd>.dropdown-list</kbd>类，以及添加id<kbd>#[id]</kbd>,在列表中，如果存在首级项和次级项，可以对首级项添加类<kbd>.dropdown-header</kbd>。
+                    </p>
                     <div class="grids-12">
                         <div class="dropdown g-6">
                             <button class="btn btn-fl skyblue btn-dropdown" data-dropdown="#dropdown1">Choose one
@@ -412,6 +435,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">幽灵系列</h2>
+                    <p class="description">
+                        创建一个下拉菜单，首先需要在外层容器添加<kbd>.dropdown</kbd>，如果使用幽灵样式，再添加一个类<kbd>.dropdown-yl</kbd>，
+                        内部组成与上述基础下拉菜单相同。
+                    </p>
                     <div class="grids-12 yl">
                         <div class="dropdown dropdown-yl g-6">
                             <button class="btn btn-yl skyblue btn-dropdown" data-dropdown="#dropdown3">Choose one
@@ -460,6 +487,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">上拉菜单</h2>
+                    <p class="description">
+                        创建一个下拉菜单，首先需要在外层容器添加<kbd>.dropdown</kbd>，如果希望菜单弹出的方向向上，再添加一个类<kbd>.dropdown-top</kbd>，
+                        内部组成与上述基础下拉菜单相同。
+                    </p>
                     <div class="dropdown dropdown-top">
                         <button class="btn btn-fl skyblue btn-dropdown" data-dropdown="#dropdown5">Choose one
                             <span class="triangle-top"></span>
@@ -492,6 +523,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">下拉菜单拉伸至父元素100%</h2>
+                    <p class="description">
+                        创建一个下拉菜单，首先需要在外层容器添加<kbd>.dropdown</kbd>，如果希望该下拉菜单占父元素100%，再添加一个类<kbd>.dropdown-block</kbd>，
+                        内部组成与上述基础下拉菜单相同。
+                    </p>
                     <div class="dropdown dropdown-block">
                         <button class="btn btn-fl skyblue btn-dropdown" data-dropdown="#dropdown9">Choose one
                             <span class="triangle"></span>
@@ -521,6 +556,11 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">按钮组式样与右对齐</h2>
+                    <p class="description">
+                        创建一个以按钮组为基础的下拉菜单，首先需要在外层容器添加<kbd>.dropdown</kbd>和<kbd>.btn-group</kbd>类，如果使用幽灵样式，再添加一个类<kbd>.dropdown-yl</kbd>，
+                        内部组成与上述基础下拉菜单基本相同，唯一不同的是，需要为按钮组中的第二个按钮添加类<kbd>.btn-dropdown</kbd>,以及自定义属性<kbd>data-dropdown = "[id]"</kbd>。
+
+                    </p>
                     <div class="grids-16 yl">
                         <div class="btn-group dropdown dropdown-yl g-6">
                             <button type="submit" class="btn btn btn-lu green">青い鳥</button>
@@ -571,6 +611,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">ListGroup的删除样式</h2>
+                    <p class="description">
+                        创建列表组，首先要在外层容器添加类<kbd>.list-group</kbd>,如果想要使其能够滑动删除，务必添加<kbd>.list-touchmoveable</kbd>类。并且调用参数与方法，参看<a href="#list-mo">参数与方法</a>部分。
+                        内部组成中，为每个列表项添加<kbd>.list-item</kbd>即可。
+                    </p>
                     <div class="list-group list-chooseable list-touchmovable">
                         <div class="list-item">
                             <div class="media-item">
@@ -616,6 +660,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">ListGroup的拓展样式</h2>
+                    <p class="description">
+                        创建列表组，首先要在外层容器添加类<kbd>.list-group</kbd>,内部组成中，为每个列表项添加<kbd>.list-item</kbd>即可。
+                        下面样式为表单与列表项组合样式。
+                    </p>
                     <div class="list-group list-chooseable">
                         <div class="list-item">
                             <div>
@@ -672,6 +720,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">ListGroup的手风琴样式</h2>
+                    <p class="description">
+                        列表项也可以实现手风琴效果，为外层元素添加<kbd>.list-organ</kbd>类，并在 JavaScript 中调用 organ 方法即可，参看<a href="#list-mo">参数与方法</a>部分。
+                    </p>
                     <div class="list-group list-organ">
                         <div class="list-item">
                             <div class="media-item g-8">
@@ -721,7 +772,7 @@
             </div>
             <div>
                 <div class="block">
-                    <h2 class="small-title">参数与方法</h2>
+                    <h2 class="small-title" id="list-mo">参数与方法</h2>
                     <div class="table-responsive">
                         <table class="table table-bordered" cellspacing="0" cellpadding="0">
                             <thead>
@@ -764,6 +815,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">Popup基础样式</h2>
+                    <p class="description">
+                        创建弹出框首先需要在外层容器添加<kbd>.popup</kbd>类，内部组成为按钮的弹出内容，需要为内容部分容器添加类<kbd>.popup-list</kbd>,根据弹出方向，再添加类<kbd>.popup-[position]</kbd>。
+                        内容部分仍需添加类<kbd>popup-triangle</kbd>，<kbd>popup-header</kbd>，<kbd>popup-body</kbd>，详细参看下例。
+                    </p>
                     <div class="popup">
                         <button class="btn btn-fl skyblue">popup-left
                             <span class="triangle"></span>
@@ -855,6 +910,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">长按钮Popup样式</h2>
+                    <p class="description">
+                        由于点击部分为按钮，长度并不影响，请放心使用。
+                    </p>
                     <div class="popup">
                         <button class="btn btn-lu green">popup-top and the button is very very long
                             <span class="triangle"></span>
@@ -894,6 +952,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">Tooltip基础样式</h2>
+                    <p class="description">
+                        创建提示框首先需要在外层容器添加<kbd>.tooltip</kbd>类，内部组成为按钮的弹出内容，需要为内容部分容器添加类<kbd>.tooltip-list</kbd>,根据弹出方向，再添加类<kbd>.tooltip-[position]</kbd>。
+                        内容部分仍需添加类<kbd>tooltip-triangle</kbd>，<kbd>tooltip-header</kbd>，<kbd>tooltip-body</kbd>，详细参看下例。
+                    </p>
                     <div class="tooltip">
                         <button class="btn btn-lu skyblue">tooltip-left</button>
                         <div class="tooltip-list tooltip-left">
@@ -958,6 +1020,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">长Tooltip样式</h2>
+                    <p class="description">
+                        由于点击部分为按钮，长度并不影响，请放心使用。
+                    </p>
                     <div class="tooltip">
                         <button class="tooltip btn btn-fl orange">tooltip-top and the button is very very long</button>
                         <div class="tooltip-list tooltip-bottom">
@@ -993,6 +1058,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">静态进度条样式</h2>
+                    <p class="description">
+                        创建静态进度条样式需要添加的类为<kbd>.progressbar</kbd>，并且需要您设置一个 width，推荐写在 CSS 代码中。也可以为进度条添加颜色类<kbd>.[color]</kbd>,
+                        如果需要添加条纹，在内部元素上添加<kbd>.probar-stripe</kbd>类。
+                    </p>
                     <div class=" progressbar">
                         <div style="width: 20%">
                             20%
@@ -1020,6 +1089,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">动画进度条样式</h2>
+                    <p class="description">
+                        创建动态进度条样式需要添加的类为<kbd>.progressbar</kbd>，并且需要您设置一个 width，推荐写在 CSS 代码中。也可以为进度条添加颜色类<kbd>.[color]</kbd>,
+                        如果需要添加条纹，在内部元素上添加<kbd>.probar-stripe</kbd>类。希望进度条有动画效果，则需要添加类<kbd>.animate-stripe</kbd>。
+                    </p>
                     <div class=" progressbar red">
                         <div class="probar-stripe animate-stripe" style="width: 48%">
                         </div>
@@ -1043,6 +1116,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">进度条控制插件</h2>
+                    <p class="description">
+                        创建动态进度条样式需要添加的类为<kbd>.progressbar</kbd>，要使用插件使其产生动作，需再添加一个类<kbd>.active</kbd>。插件的使用方法参看参数与插件部分。
+                    </p>
                     <div class="progressbar active">
                         <div></div>
                     </div>
@@ -1061,6 +1137,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">环形进度-[Unstable]</h2>
+                    <p class="description">
+                        创建环形进度条的方法为，在外部容器添加类<kbd>.progresscircle</kbd>，内部三个标签依次添加类<kbd>.pie-right</kbd>，
+                        <kbd>.pie-left</kbd>，<kbd>.circle-inner</kbd>。
+                    </p>
                     <div class="grids-12">
                         <div class="g-6 progresscircle">
                             <div class="pie-right"><div></div></div>
@@ -1088,6 +1168,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">Loading样式</h2>
+                    <p class="description">
+                        载入的样式归入进度条中，根据不同样式，添加类<kbd>.loading</kbd>，<kbd>.loading-round</kbd>。具体参看下面代码。
+                    </p>
                     <div class="grids-12">
                         <div class="loading g-3">
                             <span></span>
@@ -1217,6 +1300,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">带背景颜色的样式</h2>
+                    <p class="description">
+                        创建警告框，使其具有基础特征的类为<kbd>.alert</kbd>，如果选择带背景的样式，添加类<kbd>.alert-bgc</kbd>即可，颜色的设定直接追加颜色类<kbd>.[color]</kbd>。
+                    </p>
                     <div class="grids-16">
                         <div class="g-4 alert alert-bgc" role="alert">
                             yeah,look at me;iamverylongduibudui;
@@ -1246,6 +1332,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">带边框的样式</h2>
+                    <p class="description">
+                        创建警告框，使其具有基础特征的类为<kbd>.alert</kbd>，如果选择带边框的样式，添加类<kbd>.alert-yl</kbd>即可，颜色的设定直接追加颜色类<kbd>.[color]</kbd>。
+                    </p>
                     <div class="divide grids-16">
                         <div class="g-4 alert alert-yl" role="alert">
                             yeah,but you still click there....aasdfasd
@@ -1276,6 +1365,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">Alert插件－[Unstable]</h2>
+                    <p class="description">
+                        使用方法参看参数与方法，但首先要将alert隐藏。<strong>该部分请先不要使用</strong>。
+                    </p>
                     <button class="btn btn-fl green test-alert">test-alert</button>
                     <div class="grids-5">
                         <div class="g-2 alert alert-bgc alert-hide" role="alert" style="display: none">
@@ -1357,6 +1449,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">常规尺寸样式</h2>
+                    <p class="description">
+                        模态框的创建要为点击触发事件的区域添加类<kbd>.btn-modal</kbd>，自定义属性<kbd>data-modal = "#[id]"</kbd>,实体部分的容器务必记得添加一个 id，以<kbd>.modal</kbd>类。
+                        在实体中的各组成部分，类的添加为<kbd>.content</kbd>，<kbd>.modal-main</kbd>，<kbd>.modal-header</kbd>，<kbd>.modal-body</kbd>，<kbd>.modal-footer</kbd>，详细请参看下例。
+                    </p>
                     <div>
                         <button class="btn btn-fl skyblue btn-lg btn-modal" data-modal="#modal1">
                             Modal demo1
@@ -1507,7 +1603,10 @@
             </div>
             <div>
                 <div class="block">
-                    <h2 class="small-title">Collie-UI form-block表单测试</h2>
+                    <h2 class="small-title">小尺寸的Modal</h2>
+                    <p class="description">
+                        与常规模态框相同，唯一的区别是，在<kbd>.content</kbd>后还需追加<kbd>.content-sm</kbd>类。
+                    </p>
                     <div>
                         <button class="btn btn-lu skyblue btn-lg btn-modal" data-modal="#modal3">
                             Modal demo3
@@ -1664,6 +1763,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">滚动监听[Unstable]</h2>
+                     <p class="description">
+                         暂时只提供最常用的垂直方向滚动监听，并且嵌套情况下不是特别稳定，谨慎，单层可以放心使用。为滚动菜单的ul添加类<kbd>.scroll-menu</kbd>，监听部分的容器添加类<kbd>.scrollview</kbd>。还需设置锚点，务必。
+                         插件的使用参看参数和方法部分。
+                     </p>
                     <nav class="nav nav-success nav-padding">
                         <ul id="scroll-menu">
                             <li class="scroll-choosed"><a href="#l-one">Spring</a></li>
@@ -1735,6 +1838,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">图片轮播样式</h2>
+                    <p class="description">
+                        不需要添加特别的类，如果需要左右点击翻页，可以添加类<kbd>.imgscroll-left</kbd>，<kbd>.imgscroll-right</kbd>。
+                        插件的使用方法参看参数与方法部分。该部分存在尺寸问题，请先使用固定尺寸。
+                    </p>
                     <div class="images">
                         <img class="img-choosed" src="../image/m1.jpg">
                         <img src="../image/m2.jpg">
