@@ -3786,22 +3786,22 @@ tr {
   width: auto;
   margin: 0;
 }
-.info {
+table .gray {
   background-color: #d0d0d0;
 }
-.active {
+table .skyblue {
   background-color: #dcf2f5;
 }
-.success {
+table .green {
   background-color: #d7f0cc;
 }
-.secondary {
+table .blue {
   background-color: #d0e5f5;
 }
-.warning {
+table .orange {
   background-color: #ffeed9;
 }
-.error {
+table .red {
   background-color: #f2dada;
 }
 

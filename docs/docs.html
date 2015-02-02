@@ -611,7 +611,8 @@
                 <div class="block">
                     <h2 class="small-title">Tables headfixed strip hover示例</h2>
                     <p class="description">
-
+                        为&lt;table&gt;元素添加<kbd>.table-bordered</kbd>类可以为其添加边框；<kbd>.table-strip</kbd>类的添加使表格表现出斑马纹；<kbd>.table-hover</kbd>类增加悬浮效果。
+                        而为&lt;table&gt;的容器添加<kbd>.table-responsive</kbd>使其具有响应式，添加<kbd>.table-headfixed</kbd>类可以固定表头。
                     </p>
                     <div class=" table-responsive table-headfixed">
                         <table class="table-bordered table-grey table-strip table-hover">
@@ -719,6 +720,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">Tables underline示例</h2>
+                    <p class="description">
+                        <kbd>.table-underline</kbd>类定义了表格的下划线样式。
+                    </p>
                     <div class="table-responsive">
                         <table class="table-underline" cellspacing="0" cellpadding="0">
                             <thead>
@@ -788,6 +792,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">Tables bordered示例</h2>
+                    <p class="description">
+                        <kbd>.table-bordered</kbd>类可以为表格添加边框。
+                    </p>
                     <div class="table-responsive">
                         <table class="table-bordered" cellspacing="0" cellpadding="0">
                             <thead>
@@ -853,6 +860,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">Tables colors示例</h2>
+                    <p class="description">
+                        为表格中的&lt;th&gt;，&lt;tr&gt;，&lt;td&gt;等标签添加类<kbd>.[color]</kbd>，可以表现该颜色以突出某些信息。
+                    </p>
                     <div class="table-responsive">
                         <table class="table-underline" cellspacing="0" cellpadding="0">
                             <thead>
@@ -865,7 +875,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="active">
+                            <tr class="skyblue">
                                 <td>silly tshirts</td>
                                 <td>6,000</td>
                                 <td>110</td>
@@ -874,12 +884,12 @@
                             </tr>
                             <tr>
                                 <td>desktop photos</td>
-                                <td class="error">2,200</td>
+                                <td class="red">2,200</td>
                                 <td>500</td>
                                 <td>22%</td>
                                 <td>8.9</td>
                             </tr>
-                            <tr class="warning">
+                            <tr class="orange">
                                 <td>arrested quotes</td>
                                 <td>13,500</td>
                                 <td>900</td>
@@ -893,7 +903,7 @@
                                 <td>4%</td>
                                 <td>7.0</td>
                             </tr>
-                            <tr class="secondary">
+                            <tr class="blue">
                                 <td>2013 webapps</td>
                                 <td>9,900</td>
                                 <td>460</td>
@@ -907,7 +917,7 @@
                                 <td>7.1%</td>
                                 <td>17.3</td>
                             </tr>
-                            <tr class="success">
+                            <tr class="green">
                                 <td>ring bananaphone</td>
                                 <td>10,500</td>
                                 <td>748</td>
@@ -954,6 +964,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">Collie-UI基础表单测试(默认inline-block)</h2>
+                    <p class="description">
+                        在&lt;form&gt;元素中添加表单组，如需使用下述样式，务必添加类<kbd>.form</kbd>。
+                    </p>
                     <form class="form">
                         <input type="email" placeholder="Email">
                         <input type="password" placeholder="Password"  disabled="disabled">
@@ -1866,6 +1879,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">幽灵系列图片样式</h2>
+                    <p class="description">
+                        如果希望图片能够具有响应式特征，可以为&lt;img&gt;标签添加<kbd>img</kbd>类。在图片下方显示信息，可以为&lt;figure&gt;元素添加<kbd>.img-under</kbd>类。如果想要让图片呈现圆形[正方形]或椭圆形[长方形]，在&lt;img&gt;标签添加类<kbd>.img-circle</kbd>。
+                    </p>
                     <div class="grids-16 yl">
                         <figure class="img-under g-5">
                             <img class="img" src="../image/blur.jpg" alt="img">
@@ -1894,6 +1910,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">图片的hover样式</h2>
+                    <p class="description">
+                        鼠标悬浮触发在图片上显示文字的效果，对figure标签添加<kbd>.figure</kbd>类。
+                    </p>
                     <div class="grids-16">
                         <figure class="img-above g-6">
                             <img class="img" src="../image/blur.jpg" alt="img">
@@ -1924,6 +1943,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">媒体对象的嵌套</h2>
+                    <p class="description">
+                        这是一个组合样式，图片+文字。为每一个单位的媒体对象容器添加类<kbd>.media-item</kbd>,这里务必为&lt;img&gt;添加<kbd>.img</kbd>类，以及对文字部分添加<kbd>.mi-content</kbd>类。媒体对象可以直接嵌套。
+                    </p>
                     <div class="media-item g-8">
                         <img class="img" src="../image/m2.jpg">
                         <div class="mi-content" id="sortable">
@@ -1964,6 +1986,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">媒体对象的垂直相对位置</h2>
+                    <p class="description">
+                       当媒体对象和说明文字存在一个垂直相对位置，在媒体对象容器添加类<kbd>.media-center</kbd>，<kbd>.media-start</kbd>，<kbd>.media-end</kbd>类，即可表现不同样式。默认情况下图片居上。
+                    </p>
                     <div class="grids-12">
                         <div class="media-item g-8">
                             <img class="img" src="../image/m2.jpg">
@@ -2014,6 +2039,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">媒体对象的水平相对位置</h2>
+                    <p class="description">
+                        对调图片与说明不需要添加其他类，直接调换代码顺序即可。
+                    </p>
                     <div class="media-item g-8">
                         <div class="mi-content">
                             <h3>MIMPI</h3>
@@ -2043,6 +2071,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">按钮中的Badge样式</h2>
+                    <p class="description">
+                        可以为按钮添加小徽章以提示消息，在&lt;button&gt;标签中追加合法元素并为其添加类<kbd>.badge</kbd>即可。
+                    </p>
                     <button class="btn btn-fl skyblue" style="margin: 1em 0.5em 1.5em 0">badge<span class="badge">1</span></button>
                     <button class="btn btn-lu green" style="margin: 1em 0.5em 1.5em 0">badge<span class="badge">99+</span></button>
                     <button class="code-display btn btn-fl default">Source</button>
@@ -2057,6 +2088,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">垂直Tab中的badge样式</h2>
+                    <p class="description">
+                        为可为垂直标签页添加小徽章，在需要添加的位置的&lt;li&gt;标签中追加合法元素并添加类<kbd>.badge</kbd>即可。
+                    </p>
                     <div class="tab-vertical tab-line">
                         <ul class="tabs">
                             <li>Home</li>
@@ -2097,6 +2131,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">水平Tab中的badge样式</h2>
+                    <p class="description">
+                        为可为水平标签页添加小徽章，在需要添加的位置的&lt;li&gt;标签中追加合法元素并添加类<kbd>.badge</kbd>即可。
+                    </p>
                     <div class="tab-horizontal tab-line divider">
                         <ul class="tabs">
                             <li class="tab-choosed">Home</li>
@@ -2141,6 +2178,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">方正有框样式</h2>
+                    <p class="description">
+                        如果要使用带边框的翻页页码，为其添加类<kbd>.pgn</kbd>，<kbd>.pgn-border</kbd>即可，如果表示选中样式，单独为&lt;a&gt;标签添加类<kbd>.pgn-choosed</kbd>。
+                    </p>
                     <ul class="pgn pgn-border">
                         <li><a>Previous</a></li>
                         <li><a>1</a></li>
@@ -2170,6 +2210,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">圆形边框样式</h2>
+                    <p class="description">
+                        使用圆形边框的翻页页码，为其添加类<kbd>.pgn</kbd>，<kbd>.pgn-roundborder</kbd>即可，如果表示选中样式，单独为&lt;a&gt;标签添加类<kbd>.pgn-choosed</kbd>，
+                        前一页和后一页分别对应添加类<kbd>.pgn-pre</kbd>和<kbd>.pgn-next</kbd>。
+                    </p>
                     <div class="pgn pgn-roundborder">
                         <a class="pgn-pre"></a>
                         <a>1</a>
@@ -2198,6 +2242,10 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">简约样式</h2>
+                    <p class="description">
+                        使用小圆圈样式的翻页页码，为其添加类<kbd>.pgn</kbd>，<kbd>.pgn-circle</kbd>即可，如果表示选中样式，单独为&lt;a&gt;标签添加类<kbd>.pgn-choosed</kbd>，
+                        前一页和后一页分别对应添加类<kbd>.pgn-pre</kbd>和<kbd>.pgn-next</kbd>。
+                    </p>
                     <div class="pgn pgn-circle">
                         <a class="pgn-pre"></a>
                         <a></a>
@@ -2228,6 +2276,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">h1～h6中基础颜色样式</h2>
+                    <p class="description">
+                        标签可以突出显示当前部分强调的点，在h1~h6标签中追加一个合法标签并添加类<kbd>.label</kbd>和<kbd>.label-[color]</kbd>即可。
+                    </p>
                     <h1>Example heading <span class="label label-skyblue">New</span></h1>
                     <h2>Example heading <span class="label label-green">New</span></h2>
                     <h3>Example heading <span class="label label-orange">New</span></h3>
@@ -2247,6 +2298,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">带链接样式</h2>
+                    <p class="description">
+                        如果h1~h6标签中包含链接，也可以在其中追加一个合法标签并添加类<kbd>.label</kbd>和<kbd>.label-[color]</kbd>。
+                    </p>
                     <h1><a href="...">Default <span class="label label-default">New</span></a></h1>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
@@ -2259,6 +2313,9 @@
             <div>
                 <div class="block">
                     <h2 class="small-title">Button嵌套样式</h2>
+                    <p class="description">
+                        在按钮中使用标签的方法也是在其中追加一个合法标签并添加类<kbd>.label</kbd>和<kbd>.label-[color]</kbd>。
+                    </p>
                     <button class="btn btn-lu skyblue">Default <span class="label label-green">New!</span></button>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
@@ -2275,7 +2332,7 @@
             <label class="under">Simple CSS for Helper.</label>
             <div>
                 <div class="block">
-                    <h2 class="small-title">Collie-UI form-block表单测试</h2>
+                    <h2 class="small-title">居中</h2>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
                 <pre class="code">
