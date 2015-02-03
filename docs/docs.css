@@ -102,7 +102,7 @@ section {
 }
 .title {
     display: block;
-    font-family: 'raleway',arial, sans-serif;
+    font-family: 'Raleway',arial, sans-serif;
     font-size: 56px;
     margin: 12px 30px 0;
     padding: 10px 0;
@@ -122,14 +122,14 @@ section {
     display: block;
     margin: -80px 30px 66px;
     font-size: 100%;
-    color: #333;
+    color: #666;
     /*text-align: center;*/
 }
 .introduce h1{
     margin-top: 100px;
     font-size: 30px;
     font-weight: 500;
-    color: #888;
+    color: #666;
     text-align: center;
 }
 .block {
