@@ -327,10 +327,11 @@ section {
 kbd {
     margin: 2px 4px;
     padding: 2px;
-    color: #31dddd;
+    color: red;
     background-color: #f5f5f5;
     font-family: 'SourceCodePro', arial, sans-serif;
     font-size: 14px;
+    border-radius: 3px;
 }
 
 .description {
