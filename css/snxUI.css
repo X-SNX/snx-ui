@@ -1603,9 +1603,9 @@ span:focus {
   background-color: #000000;
   border: 1px solid #8fe1fd;
   box-shadow: 0px 0px 10px rgba(143, 225, 253, 0.6);
-  -webkit-transition: box-shadow ease-in-out 0.3s;
-  -moz-transition: box-shadow ease-in-out 0.3s;
-  transition: box-shadow ease-in-out 0.3s;
+  -webkit-transition: box-shadow ease-in-out 0.3s ease-in-out 0.15s;
+  -moz-transition: box-shadow ease-in-out 0.3s ease-in-out 0.15s;
+  transition: box-shadow ease-in-out 0.3s ease-in-out 0.15s;
 }
 .form input[type="text"][disabled],
 .form input[type="password"][disabled],
@@ -2235,6 +2235,7 @@ label.btn .checkbox-input {
 }
 .media-item {
   display: -webkit-flex;
+  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
   margin: .5em;
@@ -2555,7 +2556,7 @@ label.btn .checkbox-input {
 .content {
   display: none;
   font-family: dax-regular;
-  text-align: center;
+  text-align: middle;
   width: 768px;
   padding: 3em;
   margin: 0 auto;
@@ -2563,7 +2564,7 @@ label.btn .checkbox-input {
 }
 .modal-main {
   background-color: white;
-  border-radius: 0;
+  border-radius: 0px;
   box-shadow: 0 3px 30px rgba(0, 0, 0, 0.15);
   background-clip: padding-box;
   outline: 0;
@@ -2802,48 +2803,48 @@ label.btn .checkbox-input {
   padding-right: 2em;
   border-left: 0;
 }
-.nav-primary > ul {
+.nav-skyblue > ul {
   background-color: #73dcff;
 }
-.nav-primary > ul > li > a {
+.nav-skyblue > ul > li > a {
   color: white;
   background-color: #73dcff;
 }
-.nav-success > ul {
+.nav-green > ul {
   background-color: #65e1a3;
 }
-.nav-success > ul > li > a {
+.nav-green > ul > li > a {
   color: white;
   background-color: #65e1a3;
 }
-.nav-inverse > ul {
+.nav-black > ul {
   background-color: #555;
 }
-.nav-inverse > ul > li > a {
+.nav-black > ul > li > a {
   color: white;
   background-color: #555;
 }
-.nav-inverse > ul > li > a:active,
-.nav-inverse > ul > li > a:focus {
+.nav-black > ul > li > a:active,
+.nav-black > ul > li > a:focus {
   text-decoration: none;
 }
-.nav-inverse > ul > li > a:hover {
+.nav-black > ul > li > a:hover {
   background-color: rgba(0, 0, 0, 0.16);
 }
-.nav-primary > ul > li.disabled > a,
-.nav-success > ul > li.disabled > a,
-.nav-inverse > ul > li.disabled > a {
+.nav-skyblue > ul > li.disabled > a,
+.nav-green > ul > li.disabled > a,
+.nav-black > ul > li.disabled > a {
   color: rgba(255, 255, 255, 0.5);
 }
-.nav-primary > ul > li.disabled > a:hover,
-.nav-success > ul > li.disabled > a:hover,
-.nav-inverse > ul > li.disabled > a:hover,
-.nav-primary > ul > li.disabled > a:active,
-.nav-success > ul > li.disabled > a:active,
-.nav-inverse > ul > li.disabled > a:active,
-.nav-primary > ul > li.disabled > a:focus,
-.nav-success > ul > li.disabled > a:focus,
-.nav-inverse > ul > li.disabled > a:focus {
+.nav-skyblue > ul > li.disabled > a:hover,
+.nav-green > ul > li.disabled > a:hover,
+.nav-black > ul > li.disabled > a:hover,
+.nav-skyblue > ul > li.disabled > a:active,
+.nav-green > ul > li.disabled > a:active,
+.nav-black > ul > li.disabled > a:active,
+.nav-skyblue > ul > li.disabled > a:focus,
+.nav-green > ul > li.disabled > a:focus,
+.nav-black > ul > li.disabled > a:focus {
   color: rgba(255, 255, 255, 0.5);
 }
 .nav-path > ol {
