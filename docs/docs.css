@@ -75,7 +75,6 @@ section {
     display: inline-flex;
     width: 86%;
     height: 50%;
-    padding: 6px 0 6px 24px;
     color: #333;
     text-decoration: none;
     letter-spacing: 1px;
@@ -88,7 +87,7 @@ section {
 #detail li {
     font-family: 'Raleway',arial, sans-serif;
     margin: 0 8px 8px 32px;
-    padding: 3px;
+    padding: 8px 0 8px 24px;
     border-left: 10px solid transparent;
     box-shadow: 0 0 10px #e6e6e6;
     transition: all 0.3s ease-in-out;
