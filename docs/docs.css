@@ -47,21 +47,6 @@ header{
     box-shadow: none;
 }
 
-#headNav.nav .disabled{
-    color: #999;
-    background-color: inherit;
-    box-shadow: none;
-    cursor: not-allowed;
-}
-
-#headNav.nav .disabled:hover{
-    color: #999;
-}
-
-#headNav.nav .disabled:active{
-    border: none;
-}
-
 section {
     display: -webkit-flex;
     display: -ms-flexbox;
