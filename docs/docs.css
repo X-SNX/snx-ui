@@ -21,7 +21,7 @@ header{
     background-color: inherit;
 }
 #headNav.nav > ul > li > a{
-    margin: 26px 40px 0;
+    margin: 26px 30px 0;
     padding: 10px 10px 20px 10px;
     cursor: pointer;
 }
@@ -45,6 +45,21 @@ header{
     border-bottom: 2px solid #73dcff;
     background-color: inherit;
     box-shadow: none;
+}
+
+#headNav.nav .disabled{
+    color: #999;
+    background-color: inherit;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+#headNav.nav .disabled:hover{
+    color: #999;
+}
+
+#headNav.nav .disabled:active{
+    border: none;
 }
 
 section {
