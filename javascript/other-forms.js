@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
 //    样式覆盖
     var inputNumber = $('input[type="number"]');
     $('<div class="number"><input type="text" value="0"><div><div>▲</div><div>▼</div></div></div>')
@@ -20,7 +21,7 @@ $(document).ready(function () {
     $('.number>div>div:first-child').click(function () {
         num = $(this).parents('.number').find('input').prop('value');
         $(this).parents('.number').find('input').prop('value',parseInt(num)+parseInt(1));
-    })
+    });
     $('.number>div>div:last-child').click(function () {
         num = $(this).parents('.number').find('input').prop('value');
         $(this).parents('.number').find('input').prop('value',parseInt(num)-parseInt(1));
