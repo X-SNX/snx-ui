@@ -43,7 +43,7 @@ function sample() {
     }).remove();
 
     if($('.active').closest('li').index() === 2) {
-        $('.list-touchmovable').listGroup('swipe',{content:'你在看什么'});
+        $('.list-touchmovable').listGroup('swipe',{content:'CLICK to DELETE'});
         $('.list-organ').listGroup('organ');
         $('.progressbar.active').progress("animate");
 
