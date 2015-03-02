@@ -1,7 +1,7 @@
 .alert {
   position: relative;
   margin: .3em 0;
-  padding: .5em 1em .5em .5em;
+  padding: .5em 1.2em .5em .5em;
   border-radius: 1.5em;
   word-break: normal;
   word-wrap: break-word;
@@ -211,6 +211,7 @@ li .badge {
   letter-spacing: 1px;
   font-family: dax-regular;
   font-size: 100%;
+  vertical-align: bottom;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -265,6 +266,7 @@ li .badge {
   letter-spacing: 1px;
   font-family: dax-regular;
   font-size: 100%;
+  vertical-align: bottom;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

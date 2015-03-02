@@ -3,7 +3,7 @@ body {
     padding: 0 12.5%;
 }
 .bgc-change {
-    background-image: url("../../image/background.png");
+    background-image: url("../../docs/image/background.png");
     background-size: cover;
 }
 .divide {
