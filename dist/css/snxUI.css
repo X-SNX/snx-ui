@@ -1505,7 +1505,7 @@ label.btn .checkbox-input {
   display: -ms-flexbox;
   display: flex;
   margin: .5em;
-  color: #acacac;
+  color: #333;
 }
 .media-item > img {
   width: 5em;
@@ -3839,7 +3839,7 @@ table .red {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  color: #c3c3c3;
+  color: #333;
   font-family: dax-regular;
   font-size: inherit;
   cursor: pointer;
