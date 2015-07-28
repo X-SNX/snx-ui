@@ -1,19 +1,28 @@
 {
   "name": "snx-ui",
   "version": "0.0.1",
-  "homepage": "https://github.com/Quickper/snx-ui",
-  "authors": [
-    "snx"
-  ],
-  "description": "snx ui framework",
+  "homepage": "https://github.com/X-SNX/snx-ui",
+  "authors": [],
+  "description": "ui framework",
   "license": "MIT",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "demo"
+  ],
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/X-SNX/snx-ui.git"
+  },
+  "main": [
+    "dist/css/snxUI.css",
+    "dist/css/snxUI.min.css",
+    "dist/javascript/snxUI.js",
+    "dist/javascript/snxUI.min.js"
   ],
   "dependencies": {
     "jquery": "~2.1.3",
