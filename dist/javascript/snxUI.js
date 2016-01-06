@@ -62,7 +62,7 @@ $(document).ready(function(){
     });
     $(document).bind('click',function(e){//点击空白区域隐藏弹出
         var target  = $(e.target);
-        if(target.closest('.dropdown-list').length == 0){
+        if(target.closest('.dropdown-list').length === 0){
             $('.dropdown-list').slideUp(200);
         }
         e.stopPropagation();
@@ -171,7 +171,7 @@ $(document).ready(function(){
                 pgnChoosed: 1,  //默认选中的页码
                 leftButton: '.pgn-pre', //向左的按钮
                 rightButton: '.pgn-next', //向右的按钮
-                autoPlay: 'false', //自动播放
+                autoPlay: false, //自动播放
                 timeCircle: 5000 //自动播放的时间
             };
             var settings = $.extend(defaults, options);
@@ -184,14 +184,14 @@ $(document).ready(function(){
             var $this = $(this);
             var imgs = [];
             var i = 0, flag = 0, imgChoosed;
-            $(this).find('img[src]').each(function () {
+            $(this).find('.scroll-body').each(function () {
                 imgs[i] = $(this);
                 i++;
             });
 
             function rightToLeft(){
                 imgChoosed = $this.find('.img-choosed');
-                flag = imgChoosed.closest('img[src]').index();
+                flag = imgChoosed.closest('.scroll-body').index();
                 if(flag+1 === imgs.length) flag = -1;
                 imgChoosed.addClass('c-slider');
                 $(imgs[flag+1]).show().addClass('u-slider');
@@ -202,7 +202,7 @@ $(document).ready(function(){
             }
             function leftToRight(){
                 imgChoosed = $this.find('.img-choosed');
-                flag = imgChoosed.closest('img[src]').index();
+                flag = imgChoosed.closest('.scroll-body').index();
                 if(flag+1 === imgs.length) flag = -1;
                 imgChoosed.addClass('c-l-slider');
                 $(imgs[flag+1]).show().addClass('u-l-slider');
@@ -211,7 +211,13 @@ $(document).ready(function(){
                     $(imgs[flag+1]).removeClass('u-l-slider').addClass('img-choosed');
                 },500);
             }
-
+            function auto(){
+                if(settings.autoPlay){
+                    setInterval(function(){
+                        leftToRight();
+                    },6000);
+                }
+            }
             return this.each(function () {
                 var startX,endX;
                 var type = 'mobile';
@@ -245,6 +251,7 @@ $(document).ready(function(){
                 $(settings.rightButton).bind('click', function () {
                     leftToRight();
                 });
+                auto();
             });
         },
         stop: function (options) {
@@ -386,6 +393,16 @@ $(document).ready(function(){
 
 $(document).ready(function () {
 
+    $(document).bind('click',function(e){//点击空白区域隐藏弹出
+        var target  = $(e.target);
+        if(target.closest('.colors').length === 0){
+            $('.colors').hide(300);
+        }
+        if(target.closest('.calendar').length === 0){
+            $('.calendar').slideUp(300);
+        }
+        e.stopPropagation();
+    });
 //    样式覆盖
     var inputNumber = $('input[type="number"]');
     $('<div class="number"><input type="text" value="0"><div><div>▲</div><div>▼</div></div></div>')
@@ -416,26 +433,67 @@ $(document).ready(function () {
 //    .color
 
     $('<div class="colors"></div>').appendTo('.color');
-    var x = 201, y = 193 , z = 225;
+    var arrColor = [
+        {r:239,g:158,b:184},//うすもも
+        {r:235,g:125,b:148},//サイバーピンク
+        {r:232,g:96,b:122},//ピンク
+        {r:226,g:15,b:98},//べに
+        {r:176,g:6,b:52},//えんじ
+        {r:134,g:42,b:14},//ブラウン
+        {r:227,g:29,b:52},//あか
+        {r:227,g:29,b:52},//朱色
+        {r:240,g:142,b:35},//オレンジ
+        {r:245,g:174,b:41},//やまぶき
+        {r:254,g:236,b:52},//イエロー
+        {r:208,g:138,b:41},//キャメル
+        {r:58,g:22,b:1},//こげ茶
+        {r:110,g:106,b:64},//オリーブドラブ
+        {r:176,g:207,b:90},//若草
+        {r:105,g:182,b:64},//きみどり
+        {r:22,g:160,b:68},//グリーン
+        {r:8,g:95,b:81},//ビリジアン
+        {r:151,g:211,b:225},//ベビーブルー
+        {r:60,g:185,b:195},//あさぎ
+        {r:25,g:159,b:225},//スカイブルー
+        {r:12,g:100,b:174},//ウルトラマリン
+        {r:67,g:78,b:156},//青紫
+        {r:165,g:121,b:178},//藤
+        {r:62,g:32,b:129},//紫
+        {r:23,g:50,b:88},//ブルーブラック
+        {r:113,g:111,b:99},//濃グレー
+        {r:170,g:170,b:158},//グレー
+        {r:255,g:255,b:255},//ホワイト
+        {r:0,g:0,b:0},//スミ
+        {r:151,g:156,b:154},//シルバー
+        {r:144,g:123,b:82},//シルバー青口
+        {r:155,g:119,b:84},//シルバー赤口
+        {r:224,g:141,b:184},//蛍光ピンク
+        {r:243,g:169,b:134},//蛍光オレンジ
+        {r:146,g:201,b:139}//蛍光グリーン
+    ];
     for(var i = 0; i < 36; i++) {
-
-        $('<span></span>').appendTo('.colors').css('background-color','rgb('+x+','+y+','+z+')');
+        $('<span></span>').appendTo('.colors').css('background-color','rgb('+arrColor[i].r+','+arrColor[i].g+','+arrColor[i].b+')');
     }
     $('<div></div>').appendTo('.colors');
 
-    $('.colors').hide();
-    $('.color').children('div:nth-child(2)').click(function(){
-        $(this).parent().find('.colors').toggle();
+    var theColor = $('.colors');
+    theColor.hide();
+    $('.color').children('div:nth-child(2)').click(function(e){
+        $(this).parent().find('.colors').toggle(300);
+        $('.calendar').slideUp(300);
+        e.stopPropagation();
     });
-
-    $('.colors').children('span').click(function(){
+    theColor.children('span').click(function(){
         $(this).parents('.color').find('div:nth-child(1)').find('div').css('background-color',$(this).css('background-color'));
         $(this).parent().hide();
     }).mouseover(function(){
-        $(this).parent().find('div').text($('.color').find('div').find('div').first().css('background-color'));
+        $(this).parent().find('div').append('<label></label>');
+        var theLabel = $(this).parent().find('div label');
+        theLabel.text('Choose color : '+$(this).css('background-color'));
+        theLabel.css({'display':'inline-block'});
     }).mouseout(function () {
         $(this).parent().find('div').text('');
-    })
+    });
 
 //    date
 
@@ -452,10 +510,13 @@ $(document).ready(function () {
     var tYear = today.getFullYear();
     var tMonth = today.getMonth()+1;
     var tDate = today.getDate();
-    $('.date').find('input').attr('value',tMonth+'/'+tDate+'/'+tYear);
+    var theDate = $('.date');
+    theDate.find('input').attr('value',tMonth+'/'+tDate+'/'+tYear);
 
-    $('.date').find('input').click(function(){
-        $(this).parent().children('.calendar').toggle();
+    theDate.find('input').click(function(e){
+        $(this).parent().children('.calendar').slideToggle(300);
+        $('.colors').hide(300);
+        e.stopPropagation();
     });
 
     $.calPanel = function (date) {
@@ -481,7 +542,7 @@ $(document).ready(function () {
         }
         preMonth = preMonth.concat(currentMonth,nextMonth);
         return preMonth;
-    }
+    };
 
     var calendar = $('.calendar');  //日历的容器div
     var curYear, curMonth;
@@ -514,7 +575,7 @@ $(document).ready(function () {
             }
             else curRow.append('<td>'+curDay+'</td>');
         }
-    }
+    };
 
     $.calUI();
 
@@ -523,16 +584,18 @@ $(document).ready(function () {
         tbody = current.find('tbody');
         current.find('tbody').empty();
         current.children('div').empty();
-    }
+    };
 
 //  DOM结构没有刷新？
-    calendar.on('click','i:first',function () {
+    calendar.on('click','i:first',function (e) {
         $.changeMonth($(this));
         $.calUI(new Date(curYear,curMonth-1,1));
+        e.stopPropagation();
     });
-    calendar.on('click','i:last',function () {
+    calendar.on('click','i:last',function (e) {
         $.changeMonth($(this));
         $.calUI(new Date(curYear,curMonth+1,1));
+        e.stopPropagation();
     });
 
     current.find('tbody').on('click','td', function () {
