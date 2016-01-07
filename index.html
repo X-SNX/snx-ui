@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>SNX-UI　Show</title>
+    <link rel="Shortcut Icon" href="docs/image/titleIcon.ico" type="image/x-icon">
+    <link href="dist/css/snxUI.min.css" type="text/css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="fonts/dax/dax.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <style type="text/css">
+        div.background{
+            position:fixed;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            z-index:-1;
+        }
+        div.background > img {
+            height:100%;
+            width:100%;
+            border:0;
+        }
+        h1{
+        color: white;
+        max-width: 800px;
+        font-weight: bold;
+        font-size: 120px;
+        margin: 0 auto;
+        padding: 30px 0 20px;
+        line-height: 110px;
+        position: relative;
+        }
+        h2 {
+            color: #f0f0f0;
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: condensed;
+            text-transform: uppercase;
+            margin: 0 auto;
+            position: relative;
+        }
+        .logo{
+            /*padding-left:20px;*/
+            /*height:120px;*/
+            /*width:180px;*/
+        }
+    </style>
+</head>
+<body>
+<div class="background"><img src="docs/image/blur.jpg" /></div>
+<div class="background" style="opacity: 0.6"><img src="docs/image/content.png" /></div>
+<header class="grids-16 gutter-vertical">
+    <div class="g-2"></div>
+    <div class="g-12 form">
+        <div style="display: inline-block">
+        <img class="logo" src="docs/image/SNXUI.png">
+        </div>&nbsp;
+    </div>
+    <div class="g-2"></div>
+
+</header>
+<section class="grids-16">
+    <div class="g-2"></div>
+    <div class="g-12 form" style="text-align: center">
+        <h1>I'm a UI framework</h1>
+        <h2>FREE WITH BEAUTY FOR EASY WEB DEVELOPMENT</h2>
+        <legend></legend>
+        <a type="button" class="btn btn-fl green" style="font-size: 180%;margin-top: 30px" href="started">Get Started...</a>
+    </div>
+    <div class="g-2"></div>
+</section>
+<footer class="grids-16 form gutter-vertical" style="position:fixed;bottom:0;left: 0;right: 0;padding:0 0 18px 0;">
+    <div class="g-2"></div>
+    <div class="g-12">
+    <p style="text-align: right;color:#d6d6d6;margin: 0;">@Didichaoren &nbsp;&&nbsp; @Ckitakishi</p>
+    </div>
+    <div class="g-2"></div>
+</footer>
+</body>
+</html>
