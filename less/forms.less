@@ -62,7 +62,7 @@ input:focus,textarea:focus,select:focus,span:focus{
   padding: 0.5em 1em;
   display: inline-block;
   border: 1px solid #333333;
-  border-radius: 0px;
+  border-radius: 0;
   font-size: 100%;
   font-family: @font-family;
   -webkit-tap-highlight-color: transparent;/*苹果设备的点击阴影屏蔽，使效果统一*/
@@ -81,7 +81,7 @@ input:focus,textarea:focus,select:focus,span:focus{
   &:focus {
     background-color: #000000;
     border: 1px solid #8fe1fd;
-    box-shadow: 0px 0px 10px rgba(143,225,253,0.6);
+    box-shadow: 0 0 10px rgba(143,225,253,0.6);
     .transition-setting(box-shadow ease-in-out 0.3s);//transition竟然不支持box-shadow的过度!疯了@！
   }
   &[disabled]{
@@ -289,8 +289,8 @@ input:focus,textarea:focus,select:focus,span:focus{
 }
 
 .form-aligned .controls {//定制特殊样式，一般用于表单中的checkbox等
-   margin: 1.5em 0 0 10em;
- }
+  margin: 1.5em 0 0 10em;
+}
 .form-aligned .controls .checkbox,
 .form-aligned .controls .radio{
   display: block;
@@ -398,7 +398,7 @@ input:focus,textarea:focus,select:focus,span:focus{
   text-align: center;
   display: inline-block;
   border: 1px solid #e6e6e6;
-  border-radius: 0px;
+  border-radius: 0;
   font-family: @font-family;
   box-shadow: none;
   background-color: #e6e6e6;
@@ -507,14 +507,14 @@ input:focus,textarea:focus,select:focus,span:focus{
   }
   &:focus{
     border: 1px solid #8fe1fd;
-    box-shadow: 0px 0px 10px rgba(143, 225, 253, 0.6);;//这里的focus<span>中不使用tabindex不起作用 js解决
-     }
+    box-shadow: 0 0 10px rgba(143, 225, 253, 0.6);;//这里的focus<span>中不使用tabindex不起作用 js解决
   }
+}
 
 .file+label{
-   margin-top:0;
-   font-size:80%;
-   color:#333333;
+  margin-top:0;
+  font-size:80%;
+  color:#333333;
 }
 .fbtn {
   width: 125px;
@@ -525,7 +525,7 @@ input:focus,textarea:focus,select:focus,span:focus{
   top: 0;
   opacity: 0;
   filter: alpha(opacity=0);
-  }
+}
 
 .form div.input-xl,
 .form input.input-xl,
@@ -573,9 +573,9 @@ input[type=radio] {
   background: #ddd;
   border-radius: 100%;
   position: relative;//子元素寻找定位
-  -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
-  box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
   &[disabled]{
     cursor: not-allowed;
   }
@@ -605,9 +605,9 @@ input[type=radio] {
   left: 2px;
   z-index: 1;
   background: #333;
-  -webkit-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
-  -moz-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
-  box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+  box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
 }
 
 
@@ -624,15 +624,12 @@ label.btn .checkbox-input{
 .checkbox-input{
   display: inline-block;
   margin: 0 0.3em;
-  width: 18px;
-  height: 18px;
+  width: 23px;
+  height: 23px;
   vertical-align: middle;
-  background: #ddd;
+  background: #e6e6e6;
   position: relative;
   border-radius: 100%;
-  -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
-  box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
   &[disabled]{
     cursor:not-allowed;
   }
@@ -640,31 +637,35 @@ label.btn .checkbox-input{
 .checkbox-input label{
   cursor: pointer;
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: 17px;
+  height: 17px;
   margin: 0;
-  top: 2px;
-  left: 2px;
-  background: #333;
+  top: 3px;
+  left: 3px;
+  background: #fff;
   border-radius: 2em;
-  -webkit-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
-  -moz-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
-  box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
   &[disabled]{
     cursor: not-allowed;
   }
 }
+.checkbox-input label[disabled]:after{
+  cursor: not-allowed;
+}
+
+.checkbox-input label[disabled]:before{
+  cursor: not-allowed;
+}
 
 .checkbox-input label:after {
-  opacity: 0.3;
+  opacity: 0;
   content: '';
   position: absolute;
-  width: 11px;
-  height: 5px;
+  width: 14px;
+  height: 6px;
   background: transparent;
-  top: 1px;
-  left: 1px;
-  border: 3px solid #73dcff;
+  top: .5px;
+  left: 2px;
+  border: 3px solid #fff;
   border-top: none;
   border-right: none;
   -webkit-transition: all .3s ease;
@@ -672,17 +673,55 @@ label.btn .checkbox-input{
   -o-transition: all .3s ease;
   -ms-transition: all .3s ease;
   transition: all .3s ease;
-  -webkit-transform: rotate(-60deg);//旋转60°制作对钩
-  -moz-transform: rotate(-60deg);
-  -o-transform: rotate(-60deg);
-  -ms-transform: rotate(-60deg);
-  transform: rotate(-60deg);
+  -webkit-transform: rotate(-45deg);//旋转60°制作对钩
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.checkbox-input label:before {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  top: 0;
+  left: 0;
+  background: #33ace0;
+  border-radius: 2em;
+  &[disabled]{
+    cursor: not-allowed;
+  }
 }
 
 .checkbox-input label:hover::after {
   opacity: 0.5;
+  border-color: #fff;
+}
+.checkbox-input label[disabled]:hover::after {
+  opacity: 0;
 }
 
 .checkbox-input input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+.checkbox-input label:hover::before {
+  opacity: 0.3;
+  background-color: #33ace0;
+}
+.checkbox-input label[disabled]:hover::before {
+  opacity: 0;
+}
+
+.checkbox-input input[type=checkbox]:checked + label:before {
   opacity: 1;
 }

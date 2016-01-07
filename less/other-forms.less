@@ -23,6 +23,7 @@
   background-color: #7be0ff;
   color: #ffffff;
   font-size: inherit;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
   z-index: 100;
   >div {
     padding: .2em;
@@ -174,11 +175,12 @@
 //色盘
 .colors {
   position: absolute;
-  height: 6em;
   width: 16.8em;
   margin: .1em 0;
   padding-top: .2em;
   border: 1px solid #e7e7e7;
+  background-color: rgba(0,0,0,.06);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
   z-index: 100;
   >span {
     display: inline-block;
@@ -186,5 +188,63 @@
     width: 1.2em;
     margin: 0 .1em;
     cursor: pointer;
+  }
+  >div{
+    height: 1.8em;
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 1px;
+    overflow: hidden;
+    >label{
+      font-size: 13.5px;
+      transition: all .3s ease-in-out;
+      -webkit-animation: appear .3s linear 0s alternate;
+      animation: appear .3s linear 0s alternate;
+    }
+  }
+}
+
+@keyframes appear {
+  0% {
+    -webkit-transform: translate3d(0,150%,0);
+    -moz-transform: translate3d(0,150%,0);
+    -ms-transform: translate3d(0,150%,0);
+    -o-transform: translate3d(0,150%,0);
+    transform: translate3d(0,150%,0);
+  }
+  100% {
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+}
+@-moz-keyframes appear {
+  0% {
+    -webkit-transform: translate3d(0,150%,0);
+    -moz-transform: translate3d(0,150%,0);
+    -o-transform: translate3d(0,150%,0);
+    transform: translate3d(0,150%,0);
+  }
+  100% {
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+}
+@-webkit-keyframes appear {
+  0% {
+    -webkit-transform: translate3d(0,150%,0);
+    -moz-transform: translate3d(0,150%,0);
+    -o-transform: translate3d(0,150%,0);
+    transform: translate3d(0,150%,0);
+  }
+  100% {
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
   }
 }
