@@ -15,7 +15,7 @@ $(document).ready(function(){
     });
     $(document).bind('click',function(e){//点击空白区域隐藏弹出
         var target  = $(e.target);
-        if(target.closest('.dropdown-list').length == 0){
+        if(target.closest('.dropdown-list').length === 0){
             $('.dropdown-list').slideUp(200);
         }
         e.stopPropagation();
