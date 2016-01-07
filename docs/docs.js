@@ -54,7 +54,7 @@ function sample() {
 
         $('.scrollview').scrollMonitor({target: '#scroll-menu', choosed: 'scroll-choosed'});
 
-        $('.images').imgScroll('cycle',{leftButton:'.imgscroll-left',rightButton:'.imgscroll-right'});
+        $('.images').imgScroll('cycle',{leftButton:'.imgscroll-left',rightButton:'.imgscroll-right',autoPlay:true});
     }
 }
 

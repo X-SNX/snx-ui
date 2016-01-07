@@ -69,7 +69,8 @@ section {
     padding: 0;
     list-style: none;
 }
-#detail a {
+#detail a,
+#detail #det a{
     font-family: inherit;
     display: inline-flex;
     width: 86%;
@@ -80,7 +81,13 @@ section {
     font-size: 18px;
     transition: all 0.3s ease-in-out;
 }
-#detail a:hover{
+
+#detail #det a {
+    margin: -8px 0 -8px -24px;
+    padding: 8px 0 9px 24px;
+    width: 100%;
+}
+#detail #det a:hover{
     color: #2dcbff;
 }
 #detail li {
@@ -92,10 +99,10 @@ section {
     transition: all 0.3s ease-in-out;
     line-height: 20px;
 }
-#detail .choosed  {
+#detail #det .choosed  {
     border-left-color: #73dcff;
 }
-#detail .choosed a{
+#detail #det .choosed a{
     color: #2dcbff;
 }
 .title {
@@ -179,9 +186,9 @@ section {
 
 .yl {
     padding: 18px;
-    background-image: linear-gradient(45deg, #EE855F, #a3f7e6);
+    /*background-image: linear-gradient(45deg, #EE855F, #a3f7e6);*/
     /*background-image: linear-gradient(135deg, #5fa4ee, #a3f7e6);*/
-    /*background-image: linear-gradient(135deg, #5bcefb, #fc78fd);*/
+    background-image: linear-gradient(135deg, #5bcefb, #fc78fd);
 
 }
 .code .html{
@@ -279,20 +286,6 @@ section {
 }
 #content .scroll-choosed a {
     color: #000000;
-}
-
-.imgscroll-right {
-    left: 38em;
-}
-
-.imgscroll-left,
-.imgscroll-right {
-    position: absolute;
-    top: 0;
-    height: 30em;
-    width: 2em;
-    background-color: rgba(0,0,0,0.5);
-    line-height: 30em;
 }
 .header {
     margin: 60px auto 0;

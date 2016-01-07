@@ -3,17 +3,18 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>SNX-UI</title>
-  <link href="../dist/css/snxUI.min.css" type="text/css" rel="stylesheet">
-  <!--<link type="text/css" rel="stylesheet" href="../fonts/dax/dax.css">-->
-  <!--<link type="text/css" rel="stylesheet" href="../fonts/SourceCodePro/SourceCodePro.css">-->
-  <!--<link type="text/css" rel="stylesheet" href="../fonts/Raleway/Raleway.css">-->
-  <link href="docs.css" type="text/css" rel="stylesheet">
-  <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="docs.js"></script>
-  <script src="../dist/javascript/snxUI.min.js"></script>
-  <link rel="stylesheet" href="styles/monokai_sublime.css">
-  <script src="styles/highlight.pack.js"></script>
+  <link rel="Shortcut Icon" href="docs/image/titleIcon.ico" type="image/x-icon">
+  <link href="dist/css/snxUI.min.css" type="text/css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="fonts/dax/dax.css">
+  <link type="text/css" rel="stylesheet" href="fonts/SourceCodePro/SourceCodePro.css">
+  <link type="text/css" rel="stylesheet" href="fonts/Raleway/Raleway.css">
+  <link href="docs/docs.css" type="text/css" rel="stylesheet">
+  <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="docs/docs.js"></script>
+  <script src="dist/javascript/snxUI.min.js"></script>
+  <link rel="stylesheet" href="docs/styles/monokai_sublime.css">
+  <script src="docs/styles/highlight.pack.js"></script>
   <script>
     hljs.tabReplace = '    ' ;// 4 spaces
     hljs.initHighlightingOnLoad();
@@ -30,12 +31,12 @@
 <body>
 <header>
   <div id="headNav" class="nav nav-padding">
-    <img id="logo" src="image/Snx1.png">
+    <img id="logo" src="docs/image/SNXUI-title.png">
     <ul>
       <li><a class="active"><i class="fa fa-play-circle"></i> Getting Started</a></li>
-      <li><a href="docs.html"><i class="fa fa-css3"></i> CSS</a></li>
-      <li><a href="docs_component.html"><i class="fa fa-forumbee"></i> Component</a></li>
-      <li><a href="docs_template.html"><i class="fa fa-th-list"></i> Template</a></li>
+      <li><a href="css"><i class="fa fa-css3"></i> CSS</a></li>
+      <li><a href="component"><i class="fa fa-forumbee"></i> Component</a></li>
+      <li><a href="template"><i class="fa fa-th-list"></i> Template</a></li>
     </ul>
   </div>
   <span class="left-white"></span>
@@ -57,7 +58,7 @@
   <div id="content">
     <div id="begin" class="form">
       <div class="header">
-        <img src="image/Snx.png">
+        <img src="docs/image/SNX%20Headerlogo1.png">
       </div>
       <h2>FREE WITH BEAUTY FOR EASY WEB DEVELOPMENT</h2>
       <div class="btn-center">
@@ -93,7 +94,7 @@
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用舒适化的类名与标签搭配，支持部分移动端手势。想要真正方便的提供给人使用绝非易事，但是我们会不断努力。
         </div>
         <div class="g-12">
-          <h1 style="font-size: 24px;color: #333;width: 480px;margin: 80px auto 0">SNX是完全开源的。它的代码托管、开发、维护都依赖 GitHub 平台。</h1>
+          <h1 style="font-size: 24px;color: #333;width: 480px;margin: 80px auto 0">SNX-UI是完全开源的。它的代码托管、开发、维护都依赖 GitHub 平台。</h1>
         </div>
       </div>
       <div class="block" style="margin-top: 100px">
@@ -130,10 +131,57 @@
     <div id="download">
       <h1 class="title">DownLoad</h1>
       <label class="under">Download for your web development.</label>
-      <div class="introduce grids-12">
-        <div class="g-12" style="padding-top: 30px">
-          Building...
-        </div>
+        <div class="block">
+          <h2 class="small-title">选择适合您的SNX-UI版本下载使用</h2>
+        <div>
+          <div class="list-group list-chooseable">
+            <p style="padding:0;margin-left: 10px;color: #333;font-weight:500">生产版定制下载:</p>
+            <div class="list-item">
+              <div>
+                <form class="form form-order">
+                  <label  for="list-check1">
+                    <input type="checkbox" id="list-check1">
+                    合并版+压缩版<div style="display:inline-block;color: #888;">&mdash;&mdash;选择其一引入您的项目</div>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <div class="list-item">
+              <div>
+                <form class="form form-order">
+                  <label for="list-check2">
+                    <input type="checkbox" id="list-check2">
+                    LESS源码和JS源码<div style="display:inline-block;color: #888;">&mdash;&mdash;支持单独引入，占用最少的空间完成您的样式</div>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <div class="list-item">
+              <div>
+                <form class="form form-order">
+                  <label for="list-check3">
+                    <input type="checkbox" id="list-check3">
+                    Font配饰文字<div style="display:inline-block;color: #888;">&mdash;&mdash;设计师的搭配选择会为您的项目增色不少</div>
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-lu green">Download for producing</button>
+        </div><!--wiki-->
+          <div class="list-group list-chooseable">
+            <p style="padding:0;margin-left: 10px;color: #333;font-weight:500"></p>
+            <div class="list-item">
+              <div>
+                <form class="form form-order">
+                  <label  for="list-check1">
+                    开发版全部源码压缩包下载：
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-lu skyblue">Download for development</button>
       </div>
     </div>
     <div id="compiling">

@@ -2,18 +2,19 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>SNX-UI</title>
-    <link href="../dist/css/snxUI.min.css" type="text/css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="../fonts/dax/dax.css">
-    <link type="text/css" rel="stylesheet" href="../fonts/SourceCodePro/SourceCodePro.css">
-    <link type="text/css" rel="stylesheet" href="../fonts/Raleway/Raleway.css">
-    <link href="docs.css" type="text/css" rel="stylesheet">
-    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="docs.js"></script>
-    <script src="../dist/javascript/snxUI.min.js"></script>
-    <link rel="stylesheet" href="styles/monokai_sublime.css">
-    <script src="styles/highlight.pack.js"></script>
+    <title>SNX-UI　CSS</title>
+    <link rel="Shortcut Icon" href="docs/image/titleIcon.ico" type="image/x-icon">
+    <link href="dist/css/snxUI.min.css" type="text/css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="fonts/dax/dax.css">
+    <link type="text/css" rel="stylesheet" href="fonts/SourceCodePro/SourceCodePro.css">
+    <link type="text/css" rel="stylesheet" href="fonts/Raleway/Raleway.css">
+    <link href="docs/docs.css" type="text/css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="docs/docs.js"></script>
+    <script src="dist/javascript/snxUI.min.js"></script>
+    <link rel="stylesheet" href="docs/styles/monokai_sublime.css">
+    <script src="docs/styles/highlight.pack.js"></script>
     <script>
         hljs.tabReplace = '    ' ;// 4 spaces
         hljs.initHighlightingOnLoad();
@@ -22,12 +23,12 @@
 <body>
 <header>
     <div id="headNav" class="nav nav-padding">
-        <img id="logo" src="image/Snx1.png">
+        <img id="logo" src="docs/image/SNXUI-title.png">
       <ul>
-        <li><a href="docs_started.html"><i class="fa fa-play-circle"></i> Getting Started</a></li>
+        <li><a href="started"><i class="fa fa-play-circle"></i> Getting Started</a></li>
         <li><a class="active"><i class="fa fa-css3"></i> CSS</a></li>
-        <li><a href="docs_component.html"><i class="fa fa-forumbee"></i> Component</a></li>
-        <li><a href="docs_template.html"><i class="fa fa-th-list"></i> Template</a></li>
+        <li><a href="component"><i class="fa fa-forumbee"></i> Component</a></li>
+        <li><a href="template"><i class="fa fa-th-list"></i> Template</a></li>
       </ul>
     </div>
     <span class="left-white"></span>
@@ -588,7 +589,7 @@
                     <br><br>
                     <div class="btn-group-gap btn-group-xs">
                         <button type="button" class="btn btn-xs btn-fl btn-r skyblue">
-                            <i class="fa fa-info-circle"></i>
+                            <i class="fa fa-thumbs-up"></i>
                         </button>
                         <button type="button" class="btn btn-xs btn-fl btn-r green">
                             <i class="fa fa-heart"></i>
@@ -1742,7 +1743,6 @@
         <div id="nav">
             <h1 class="title">Navigation</h1>
             <label class="under">Simple CSS & JS for Navs.</label>
-
             <div>
                 <div class="block">
                     <h2 class="small-title">横向Nav示例</h2>
@@ -1753,19 +1753,21 @@
                     <div class="grids-16"><div class="g-16">
                         <nav class="nav nav-green nav-padding">
                             <ul>
-                            <li><a>Spring</a></li>
-                            <li><a>Summer</a></li>
-                            <li><a>Fall</a></li>
-                            <li class="disabled"><a>Winter</a></li>
-                                <li class="right"><a><i class="fa fa-user"></i></a></li>
-                                <li class="right"><a><i class="fa fa-envelope"></i></a></li>
-                                <li class="right"><form class="form">
-                                    <div class="input-group input-xs">
-                                        <input class="input-rounded" type="email" placeholder="Email">
-                                        <div class="input-info"><i class="fa fa-search fa-fw"></i></div>
-                                    </div>
-                                </form></li>
-                        </ul>
+                                <li><a class="active">Spring</a></li>
+                                <li><a>Summer</a></li>
+                                <li><a>Fall</a></li>
+                                <li class="disabled"><a>Winter</a></li>
+                                    <li class="right"><a><i class="fa fa-user"></i></a></li>
+                                    <li class="right"><a><i class="fa fa-envelope"></i></a></li>
+                                    <li class="right">
+                                        <form class="form">
+                                            <div class="input-group input-xs">
+                                                <input class="input-rounded" type="email" placeholder="Email">
+                                                <div class="input-info"><i class="fa fa-search fa-fw"></i></div>
+                                            </div>
+                                        </form>
+                                    </li>
+                            </ul>
                         </nav>
                     </div></div>
                     <button class="code-display btn btn-fl default">Source</button>
@@ -1804,7 +1806,7 @@
                         <nav class="nav nav-yl nav-padding">
                         <ul>
                         <li><a>Spring</a></li>
-                        <li><a>Summer</a></li>
+                        <li><a class="active">Summer</a></li>
                         <li class="disabled"><a>Fall</a></li>
                         <li><a>Winter</a></li>
                         <li class="right">
@@ -1855,7 +1857,7 @@
                                     <li><a>Spring</a></li>
                                     <li class="disabled"><a>Summer</a></li>
                                     <li><a>normal-long</a></li>
-                                    <li><a>Fall</a></li>
+                                    <li><a class="active">Fall</a></li>
                                     <li><a>Winter</a></li>
                                 </ul>
                             </nav>
@@ -1892,7 +1894,7 @@
                                         <li class="disabled"><a>When the list is very very long...</a></li>
                                         <li><a>Summer</a></li>
                                         <li><a>Fall</a></li>
-                                        <li><a>Winter</a></li>
+                                        <li><a class="active">Winter</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -1958,11 +1960,12 @@
                     </p>
                     <div class="grids-16 yl">
                         <figure class="img-under g-5">
-                            <img class="img" src="image/blur.jpg" alt="img">
-                            <p>hihihi</p>
+                            <img class="img" src="docs/image/blur.jpg" alt="img">
+                            <h2 style="margin-bottom: 10px;font-family: 'Raleway', arial, sans-serif">— Girl Friend —</h2>
+                            <p style="font-family: 'Raleway', arial, sans-serif;font-size: 13px;">Singer：Avril Lavigne</p>
                         </figure>
                         <figure class="g-5">
-                            <img class="img img-circle" src="image/blur.jpg" alt="img">
+                            <img class="img img-circle" src="docs/image/m1.jpg" alt="img">
                         </figure>
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
@@ -1985,32 +1988,38 @@
                 <div class="block">
                     <h2 class="small-title">图片的hover样式</h2>
                     <p class="description">
-                        鼠标悬浮触发在图片上显示文字的效果，对figure标签添加<kbd>.figure</kbd>类。
+                        鼠标悬浮触发在图片上显示文字的效果，对figure标签添加<kbd>.img-above</kbd>类,并配合使用source中的各标签。
                     </p>
                     <div class="grids-16">
-                        <figure class="img-above g-6">
-                            <img class="img" src="image/blur.jpg" alt="img">
-                            <div>2012/2/2</div>
-                        </figure>
-                        <figure class="img-above g-6">
-                            <img class="img" src="image/blur.jpg" alt="img">
-                            <div>走过路过千万不要错过啊啊啊啊啊</div>
-                        </figure>
+                        <div class="g-2"></div>
+                        <div class="g-12" style="margin: 1em auto">
+                            <figure class="img-above">
+                                <img src="docs/image/blur.jpg" alt="img14">
+                                <figcaption>
+                                    <h2 style="font-family: 'Raleway', arial, sans-serif">SNX <span style="font-family: arial, sans-serif;font-weight: 600">UI Framework</span></h2>
+                                    <span><i class="fa fa-heart-o"></i></span>
+                                    <span><i class="fa fa-thumbs-o-up"></i></span>
+                                    <span><i class="fa fa-paperclip"></i></span>
+                                    <p style="font-family: 'Raleway', arial, sans-serif;">Using the SNX UI will help you to find a easy way to build your amazing website.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="g-2"></div>
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
                 <pre class="code">
                     <code class="html">
-    &lt;div class="grids-16"&gt;
-        &lt;figure class="img-above g-6"&gt;
-            &lt;img class="img" src="../image/blur.jpg" alt="img"&gt;
-            &lt;div&gt;2012/2/2&lt;/div&gt;
-        &lt;/figure&gt;
-        &lt;figure class="img-above g-6"&gt;
-            &lt;img class="img" src="../image/blur.jpg" alt="img"&gt;
-            &lt;div&gt;走过路过千万不要错过啊啊啊啊啊&lt;/div&gt;
-        &lt;/figure&gt;
-    &lt;/div&gt;
+    &lt;figure class="img-above"&gt;
+        &lt;img src="docs/image/blur.jpg" alt="img14"&gt;
+        &lt;figcaption&gt;
+            &lt;h2&gt;UI Framework&lt;/span&gt;&lt;/h2&gt;
+            &lt;span&gt;&lt;i class="fa fa-heart-o"&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;span&gt;&lt;i class="fa fa-thumbs-o-up"&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;span&gt;&lt;i class="fa fa-paperclip"&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;p&gt;Using the SNX UI will help you to find a easy way to build your amazing website.&lt;/p&gt;
+        &lt;/figcaption&gt;
+    &lt;/figure&gt;
                     </code>
                 </pre>
             </div>
@@ -2020,20 +2029,24 @@
                     <p class="description">
                         这是一个组合样式，图片+文字。为每一个单位的媒体对象容器添加类<kbd>.media-item</kbd>,这里务必为&lt;img&gt;添加<kbd>.img</kbd>类，以及对文字部分添加<kbd>.mi-content</kbd>类。媒体对象可以直接嵌套。
                     </p>
-                    <div class="media-item g-8">
-                        <img class="img" src="image/m2.jpg">
+                    <div class="media-item">
+                        <img class="img" src="docs/image/titleIcon.ico">
                         <div class="mi-content" id="sortable">
-                            <h3>MIMPI</h3>
+                            <h3>See You Again</h3>
                             <div>
-                                A warm story.A warm storyA warm storyA warm storyA warm storyA warm storyA warm story
-                                A warm storyA warm storyA warm story
+                                This is the song bring back the memory of Paul.<br><br>
                             </div>
                             <div class="media-item">
-                                <img class="img" src="image/m2.jpg">
+                                <img class="img" src="docs/image/Nav%20logo.png">
                                 <div class="mi-content">
-                                    <h3>MIMPI</h3>
-                                    <div>A warm story. A warm story.A warm storyA warm storyA warm storyA warm storyA warm storyA warm story
-                                        A warm storyA warm storyA warm story A warm story.A warm storyA warm storyA warm storyA warm storyA warm story</div>
+                                    <h3>Wiz Khalifa & Charlie Puth </h3><br>
+                                    <div>
+                                        It's been a long day,without you my friend.<br><br>
+                                        and I'll tell you all about it when I see you again.<br><br>
+                                        We've come a long way,from where we began.<br><br>
+                                        oh,I'll tell you all about it when I see you again.<br><br>
+                                        when I see you again.
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -2064,29 +2077,76 @@
                        当媒体对象和说明文字存在一个垂直相对位置，在媒体对象容器添加类<kbd>.media-center</kbd>，<kbd>.media-start</kbd>，<kbd>.media-end</kbd>类，即可表现不同样式。默认情况下图片居上。
                     </p>
                     <div class="grids-12">
-                        <div class="media-item g-8">
-                            <img class="img" src="image/m2.jpg">
-                            <div class="mi-content">
-                                <h3>MIMPI</h3>
-                                <div>A warm story. A warm story.A warm storyA warm storyA warm storyA warm storyA warm storyA warm story
-                                    A warm storyA warm storyA warm story A warm story.A warm storyA warm storyA warm storyA warm storyA warm story
-                                    A warm story.A warm storyA warm story A warm story.A warm storyA warm story</div>
+                        <div class="g-12">
+                            <div class="media-item">
+                                <img class="img" src="docs/image/m2.jpg">
+                                <div class="mi-content">
+                                    <h3 style="font-size:32px">see you Again</h3>
+                                    <div style="line-height: 26px;">
+                                        It's been a long day,without you my friend.
+                                        and I'll tell you all about it when I see you again.
+                                        We've come a long way,from where we began.
+                                        oh,I'll tell you all about it when I see you again.~when I see you again.
+
+                                        carry on,give me all the strength I need.
+                                        To carry on...
+                                        It's been a long day,without you my friend.
+                                        and I'll tell you all about it when I see you again.
+                                        We've come a long way,from where we began.
+                                        oh,I'll tell you all about it when I see you again.~when I see you again.
+
+                                        How do I breath without you,feeling so cold.
+                                        I'll be waiting right here for you till the day you home.
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="media-item media-center g-8">
-                            <img class="img" src="image/m2.jpg">
-                            <div class="mi-content">
-                                <h3>MIMPI</h3>
-                                <div>A warm story. A warm story.A warm storyA warm storyA warm storyA warm storyA warm storyA warm story
-                                    A warm storyA warm storyA warm story A warm story.A warm storyA warm storyA warm storyA warm storyA warm story</div>
+                        <div class="g-12">
+                            <div class="media-item media-center">
+                                <img class="img" src="docs/image/m2.jpg">
+                                <div class="mi-content">
+                                    <h3 style="font-size:32px">We love you paul</h3>
+                                    <div style="line-height: 26px;">
+                                        It's been a long day,without you my friend.
+                                        and I'll tell you all about it when I see you again.
+                                        We've come a long way,from where we began.
+                                        oh,I'll tell you all about it when I see you again.~when I see you again.
+
+                                        carry on,give me all the strength I need.
+                                        To carry on...
+                                        It's been a long day,without you my friend.
+                                        and I'll tell you all about it when I see you again.
+                                        We've come a long way,from where we began.
+                                        oh,I'll tell you all about it when I see you again.~when I see you again.
+
+                                        How do I breath without you,feeling so cold.
+                                        I'll be waiting right here for you till the day you home.
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="media-item media-end g-8">
-                            <img class="img" src="image/m2.jpg">
-                            <div class="mi-content">
-                                <h3>MIMPI</h3>
-                                <div>A warm story. A warm story.A warm storyA warm storyA warm storyA warm storyA warm storyA warm story
-                                    A warm storyA warm storyA warm story A warm story.A warm storyA warm storyA warm storyA warm storyA warm story</div>
+                        <div class="g-12">
+                            <div class="media-item media-end">
+                                <img class="img" src="docs/image/m2.jpg">
+                                <div class="mi-content">
+                                    <h3 style="font-size:32px">You'll free in the heaven</h3>
+                                    <div style="line-height: 26px;">
+                                        It's been a long day,without you my friend.
+                                        and I'll tell you all about it when I see you again.
+                                        We've come a long way,from where we began.
+                                        oh,I'll tell you all about it when I see you again.~when I see you again.
+
+                                        carry on,give me all the strength I need.
+                                        To carry on...
+                                        It's been a long day,without you my friend.
+                                        and I'll tell you all about it when I see you again.
+                                        We've come a long way,from where we began.
+                                        oh,I'll tell you all about it when I see you again.~when I see you again.
+
+                                        How do I breath without you,feeling so cold.
+                                        I'll be waiting right here for you till the day you home.
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -2116,13 +2176,19 @@
                     <p class="description">
                         对调图片与说明不需要添加其他类，直接调换代码顺序即可。
                     </p>
-                    <div class="media-item g-8">
+                    <div class="media-item">
                         <div class="mi-content">
-                            <h3>MIMPI</h3>
-                            <div>A warm story.A warm story. A warm story.A warm storyA warm storyA warm storyA warm storyA warm storyA warm story
-                                A warm storyA warm storyA warm story A warm story.A warm storyA warm storyA warm story</div>
+                            <div style="line-height: 26px;">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It's been a long day,without you my friend.
+                                carry on,give me all the strength I need.
+                                To carry on...
+                                It's been a long day,without you my friend.
+                                and I'll tell you all about it when I see you again.
+                                We've come a long way,from where we began.
+                                oh,I'll tell you all about it when I see you again.~when I see you again.
+                            </div>
                         </div>
-                        <img class="img" src="image/m2.jpg">
+                        <img class="img" src="docs/image/m2.jpg">
                     </div>
                     <button class="code-display btn btn-fl default">Source</button>
                 </div>
