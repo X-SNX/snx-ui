@@ -1961,7 +1961,7 @@ figure.img-above:hover figcaption > span:nth-child(2) {
 .list-organ .list-content {
   display: none;
   padding: 1em;
-  border: .1em solid #d6d6d6;
+  border: .01em solid #d6d6d6;
 }
 @-webkit-keyframes touchmovedleft {
   from {
