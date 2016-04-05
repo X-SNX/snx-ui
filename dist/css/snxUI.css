@@ -642,6 +642,7 @@ a.btn-yl.active {
   border-top: 10px solid;
   border-right: 6px solid transparent;
   border-left: 6px solid transparent;
+  margin: 7px 0 7px 0;
 }
 .triangle-top {
   display: inline-block;
@@ -2555,8 +2556,8 @@ figure.img-above:hover figcaption > span:nth-child(2) {
 .colors > div > label {
   font-size: 13.5px;
   transition: all 0.3s ease-in-out;
-  -webkit-animation: appear .3s linear 0s alternate;
-  animation: appear .3s linear 0s alternate;
+  -webkit-animation: appear .3s linear 0 alternate;
+  animation: appear .3s linear 0 alternate;
 }
 @keyframes appear {
   0% {
