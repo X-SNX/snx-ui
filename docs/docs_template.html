@@ -3,27 +3,32 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>SNX-UI　Template</title>
-  <link rel="Shortcut Icon" href="docs/image/titleIcon.ico" type="image/x-icon">
-  <link href="dist/css/snxUI.min.css" type="text/css" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="fonts/dax/dax.css">
-  <link type="text/css" rel="stylesheet" href="fonts/SourceCodePro/SourceCodePro.css">
-  <link type="text/css" rel="stylesheet" href="fonts/Raleway/Raleway.css">
-  <link href="docs/docs.css" type="text/css" rel="stylesheet">
-  <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="docs/docs.js"></script>
-  <script src="dist/javascript/snxUI.min.js"></script>
-  <link rel="stylesheet" href="docs/styles/monokai_sublime.css">
+  <link rel="Shortcut Icon" type="image/x-icon" href="../img/titleIcon.ico" >
+  <link rel="stylesheet" type="text/css" href="../css/snxUI.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/docs.css">
+  <link rel="stylesheet" type="text/css" href="../css/monokai_sublime.css">
+  <link rel="stylesheet" type="text/css" href="../vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../fonts/dax/dax.css">
+  <link rel="stylesheet" type="text/css" href="../fonts/SourceCodePro/SourceCodePro.css">
+  <link rel="stylesheet" type="text/css" href="../fonts/Raleway/Raleway.css">
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../js/snxUI.min.js"></script>
+  <script src="../js/highlight.pack.js"></script>
+  <script src="../js/docs.js"></script>
+  <script>
+    hljs.tabReplace = '  ' ;// 4 spaces
+    hljs.initHighlightingOnLoad();
+  </script>
 </head>
 <body>
 <header>
   <div id="headNav" class="nav nav-padding">
-    <img id="logo" src="docs/image/SNXUI-title.png">
+    <img id="logo" src="../img/Snx1.png">
     <ul>
-      <li><a href="started"><i class="fa fa-play-circle"></i> Getting Started</a></li>
-      <li><a href="css"><i class="fa fa-css3"></i> CSS</a></li>
-      <li><a href="component"><i class="fa fa-forumbee"></i> Component</a></li>
-      <li><a class="active"><i class="fa fa-th-list"></i> Template</a></li>
+      <li><a href="../index.html"><i class="fa fa-play-circle"></i> Getting Started</a></li>
+      <li><a href="docs_css.html"><i class="fa fa-css3"></i> CSS</a></li>
+      <li><a href="docs_component.html"><i class="fa fa-forumbee"></i> Component</a></li>
+      <li><a href="docs_template.html" class="active"><i class="fa fa-th-list"></i> Template</a></li>
     </ul>
   </div>
   <span class="left-white"></span>
