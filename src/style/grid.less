@@ -1,0 +1,67 @@
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left:  (@grid-gutter-width / 2);
+  padding-right: (@grid-gutter-width / 2);
+  .clearfix();
+
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
+}
+
+.row {
+  .make-row();
+}
+
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+.make-grid-columns();
+
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+.make-grid(xs);
+
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: @screen-sm-min) {
+  .make-grid(sm);
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: @screen-md-min) {
+  .make-grid(md);
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: @screen-lg-min) {
+  .make-grid(lg);
+}
+
+
