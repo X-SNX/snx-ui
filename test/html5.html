@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML5 Test Page</title>
+  <style>
+    h3 {
+      color: #54cd77;
+    }
+  </style>
 </head>
 <body>
 <div id="top" class="page" role="document">
-  <header role="banner">
-    <h1>HTML5 Test Page</h1>
-    <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
-  </header>
   <nav role="navigation">
     <ul>
       <li>
@@ -54,6 +55,119 @@
     </ul>
   </nav>
   <main role="main">
+    <section>
+      <header><h1><legend>内容分区</legend></h1></header>
+      <form>
+        <fieldset>
+          <legend>内容分区</legend>
+          <p>
+            <h3>&lt;address&gt;: 元素可以让作者为它最近的&lt;article&gt;或者祖先元素提供联系信息。在后一种情况下，它应用于整个文档。</h3>
+            <address>
+              You can contact author at <a href="http://www.somedomain.com/contact">www.somedomain.com</a>.<br>
+              If you see any bugs, please <a href="mailto:webmaster@somedomain.com">contact webmaster</a>.<br>
+              You may also want to visit us:<br>
+              Mozilla Foundation<br>
+              1981 Landings Drive<br>
+              Building K<br>
+              Mountain View, CA 94043-0801<br>
+              USA
+            </address>
+          </p>
+          <p>
+            <h3>&lt;article&gt;: 表示文档、页面、应用或网站中的独立结构，其意在成为可独立分配的或可复用的结构，如在发布中，它可能是论坛帖子、杂志或新闻文章、博客、用户提交的评论、交互式组件，或者其他独立的内容项目。</h3>
+            <article>
+              <p>I agree, dinos are my favorite.</p>
+            </article>
+          </p>
+          <p>
+            <h3>&lt;aside&gt;: 元素中连接到页面中其他部分的内容，被认为是独立于该内容的一部分并且可以被单独的拆分出来而不会使整体受影响。其通常表现为侧边栏或者被插入在该内容里。他们通常包含在工具条，例如来自词汇表的定义。也可能有其他类型的信息，例如相关的广告、笔者的传记、web 应用程序、个人资料信息，或在博客上的相关链接。</h3>
+            <aside>
+              The movie earned $87 million during its initial release.
+            </aside>
+          </p>
+          <p>
+            <h3>&lt;footer&gt;: 表示最近一个章节内容或者根节点（sectioning root ）元素的页脚。一个页脚通常包含该章节作者、版权数据或者与文档相关的链接等信息。</h3>
+            <footer>
+              Some copyright info or perhaps some author info for an &lt;article&gt;?
+            </footer>
+          </p>
+          <p>
+            <h3>&lt;h1&gt;-&lt;h6&gt;: 标题(Heading)元素有六个不同的级别，&lt;h1&gt;是最高级的，而&lt;h6&gt; 则是最低。</h3>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+          </p>
+          <p>
+            <h3>&lt;hgroup&gt;: 代表一个段的标题。</h3>
+            <hgroup>
+              <h1>Main title</h1>
+              <h2>Secondary title</h2>
+            </hgroup>
+          </p>
+          <p>
+            <h3>&lt;nav&gt;: 描绘一个含有多个超链接的区域，这个区域包含转到其他页面，或者页面内部其他部分的链接列表.</h3>
+            <nav>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+    <section>
+      <header><h1><legend>文本内容</legend></h1></header>
+      <form>
+        <fieldset>
+          <legend>文本内容</legend>
+        </fieldset>
+      </form>
+    </section>
+    <section>
+      <header><h1><legend>内联文本语义</legend></h1></header>
+      <form>
+        <fieldset>
+          <legend>内联文本语义</legend>
+        </fieldset>
+      </form>
+    </section>
+    <section>
+      <header><h1><legend>图片和多媒体</legend></h1></header>
+      <form>
+        <fieldset>
+          <legend>图片和多媒体</legend>
+        </fieldset>
+      </form>
+    </section>
+    <section>
+      <header><h1><legend>内嵌内容</legend></h1></header>
+      <form>
+        <fieldset>
+          <legend>内嵌内容</legend>
+        </fieldset>
+      </form>
+    </section>
+    <section>
+      <header><h1><legend>表格内容</legend></h1></header>
+      <form>
+        <fieldset>
+          <legend>表格内容</legend>
+        </fieldset>
+      </form>
+    </section>
+    <section>
+      <header><h1><legend>表单</legend></h1></header>
+      <form>
+        <fieldset>
+          <legend>表单</legend>
+        </fieldset>
+      </form>
+    </section>
     <section id="text">
       <header><h1>Text</h1></header>
       <article id="text__headings">
